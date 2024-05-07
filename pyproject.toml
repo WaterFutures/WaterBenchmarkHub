@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "water_benchmark_hub"
+description = "WaterBenchmarkHub"
+authors = [
+    {name = "André Artelt", email = "aartelt@techfak.uni-bielefeld.de"}
+]
+license = {text = "MIT License"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+keywords=["water", "networks", "benchmarks", "data"]
+dynamic = ["version", "readme", "dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/WaterFutures/WaterBenchmarkHub"
+Documentation = "https://waterbenchmarkhub.readthedocs.io/en/latest/"
+Repository = "https://github.com/WaterFutures/WaterBenchmarkHub.git"
+Issues = "https://github.com/WaterFutures/WaterBenchmarkHub/issues"
+
+[tool.setuptools]
+packages = ["water_benchmark_hub"]
+
+[tool.setuptools.dynamic]
+version = {attr = "water_benchmark_hub.VERSION"}
+readme = {file = "README.md"}
+dependencies = {file = "REQUIREMENTS.txt"}

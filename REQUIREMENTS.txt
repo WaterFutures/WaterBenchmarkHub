@@ -1,1 +1,1 @@
-epyt_flow>=0.1.0
+epyt-flow>=0.1.0

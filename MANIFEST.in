@@ -1,1 +1,11 @@
 include water_benchmark_hub/VERSION
+exclude .*
+exclude DEVELOPERS.md
+exclude REQUIREMENTS-DEV.txt
+exclude Makefile
+exclude make.bat
+recursive-exclude examples/ *
+recursive-exclude paper/ *
+recursive-exclude docs/ *
+recursive-exclude tests/ *
+recursive-exclude .github/ *

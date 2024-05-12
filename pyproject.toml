@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "water_benchmark_hub"
+name = "water-benchmark-hub"
 description = "WaterBenchmarkHub"
 authors = [
     {name = "André Artelt", email = "aartelt@techfak.uni-bielefeld.de"}
@@ -25,14 +25,14 @@ dynamic = ["version", "readme", "dependencies"]
 
 [project.urls]
 Homepage = "https://github.com/WaterFutures/WaterBenchmarkHub"
-Documentation = "https://waterbenchmarkhub.readthedocs.io/en/latest/"
+Documentation = "https://water-benchmark-hub.readthedocs.io/en/latest/"
 Repository = "https://github.com/WaterFutures/WaterBenchmarkHub.git"
 Issues = "https://github.com/WaterFutures/WaterBenchmarkHub/issues"
 
-[tool.setuptools]
-packages = ["water_benchmark_hub"]
+[tool.setuptools.packages]
+find = {}
 
 [tool.setuptools.dynamic]
-version = {attr = "water_benchmark_hub.VERSION"}
-readme = {file = "README.md"}
+version = {file = "water_benchmark_hub/VERSION"}
+readme = {file = "README.md", content-type = "text/markdown"}
 dependencies = {file = "REQUIREMENTS.txt"}

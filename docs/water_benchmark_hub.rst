@@ -1,6 +1,9 @@
 water_benchmark_hub
 ===================
 
+.. toctree::
+   water_benchmark_hub.gecco_waterquality
+
 
 water_benchmark_hub.benchmark_resource
 --------------------------------------

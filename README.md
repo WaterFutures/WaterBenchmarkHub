@@ -9,14 +9,14 @@ WaterBenchmarkHub supports Python 3.9 - 3.12
 ### PyPI
 
 ```
-pip install water_benchmark_hub
+pip install water-benchmark-hub
 ```
 
 ### Git
 Download or clone the repository:
 ```
 git clone https://github.com/WaterFutures/WaterBenchmarkHub.git
-cd water_benchmark_hub
+cd WaterBenchmarkHub
 ```
 
 Install all requirements as listed in [REQUIREMENTS.txt](REQUIREMENTS.txt):
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 ## Documentation
 
 Documentation is available on readthedocs:
-[https://waterbenchmarkhub.readthedocs.io/en/latest/](https://waterbenchmarkhub.readthedocs.io/en/latest/)
+[https://water-benchmark-hub.readthedocs.io/en/latest/](https://water-benchmark-hub.readthedocs.io/en/latest/)
 
 ## License
 

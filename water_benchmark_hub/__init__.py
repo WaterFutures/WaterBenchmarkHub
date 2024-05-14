@@ -9,3 +9,4 @@ with open(os.path.join(os.path.dirname(__file__), 'VERSION'), encoding="utf-8") 
 # Trigger registration of benchmarks
 from . import gecco_waterquality
 from . import water_usage
+from . import networks

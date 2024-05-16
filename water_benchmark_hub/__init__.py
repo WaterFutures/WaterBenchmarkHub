@@ -10,3 +10,4 @@ with open(os.path.join(os.path.dirname(__file__), 'VERSION'), encoding="utf-8") 
 from . import gecco_waterquality
 from . import water_usage
 from . import networks
+from . import batadal

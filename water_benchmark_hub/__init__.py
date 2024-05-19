@@ -11,3 +11,4 @@ from . import gecco_waterquality
 from . import water_usage
 from . import networks
 from . import batadal
+from . import leakdb

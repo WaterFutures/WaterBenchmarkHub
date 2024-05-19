@@ -3,6 +3,7 @@ water_benchmark_hub
 
 .. toctree::
    water_benchmark_hub.batadal
+   water_benchmark_hub.leakdb
    water_benchmark_hub.gecco_waterquality
    water_benchmark_hub.water_usage
    water_benchmark_hub.networks

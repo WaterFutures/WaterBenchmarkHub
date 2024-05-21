@@ -8,6 +8,7 @@ water_benchmark_hub
    water_benchmark_hub.gecco_waterquality
    water_benchmark_hub.water_usage
    water_benchmark_hub.networks
+   water_benchmark_hub.gym
 
 
 water_benchmark_hub.benchmark_resource

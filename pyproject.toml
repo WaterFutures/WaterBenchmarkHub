@@ -29,10 +29,7 @@ Documentation = "https://water-benchmark-hub.readthedocs.io/en/latest/"
 Repository = "https://github.com/WaterFutures/WaterBenchmarkHub.git"
 Issues = "https://github.com/WaterFutures/WaterBenchmarkHub/issues"
 
-[tool.setuptools.packages]
-find = {}
-
 [tool.setuptools.dynamic]
-version = {file = "water_benchmark_hub/VERSION"}
+version = {file = "src/water_benchmark_hub/VERSION"}
 readme = {file = "README.md", content-type = "text/markdown"}
 dependencies = {file = "REQUIREMENTS.txt"}

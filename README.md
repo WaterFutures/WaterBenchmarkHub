@@ -1,10 +1,13 @@
 # WaterBenchmarkHub
 
 The *WaterBenchmarkHub* is a platform for providing benchmark resources regarding Water Distribution Networks (WDNs).
+The webpage is available at [https://waterfutures.github.io/WaterBenchmarkHub](https://waterfutures.github.io/WaterBenchmarkHub) -- see [webpage/](webpage/) for details such as source code, etc.
 
-## Installation
+The WaterBenchmarkHub is also available as a Python package *water-benchmark-hub*.
 
-WaterBenchmarkHub supports Python 3.9 - 3.12
+## Installation of the Python Package
+
+The Python package supports Python 3.9 - 3.12
 
 ### PyPI
 
@@ -60,7 +63,7 @@ MIT license -- see [LICENSE](LICENSE)
 
 ## How to Cite?
 
-If you use this software, please cite it as follows:
+If you use the WaterBenchmarkHub in your research, please cite it as follows:
 
 ```
 @misc{github:water_benchmark_hub,

@@ -4,6 +4,7 @@ exclude DEVELOPERS.md
 exclude REQUIREMENTS-DEV.txt
 exclude Makefile
 exclude make.bat
+recursive-exclude webpage/ *
 recursive-exclude examples/ *
 recursive-exclude paper/ *
 recursive-exclude docs/ *

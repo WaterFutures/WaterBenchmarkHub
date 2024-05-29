@@ -1,0 +1,64 @@
+# Site Settings
+locale                   : "en-US"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _benchmarks
+  - files
+exclude:
+  - .asset-cache
+  - .bundle
+  - Gemfile
+  - README
+  - node_modules
+  - package.json
+  - .vendor
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Defaults
+defaults:
+  # _benchmarks
+  - scope:
+      path: ""
+      type: benchmarks
+    values:
+      layout: benchmark
+      share: true
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji

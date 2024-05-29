@@ -1,3 +1,9 @@
+# Ruby and NodeJS
+.bundle/
+.vendor/
+_site/
+node_modules/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta http-equiv="content-type" content="text/html;charset=UTF8">
+      <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+
+      <link type="text/css" rel="stylesheet" href="static/libs/bootstrap.min.css"/>
+      <link type="text/css" rel="stylesheet" href="static/libs/bootstrap-vue.min.css"/>
+  
+      <script src="static/libs/polyfill.min.js"></script>
+      <script src="static/libs/vue.min.js"></script>
+      <script src="static/libs/bootstrap-vue.min.js"></script>
+      <script src="static/libs/bootstrap-vue-icons.min.js"></script>
+
+      <script src="static/js/controller.js"></script>
+      <link type="text/css" rel="stylesheet" href="static/css/styles.css"/>
+
+      <title>Water Benchmark Hub</title>
+    </head>
+    <body>
+      <div id="app">
+
+        <div>
+          <b-navbar toggleable="lg" type="dark" variant="primary">
+            <b-navbar-brand>
+              <img src="static/favicon.ico" alt="" width="30" height="30"></a>
+              WaterBenchmarkHub
+            </b-navbar-brand>
+        
+            <b-collapse is-nav>
+              <b-navbar-nav>
+                <b-nav-item
+                  active
+                  href="#">
+                    Benchmarks
+                </b-nav-item>
+                <b-nav-item
+                  active
+                  href="https://water-benchmark-hub.readthedocs.io/en/latest/">
+                    Documentation
+                </b-nav-item>
+                <b-nav-item
+                  active
+                  href="https://github.com/WaterFutures/WaterBenchmarkHub">
+                    <img src="static/github.svg">
+                    Project on GitHub
+                </b-nav-item>
+              </b-navbar-nav>
+        
+              <b-navbar-nav class="ml-auto">
+                  <b-input
+                    size="sm"
+                    class="mr-sm-2"
+                    v-model="searchText"
+                    placeholder="Search for benchmarks"
+                    v-on:keyup.enter="onClickSearch"
+                    >
+                  </b-input>
+                  <b-button size="sm" class="my-2 my-sm-0" @click="onClickSearch">Search</b-button>
+              </b-navbar-nav>
+            </b-collapse>
+          </b-navbar>
+        </div>
+
+        <b-container fluid>
+          <b-row>
+            <b-col class="background-layer-light">
+              <div v-for="tag in allTags">
+                <b-badge
+                  href="#"
+                  v-bind:variant="activeTags.includes(tag) ? 'primary' : 'secondary'"
+                  @click="onClickOnTag(tag)">{{tag}}
+                </b-badge>
+              </div>
+            </b-col>
+            <b-col cols="8">
+              <h5>Benchmarks:</h5>
+
+              <searchterm
+                v-for="searchText in allSearchTexts"
+                v-bind:text="searchText"
+                :key="searchText"
+                v-on:click-on-close="onRemoveSearchText(searchText)"
+                >
+              </searchterm>
+
+              <b-list-group id="list-group-benchmarks">
+                <benchmark
+                  v-for="benchmark in benchmarks"
+                  :key="benchmark.id"
+                  v-bind:benchmark="benchmark">
+                </benchmark>       
+              </b-list-group>
+              <b-pagination
+                :per-page="5"
+                aria-controls="list-group-benchmarks"
+                align="center">
+              </b-pagination>   
+              <br>
+            </b-col>
+          </b-row>
+        </b-container>
+      </div>
+
+      <footer class="text-center text-white background-layer">
+        <div class="text-center text-white p-3">
+          © 2024 Water Benchmark Hub Developers
+        </div>
+      </footer>
+    </body>
+</html>

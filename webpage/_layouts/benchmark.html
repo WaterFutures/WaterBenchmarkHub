@@ -67,7 +67,7 @@
         </div>
         <script>
             var benchmarkID = "{{ page.id }}"
-            new Database().getDatabase().then(database => {
+            new Database().getDatabase("../").then(database => {
                 var benchmark = database.resources[benchmarkID];
                 
                 document.getElementById("benchmarkYear").innerText = benchmark.year;

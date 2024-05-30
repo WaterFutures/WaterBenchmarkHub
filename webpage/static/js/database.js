@@ -2,9 +2,9 @@
 
 
 class Database {
-    getDatabase() {
+    getDatabase(rootDir="") {
         return new Promise(resolve => {
-            fetch("../static/database.json", {
+            fetch(`${rootDir}static/database.json`, {
                 method: "GET"
             })
             .then(r => r.json())

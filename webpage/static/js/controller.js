@@ -1,22 +1,12 @@
 "use strict";
 
 window.onload = () => {
-    new Promise(resolve => {
-        fetch("static/database.json", {
-            method: "GET"
-        })
-        .then(r => r.json())
-        .then(r => resolve(r))
-        .catch((error) => {
-            console.error(error);
-            resolve(undefined);
-        })
-    }).then(database => {
+    new Database().getDatabase().then(database => {
         var myBenchmarks = []
         for (var [key, value] of Object.entries(database.resources)) {
             value["id"] = key;
             myBenchmarks.push(value);
-          }
+        }
 
         new Vue({
             el: "#app",

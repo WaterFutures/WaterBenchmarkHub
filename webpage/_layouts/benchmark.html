@@ -69,15 +69,41 @@
             var benchmarkID = "{{ page.id }}"
             new Database().getDatabase("../").then(database => {
                 var benchmark = database.resources[benchmarkID];
-                
+
                 document.getElementById("benchmarkYear").innerText = benchmark.year;
-                document.getElementById("benchmarkLicense").innerText = benchmark.license;
                 document.getElementById("benchmarkDownloadUrl").setAttribute("href", benchmark.download_url);
 
-                document.getElementById("benchmarkDOI").setAttribute("href", `https://doi.org/${benchmark.doi}`);
-                document.getElementById("benchmarkDOI").innerText = benchmark.doi;
+                if(benchmark.license == undefined) {
+                    var element = document.getElementById("benchmarkLicense");
+                    element.classList.add("badge-warning");
+                    element.classList.remove("badge-info");
+                    benchmark.license = "Not available";
+                }
+                document.getElementById("benchmarkLicense").innerText = benchmark.license;
 
-                document.getElementById("benchmarkExternalURL").setAttribute("href", benchmark.external_url);
+                if(benchmark.doi == undefined) {
+                    var element = document.getElementById("benchmarkDOI");
+                    element.removeAttribute("href");
+                    element.classList.add("badge-warning");
+                    element.classList.remove("badge-primary");
+                    element.innerText = "Not available";
+                }
+                else {
+                    var element = document.getElementById("benchmarkDOI");
+                    element.setAttribute("href", `https://doi.org/${benchmark.doi}`);
+                    element.innerText = benchmark.doi;
+                }
+
+                if(benchmark.external_url == undefined) {
+                    var element = document.getElementById("benchmarkExternalURL");
+                    element.removeAttribute("href");
+                    element.classList.add("badge-warning");
+                    element.classList.remove("badge-primary");
+                    element.innerText = "Not available";
+                }
+                else {
+                    document.getElementById("benchmarkExternalURL").setAttribute("href", benchmark.external_url);
+                }
             });
         </script>
 

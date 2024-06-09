@@ -42,29 +42,58 @@
             </nav>
         </div>
        
-        <div class="container-fluid background-layer-light">
+        <div class="container-fluid">
             <div class="row">
-                <h3>{{ page.title }}</h3>   
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i>Year: </i>
-                    <span class="badge badge-pill badge-info" id="benchmarkYear"></span>
+                <div class="col background-layer-light">
+                    <div class="row">
+                        <div class="col">
+                            <h4>{{ page.title }}</h4>
+                        </div>   
+                    </div>
 
-                    <i>DOI: </i>
-                    <a href="#" class="badge badge-pill badge-primary" id="benchmarkDOI"></a>
+                    <div class="row">
+                        <div class="col">
+                            <i>Year: </i>
+                            <span class="badge badge-pill badge-info" id="benchmarkYear"></span>
+                        </div>
+                    </div>
 
-                    <i>License: </i>
-                    <span class="badge badge-pill badge-info" id="benchmarkLicense"></span>
-
-                    <i>Link: </i>
-                    <a href="#" class="badge badge-pill badge-primary" id="benchmarkExternalURL">External webpage</a>
+                    <div class="row mt-1">
+                        <div class="col">
+                            <i>DOI: </i>
+                            <a href="#" class="badge badge-pill badge-primary" id="benchmarkDOI"></a>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col">
+                            <i>License: </i>
+                            <span class="badge badge-pill badge-info" id="benchmarkLicense"></span> 
+                        </div>  
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col">
+                            <i>Link: </i>
+                            <a href="#" class="badge badge-pill badge-primary" id="benchmarkExternalURL">External webpage</a>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <a href="#" class="btn btn-primary btn-sm" role="button" id="benchmarkDownloadUrl">Download</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <a href="#" class="btn btn-primary btn-sm" role="button" id="benchmarkDownloadUrl">Download</a>
+                <div class="col-10">
+                    {{ content }}
                 </div>
             </div>
         </div>
+
+        <footer class="text-center text-white background-layer">
+            <div class="text-center text-white p-3">
+                © 2024 Water Benchmark Hub Developers
+            </div>
+        </footer>
+
         <script>
             var benchmarkID = "{{ page.id }}"
             new Database().getDatabase("../").then(database => {
@@ -106,13 +135,5 @@
                 }
             });
         </script>
-
-        {{ content }}
-
-        <footer class="text-center text-white background-layer">
-            <div class="text-center text-white p-3">
-                © 2024 Water Benchmark Hub Developers
-            </div>
-        </footer>
     </body>
 </html>

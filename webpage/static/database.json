@@ -3,19 +3,24 @@
     "tasks": ["Leakage detection", "Leakage localization"],
     "resources": {
         "kios-leakdb": {
-            "name": "LeakDB", "desc": "LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.",
+            "name": "LeakDB",
+            "desc": "LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.",
             "year": 2018,
-            "tasks": ["Leakage detection", "Leakage localization"], "tags": ["leakage", "event detection", "Net1", "Hanoi"],
+            "tasks": ["Leakage detection", "Leakage localization"],
+            "tags": ["leakage", "event detection", "Net1", "Hanoi"],
             "keywords": [],
-            "doi": "10.5281/zenodo.1313116", "license": "EUPL-1.2",
+            "doi": "10.5281/zenodo.1313116",
+            "license": "EUPL-1.2",
             "download_url": "https://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A",
             "external_url": "https://github.com/KIOS-Research/LeakDB",
             "permalink": "benchmarks/KIOS-LeakDB.html"
         },
         "network-net1": {
-            "name": "Net1", "desc": "EPANET Example Network 1",
+            "name": "Net1",
+            "desc": "EPANET Example Network 1",
             "year": 2000,
-            "tasks": [], "tags": ["Net1"],
+            "tasks": [],
+            "tags": ["Net1"],
             "keywords": [],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
             "permalink": "benchmarks/network-Net1.html"

@@ -11,6 +11,14 @@
             "download_url": "https://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A",
             "external_url": "https://github.com/KIOS-Research/LeakDB",
             "permalink": "benchmarks/KIOS-LeakDB.html"
+        },
+        "network-net1": {
+            "name": "Net1", "desc": "EPANET Example Network 1",
+            "year": 2000,
+            "tasks": [], "tags": ["Net1"],
+            "keywords": [],
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
+            "permalink": "benchmarks/network-Net1.html"
         }
     }
 }

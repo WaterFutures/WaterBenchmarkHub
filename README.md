@@ -13,6 +13,12 @@ evaluation functions that can evaluate different algorithms/methods under the sa
 
 The WaterBenchmarkHub is also available as a Python package *water-benchmark-hub*.
 
+## Call for Contributions
+
+If you have a benchmark (resource) that is not yet available in the *WaterBenchmarkHub*,
+please either create a new issue or read on
+[How to Contribute](https://waterfutures.github.io/WaterBenchmarkHub/en/stable/how_to_contribute.html).
+
 ## Installation of the Python Package
 
 The Python package supports Python 3.9 - 3.12
@@ -86,5 +92,6 @@ If you use the WaterBenchmarkHub in your research, please cite it as follows:
 
 ## How to Contribute?
 
-Contributions (e.g. creating issues, pull-requests, etc.) are welcome -- please make sure to read the
-[code of conduct](CODE_OF_CONDUCT.md) and follow the [developers' guidelines](DEVELOPERS.md).
+Contributions (e.g. creating issues, pull-requests, etc.) are welcome -- please make sure to read
+[How to Contribute](https://waterfutures.github.io/WaterBenchmarkHub/en/stable/how_to_contribute.html),
+the [code of conduct](CODE_OF_CONDUCT.md) and follow the [developers' guidelines](DEVELOPERS.md).

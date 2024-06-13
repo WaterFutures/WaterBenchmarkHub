@@ -81,7 +81,11 @@ window.onload = () => {
                             var searchKeywords = this.allSearchTexts[i].split(" ");
 
                             benchmarks = benchmarks.filter((b) => searchKeywords.some((k) => {
-                                return b.tags.includes(k) | b.keywords.includes(k) | b.name.includes(k) | b.desc.includes(k);
+                                var _k = k.toLowerCase();
+                                return b.tags.some(item => item.toLowerCase().includes(_k))|
+                                    b.keywords.some(item => item.toLowerCase().includes(_k)) |
+                                    b.name.toLowerCase().includes(_k) |
+                                    b.desc.toLowerCase().includes(_k);
                             }));
                         }
                     }

@@ -22,6 +22,7 @@ from .leakdb_data import NET1_LEAKAGES, HANOI_LEAKAGES
 from ..networks import WaterDistributionNetworks
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
+from ..meta_data import MetaData
 
 
 class LeakDB(BenchmarkResource):
@@ -44,7 +45,7 @@ class LeakDB(BenchmarkResource):
     """
     @staticmethod
     def get_meta_info() -> dict:
-        return {}
+        return MetaData.get_meta_info("KIOS-LeakDB")
 
     @staticmethod
     def __leak_time_to_idx(t: int, round_up: bool = False, hydraulic_time_step: int = 1800):
@@ -605,4 +606,4 @@ class LeakDB(BenchmarkResource):
                 for f_inp_in, leaks in zip(scenarios_inp, leaks_all)]
 
 
-register("LeakDB", LeakDB)
+register("KIOS-LeakDB", LeakDB)

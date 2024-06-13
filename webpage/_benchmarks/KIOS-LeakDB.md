@@ -29,7 +29,7 @@ Detailed information about the provided functionality can be found in the [docum
 
 #### Loading the original data set
 
-The original data set can be loaded as Numpy arrays as follows:
+The original data set can be loaded as Numpy arrays by calling the [```load_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.load_data) function:
 ```python
 # Load original data set for Net1 as labeled Numpy array
 # Labels:
@@ -44,7 +44,7 @@ Besides loading the entire data set of 1000 scenarios, it is also possible to lo
 X, y_leak = leakdb.load_data(scenarios_id=range(10), use_net1=True, return_X_y=True)
 ```
 
-Besides the data set, this benchmark also provides the original evaluation function implemented in ```compute_evaluation_score```.
+Besides the data set, this benchmark also provides the original evaluation function implemented in [```compute_evaluation_score()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.compute_evaluation_score).
 In the context of the previous example of the first 10 Net1 scenarios, this could look like as follows:
 ```python
 # Predict the presence of a leakage for each time step in each scenario
@@ -56,14 +56,14 @@ score = compute_evaluation_score(scenarios_id=range(10), use_net1=True, y_pred_l
 
 #### Loading the scenario configurations
 
-Besides loading the original (already simulated) data sets, it is also possible to load the scenario configuration in [EPyT-Flow](https://github.com/WaterFutures/EPyT-Flow) such that the user can modify the scenarios and run the simulation themself:
+Besides loading the original (already simulated) data sets, it is also possible to load the scenario configuration in [EPyT-Flow](https://github.com/WaterFutures/EPyT-Flow) by calling the [```load_scenarios()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios) function -- i.e. the user can modify the scenarios and run the simulation themself:
 ```python
 # Load the first Net1 scenarios as an EPyT-Flow scenario
-scenarios = leakdb.load_scenarios(scenarios_id=[0], use_net1=True)
+scenario, = leakdb.load_scenarios(scenarios_id=[0], use_net1=True)
 
 # Modify scenario and run simulation
 from epyt_flow.simulation import ScenarioSimulator
-with ScenarioSimulator(scenario_config=scenarios[0]) as scenario:
+with ScenarioSimulator(scenario_config=scenario) as scenario:
     # ....
 ```
 Note that due to uncertainties and other factors in the original simulation, the simulated results will differ from the original data set.

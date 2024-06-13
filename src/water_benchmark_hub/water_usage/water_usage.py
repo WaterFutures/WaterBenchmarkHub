@@ -9,6 +9,7 @@ from epyt_flow.utils import get_temp_folder, download_if_necessary
 from ..metrics import accuracy_score, precision_score, roc_auc_score, f1_micro_score
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
+from ..meta_data import MetaData
 
 
 class WaterUsage(BenchmarkResource):
@@ -43,7 +44,7 @@ class WaterUsage(BenchmarkResource):
     """
     @staticmethod
     def get_meta_info() -> dict:
-        return {}
+        return MetaData.get_meta_info("KIOS-WaterUsage")
 
     @staticmethod
     def compute_evaluation_score(y_pred: np.ndarray, y: np.ndarray) -> dict:
@@ -139,4 +140,4 @@ class WaterUsage(BenchmarkResource):
             return r
 
 
-register("WaterUsage", WaterUsage)
+register("KIOS-WaterUsage", WaterUsage)

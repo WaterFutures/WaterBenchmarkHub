@@ -28,6 +28,19 @@
             "external_url": "https://github.com/KIOS-Research/BattLeDIM",
             "permalink": "benchmarks/KIOS-BattLeDIM.html"
         },
+        "kios-waterusage": {
+            "name": "WaterUsage",
+            "desc": "Water-Usage-Dataset",
+            "year": 2024,
+            "tasks": [],
+            "tags": [],
+            "keywords": [],
+            "doi": "10.2166/hydro.2024.120",
+            "license": "EUPL-1.2",
+            "download_url": "https://github.com/KIOS-Research/Water-Usage-Dataset/tree/main/Dataset",
+            "external_url": "https://github.com/KIOS-Research/Water-Usage-Dataset",
+            "permalink": "benchmarks/KIOS-WaterUsage.html"
+        },
         "network-net1": {
             "name": "Net1",
             "desc": "EPANET Example Network 1",

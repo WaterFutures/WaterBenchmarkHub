@@ -1,5 +1,8 @@
-include water_benchmark_hub/VERSION
+include src/water_benchmark_hub/VERSION
+graft src/water_benchmark_hub/
 exclude .*
+global-exclude */__pycache__/*
+global-exclude *.pyc
 exclude DEVELOPERS.md
 exclude REQUIREMENTS-DEV.txt
 exclude Makefile

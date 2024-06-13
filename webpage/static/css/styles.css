@@ -5,3 +5,7 @@
 .background-layer {
     background-color: #0d6efd;
 }
+
+body {
+    padding-bottom: 60px;
+}

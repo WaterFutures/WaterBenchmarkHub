@@ -15,6 +15,19 @@
             "external_url": "https://github.com/KIOS-Research/LeakDB",
             "permalink": "benchmarks/KIOS-LeakDB.html"
         },
+        "kios-battledim": {
+            "name": "BattLeDIM",
+            "desc": "The Battle of the Leakage Detection and Isolation Methods (BattLeDIM)",
+            "year": 2020,
+            "tasks": ["Leakage detection", "Leakage localization"],
+            "tags": ["leakage", "event detection", "L-Town"],
+            "keywords": [],
+            "doi": "10.5281/zenodo.4017658",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/api/records/4017659/files-archive",
+            "external_url": "https://github.com/KIOS-Research/BattLeDIM",
+            "permalink": "benchmarks/KIOS-BattLeDIM.html"
+        },
         "network-net1": {
             "name": "Net1",
             "desc": "EPANET Example Network 1",

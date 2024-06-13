@@ -22,6 +22,7 @@ from epyt_flow.utils import get_temp_folder, to_seconds, create_path_if_not_exis
 from ..networks import WaterDistributionNetworks
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
+from ..meta_data import MetaData
 
 
 class BattLeDIM(BenchmarkResource):
@@ -46,7 +47,7 @@ class BattLeDIM(BenchmarkResource):
     """
     @staticmethod
     def get_meta_info() -> dict:
-        return {}
+        return MetaData.get_meta_info("KIOS-BattLeDIM")
 
     @staticmethod
     def __parse_leak_config(start_time: str, leaks_config: str) -> list[Leakage]:
@@ -489,4 +490,4 @@ class BattLeDIM(BenchmarkResource):
                               sensor_config=ltown_config.sensor_config, system_events=leakages)
 
 
-register("BattLeDIM", BattLeDIM)
+register("KIOS-BattLeDIM", BattLeDIM)

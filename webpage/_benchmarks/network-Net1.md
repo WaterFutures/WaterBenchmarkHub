@@ -35,4 +35,4 @@ Detailed information about the provided functionality can be found in the docume
 
 ## Reference
 
-Rossman, L. A. (2000). EPANET 2: users manual.
+Rossman, L. A. (2000). *EPANET 2: users manual.*

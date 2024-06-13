@@ -20,9 +20,9 @@ Labels for each time step (30-minute steps) indicating the presence of a leak ar
 
 ### Usage in Python
 
-This benchmark is also available in Python under the key "*LeakDB*":
+This benchmark is also available in Python under the key "*KIOS-LeakDB*":
 ```python
-leakdb = load("LeakDB")
+leakdb = load("KIOS-LeakDB")
 ```
 
 Detailed information about the provided functionality can be found in the [documentation](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.leakdb.html#module-water_benchmark_hub.leakdb.leakdb).
@@ -71,4 +71,4 @@ Note that due to uncertainties and other factors in the original simulation, the
 
 ## Reference
 
-Vrachimis, S. G., Kyriakou, M. S., Eliades, D. G. and Polycarpou, M. M. (2018). LeakDB: A benchmark dataset for leakage diagnosis in water distribution networks. In Proc. of WDSA / CCWI Joint Conference (Vol. 1).
+Vrachimis, S. G., Kyriakou, M. S., Eliades, D. G. and Polycarpou, M. M. (2018). *LeakDB: A benchmark dataset for leakage diagnosis in water distribution networks.* In Proc. of WDSA / CCWI Joint Conference (Vol. 1).

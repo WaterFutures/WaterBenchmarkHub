@@ -19,6 +19,14 @@ water_benchmark_hub.benchmark_resource
    :show-inheritance:
 
 
+water_benchmark_hub.meta_data
+-----------------------------
+
+.. automodule:: water_benchmark_hub.meta_data
+   :members:
+   :show-inheritance:
+
+
 water_benchmark_hub.benchmarks
 ------------------------------
 

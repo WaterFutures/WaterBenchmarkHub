@@ -13,6 +13,7 @@ from .batadal_data import TRAINING_DATA_2_ATTACKS_TIME, TRAINING_DATA_2_START_TI
     TEST_DATA_ATTACKS_TIME, TEST_DATA_START_TIME
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
+from ..meta_data import MetaData
 
 
 class BATADAL(BenchmarkResource):
@@ -44,7 +45,7 @@ class BATADAL(BenchmarkResource):
     """
     @staticmethod
     def get_meta_info() -> dict:
-        return {}
+        return MetaData.get_meta_info("BATADAL")
 
     @staticmethod
     def __parse_attacks_time(start_time: str, attacks_time):

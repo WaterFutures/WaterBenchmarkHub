@@ -1,5 +1,5 @@
 {
-    "tags": ["leakage", "event detection", "Net1", "Hanoi"],
+    "tags": ["competition", "leakage", "event detection", "Net1", "Hanoi", "L-Town", "C-Town"],
     "tasks": ["Leakage detection", "Leakage localization"],
     "resources": {
         "kios-leakdb": {
@@ -20,7 +20,7 @@
             "desc": "The Battle of the Leakage Detection and Isolation Methods (BattLeDIM)",
             "year": 2020,
             "tasks": ["Leakage detection", "Leakage localization"],
-            "tags": ["leakage", "event detection", "L-Town"],
+            "tags": ["leakage", "event detection", "L-Town", "competition"],
             "keywords": [],
             "doi": "10.5281/zenodo.4017658",
             "license": "CC BY 4.0",
@@ -40,6 +40,19 @@
             "download_url": "https://github.com/KIOS-Research/Water-Usage-Dataset/tree/main/Dataset",
             "external_url": "https://github.com/KIOS-Research/Water-Usage-Dataset",
             "permalink": "benchmarks/KIOS-WaterUsage.html"
+        },
+        "batadal": {
+            "name": "BATADAL",
+            "desc": "The BATtle of the Attack Detection ALgorithms (BATADAL)",
+            "year": 2018,
+            "tasks": [],
+            "tags": ["C-Town", "competition", "event detection"],
+            "keywords": [],
+            "doi": "10.1061/(ASCE)WR.1943-5452.0000969",
+            "license": "CC BY 4.0",
+            "download_url": "https://www.batadal.net/data.html",
+            "external_url": "https://www.batadal.net/",
+            "permalink": "benchmarks/BATADAL.html"
         },
         "network-net1": {
             "name": "Net1",

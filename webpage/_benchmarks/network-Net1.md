@@ -15,7 +15,7 @@ Both bulk and wall reactions are included.
 The network consists of 9 nodes (junctions), 12 pipes, 1 reservoir, 1 tank, and 1 pump.
 Only base demands but no demand pattern are given.
 
-<img src="/static/benchmarks/network-net1/net1_plot.png"/>
+<img src="../static/benchmarks/network-net1/net1_plot.png"/>
 
 ## How to Use
 

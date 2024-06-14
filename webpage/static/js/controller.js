@@ -7,6 +7,7 @@ window.onload = () => {
             value["id"] = key;
             myBenchmarks.push(value);
         }
+        myBenchmarks = myBenchmarks.sort((a, b) => -1 * (a["year"] - b["year"]));
 
         new Vue({
             el: "#app",

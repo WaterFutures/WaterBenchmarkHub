@@ -6,6 +6,7 @@
 
       <link type="text/css" rel="stylesheet" href="static/libs/bootstrap.min.css"/>
       <link type="text/css" rel="stylesheet" href="static/libs/bootstrap-vue.min.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
       <script src="static/libs/polyfill.min.js"></script>
       <script src="static/libs/vue.min.js"></script>
@@ -33,18 +34,26 @@
                 <b-nav-item
                   active
                   href="#">
+                  <span>
+                    <i class="bi bi-database-fill"></i>
                     Benchmarks
+                  </span>
                 </b-nav-item>
                 <b-nav-item
                   active
                   href="https://water-benchmark-hub.readthedocs.io/en/latest/">
+                  <span>  
+                    <i class="bi bi-book-half"></i>
                     Documentation
+                  </span>
                 </b-nav-item>
                 <b-nav-item
                   active
                   href="https://github.com/WaterFutures/WaterBenchmarkHub">
-                    <img src="static/github.svg">
+                  <span>
+                    <i class="bi bi-github"></i>
                     BenchmarkHub on GitHub
+                  </span>
                 </b-nav-item>
               </b-navbar-nav>
         
@@ -54,10 +63,11 @@
                     class="mr-sm-2"
                     v-model="searchText"
                     placeholder="Search for benchmarks"
-                    v-on:keyup.enter="onClickSearch"
-                    >
+                    v-on:keyup.enter="onClickSearch">
                   </b-input>
-                  <b-button size="sm" class="my-2 my-sm-0" @click="onClickSearch">Search</b-button>
+                  <b-button size="sm" class="my-2 my-sm-0" @click="onClickSearch">
+                    Search
+                  </b-button>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>

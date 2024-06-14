@@ -10,6 +10,7 @@ from epyt_flow.utils import get_temp_folder, download_if_necessary
 from ..metrics import f1_score
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
+from ..meta_data import MetaData
 
 
 class GeccoWaterQuality(BenchmarkResource):
@@ -280,4 +281,4 @@ class GeccoWaterQuality(BenchmarkResource):
             return r
 
 
-register("GeccoWaterQuality", GeccoWaterQuality)
+register("GECCO-WaterQuality", GeccoWaterQuality)

@@ -54,6 +54,45 @@
             "external_url": "https://www.batadal.net/",
             "permalink": "benchmarks/BATADAL.html"
         },
+        "gecco-waterquality2017": {
+            "name": "GECCO Industrial Challenge 2017 Dataset",
+            "desc": "A water quality dataset for the Monitoring of drinking-water quality",
+            "year": 2017,
+            "tasks": [],
+            "tags": ["competition", "event detection"],
+            "keywords": [],
+            "doi": "10.5281/zenodo.3884464",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/api/records/3884465/files-archive",
+            "external_url": "http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/",
+            "permalink": "benchmarks/GECCO-WaterQuality2017.html"
+        },
+        "gecco-waterquality2018": {
+            "name": "GECCO Industrial Challenge 2018 Dataset",
+            "desc": "A water quality dataset for the Internet of Things: Online Anomaly Detection for Drinking Water Quality",
+            "year": 2018,
+            "tasks": [],
+            "tags": ["competition", "event detection"],
+            "keywords": [],
+            "doi": "10.5281/zenodo.3884397",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/api/records/3884398/files-archive",
+            "external_url": "http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/",
+            "permalink": "benchmarks/GECCO-WaterQuality2018.html"
+        },
+        "gecco-waterquality2019": {
+            "name": "GECCO Industrial Challenge 2019 Dataset",
+            "desc": "A water quality dataset for the Internet of Things: Online Event Detection for Drinking Water Quality Control",
+            "year": 2019,
+            "tasks": [],
+            "tags": ["competition", "event detection"],
+            "keywords": [],
+            "doi": "10.5281/zenodo.3884443",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/api/records/4304080/files-archive",
+            "external_url": "https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php",
+            "permalink": "benchmarks/GECCO-WaterQuality2019.html"
+        },
         "network-net1": {
             "name": "Net1",
             "desc": "EPANET Example Network 1",

@@ -54,7 +54,7 @@ from water_benchmark_hub import load
 
 if __name__ == "__main__":
     # Load GECCO water quality benchmark
-    benchmark = load("GeccoWaterQuality")
+    benchmark = load("GECCO-WaterQuality")
 
     # Load 2019 data set
     data = benchmark.load_gecco2019_water_quality_data(return_X_y=True)

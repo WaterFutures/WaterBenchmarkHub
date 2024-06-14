@@ -72,7 +72,7 @@ window.onload = () => {
                     if(this.activeTags.length != 0) {
                         // Filter by tags
                         benchmarks = benchmarks.filter((b) => {
-                            return this.activeTags.some((t) => b.tags.includes(t));
+                            return this.activeTags.every((t) => b.tags.includes(t));
                         });
                     }
                     if(this.allSearchTexts.length != 0) {

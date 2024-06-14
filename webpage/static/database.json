@@ -102,6 +102,17 @@
             "keywords": [],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
             "permalink": "benchmarks/network-Net1.html"
+        },
+        "network-ltown": {
+            "name": "L-Town",
+            "desc": "L-Town Network",
+            "year": 2020,
+            "tasks": [],
+            "tags": ["L-Town"],
+            "doi": "10.5281/zenodo.4017658",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/records/4017659",
+            "permalink": "benchmarks/network-LTown.html"
         }
     }
 }

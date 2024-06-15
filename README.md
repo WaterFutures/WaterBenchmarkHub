@@ -53,11 +53,11 @@ from water_benchmark_hub import load
 
 
 if __name__ == "__main__":
-    # Load GECCO water quality benchmark
-    benchmark = load("GECCO-WaterQuality")
+    # Load the GECCO Water Quality 2019 benchmark
+    benchmark = load("GECCO-WaterQuality2019")
 
-    # Load 2019 data set
-    data = benchmark.load_gecco2019_water_quality_data(return_X_y=True)
+    # Load data set
+    data = benchmark.load_data(return_X_y=True)
 
     # Show number of samples
     X_train, y_train = data["train"]

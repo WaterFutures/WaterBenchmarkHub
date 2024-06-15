@@ -41,16 +41,16 @@ The data set itself comes in three splits: A train set, a validation set, and a 
 
 ### Usage in Python
 
-This benchmark is also available in Python in the GECCO water quality collection (key: *GECCO-WaterQuality*)
+This benchmark is also available in Python in the GECCO water quality collection (key: *GECCO-WaterQuality2019*)
 through the
-[```load_gecco2019_water_quality_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.load_gecco2019_water_quality_data)
+[```load_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.load_data)
 function:
 ```python
 # Load GECCO water quality benchmark
-benchmark = load("GECCO-WaterQuality")
+benchmark = load("GECCO-WaterQuality2019")
 
-# Load 2019 data set
-data = benchmark.load_gecco2019_water_quality_data(return_X_y=True)
+# Load data set
+data = benchmark.load_data(return_X_y=True)
 
 # Show number of samples
 X_train, y_train = data["train"]
@@ -58,6 +58,8 @@ X_val, y_val = data["validation"]
 X_test, y_test = data["test"]
 print(X_train.shape, X_val.shape, X_test.shape)
 ```
+
+The official evaluation function is implemented in [```compute_evaluation_score()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score).
 
 ## Reference
 

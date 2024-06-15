@@ -15,15 +15,7 @@ from ..meta_data import MetaData
 
 class GeccoWaterQuality(BenchmarkResource):
     """
-    Class provides access to the GECCO Water Quality 2017 - 2019 benchmarks.
-
-    +------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-    | GECCO Water Quality 2017     | :func:`~water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.load_gecco2017_water_quality_data`    |
-    +------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-    | GECCO Water Quality 2018     | :func:`~water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.load_gecco2018_water_quality_data`    |
-    +------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-    | GECCO Water Quality 2019     | :func:`~water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.load_gecco2019_water_quality_data`    |
-    +------------------------------+----------------------------------------------------------------------------------------------------------------------------+
+    Base class for GECCO Water Quality 2017 - 2019 benchmarks.
 
     Note that the scoring/evaluation algorithm is the same for all GECCO water quality benchmarks
     and is implemented in
@@ -31,7 +23,7 @@ class GeccoWaterQuality(BenchmarkResource):
     """
     @staticmethod
     def get_meta_info() -> dict:
-        return {}
+        raise NotImplementedError()
 
     @staticmethod
     def compute_evaluation_score(y_pred: np.ndarray, y: np.ndarray) -> float:
@@ -55,23 +47,31 @@ class GeccoWaterQuality(BenchmarkResource):
         """
         return f1_score(y_pred, y)
 
+
+class GeccoWaterQuality2017(GeccoWaterQuality):
+    """
+    Class for Loading the original GECCO Industrial Challenge 2017 Dataset: A water quality dataset for the
+    "Monitoring of drinking-water quality" competition organized by M. Friese, J. Stork,
+    A. Fischbach, M. Rebolledo, T. Bartz-Beielstein at the Genetic and Evolutionary
+    Computation Conference 2017, Berlin, Germany
+
+    This is a benchmark for anomaly detection algorithms on water quality. The data is provided by
+    the "Thüringer Fernwasserversorgung" (Germany) and constitutes a real-world data set. In this
+    data set, 9 numeric water quality features are given at a sampling rate of 1 min over approx.
+    3 month. The goal is to predict the presence of an anomaly -- i.e. binary classification.
+
+    More information can be found at https://zenodo.org/records/3884465 and
+    http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/
+    """
     @staticmethod
-    def load_gecco2017_water_quality_data(download_dir: str = None, return_X_y: bool = True,
-                                          verbose: bool = True
-                                          ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
+    def get_meta_info() -> dict:
+        return MetaData.get_meta_info("gecco-waterquality2017")
+
+    @staticmethod
+    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True
+                  ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
         """
-        Loads the original GECCO Industrial Challenge 2017 Dataset: A water quality dataset for the
-        "Monitoring of drinking-water quality" competition organized by M. Friese, J. Stork,
-        A. Fischbach, M. Rebolledo, T. Bartz-Beielstein at the Genetic and Evolutionary
-        Computation Conference 2017, Berlin, Germany
-
-        This is a benchmark for anomaly detection algorithms on water quality. The data is provided by
-        the "Thüringer Fernwasserversorgung" (Germany) and constitutes a real-world data set. In this
-        data set, 9 numeric water quality features are given at a sampling rate of 1 min over approx.
-        3 month. The goal is to predict the presence of an anomaly -- i.e. binary classification.
-
-        More information can be found at https://zenodo.org/records/3884465 and
-        http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/
+        Loads the original GECCO Industrial Challenge 2017 Dataset.
 
         .. note::
 
@@ -121,27 +121,34 @@ class GeccoWaterQuality(BenchmarkResource):
 
             return X, y
 
+
+class GeccoWaterQuality2018(GeccoWaterQuality):
+    """
+    Class for Loading the GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the
+    "Internet of Things: Online Anomaly Detection for Drinking Water Quality" competition
+    organized by F. Rehbach, M. Rebolledo, S. Moritz, S. Chandrasekaran, T. Bartz-Beielstein at
+    the Genetic and Evolutionary Computation Conference 2018, Kyoto, Japan.
+
+    This is a benchmark (based on
+    :func:`~~water_benchmark_hub.gecco_water_quality.GeccoWaterQuality2017`)
+    for anomaly detection algorithms on water quality. The data is provided by the
+    "Thüringer Fernwasserversorgung" (Germany) and constitutes a real-world data set. In this
+    data set, 9 numeric water quality features are given at a sampling rate of
+    1 min over approx. 3 month. The goal is to predict the presence of an anomaly -- i.e.
+    binary classification.
+
+    More information can be found at https://zenodo.org/records/3884398 and
+    http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/
+    """
     @staticmethod
-    def load_gecco2018_water_quality_data(download_dir: str = None, return_X_y: bool = True,
-                                          verbose: bool = True
-                                          ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
+    def get_meta_info() -> dict:
+        return MetaData.get_meta_info("gecco-waterquality2018")
+
+    @staticmethod
+    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True
+                  ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
         """
-        Loads the GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the
-        "Internet of Things: Online Anomaly Detection for Drinking Water Quality" competition
-        organized by F. Rehbach, M. Rebolledo, S. Moritz, S. Chandrasekaran, T. Bartz-Beielstein at
-        the Genetic and Evolutionary Computation Conference 2018, Kyoto, Japan.
-
-        This is a benchmark
-        (based on
-        :func:`~epyt_flow.data.benchmarks.gecco_water_quality.load_gecco2017_water_quality_data`)
-        for anomaly detection algorithms on water quality. The data is provided by the
-        "Thüringer Fernwasserversorgung" (Germany) and constitutes a real-world data set. In this
-        data set, 9 numeric water quality features are given at a sampling rate of
-        1 min over approx. 3 month. The goal is to predict the presence of an anomaly -- i.e.
-        binary classification.
-
-        More information can be found at https://zenodo.org/records/3884398 and
-        http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/
+        Loads the GECCO Industrial Challenge 2018 Dataset.
 
         .. note::
 
@@ -193,26 +200,33 @@ class GeccoWaterQuality(BenchmarkResource):
 
             return X, y
 
+
+class GeccoWaterQuality2019(GeccoWaterQuality):
+    """
+    Class for Loading GECCO Industrial Challenge 2019 Dataset: A water quality dataset for the
+    "Internet of Things: Online Event Detection for Drinking Water Quality Control" competition
+    organized by F. Rehbach, S. Moritz, T. Bartz-Beielstein at the Genetic and
+    Evolutionary Computation Conference 2019, Prague, Czech Republic.
+
+    This is a benchmark (based on
+    :class:`~water_benchmark_hub.gecco_water_quality.GeccoWaterQuality2018`)
+    for anomaly detection algorithms on water quality. The data is provided by the
+    "Thüringer Fernwasserversorgung" (Germany) and constitutes a real-world data set. In this
+    data set, 6 numeric water quality features are given at a sampling rate of 1 min over approx.
+    3 month. The goal is to predict the presence of an anomaly -- i.e. binary classification.
+    The data set itself comes in three splits: A train set, a validation set, and a test set.
+
+    More information can be found at https://zenodo.org/records/4304080 and
+    https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php
+    """
     @staticmethod
-    def load_gecco2019_water_quality_data(download_dir: str = None, return_X_y: bool = True,
-                                          verbose: bool = True) -> dict:
+    def get_meta_info() -> dict:
+        return MetaData.get_meta_info("gecco-waterquality2019")
+
+    @staticmethod
+    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True) -> dict:
         """
-        Loads GECCO Industrial Challenge 2019 Dataset: A water quality dataset for the
-        "Internet of Things: Online Event Detection for Drinking Water Quality Control" competition
-        organized by F. Rehbach, S. Moritz, T. Bartz-Beielstein at the Genetic and
-        Evolutionary Computation Conference 2019, Prague, Czech Republic.
-
-        This is a benchmark
-        (based on
-        :func:`~epyt_flow.data.benchmarks.gecco_water_quality.load_gecco2018_water_quality_data`)
-        for anomaly detection algorithms on water quality. The data is provided by the
-        "Thüringer Fernwasserversorgung" (Germany) and constitutes a real-world data set. In this
-        data set, 6 numeric water quality features are given at a sampling rate of 1 min over approx.
-        3 month. The goal is to predict the presence of an anomaly -- i.e. binary classification.
-        The data set itself comes in three splits: A train set, a validation set, and a test set.
-
-        More information can be found at https://zenodo.org/records/4304080 and
-        https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php
+        Loads GECCO Industrial Challenge 2019 Dataset.
 
         .. note::
 
@@ -281,4 +295,6 @@ class GeccoWaterQuality(BenchmarkResource):
             return r
 
 
-register("GECCO-WaterQuality", GeccoWaterQuality)
+register("GECCO-WaterQuality2017", GeccoWaterQuality2017)
+register("GECCO-WaterQuality2018", GeccoWaterQuality2018)
+register("GECCO-WaterQuality2019", GeccoWaterQuality2019)

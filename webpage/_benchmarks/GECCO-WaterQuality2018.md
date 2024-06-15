@@ -41,17 +41,19 @@ binary classification.
 
 ### Usage in Python
 
-This benchmark is also available in Python in the GECCO water quality collection (key: *GECCO-WaterQuality*)
+This benchmark is also available in Python in the GECCO water quality collection (key: *GECCO-WaterQuality2018*)
 through the
-[```load_gecco2018_water_quality_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.load_gecco2018_water_quality_data)
+[```load_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.load_data)
 function:
 ```python
 # Load GECCO water quality benchmark
-benchmark = load("GECCO-WaterQuality")
+benchmark = load("GECCO-WaterQuality2018")
 
-# Load 2018 data set
-data = benchmark.load_gecco2018_water_quality_data(return_X_y=True)
+# Load data set
+data = benchmark.load_data(return_X_y=True)
 ```
+
+The official evaluation function is implemented in [```compute_evaluation_score()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score).
 
 ## Reference
 

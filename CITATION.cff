@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+authors:
+  - family-names: Artelt
+    given-names: André
+    orcid: "https://orcid.org/0000-0002-2426-3126"
+contact:
+  - family-names: Artelt
+    given-names: André
+    orcid: "https://orcid.org/0000-0002-2426-3126"
+message: "If you use this software, please cite it using these metadata."
+title: "WaterBenchmarkHub"
+keywords:
+  - python
+  - simulation
+  - water
+  - epanet
+  - epanet-python-toolkit
+license: MIT
+repository-code: "https://github.com/WaterFutures/WaterBenchmarkHub"

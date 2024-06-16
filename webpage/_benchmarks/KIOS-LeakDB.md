@@ -13,7 +13,7 @@ The increase of streaming data from water utilities is enabling the development 
 
 ## How to Use
 
-The benchmark contains 1000 scenarios based on [Net1](../benchmarks/network-Net1.html) and the same number of scenarios based on Hanoi network. For each scenario, the pressure, demands, and flow rates at every node/link in the network are provided as .csv files.
+The benchmark contains 1000 scenarios based on the [Net1](../benchmarks/network-Net1.html) and the same number of scenarios based on the [Hanoi](../benchmarks/network-Hanoi.html) network. For each scenario, the pressure, demands, and flow rates at every node/link in the network are provided as .csv files.
 The leakage location and type (abrupt, incipient) are provided as well (see ```Leaks``` folder) -- note that not every scenario contains leakages.
 Furthermore, the .inp file used for the simulation is available as well.
 Labels for each time step (30-minute steps) indicating the presence of a leak are given in ```Labels.csv```.

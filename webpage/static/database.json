@@ -126,6 +126,17 @@
             "license": "CC BY 4.0",
             "download_url": "https://www.batadal.net/data/CTOWN.INP",
             "permalink": "benchmarks/network-CTown.html"
+        },
+        "network-hanoi": {
+            "name": "Hanoi",
+            "desc": "Hanoi Network",
+            "year": 1990,
+            "tasks": [],
+            "keywords": [],
+            "tags": ["Hanoi"],
+            "doi": "10.1029/WR026i004p00539",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Hanoi.inp",
+            "permalink": "benchmarks/network-Hanoi.html"
         }
     }
 }

@@ -24,13 +24,14 @@ supporting .inp files.
 
 ### Usage in Python
 
-Net1 is also available in Python in the [`WaterDistributionNetworks`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetworks) class -- can be loaded by using the key "*WaterDistributionNetworks*":
+Net1 is also available in Python through the key "*Network-Net1*":
 ```python
-networks = load("WaterDistributionNetworks")
+network = load("Network-Net1")
+net1_inp = network.load()
 ```
 
 Detailed information about the provided functionality can be found in the documentation of
-[`load_net1()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetworks.load_net1).
+[`load()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Net1.load).
 
 
 ## Reference

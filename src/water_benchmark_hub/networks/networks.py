@@ -10,6 +10,7 @@ from epyt_flow.utils import get_temp_folder, download_if_necessary
 
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
+from ..meta_data import MetaData
 
 
 class WaterDistributionNetworks(BenchmarkResource):
@@ -18,11 +19,20 @@ class WaterDistributionNetworks(BenchmarkResource):
     """
     @staticmethod
     def get_meta_info() -> dict:
-        return {}
+        raise NotImplementedError()
+
+
+class Net1(WaterDistributionNetworks):
+    """
+    Class for loading the EPANET Example Network 1.
+    """
+    @staticmethod
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-net1")
 
     @staticmethod
-    def load_net1(download_dir: str = get_temp_folder(), verbose: bool = True,
-                  return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Net1 network.
 
@@ -56,9 +66,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Net1", Net1)
+
+
+class Net2(WaterDistributionNetworks):
+    """
+    Class for loading the EPANET Example Network 2.
+    """
     @staticmethod
-    def load_net2(download_dir: str = get_temp_folder(), verbose: bool = True,
-                  return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-net2")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Net2 network.
 
@@ -92,9 +114,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Net2", Net2)
+
+
+class Net3(WaterDistributionNetworks):
+    """
+    Class for loading the EPANET Example Network 3.
+    """
     @staticmethod
-    def load_net3(download_dir: str = get_temp_folder(), verbose: bool = True,
-                  return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-net3")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Net3 network.
 
@@ -128,9 +162,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Net3", Net3)
+
+
+class Net6(WaterDistributionNetworks):
+    """
+    Class for loading the EPANET Example Network 6.
+    """
     @staticmethod
-    def load_net6(download_dir: str = get_temp_folder(), verbose: bool = True,
-                  return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-net6")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Net6 network.
 
@@ -163,9 +209,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Net6", Net6)
+
+
+class Richmond(WaterDistributionNetworks):
+    """
+    Class for loading the Richmond network.
+    """
     @staticmethod
-    def load_richmond(download_dir: str = get_temp_folder(), verbose: bool = True,
-                      return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-richmond")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Richmond network.
 
@@ -199,9 +257,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Richmond", Richmond)
+
+
+class Micropolois(WaterDistributionNetworks):
+    """
+    Class for loading the Micropolois network.
+    """
     @staticmethod
-    def load_micropolis(download_dir: str = get_temp_folder(), verbose: bool = True,
-                        return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-micropolois")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the MICROPOLIS network.
 
@@ -235,9 +305,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Micropolois", Micropolois)
+
+
+class Balerma(WaterDistributionNetworks):
+    """
+    Class for loading the Balerma network.
+    """
     @staticmethod
-    def load_balerma(download_dir: str = get_temp_folder(), verbose: bool = True,
-                     return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-balerma")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Balerma network.
 
@@ -271,9 +353,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Balerma", Balerma)
+
+
+class Rural(WaterDistributionNetworks):
+    """
+    Class for loading the Rural network.
+    """
     @staticmethod
-    def load_rural(download_dir: str = get_temp_folder(), verbose: bool = True,
-                   return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-rural")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Rural network.
 
@@ -307,9 +401,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Rural", Rural)
+
+
+class BWSN1(WaterDistributionNetworks):
+    """
+    Class for loading the BWSN-1 network.
+    """
     @staticmethod
-    def load_bwsn1(download_dir: str = get_temp_folder(), verbose: bool = True,
-                   return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-bwsn")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the BWSN-1 network.
 
@@ -342,10 +448,22 @@ class WaterDistributionNetworks(BenchmarkResource):
 
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
+    
+
+register("Network-BWSN1", BWSN1)
+
+
+class BWSN2(WaterDistributionNetworks):
+    """
+    Class for loading the BWSN-1 network.
+    """
+    @staticmethod
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-bwsn2")
 
     @staticmethod
-    def load_bwsn2(download_dir: str = get_temp_folder(), verbose: bool = True,
-                   return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the BWSN-2 network.
 
@@ -378,10 +496,22 @@ class WaterDistributionNetworks(BenchmarkResource):
 
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
+    
+
+register("Network-BWSN2", BWSN2)
+
+
+class Anytown(WaterDistributionNetworks):
+    """
+    Class for loading the Anytown network.
+    """
+    @staticmethod
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-anytown")
 
     @staticmethod
-    def load_anytown(download_dir: str = get_temp_folder(), verbose: bool = True,
-                     return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Anytown network.
 
@@ -415,9 +545,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Anytown", Anytown)
+
+
+class DTown(WaterDistributionNetworks):
+    """
+    Class for loading the D-Town network.
+    """
     @staticmethod
-    def load_dtown(download_dir: str = get_temp_folder(), verbose: bool = True,
-                   return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-dtown")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the D-Town network.
 
@@ -450,9 +592,21 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-DTown", DTown)
+
+
+class CTown(WaterDistributionNetworks):
+    """
+    Class for loading the C-Town network.
+    """
     @staticmethod
-    def load_ctown(download_dir: str = get_temp_folder(), verbose: bool = True,
-                   return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-ctown")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), verbose: bool = True,
+             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the C-Town network.
 
@@ -485,16 +639,28 @@ class WaterDistributionNetworks(BenchmarkResource):
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-CTown", CTown)
+
+
+class Kentucky(WaterDistributionNetworks):
+    """
+    Class for loading the Kentucky networks.
+    """
     @staticmethod
-    def load_kentucky(wdn_id: int = 1, download_dir: str = get_temp_folder(),
-                      verbose: bool = True, return_scenario: bool = True
-                      ) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-kentucky")
+
+    @staticmethod
+    def load(network_id: int = 1, download_dir: str = get_temp_folder(),
+             verbose: bool = True, return_scenario: bool = True
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the specified Kentucky network.
 
         Parameters
         ----------
-        wdn_id : `int`, optional
+        network_id : `int`, optional
             The ID (1-15) of the particular network.
 
             The default is wdn_id=1
@@ -519,23 +685,35 @@ class WaterDistributionNetworks(BenchmarkResource):
             can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the .inp file is returned.
         """
-        if not isinstance(wdn_id, int):
+        if not isinstance(network_id, int):
             raise ValueError("'wdn_id' must be an integer in [1, 15]")
-        if wdn_id < 1 or wdn_id > 15:
-            raise ValueError(f"Unknown network 'ky{wdn_id}.inp'")
+        if network_id < 1 or network_id > 15:
+            raise ValueError(f"Unknown network 'ky{network_id}.inp'")
 
-        f_in = os.path.join(download_dir, f"ky{wdn_id}.inp")
+        f_in = os.path.join(download_dir, f"ky{network_id}.inp")
         url = "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/" + \
-            f"asce-tf-wdst/ky{wdn_id}.inp"
+            f"asce-tf-wdst/ky{network_id}.inp"
 
         download_if_necessary(f_in, url, verbose)
         return load_inp(f_in)
 
+
+register("Network-Kentucky", Kentucky)
+
+
+class Hanoi(WaterDistributionNetworks):
+    """
+    Class for loading the Hanoi networks.
+    """
     @staticmethod
-    def load_hanoi(download_dir: str = get_temp_folder(),
-                   include_default_sensor_placement: bool = False,
-                   verbose: bool = True, return_scenario: bool = True
-                   ) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-hanoi")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             include_default_sensor_placement: bool = False,
+             verbose: bool = True, return_scenario: bool = True
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Hanoi network.
 
@@ -582,11 +760,23 @@ class WaterDistributionNetworks(BenchmarkResource):
 
         return config
 
+
+register("Network-Hanoi", Hanoi)
+
+
+class LTown(WaterDistributionNetworks):
+    """
+    Class for loading the Kentucky networks.
+    """
     @staticmethod
-    def load_ltown(download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
-                   include_default_sensor_placement: bool = False,
-                   verbose: bool = True, return_scenario: bool = True
-                   ) -> Union[ScenarioConfig, str]:
+    def get_meta_info() -> dict:
+        raise MetaData.get_meta_info("network-ltown")
+
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
+             include_default_sensor_placement: bool = False,
+             verbose: bool = True, return_scenario: bool = True
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the L-TOWN_v2 network.
 
@@ -722,4 +912,4 @@ class WaterDistributionNetworks(BenchmarkResource):
         return config
 
 
-register("WaterDistributionNetworks", WaterDistributionNetworks)
+register("Network-LTown", LTown)

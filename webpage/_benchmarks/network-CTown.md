@@ -22,15 +22,14 @@ supporting .inp files.
 
 ### Usage in Python
 
-C-Town is also available in Python in the
-[`WaterDistributionNetworks`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetworks)
-class -- can be loaded by using the key "*WaterDistributionNetworks*":
+C-Town is also available in Python through the key "*Network-CTown*":
 ```python
-networks = load("WaterDistributionNetworks")
+network = load("Network-CTown")
+ctown_inp = network.load()
 ```
 
 Detailed information about the provided functionality can be found in the documentation of
-[`load_ctown()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetworks.load_ctown).
+[`load()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CTown.load).
 
 
 ## Reference

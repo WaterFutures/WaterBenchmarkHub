@@ -45,15 +45,14 @@ supporting .inp files:
 
 ### Usage in Python
 
-L-Town is also available in Python in the
-[`WaterDistributionNetworks`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetworks)
-class -- can be loaded by using the key "*WaterDistributionNetworks*":
+L-Town is also available in Python through the key "*Network-LTown*":
 ```python
-networks = load("WaterDistributionNetworks")
+network = load("Network-LTown")
+ltown_inp = network.load()
 ```
 
 Detailed information about the provided functionality can be found in the documentation of
-[`load_ltown()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetworks.load_ltown).
+[`load()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.LTown.load).
 
 
 ## Reference

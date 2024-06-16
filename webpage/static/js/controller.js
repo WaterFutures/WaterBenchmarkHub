@@ -15,7 +15,7 @@ window.onload = () => {
                 benchmark: {
                     props: ["benchmark"],
                     template: `
-                    <b-list-group-item :href="benchmark.permalink">
+                    <b-list-group-item :href="benchmark.permalink" target="_blank">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">{{benchmark.name}}</h5>
                         <small>{{benchmark.year}}</small>

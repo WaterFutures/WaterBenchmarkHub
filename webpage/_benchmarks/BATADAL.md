@@ -14,15 +14,15 @@ planning and management of water networks undertaken within the Water Distributi
 Analysis Symposium. The goal of the battle was to compare the performance of algorithms for
 the detection of cyber-physical attacks, whose frequency has increased in the last few years
 along with the adoption of smart water technologies. The design challenge was set for the
-[C-Town network](network-CTown.html), a real-world, medium-sized water distribution system operated through programmable
-logic controllers and a supervisory control and data acquisition (SCADA) system.
-Participants were provided with data sets containing (simulated) SCADA observations, and challenged
-to design an attack detection algorithm. The effectiveness of all submitted algorithms was evaluated
-in terms of time-to-detection and classification accuracy. Seven teams participated in the battle
-and proposed a variety of successful approaches leveraging data analysis, model-based detection
-mechanisms, and rule checking. Results were presented at the Water Distribution Systems Analysis
-Symposium (World Environmental and Water Resources Congress) in Sacramento,
-California on May 21-25, 2017.
+[C-Town network](network-CTown.html), a real-world, medium-sized water distribution system
+operated through programmable logic controllers and a supervisory control and
+data acquisition (SCADA) system. Participants were provided with data sets containing (simulated)
+SCADA observations, and challenged to design an attack detection algorithm.
+The effectiveness of all submitted algorithms was evaluated in terms of time-to-detection and
+classification accuracy. Seven teams participated in the battle and proposed a variety of
+successful approaches leveraging data analysis, model-based detection mechanisms, and rule checking.
+Results were presented at the Water Distribution Systems Analysis Symposium
+(World Environmental and Water Resources Congress) in Sacramento, California on May 21-25, 2017.
 
 ## How to Use
 

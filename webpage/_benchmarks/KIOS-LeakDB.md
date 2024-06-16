@@ -9,14 +9,21 @@ layout: benchmark
 
 ## Description
 
-The increase of streaming data from water utilities is enabling the development of real-time anomaly and fault detection algorithms that can detect events, such as pipe bursts and leakages. Currently, there is not a widely accessible dataset of real or realistic leakage scenarios, which could be used as a common benchmark to compare different algorithms, as well as to support research reproducibility. In this work, we propose the design of a realistic leakage dataset, the Leakage Diagnosis Benchmark (LeakDB). The dataset is comprised of a large number of artificially created but realistic leakage scenarios, on different water distribution networks, under varying conditions. Additionally, a scoring algorithm was developed in MATLAB to evaluate the results of different algorithms using various metrics. The usage of the LeakDB dataset is demonstrated by scoring four detection algorithms. The dataset is stored in an open research data repository and will be updated in the future with new simulation scenarios. The source code of the toolkit that generates the leakage benchmark dataset, as well as the detection algorithms used, are released as open source.
+The Leakage Diagnosis Benchmark (LeakDB). The dataset is comprised of a large number of artificially
+created but realistic leakage scenarios, on different water distribution networks, under varying
+conditions. Additionally, a scoring algorithm was developed to evaluate the results of different
+algorithms using various metrics. The dataset is stored in an open research data repository.
 
 ## How to Use
 
-The benchmark contains 1000 scenarios based on the [Net1](../benchmarks/network-Net1.html) and the same number of scenarios based on the [Hanoi](../benchmarks/network-Hanoi.html) network. For each scenario, the pressure, demands, and flow rates at every node/link in the network are provided as .csv files.
-The leakage location and type (abrupt, incipient) are provided as well (see ```Leaks``` folder) -- note that not every scenario contains leakages.
+The benchmark contains 1000 scenarios based on the [Net1](../benchmarks/network-Net1.html) and
+the same number of scenarios based on the [Hanoi](../benchmarks/network-Hanoi.html) network.
+For each scenario, the pressure, demands, and flow rates at every node/link in the
+network are provided as .csv files. The leakage location and type (abrupt, incipient) are provided
+as well (see ```Leaks``` folder) -- note that not every scenario contains leakages.
 Furthermore, the .inp file used for the simulation is available as well.
-Labels for each time step (30-minute steps) indicating the presence of a leak are given in ```Labels.csv```.
+Labels for each time step (30-minute steps) indicating the presence of a leak
+are given in ```Labels.csv```.
 
 ### Usage in Python
 

@@ -15,10 +15,11 @@ Joint Conference in Beijing, China, aims at objectively comparing the performanc
 for the detection and localization of leakage events, relying on SCADA measurements of flow and
 pressure sensors installed within water distribution networks.
 
-The competition problem was based on [L-Town](network-LTown.html), a small hypothetical town which experiences a large
-number of pipe breaks and water losses, affecting its service quality. The L-Town EPANET model and
-the SCADA measurements provided were generated based on a real water distribution network in a city
-in Cyprus. Participants have been invited to use different tools and methods to detect and localize
+The competition problem was based on [L-Town](network-LTown.html), a small hypothetical town which
+experiences a large number of pipe breaks and water losses, affecting its service quality.
+The [L-Town EPANET model](network-LTown.html) and the SCADA measurements provided were generated
+based on a real water distribution network in a city in Cyprus.
+Participants have been invited to use different tools and methods to detect and localize
 the leakage events that occurred in L-Town in 2019, given the availability of a historical SCADA
 dataset of the year 2018 and the evaluation SCADA dataset of the year 2019.
 The teams, without knowing the solution to the problem, have submitted a results file indicating

@@ -41,7 +41,19 @@ window.onload = () => {
                 searchText: "",
                 allSearchTexts: [],
                 allBenchmarks: myBenchmarks,
-                benchmarks: myBenchmarks
+                benchmarks: myBenchmarks,
+                currentPage: 1,
+                perPage: 5
+            },
+            computed: {
+                slicedBenchmarks() {
+                    return this.benchmarks.slice(
+                        (this.currentPage - 1) * this.perPage,
+                        this.currentPage * this.perPage);
+                },
+                totalNumBenchmarks() {
+                    return this.benchmarks.length;
+                }
             },
             methods: {
                 onClickOnTag(tagId) {

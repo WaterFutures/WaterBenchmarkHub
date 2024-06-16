@@ -93,18 +93,22 @@
                 >
               </searchterm>
 
-              <b-list-group id="list-group-benchmarks">
-                <benchmark
-                  v-for="benchmark in benchmarks"
-                  :key="benchmark.id"
-                  v-bind:benchmark="benchmark">
-                </benchmark>       
-              </b-list-group>
-              <b-pagination
-                :per-page="5"
-                aria-controls="list-group-benchmarks"
-                align="center">
-              </b-pagination>   
+              <div class="overflow-auto">
+                <b-list-group id="list-group-benchmarks">
+                  <benchmark
+                    v-for="benchmark in slicedBenchmarks"
+                    :key="benchmark.id"
+                    v-bind:benchmark="benchmark">
+                  </benchmark>       
+                </b-list-group> 
+
+                <b-pagination
+                  :per-page="perPage"
+                  :total-rows="totalNumBenchmarks" 
+                  v-model="currentPage"
+                  aria-controls="list-group-benchmarks"
+                  align="center"/> 
+              </div>
               <br>
             </b-col>
           </b-row>

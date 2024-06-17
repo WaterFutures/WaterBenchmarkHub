@@ -19,7 +19,7 @@ from epyt_flow.topology import NetworkTopology
 from epyt_flow.simulation.scada import ScadaData
 from epyt_flow.utils import get_temp_folder, to_seconds, create_path_if_not_exist, download_if_necessary
 
-from ..networks import WaterDistributionNetworks
+from ..networks import LTown
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
 from ..meta_data import MetaData
@@ -339,7 +339,7 @@ class BattLeDIM(BenchmarkResource):
             features_desc = list(df_final.columns)
             features_desc.remove("Timestamp")
 
-            network_config = WaterDistributionNetworks.load_ltown(download_dir)
+            network_config = LTown.load(download_dir, return_scenario=True)
             links = network_config.sensor_config.links
 
             X = df_final[features_desc].to_numpy()

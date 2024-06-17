@@ -19,7 +19,7 @@ from epyt_flow.utils import to_seconds, get_temp_folder, unpack_zip_archive, \
 
 from ..metrics import f1_score, true_positive_rate, true_negative_rate
 from .leakdb_data import NET1_LEAKAGES, HANOI_LEAKAGES
-from ..networks import WaterDistributionNetworks
+from ..networks import Hanoi, Net1
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
 from ..meta_data import MetaData
@@ -132,8 +132,8 @@ class LeakDB(BenchmarkResource):
         else:
             leaks_info = json.loads(HANOI_LEAKAGES)
 
-        network_config = WaterDistributionNetworks.load_net1() if use_net1 is True \
-            else WaterDistributionNetworks.load_hanoi()
+        network_config = Net1.load(return_scenario=True) if use_net1 is True \
+            else Hanoi.load(return_scenario=True)
         nodes = network_config.sensor_config.nodes
 
         y_true = []

@@ -32,7 +32,8 @@ class Richmond(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Richmond network.
 
@@ -46,11 +47,31 @@ class Richmond(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
@@ -64,7 +85,11 @@ class Richmond(WaterDistributionNetwork):
             "exeter-benchmarks/Richmond_standard.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-Richmond", Richmond)
@@ -80,7 +105,8 @@ class Micropolois(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the MICROPOLIS network.
 
@@ -94,17 +120,38 @@ class Micropolois(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
             If `return_scenario` is True, MICROPOLIS network loaded into a scenario configuration
-            that can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            that can be passed on to
+            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the MICROPOLIS_v1.inp file is returned.
         """
         f_in = os.path.join(download_dir, "MICROPOLIS_v1.inp")
@@ -112,7 +159,11 @@ class Micropolois(WaterDistributionNetwork):
             "MICROPOLIS_v1.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-Micropolois", Micropolois)
@@ -128,7 +179,8 @@ class Balerma(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Balerma network.
 
@@ -142,11 +194,31 @@ class Balerma(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
@@ -160,7 +232,11 @@ class Balerma(WaterDistributionNetwork):
             "asce-tf-wdst/Balerma.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-Balerma", Balerma)
@@ -176,7 +252,8 @@ class Rural(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Rural network.
 
@@ -190,17 +267,38 @@ class Rural(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
-            If `return_scenario` is True, Rural network loaded into a scenario configuration that can
-            be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            If `return_scenario` is True, Rural network loaded into a scenario configuration
+            that can be passed on to
+            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the RuralNetwork.inp file is returned.
         """
         f_in = os.path.join(download_dir, "RuralNetwork.inp")
@@ -208,7 +306,11 @@ class Rural(WaterDistributionNetwork):
             "asce-tf-wdst/RuralNetwork.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-Rural", Rural)
@@ -224,7 +326,8 @@ class Anytown(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Anytown network.
 
@@ -238,11 +341,31 @@ class Anytown(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
@@ -256,7 +379,11 @@ class Anytown(WaterDistributionNetwork):
             "asce-tf-wdst/Anytown.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-Anytown", Anytown)
@@ -272,7 +399,8 @@ class DTown(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the D-Town network.
 
@@ -286,24 +414,49 @@ class DTown(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
-            If `return_scenario` is True, D-Town network loaded into a scenario configuration that can
-            be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            If `return_scenario` is True, D-Town network loaded into a scenario configuration
+            that can be passed on to
+            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the d-town.inp file is returned.
         """
         f_in = os.path.join(download_dir, "d-town.inp")
         url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-DTown", DTown)
@@ -319,7 +472,8 @@ class CTown(WaterDistributionNetwork):
 
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
-             return_scenario: bool = True) -> Union[ScenarioConfig, str]:
+             flow_units_id: int = None, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the C-Town network.
 
@@ -333,24 +487,49 @@ class CTown(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
-            If `return_scenario` is True, C-Town network loaded into a scenario configuration that can
-            be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            If `return_scenario` is True, C-Town network loaded into a scenario configuration
+            that can be passed on to
+            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the CTOWN.inp file is returned.
         """
         f_in = os.path.join(download_dir, "CTOWN.INP")
         url = "https://github.com/scy-phy/www.batadal.net/raw/master/data/CTOWN.INP"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-CTown", CTown)
@@ -366,7 +545,7 @@ class Kentucky(WaterDistributionNetwork):
 
     @staticmethod
     def load(network_id: int = 1, download_dir: str = get_temp_folder(),
-             verbose: bool = True, return_scenario: bool = True
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the specified Kentucky network.
@@ -385,11 +564,31 @@ class Kentucky(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
@@ -408,7 +607,11 @@ class Kentucky(WaterDistributionNetwork):
             f"asce-tf-wdst/ky{network_id}.inp"
 
         download_if_necessary(f_in, url, verbose)
-        return load_inp(f_in)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
 
 
 register("Network-Kentucky", Kentucky)
@@ -425,8 +628,8 @@ class Hanoi(WaterDistributionNetwork):
     @staticmethod
     def load(download_dir: str = get_temp_folder(),
              include_default_sensor_placement: bool = False,
-             verbose: bool = True, return_scenario: bool = True
-             ) -> Union[ScenarioConfig, str]:
+             verbose: bool = True, flow_units_id: int = None,
+             return_scenario: bool = False) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the Hanoi network.
 
@@ -444,11 +647,31 @@ class Hanoi(WaterDistributionNetwork):
             If True, a progress bar is shown while downloading the file.
 
             The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
 
-            The default is True.
+            The default is False.
 
         Returns
         -------
@@ -462,16 +685,20 @@ class Hanoi(WaterDistributionNetwork):
             "asce-tf-wdst/Hanoi.inp"
 
         download_if_necessary(f_in, url, verbose)
-        config = load_inp(f_in)
 
-        if include_default_sensor_placement is True:
-            sensor_config = config.sensor_config
-            sensor_config.pressure_sensors = ["13", "16", "22", "30"]
-            sensor_config.flow_sensors = ["1"]
+        if return_scenario is True:
+            config = load_inp(f_in, flow_units_id=flow_units_id)
 
-            config = ScenarioConfig(scenario_config=config, sensor_config=sensor_config)
+            if include_default_sensor_placement is True:
+                sensor_config = config.sensor_config
+                sensor_config.pressure_sensors = ["13", "16", "22", "30"]
+                sensor_config.flow_sensors = ["1"]
 
-        return config
+                config = ScenarioConfig(scenario_config=config, sensor_config=sensor_config)
+
+            return config
+        else:
+            return f_in
 
 
 register("Network-Hanoi", Hanoi)

@@ -22,9 +22,10 @@ from .leakdb_data import NET1_LEAKAGES, HANOI_LEAKAGES
 from ..networks import Hanoi, Net1
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 
 
+@meta_data("KIOS-LeakDB")
 class LeakDB(BenchmarkResource):
     """
     LeakDB (Leakage Diagnosis Benchmark) by Vrachimis, S. G., Kyriakou, M. S., Eliades, D. G.,
@@ -43,10 +44,6 @@ class LeakDB(BenchmarkResource):
     directly compared to the official paper.
     Besides this, the user can choose to evaluate predictions using any other metric.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        return MetaData.get_meta_info("KIOS-LeakDB")
-
     @staticmethod
     def __leak_time_to_idx(t: int, round_up: bool = False, hydraulic_time_step: int = 1800):
         if round_up is False:

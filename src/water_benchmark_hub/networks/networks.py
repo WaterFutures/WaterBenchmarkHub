@@ -10,7 +10,7 @@ from epyt_flow.utils import get_temp_folder, download_if_necessary
 
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 
 
 class WaterDistributionNetwork(BenchmarkResource):
@@ -22,14 +22,11 @@ class WaterDistributionNetwork(BenchmarkResource):
         raise NotImplementedError()
 
 
+@meta_data("network-richmond")
 class Richmond(WaterDistributionNetwork):
     """
     Class for loading the Richmond network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-richmond")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -95,14 +92,11 @@ class Richmond(WaterDistributionNetwork):
 register("Network-Richmond", Richmond)
 
 
+@meta_data("network-micropolois")
 class Micropolois(WaterDistributionNetwork):
     """
     Class for loading the Micropolois network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-micropolois")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -169,14 +163,11 @@ class Micropolois(WaterDistributionNetwork):
 register("Network-Micropolois", Micropolois)
 
 
+@meta_data("network-balerma")
 class Balerma(WaterDistributionNetwork):
     """
     Class for loading the Balerma network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-balerma")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -242,14 +233,11 @@ class Balerma(WaterDistributionNetwork):
 register("Network-Balerma", Balerma)
 
 
+@meta_data("network-rural")
 class Rural(WaterDistributionNetwork):
     """
     Class for loading the Rural network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-rural")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -316,14 +304,11 @@ class Rural(WaterDistributionNetwork):
 register("Network-Rural", Rural)
 
 
+@meta_data("network-anytown")
 class Anytown(WaterDistributionNetwork):
     """
     Class for loading the Anytown network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-anytown")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -389,14 +374,11 @@ class Anytown(WaterDistributionNetwork):
 register("Network-Anytown", Anytown)
 
 
+@meta_data("network-dtown")
 class DTown(WaterDistributionNetwork):
     """
     Class for loading the D-Town network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-dtown")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -462,14 +444,11 @@ class DTown(WaterDistributionNetwork):
 register("Network-DTown", DTown)
 
 
+@meta_data("network-ctown")
 class CTown(WaterDistributionNetwork):
     """
     Class for loading the C-Town network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-ctown")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -535,14 +514,11 @@ class CTown(WaterDistributionNetwork):
 register("Network-CTown", CTown)
 
 
+@meta_data("network-kentucky")
 class Kentucky(WaterDistributionNetwork):
     """
     Class for loading the Kentucky networks.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-kentucky")
-
     @staticmethod
     def load(network_id: int = 1, download_dir: str = get_temp_folder(),
              flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
@@ -617,14 +593,11 @@ class Kentucky(WaterDistributionNetwork):
 register("Network-Kentucky", Kentucky)
 
 
+@meta_data("network-hanoi")
 class Hanoi(WaterDistributionNetwork):
     """
     Class for loading the Hanoi networks.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-hanoi")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(),
              include_default_sensor_placement: bool = False,

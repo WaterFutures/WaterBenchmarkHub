@@ -9,18 +9,15 @@ from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.utils import get_temp_folder, download_if_necessary
 
 from .networks import WaterDistributionNetwork
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 from ..benchmarks import register
 
 
+@meta_data("network-ltown")
 class LTown(WaterDistributionNetwork):
     """
     Class for loading the L-Town networks.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-ltown")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
              include_default_sensor_placement: bool = False,

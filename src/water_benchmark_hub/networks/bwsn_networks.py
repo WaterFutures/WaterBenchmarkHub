@@ -9,18 +9,15 @@ from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.utils import get_temp_folder, download_if_necessary
 
 from .networks import WaterDistributionNetwork
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 from ..benchmarks import register
 
 
+@meta_data("network-bwsn1")
 class BWSN1(WaterDistributionNetwork):
     """
     Class for loading the BWSN-1 network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-bwsn")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -86,14 +83,11 @@ class BWSN1(WaterDistributionNetwork):
 register("Network-BWSN1", BWSN1)
 
 
+@meta_data("network-bwsn2")
 class BWSN2(WaterDistributionNetwork):
     """
     Class for loading the BWSN-1 network.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-bwsn2")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False

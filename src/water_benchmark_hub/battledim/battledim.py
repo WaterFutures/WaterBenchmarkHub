@@ -22,9 +22,10 @@ from epyt_flow.utils import get_temp_folder, to_seconds, create_path_if_not_exis
 from ..networks import LTown
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 
 
+@meta_data("kios-battledim")
 class BattLeDIM(BenchmarkResource):
     """
     The Battle of the Leakage Detection and Isolation Methods (*BattLeDIM*) 2020, organized by
@@ -45,10 +46,6 @@ class BattLeDIM(BenchmarkResource):
     those results can be directly compared to the official leaderboard results.
     Besides this, the user can choose to evaluate predictions using any other metric.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        return MetaData.get_meta_info("KIOS-BattLeDIM")
-
     @staticmethod
     def __parse_leak_config(start_time: str, leaks_config: str) -> list[Leakage]:
         leakages = []

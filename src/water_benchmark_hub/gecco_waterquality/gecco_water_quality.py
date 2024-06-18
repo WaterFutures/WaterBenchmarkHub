@@ -10,7 +10,7 @@ from epyt_flow.utils import get_temp_folder, download_if_necessary
 from ..metrics import f1_score
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 
 
 class GeccoWaterQuality(BenchmarkResource):
@@ -48,6 +48,7 @@ class GeccoWaterQuality(BenchmarkResource):
         return f1_score(y_pred, y)
 
 
+@meta_data("gecco-waterquality2017")
 class GeccoWaterQuality2017(GeccoWaterQuality):
     """
     Class for Loading the original GECCO Industrial Challenge 2017 Dataset: A water quality dataset for the
@@ -63,10 +64,6 @@ class GeccoWaterQuality2017(GeccoWaterQuality):
     More information can be found at https://zenodo.org/records/3884465 and
     http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        return MetaData.get_meta_info("gecco-waterquality2017")
-
     @staticmethod
     def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True
                   ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
@@ -122,6 +119,7 @@ class GeccoWaterQuality2017(GeccoWaterQuality):
             return X, y
 
 
+@meta_data("gecco-waterquality2018")
 class GeccoWaterQuality2018(GeccoWaterQuality):
     """
     Class for Loading the GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the
@@ -140,10 +138,6 @@ class GeccoWaterQuality2018(GeccoWaterQuality):
     More information can be found at https://zenodo.org/records/3884398 and
     http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        return MetaData.get_meta_info("gecco-waterquality2018")
-
     @staticmethod
     def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True
                   ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
@@ -201,6 +195,7 @@ class GeccoWaterQuality2018(GeccoWaterQuality):
             return X, y
 
 
+@meta_data("gecco-waterquality2019")
 class GeccoWaterQuality2019(GeccoWaterQuality):
     """
     Class for Loading GECCO Industrial Challenge 2019 Dataset: A water quality dataset for the
@@ -219,10 +214,6 @@ class GeccoWaterQuality2019(GeccoWaterQuality):
     More information can be found at https://zenodo.org/records/4304080 and
     https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        return MetaData.get_meta_info("gecco-waterquality2019")
-
     @staticmethod
     def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True) -> dict:
         """

@@ -9,18 +9,15 @@ from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.utils import get_temp_folder, download_if_necessary
 
 from .networks import WaterDistributionNetwork
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 from ..benchmarks import register
 
 
+@meta_data("network-net1")
 class Net1(WaterDistributionNetwork):
     """
     Class for loading the EPANET Example Network 1.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-net1")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -86,14 +83,11 @@ class Net1(WaterDistributionNetwork):
 register("Network-Net1", Net1)
 
 
+@meta_data("network-net2")
 class Net2(WaterDistributionNetwork):
     """
     Class for loading the EPANET Example Network 2.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-net2")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -159,14 +153,11 @@ class Net2(WaterDistributionNetwork):
 register("Network-Net2", Net2)
 
 
+@meta_data("network-net3")
 class Net3(WaterDistributionNetwork):
     """
     Class for loading the EPANET Example Network 3.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-net3")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False
@@ -232,14 +223,11 @@ class Net3(WaterDistributionNetwork):
 register("Network-Net3", Net3)
 
 
+@meta_data("network-net6")
 class Net6(WaterDistributionNetwork):
     """
     Class for loading the EPANET Example Network 6.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        raise MetaData.get_meta_info("network-net6")
-
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
              flow_units_id: int = None, return_scenario: bool = False

@@ -13,9 +13,10 @@ from .batadal_data import TRAINING_DATA_2_ATTACKS_TIME, TRAINING_DATA_2_START_TI
     TEST_DATA_ATTACKS_TIME, TEST_DATA_START_TIME
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
-from ..meta_data import MetaData
+from ..meta_data import meta_data
 
 
+@meta_data("batadal")
 class BATADAL(BenchmarkResource):
     """
     The BATtle of the Attack Detection ALgorithms (*BATADAL*) by Riccardo Taormina, Stefano Galelli,
@@ -43,10 +44,6 @@ class BATADAL(BenchmarkResource):
     scenarios :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_scenario` and pre-generated
     SCADA data :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data`.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
-        return MetaData.get_meta_info("BATADAL")
-
     @staticmethod
     def __parse_attacks_time(start_time: str, attacks_time):
         events = []

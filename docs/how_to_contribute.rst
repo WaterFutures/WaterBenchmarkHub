@@ -25,8 +25,8 @@ The unique identifier of a new benchmark (resource) must consist of two parts:
 1. Category or user/organization
 2. Name of the benchmark (resource)
 
-Both parts are concatenated by a hyphen -- i.e. let's assume we add a network called `Net2`,
-then the final name would be `network-Net2` (note that we use the category `network`
+Both parts (lowercase!) are concatenated by a hyphen -- i.e. let's assume we add a network
+called `Net2`, then the final name would be `network-net2` (note that we use the category `network`
 to denote a network resource).
 
 Meta data
@@ -93,8 +93,8 @@ The Markdown file must start with the following header:
 	layout: benchmark
 	---
 	
-where :code:`BenchmarkName` refers to the name, :code:`benchmark-ID` to the unique ID, and
-:code:`benchmark-permalink` to the permalink of the benchmark (resource) as specified in
+where :code:`BenchmarkName` refers to the name, :code:`benchmark-ID` to the unique ID (see above),
+and :code:`benchmark-permalink` to the permalink of the benchmark (resource) as specified in
 the database.
 All other parts of the header must not be changed!
 
@@ -105,21 +105,37 @@ However, we recommend the following layout:
 - :code:`## Description` General (detailed) description of the benchmark (resource).
 - :code:`## How to Use` Description of how to load and utilize the benchmark (resource)
 - :code:`### Usage in Python` If applicable, a description on how to load the benchmark (resource)
-  in Python using the WaterBenchmarkHub Python package.
+  in Python using the *water-benchmark-hub* Python package.
 - :code:`## Reference` Reference (citation) of the benchmark (resource).
 
 Images or other resources are used in the Markdown file, must be placed in the
 `static/benchmarks/benchmark-ID/` folder -- where `benchmark-ID` (lower case!) refers to the
-benchmark ID as given the:code:`permalink` field.
+benchmark ID as given the :code:`permalink` field.
 
 
 Python package
 --------------
 
-In addition to the previous steps, the benchmark (resource) should made be available in the
-*water-benchmark-hub* Python package as well.
+In addition to the previous steps, the benchmark (resource) should made be available
+(if possible) in the *water-benchmark-hub* Python package as well.
 For this, the following steps are necessary:
 
-1. TODO
-2. TODO
-3. TODO
+1. If the new benchmark (resource) is a network, a new class has to be derived from the
+   `WaterDistributionNetwork <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetwork>`_
+   class and put into
+   `src/water_benchmark_hub/networks/networks.py <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/src/water_benchmark_hub/networks/networks.py>`_
+   (if justified, a new .py file can also be created).
+
+   For all other types of benchmark (resources), a new directory should be created and
+   the benchmark itself must be implemented by deriving a new class from the
+   `BenchmarkResource <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.html#water_benchmark_hub.benchmark_resource.BenchmarkResource>`_
+   class and importing this new class in
+   `src/water_benchmark_hub/__init__.py <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/src/water_benchmark_hub/__init__.py>`_.
+2. In all cases, the new benchmark (resource) must be registered by calling the
+   `register() <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.html#water_benchmark_hub.benchmarks.register>`_
+   function right after the class declaration -- the argument is a *key* that is used to load
+   the benchmark (resource), which is usually similar (but nicely formatted) to the unique ID of
+   the benchmark resource as used in the database.
+3. Also, in all cases, the new class must be decoratated with the
+   `@meta_data() <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.html#water_benchmark_hub.meta_data.meta_data>`_
+   decorator -- the argument is the unique ID of the benchmark resource as used in the database.

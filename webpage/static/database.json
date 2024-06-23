@@ -1,5 +1,5 @@
 {
-    "tags": ["competition", "leakage", "event detection", "Net1", "Hanoi", "L-Town", "C-Town"],
+    "tags": ["competition", "leakage", "event detection", "Net1", "Hanoi", "L-Town", "C-Town", "valves", "tanks", "pumps"],
     "tasks": ["Leakage detection", "Leakage localization"],
     "resources": {
         "kios-leakdb": {
@@ -98,7 +98,7 @@
             "desc": "EPANET Example Network 1",
             "year": 2000,
             "tasks": [],
-            "tags": ["Net1"],
+            "tags": ["Net1", "pumps", "tanks"],
             "keywords": [],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
             "permalink": "benchmarks/network-Net1.html"
@@ -108,7 +108,7 @@
             "desc": "L-Town Network",
             "year": 2020,
             "tasks": [],
-            "tags": ["L-Town"],
+            "tags": ["L-Town", "pumps", "tanks", "valves"],
             "keywords": [],
             "doi": "10.5281/zenodo.4017658",
             "license": "CC BY 4.0",
@@ -121,7 +121,7 @@
             "year": 2018,
             "tasks": [],
             "keywords": [],
-            "tags": ["C-Town"],
+            "tags": ["C-Town", "pumps", "tanks", "valves"],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000969",
             "license": "CC BY 4.0",
             "download_url": "https://www.batadal.net/data/CTOWN.INP",

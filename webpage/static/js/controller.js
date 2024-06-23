@@ -43,7 +43,7 @@ window.onload = () => {
                 allBenchmarks: myBenchmarks,
                 benchmarks: myBenchmarks,
                 currentPage: 1,
-                perPage: 5
+                perPage: 7
             },
             computed: {
                 slicedBenchmarks() {

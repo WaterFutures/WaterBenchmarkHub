@@ -1,6 +1,6 @@
 {
     "tags": ["competition", "leakage", "event detection", "Net1", "Hanoi", "L-Town", "C-Town",
-             "valves", "tanks", "pumps", "large", "small"],
+             "valves", "tanks", "pumps", "large", "small", "quality", "chlorine"],
     "tasks": ["Leakage detection", "Leakage localization"],
     "resources": {
         "kios-leakdb": {
@@ -60,7 +60,7 @@
             "desc": "A water quality dataset for the Monitoring of drinking-water quality",
             "year": 2017,
             "tasks": [],
-            "tags": ["competition", "event detection"],
+            "tags": ["competition", "event detection", "quality"],
             "keywords": [],
             "doi": "10.5281/zenodo.3884464",
             "license": "CC BY 4.0",
@@ -73,7 +73,7 @@
             "desc": "A water quality dataset for the Internet of Things: Online Anomaly Detection for Drinking Water Quality",
             "year": 2018,
             "tasks": [],
-            "tags": ["competition", "event detection"],
+            "tags": ["competition", "event detection", "quality"],
             "keywords": [],
             "doi": "10.5281/zenodo.3884397",
             "license": "CC BY 4.0",
@@ -86,7 +86,7 @@
             "desc": "A water quality dataset for the Internet of Things: Online Event Detection for Drinking Water Quality Control",
             "year": 2019,
             "tasks": [],
-            "tags": ["competition", "event detection"],
+            "tags": ["competition", "event detection", "quality"],
             "keywords": [],
             "doi": "10.5281/zenodo.3884443",
             "license": "CC BY 4.0",
@@ -99,7 +99,7 @@
             "desc": "EPANET Example Network 1",
             "year": 2000,
             "tasks": [],
-            "tags": ["Net1", "pumps", "tanks", "small"],
+            "tags": ["Net1", "pumps", "tanks", "small", "quality", "chlorine"],
             "keywords": [],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
             "permalink": "benchmarks/network-Net1.html"

@@ -73,7 +73,7 @@
           </b-navbar>
         </div>
 
-        <b-container fluid>
+        <b-container fluid class="mt-1">
           <b-row>
             <b-col class="background-layer-light min-vh-100">
               <div v-for="tag in allTags">
@@ -86,6 +86,7 @@
             </b-col>
             <b-col cols="8">
               <searchterm
+                class="mb-1"
                 v-for="searchText in allSearchTexts"
                 v-bind:text="searchText"
                 :key="searchText"

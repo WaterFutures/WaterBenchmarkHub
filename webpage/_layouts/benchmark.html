@@ -13,6 +13,8 @@
         <title>{{ page.title }}</title>
     </head>
     <body>
+        <a href="#main-content" class="screen-reader-text skip-to-main-content-link">Skip to main content</a>
+
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark background-layer">
                 <div class="navbar-brand">
@@ -98,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-10">
+                <div class="col-10" id="main-content">
                     {{ content }}
                 </div>
             </div>

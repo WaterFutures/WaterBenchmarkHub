@@ -20,6 +20,8 @@
       <title>Water Benchmark Hub</title>
     </head>
     <body>
+      <a href="#main-content" class="screen-reader-text skip-to-main-content-link">Skip to main content</a>
+
       <div id="app">
 
         <div>
@@ -94,7 +96,7 @@
                 >
               </searchterm>
 
-              <div class="overflow-auto">
+              <div class="overflow-auto" id="main-content">
                 <template v-if="benchmarks.length != 0">
                   <b-list-group id="list-group-benchmarks">
                     <benchmark

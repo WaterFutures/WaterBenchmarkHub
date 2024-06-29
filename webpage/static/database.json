@@ -1,7 +1,8 @@
 {
     "tags": ["competition", "leakage", "event detection", "Net1", "Hanoi", "L-Town", "C-Town",
-             "valves", "tanks", "pumps", "large", "small", "quality", "chlorine", "demand patterns"],
-    "tasks": ["Leakage detection", "Leakage localization"],
+             "valves", "tanks", "pumps", "large", "small", "quality", "chlorine", "demand patterns",
+            "sensor placement"],
+    "tasks": ["Leakage detection", "Leakage localization", "Sensor placement"],
     "resources": {
         "kios-leakdb": {
             "name": "LeakDB",
@@ -54,6 +55,16 @@
             "download_url": "https://www.batadal.net/data.html",
             "external_url": "https://www.batadal.net/",
             "permalink": "benchmarks/BATADAL.html"
+        },
+        "bwsn": {
+            "name": "BWSN",
+            "desc": "The Battle of the Water Sensor Networks (BWSN)",
+            "year": 2006,
+            "tasks": ["Sensor placement"],
+            "tags": ["competition", "sensor placement"],
+            "keywords": [],
+            "doi": "10.1061/(ASCE)0733-9496(2008)134:6(556)",
+            "permalink": "benchmarks/BWSN.html"
         },
         "gecco-waterquality2017": {
             "name": "GECCO Industrial Challenge 2017 Dataset",

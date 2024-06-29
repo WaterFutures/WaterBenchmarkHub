@@ -118,7 +118,13 @@
                 var benchmark = database.resources[benchmarkID];
 
                 document.getElementById("benchmarkYear").innerText = benchmark.year;
-                document.getElementById("benchmarkDownloadUrl").setAttribute("href", benchmark.download_url);
+
+                if(benchmark.download_url != undefined) {
+                    document.getElementById("benchmarkDownloadUrl").setAttribute("href", benchmark.download_url);
+                }
+                else {
+                    document.getElementById("benchmarkDownloadUrl").remove();
+                }
 
                 if(benchmark.license == undefined) {
                     var element = document.getElementById("benchmarkLicense");

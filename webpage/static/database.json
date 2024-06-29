@@ -66,6 +66,16 @@
             "doi": "10.1061/(ASCE)0733-9496(2008)134:6(556)",
             "permalink": "benchmarks/BWSN.html"
         },
+        "bwcn": {
+            "name": "BWCN",
+            "desc": "Battle of the Water Calibration Networks (BWCN)",
+            "year": 2010,
+            "tasks": [],
+            "tags": ["competition", "C-Town"],
+            "keywords": [],
+            "doi": "10.1061/(ASCE)WR.1943-5452.0000191",
+            "permalink": "benchmarks/BWCN.html"
+        },
         "gecco-waterquality2017": {
             "name": "GECCO Industrial Challenge 2017 Dataset",
             "desc": "A water quality dataset for the Monitoring of drinking-water quality",

@@ -96,6 +96,17 @@
             "doi": "10.1061/(ASCE)WR.1943-5452.0000583",
             "permalink": "benchmarks/BBLAWN.html"
         },
+        "biws": {
+            "name": "BIWS",
+            "desc": "Battle of the Intermittent Water Supply (BIWS)",
+            "year": 2022,
+            "tasks": [],
+            "tags": ["competition"],
+            "keywords": [],
+            "doi": "",
+            "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
+            "permalink": "benchmarks/BIWS.html"
+        },
         "bwndma": {
             "name": "BWNDMA",
             "desc": "Battle of Water Networks District Metered Areas (BWNDMA)",

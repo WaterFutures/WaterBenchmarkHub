@@ -9,7 +9,11 @@ layout: benchmark
 
 ## Description
 
-The C-Town network is a fictious network introduced in the [BATADAL competition](BATADAL.html).
+The Calibration Network system serves the hypothetical town C-Town and was created by
+Avi Ostfield et al. in 2011 as part of the
+[Battle of the Water Calibration Networks (BWCN)](BWCN.html) competition.
+The C-Town network was also used susequent competitions such as the
+[BATADAL competition](BATADAL.html) and [BBLAWN competition](BBLAWN.html).
 
 The network consists of 388 nodes (junctions), 444 pipes, 1 reservoir, 7 tanks, 11 pumps, and 4 valves.
 
@@ -34,7 +38,13 @@ Detailed information about the provided functionality can be found in the docume
 
 ## Reference
 
-Taormina, R., Galelli, S., Tippenhauer, N. O., Salomons, E., Ostfeld, A., Eliades, D. G., ... &
-Ohar, Z. (2018).
-*Battle of the attack detection algorithms: Disclosing cyber attacks on water distribution networks.*
-Journal of Water Resources Planning and Management, 144(8), 04018048.
+Avi Ostfeld, Elad Salomons, Lindell Ormsbee, James G. Uber, Christopher M. Bros, Paul Kalungi,
+Richard Burd, Boguslawa Zazula-Coetzee, Teddy Belrain, Doosun Kang, Kevin Lansey, Hailiang Shen,
+Edward McBean, Zheng Yi Wu, Tom Walski, Stefano Alvisi, Marco Franchini, Joshua P. Johnson,
+Santosh R. Ghimire, Brian D. Barkdoll, Tiit Koppel, Anatoli Vassiljev, Joong Hoon Kim,
+Gunhui Chung, Do Guen Yoo, Kegong Diao, Yuwen Zhou, Ji Li, Zilong Liu, Kui Chang, Jinliang Gao,
+Shaojian Qu, Yixing Yuan, T. Devi Prasad, Daniele Laucelli, Lydia S. Vamvakeridou Lyroudia,
+Zoran Kapelan, Dragan Savic, Luigi Berardi, Giuseppe Barbaro, Orazio Giustolisi, Masoud Asadzadeh,
+Bryan A. Tolson, and Robert McKillop (2012).
+*Battle of the water calibration networks.* Journal of water resources planning and management,
+138(5).

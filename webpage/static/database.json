@@ -160,11 +160,11 @@
         "network-ctown": {
             "name": "C-Town",
             "desc": "C-Town Network",
-            "year": 2018,
+            "year": 2010,
             "tasks": [],
             "keywords": [],
             "tags": ["C-Town", "pumps", "tanks", "valves", "large", "demand patterns"],
-            "doi": "10.1061/(ASCE)WR.1943-5452.0000969",
+            "doi": "10.1061/(ASCE)WR.1943-5452.0000191",
             "license": "CC BY 4.0",
             "download_url": "https://www.batadal.net/data/CTOWN.INP",
             "permalink": "benchmarks/network-CTown.html"

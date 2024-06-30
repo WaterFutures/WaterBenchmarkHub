@@ -86,6 +86,16 @@
             "doi": "10.1061/(ASCE)WR.1943-5452.0000378",
             "permalink": "benchmarks/BWN2.html"
         },
+        "bblawn": {
+            "name": "BBLAWN",
+            "desc": "Battle of Background Leakage Assessment for Water Networks (BBLAWN)",
+            "year": 2014,
+            "tasks": [],
+            "tags": ["competition", "C-Town"],
+            "keywords": [],
+            "doi": "10.1061/(ASCE)WR.1943-5452.0000583",
+            "permalink": "benchmarks/BBLAWN.html"
+        },
         "gecco-waterquality2017": {
             "name": "GECCO Industrial Challenge 2017 Dataset",
             "desc": "A water quality dataset for the Monitoring of drinking-water quality",

@@ -76,6 +76,16 @@
             "doi": "10.1061/(ASCE)WR.1943-5452.0000191",
             "permalink": "benchmarks/BWCN.html"
         },
+        "bwn2": {
+            "name": "BWN-II",
+            "desc": "Battle of the Water Networks (BWN-II)",
+            "year": 2012,
+            "tasks": [],
+            "tags": ["competition"],
+            "keywords": [],
+            "doi": "10.1061/(ASCE)WR.1943-5452.0000378",
+            "permalink": "benchmarks/BWN2.html"
+        },
         "gecco-waterquality2017": {
             "name": "GECCO Industrial Challenge 2017 Dataset",
             "desc": "A water quality dataset for the Monitoring of drinking-water quality",

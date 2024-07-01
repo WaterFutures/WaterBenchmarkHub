@@ -1,19 +1,18 @@
 ---
 title: "BattLeDIM (Battle of the Leakage Detection and Isolation Methods)"
-id: "kios-battledim"
-permalink: /benchmarks/KIOS-BattLeDIM.html
+id: "battledim"
+permalink: /benchmarks/BattLeDIM.html
 collection: benchmarks
 layout: benchmark
 ---
 
 ## Description
 
-The Battle of the Leakage Detection and Isolation Methods (*BattLeDIM*) 2020, organized
-by S. G. Vrachimis, D. G. Eliades, R. Taormina, Z. Kapelan, A. Ostfeld, S. Liu, M. Kyriakou,
-P. Pavlou, M. Qiu, and M. M. Polycarpou, as part of the 2nd International CCWI/WDSA
-Joint Conference in Beijing, China, aims at objectively comparing the performance of methods
-for the detection and localization of leakage events, relying on SCADA measurements of flow and
-pressure sensors installed within water distribution networks.
+The Battle of the Leakage Detection and Isolation Methods (*BattLeDIM*) is the 8th in a series
+of "Battle Competitions" dating back to the Battle of the Water Networks (BWN) in 1985.
+It aims at objectively comparing the performance of methods for the detection and localization
+of leakage events, relying on SCADA measurements of flow and pressure sensors installed within
+water distribution networks.
 
 The competition problem was based on [L-Town](network-LTown.html), a small hypothetical town which
 experiences a large number of pipe breaks and water losses, affecting its service quality.

@@ -1,7 +1,7 @@
 {
     "tags": ["competition", "leakage", "event detection", "Net1", "Hanoi", "L-Town", "C-Town",
              "valves", "tanks", "pumps", "large", "small", "quality", "chlorine", "demand patterns",
-            "sensor placement", "battle competition"],
+            "sensor placement", "battle competition", "network"],
     "tasks": ["Leakage detection", "Leakage localization", "Sensor placement"],
     "resources": {
         "kios-leakdb": {
@@ -171,7 +171,7 @@
             "desc": "EPANET Example Network 1",
             "year": 2000,
             "tasks": [],
-            "tags": ["Net1", "pumps", "tanks", "small", "quality", "chlorine"],
+            "tags": ["Net1", "pumps", "tanks", "small", "quality", "chlorine", "network"],
             "keywords": [],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
             "permalink": "benchmarks/network-Net1.html"
@@ -181,7 +181,7 @@
             "desc": "L-Town Network",
             "year": 2020,
             "tasks": [],
-            "tags": ["L-Town", "pumps", "tanks", "valves", "large", "demand patterns"],
+            "tags": ["L-Town", "pumps", "tanks", "valves", "large", "demand patterns", "network"],
             "keywords": [],
             "doi": "10.5281/zenodo.4017658",
             "license": "CC BY 4.0",
@@ -194,7 +194,7 @@
             "year": 2010,
             "tasks": [],
             "keywords": [],
-            "tags": ["C-Town", "pumps", "tanks", "valves", "large", "demand patterns"],
+            "tags": ["C-Town", "pumps", "tanks", "valves", "large", "demand patterns", "network"],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000191",
             "license": "CC BY 4.0",
             "download_url": "https://www.batadal.net/data/CTOWN.INP",
@@ -206,7 +206,7 @@
             "year": 1990,
             "tasks": [],
             "keywords": [],
-            "tags": ["Hanoi", "small"],
+            "tags": ["Hanoi", "small", "network"],
             "doi": "10.1029/WR026i004p00539",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Hanoi.inp",
             "permalink": "benchmarks/network-Hanoi.html"

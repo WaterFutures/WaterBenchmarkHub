@@ -106,12 +106,14 @@
                     </benchmark>       
                   </b-list-group> 
   
+                  <p align="center"><i>{{benchmarks.length}} benchmark resources found.</i></p>
+
                   <b-pagination
                     :per-page="perPage"
                     :total-rows="totalNumBenchmarks" 
                     v-model="currentPage"
                     aria-controls="list-group-benchmarks"
-                    align="center"/> 
+                    align="center"/>
                 </template>
                 <template v-if="benchmarks.length == 0">
                   <p align="center"><i>Nothing found.</i></p>

@@ -42,7 +42,6 @@ it should dropped from the database entry:
 - :code:`year` Year in which the benchmark (resource) was published.
 - :code:`doi` The doi of the benchmark (resource) or the corresponding publication.
 - :code:`license` The license of the benchmark (resource).
-- :code:`tasks` List of tasks in which the benchmark (resource) can be utilized.
 - :code:`tags` List of (existing) tags associated with the benchmark (resource) --
   avoid inventing new tags and use existing tags!
 - :code:`keywords` Additional keywords associated with the benchmark (resource) --
@@ -63,9 +62,8 @@ A complete example of the `KIOS LeakDB` benchmark is given below:
             "name": "LeakDB",
             "desc": "LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.",
             "year": 2018,
-            "tasks": ["Leakage detection", "Leakage localization"],
-            "tags": ["leakage", "event detection", "Net1", "Hanoi"],
-            "keywords": [],
+            "tags": ["leakage detection", "leakage localization", "leakage", "event detection"],
+            "keywords": ["Net1", "Hanoi"],
             "doi": "10.5281/zenodo.1313116",
             "license": "EUPL-1.2",
             "download_url": "https://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A",

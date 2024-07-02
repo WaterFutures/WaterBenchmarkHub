@@ -78,12 +78,51 @@
         <b-container fluid class="mt-1">
           <b-row>
             <b-col class="background-layer-light min-vh-100">
-              <div v-for="tag in allTags">
-                <b-badge
-                  href="#"
-                  v-bind:variant="activeTags.includes(tag) ? 'primary' : 'secondary'"
-                  @click="onClickOnTag(tag)">{{tag}}
-                </b-badge>
+              <div class="row ml-1">
+                <b>Tasks & Types:</b>
+              </div>
+              <div class="row ml-1">
+                <div v-for="tag in allTagsTasks">
+                  <div class="col px-md-1">
+                    <b-badge
+                      href="#"
+                      v-bind:variant="activeTags.includes(tag) ? 'primary' : 'secondary'"
+                      @click="onClickOnTag(tag)">{{tag}}
+                    </b-badge>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <div class="row ml-1">
+                <b>Networks:</b>
+              </div>
+              <div class="row ml-1">
+                <div v-for="tag in allTagsNetworks">
+                  <div class="col px-md-1">
+                    <b-badge
+                      href="#"
+                      v-bind:variant="activeTags.includes(tag) ? 'primary' : 'secondary'"
+                      @click="onClickOnTag(tag)">{{tag}}
+                    </b-badge>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <div class="row ml-1">
+                <b>Other:</b>
+              </div>
+              <div class="row ml-1">
+                <div v-for="tag in allTagsOther">
+                  <div class="col px-md-1">
+                    <b-badge
+                      href="#"
+                      v-bind:variant="activeTags.includes(tag) ? 'primary' : 'secondary'"
+                      @click="onClickOnTag(tag)">{{tag}}
+                    </b-badge>
+                  </div>
+                </div>
               </div>
             </b-col>
             <b-col cols="8">

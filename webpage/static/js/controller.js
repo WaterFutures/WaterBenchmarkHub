@@ -36,7 +36,9 @@ window.onload = () => {
                 }
             },
             data: {
-                allTags: database.tags,
+                allTagsTasks: database.tags.tasks_types,
+                allTagsNetworks: database.tags.networks,
+                allTagsOther: database.tags.other,
                 activeTags: [],
                 searchText: "",
                 allSearchTexts: [],

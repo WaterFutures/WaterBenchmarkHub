@@ -8,14 +8,14 @@ layout: benchmark
 
 ## Description
 
-The BATtle of the Attack Detection ALgorithms (*BATADAL*) by Riccardo Taormina, Stefano Galelli,
-Nils Ole Tippenhauer, Avi Ostfeld, Elad Salomons, Demetrios Eliades is a competition on
-planning and management of water networks undertaken within the Water Distribution Systems
-Analysis Symposium. The goal of the battle was to compare the performance of algorithms for
-the detection of cyber-physical attacks, whose frequency has increased in the last few years
-along with the adoption of smart water technologies. The design challenge was set for the
-[C-Town network](network-CTown.html), a real-world, medium-sized water distribution system
-operated through programmable logic controllers and a supervisory control and
+The BATtle of the Attack Detection ALgorithms (*BATADAL*) is the 7th in a series of "Battle
+Competitions" dating back to the Battle of the Water Networks (BWN) in 1985.
+It is a competition on planning and management of water networks undertaken within the Water
+Distribution Systems Analysis Symposium. The goal of the battle was to compare the performance
+of algorithms for the detection of cyber-physical attacks, whose frequency has increased in
+the last few years along with the adoption of smart water technologies. The design challenge was
+set for the [C-Town network](network-CTown.html), a real-world, medium-sized water distribution
+system operated through programmable logic controllers and a supervisory control and
 data acquisition (SCADA) system. Participants were provided with data sets containing (simulated)
 SCADA observations, and challenged to design an attack detection algorithm.
 The effectiveness of all submitted algorithms was evaluated in terms of time-to-detection and

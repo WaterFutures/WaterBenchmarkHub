@@ -46,9 +46,9 @@ and was disclosed in January 2020.
 
 ### Usage in Python
 
-This benchmark is also available in Python under the key "*KIOS-BattLeDIM*":
+This benchmark is also available in Python under the key "*BattLeDIM*":
 ```python
-battledim = load("KIOS-BattLeDIM")
+battledim = load("BattLeDIM")
 ```
 
 Detailed information about the provided functionality can be found in the

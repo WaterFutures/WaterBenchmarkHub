@@ -25,7 +25,7 @@ from ..benchmarks import register
 from ..meta_data import meta_data
 
 
-@meta_data("kios-battledim")
+@meta_data("battledim")
 class BattLeDIM(BenchmarkResource):
     """
     The Battle of the Leakage Detection and Isolation Methods (*BattLeDIM*) 2020, organized by
@@ -487,4 +487,4 @@ class BattLeDIM(BenchmarkResource):
                               sensor_config=ltown_config.sensor_config, system_events=leakages)
 
 
-register("KIOS-BattLeDIM", BattLeDIM)
+register("BattLeDIM", BattLeDIM)

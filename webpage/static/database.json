@@ -99,6 +99,15 @@
             "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
             "permalink": "benchmarks/BIWS.html"
         },
+        "bwdf": {
+            "name": "BWDF",
+            "desc": "Battle of Water Demand Forecasting (BWDF)",
+            "year": 2024,
+            "tags": ["competition", "battle competition"],
+            "keywords": [],
+            "external_url": "https://wdsa-ccwi2024.it/battle-of-water-networks/",
+            "permalink": "benchmarks/BWDF.html"
+        },
         "bwndma": {
             "name": "BWNDMA",
             "desc": "Battle of Water Networks District Metered Areas (BWNDMA)",

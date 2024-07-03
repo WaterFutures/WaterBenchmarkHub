@@ -79,7 +79,10 @@
           <b-row>
             <b-col class="background-layer-light min-vh-100">
               <div class="row ml-1">
-                <b>Tasks & Types:</b>
+                <span>
+                  <i class="bi-list-task"></i>
+                  <b>Tasks & Types:</b>
+                </span>
               </div>
               <div class="row ml-1">
                 <div v-for="tag in allTagsTasks">
@@ -95,7 +98,10 @@
 
               <br>
               <div class="row ml-1">
-                <b>Networks:</b>
+                <span>
+                  <i class="bi-bounding-box-circles"></i>
+                  <b>Networks:</b>
+                </span>
               </div>
               <div class="row ml-1">
                 <div v-for="tag in allTagsNetworks">
@@ -111,7 +117,10 @@
 
               <br>
               <div class="row ml-1">
-                <b>Other:</b>
+                <span>
+                  <i class="bi-three-dots-vertical"></i>
+                  <b>Other:</b>
+                </span>
               </div>
               <div class="row ml-1">
                 <div v-for="tag in allTagsOther">

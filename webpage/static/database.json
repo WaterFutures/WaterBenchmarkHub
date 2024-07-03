@@ -3,7 +3,7 @@
         "tasks_types": ["leakage detection", "leakage localization", "sensor placement", "leakage",
                         "event detection", "competition", "battle competition"],
         "networks": ["valves", "tanks", "pumps", "large", "small", "demand patterns"],
-        "other": ["quality", "chlorine"]
+        "other": ["quality", "chlorine", "real world"]
     },
     "resources": {
         "kios-leakdb": {
@@ -103,7 +103,7 @@
             "name": "BWDF",
             "desc": "Battle of Water Demand Forecasting (BWDF)",
             "year": 2024,
-            "tags": ["competition", "battle competition"],
+            "tags": ["competition", "battle competition", "real world"],
             "keywords": [],
             "external_url": "https://wdsa-ccwi2024.it/battle-of-water-networks/",
             "permalink": "benchmarks/BWDF.html"
@@ -130,7 +130,7 @@
             "name": "GECCO Industrial Challenge 2017 Dataset",
             "desc": "A water quality dataset for the Monitoring of drinking-water quality",
             "year": 2017,
-            "tags": ["competition", "event detection", "quality"],
+            "tags": ["competition", "event detection", "quality", "real world"],
             "keywords": [],
             "doi": "10.5281/zenodo.3884464",
             "license": "CC BY 4.0",
@@ -142,7 +142,7 @@
             "name": "GECCO Industrial Challenge 2018 Dataset",
             "desc": "A water quality dataset for the Internet of Things: Online Anomaly Detection for Drinking Water Quality",
             "year": 2018,
-            "tags": ["competition", "event detection", "quality"],
+            "tags": ["competition", "event detection", "quality", "real world"],
             "keywords": [],
             "doi": "10.5281/zenodo.3884397",
             "license": "CC BY 4.0",
@@ -154,7 +154,7 @@
             "name": "GECCO Industrial Challenge 2019 Dataset",
             "desc": "A water quality dataset for the Internet of Things: Online Event Detection for Drinking Water Quality Control",
             "year": 2019,
-            "tags": ["competition", "event detection", "quality"],
+            "tags": ["competition", "event detection", "quality", "real world"],
             "keywords": [],
             "doi": "10.5281/zenodo.3884443",
             "license": "CC BY 4.0",

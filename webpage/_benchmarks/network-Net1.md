@@ -12,7 +12,7 @@ layout: benchmark
 The EPANET Example Network 1 (short `Net1`) constitutes a simple example of modeling chlorine decay.
 Both bulk and wall reactions are included.
 
-The network consists of 9 nodes (junctions), 12 pipes, 1 reservoir, 1 tank, and 1 pump.
+The network consists of 9 junctions, 12 pipes, 1 reservoir, 1 tank, and 1 pump.
 Only base demands but no demand pattern are given.
 
 <img src="../static/benchmarks/network-net1/net1_plot.png"/>

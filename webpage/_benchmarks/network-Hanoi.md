@@ -13,7 +13,7 @@ The Hanoi system was first presented by Fujiwara and Khang (1990) and is based o
 trunk network of Hanoi, Vietnam. In subsequent years it became a widely used network in the
 water research community -- e.g. it was used in the [LeakDB](KIOS-LeakDB.html) data set.
 
-The network consists of 32 nodes (junctions), 34 pipes, and 1 reservoir.
+The network consists of 32 junctions, 34 pipes, and 1 reservoir.
 
 <img src="../static/benchmarks/network-hanoi/hanoi_plot.png"/>
 

@@ -15,7 +15,7 @@ Avi Ostfield et al. in 2011 as part of the
 The C-Town network was also used susequent competitions such as the
 [BATADAL competition](BATADAL.html) and [BBLAWN competition](BBLAWN.html).
 
-The network consists of 388 nodes (junctions), 444 pipes, 1 reservoir, 7 tanks, 11 pumps, and 4 valves.
+The network consists of 388 junctions, 444 pipes, 1 reservoir, 7 tanks, 11 pumps, and 4 valves.
 
 <img src="../static/benchmarks/network-ctown/ctown_plot.png"/>
 

@@ -29,7 +29,7 @@ L-Town is located in the Northern hemisphere, thus higher water usage is expecte
 July/August, and lower in December/January.
 There are no significant variations of water consumption during holidays or other special days.
 
-The network consists of 782 nodes (junctions), 923 pipes, 2 reservoirs, 1 tank, 1 pump,
+The network consists of 782 junctions, 923 pipes, 2 reservoirs, 1 tank, 1 pump,
 and 3 valves.
 
 <img src="../static/benchmarks/network-ltown/ltown_plot.png"/>
@@ -39,8 +39,10 @@ and 3 valves.
 The L-Town network is provided as two different versions, which can be loaded into EPANET
 or any other software package
 supporting .inp files:
-- `L-TOWN.inp`: L-Town network without any demand patters.
-- `L-TOWN_Real.inp`: L-Town network with realistic demand patterns as used in the
+- [`L-TOWN.inp`](https://zenodo.org/records/4017659/files/L-TOWN.inp?download=1):
+L-Town network without any demand patters.
+- [`L-TOWN_Real.inp`](https://zenodo.org/records/4017659/files/L-TOWN_Real.inp?download=1):
+L-Town network with realistic demand patterns as used in the
 [BattLeDIM](KIOS-BattLeDIM.html) benchmark.
 
 ### Usage in Python

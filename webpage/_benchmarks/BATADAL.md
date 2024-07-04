@@ -37,6 +37,12 @@ This 3-months long dataset contains several attacks but no labels. The dataset w
 February 20 2017, and it is used to compare the performance of the algorithms
 (see competition rules document for details).
 
+The column `ATT_FLAG` contains the label indicating the presence of an attack --
+i.e. "1" if an attack is present.
+The other 43 columns contain the sensor readings (such as water level in tanks,
+pressure at junctions, pump and valve states, etc.) that have to be used to predict the presenence
+of an attack -- note that those sensor readings might have been manipulated by an attacker.
+
 ### Usage in Python
 
 This benchmark is also available in Python under the key "*BATADAL*":

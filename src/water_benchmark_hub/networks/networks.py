@@ -92,8 +92,8 @@ class Richmond(WaterDistributionNetwork):
 register("Network-Richmond", Richmond)
 
 
-@meta_data("network-micropolois")
-class Micropolois(WaterDistributionNetwork):
+@meta_data("network-micropolis")
+class Micropolis(WaterDistributionNetwork):
     """
     Class for loading the Micropolois network.
     """
@@ -160,7 +160,7 @@ class Micropolois(WaterDistributionNetwork):
             return f_in
 
 
-register("Network-Micropolois", Micropolois)
+register("Network-Micropolis", Micropolis)
 
 
 @meta_data("network-balerma")

@@ -22,7 +22,7 @@ binary classification.
 
 ## How to Use
 
-`1_gecco2018_water_quality.csv` contains the entire data set.
+[`1_gecco2018_water_quality.csv`](https://zenodo.org/records/3884398/files/1_gecco2018_water_quality.csv?download=1) contains the entire data set.
 
 | Column  | Description                                                                                      |
 |---------|--------------------------------------------------------------------------------------------------|

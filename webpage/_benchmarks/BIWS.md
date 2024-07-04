@@ -26,6 +26,15 @@ the network infrastructure. It is assumed that the manager has a certain amount 
 annually, for a period of five years. A series of possible actions to take are declared, each with
 an associated cost and a degree of achievement of the objectives.
 
+## How to Use
+
+- [`BIWS.inp`](https://wdsa-ccwi2022.upv.es/wp-content/uploads/descargas/BIWS.inp):
+EPANET file with the current network status.
+- [`Leakages.xlsx`](https://wdsa-ccwi2022.upv.es/wp-content/uploads/descargas/Leakages.xlsx):
+Contains all leaky pipes together with their position and emitter coefficient
+(for modeling the leak demand) -- note that the leaks (i.e. emitter coefficients) are supposed
+to grow over time (weekly steps).
+
 ## Reference
 
 Pedro L. Iglesias-Rey, Fernando Martínez-Alzamora, F. Javier Martínez Solano, Avi Ostfeld, (2022).

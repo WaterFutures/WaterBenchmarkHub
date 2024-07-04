@@ -26,29 +26,36 @@ the location and time of the detected leakages.
 
 ## How to Use
 
-- `L-Town.inp` EPANET Model (INP): A model of the network is provided with nominal parameters for
-all the system elements. The nominal base demands for each node are based on average historical
-metered consumption. In general, the difference between the actual and the nominal values for each
-consumer type (residential and commercial) is less than 10%. Weekly demand profiles for two consumer
-types (residential and commercial) are also provided, however they do not capture the
-yearly seasonality. Furthermore, the EPANET model parameters may be different from the actual
-network parameters (e.g., diameters, roughness coefficients), and it is assumed than in general this
-difference is no greater than 10% of the nominal values.
-- `2018 SCADA.xlsx` historical dataset (also in CSV): The historical data have been collected for
-the period 2018-01-01 00:00 until 2018-12-31 23:55, at 5-minute time steps. The SCADA dataset is
-comprised of the water tank level, the flow sensors, the AMR measurements and the pressure sensors.
-- `2018 Leak Report.txt` (TXT): The repair times of pipe bursts that have been fixed are provided.
-- `2018_Leakages.csv` Contains the leak demands at all leaky pipes over time in the
-historical data set. This file was disclosed after the competition.
-- `L-TOWN_Real.inp` The L-Town network with realistic demand patterns -- this .inp file was used
+- [`L-Town.inp`](https://zenodo.org/records/4017659/files/L-TOWN.inp?download=1) EPANET Model (INP):
+A model of the network is provided with nominal parameters for all the system elements. The nominal
+base demands for each node are based on average historical metered consumption. In general, the
+difference between the actual and the nominal values for each consumer type
+(residential and commercial) is less than 10%. Weekly demand profiles for two consumer types
+(residential and commercial) are also provided, however they do not capture the yearly seasonality.
+Furthermore, the EPANET model parameters may be different from the actual network parameters
+(e.g., diameters, roughness coefficients), and it is assumed than in general this difference is no
+greater than 10% of the nominal values.
+- [`2018 SCADA.xlsx`](https://zenodo.org/records/4017659/files/2018_SCADA.xlsx?download=1)
+historical dataset: The historical data have been collected for the period 2018-01-01 00:00 until
+2018-12-31 23:55, at 5-minute time steps. The SCADA dataset is comprised of the water tank level,
+the flow sensors, the AMR measurements and the pressure sensors.
+- [`2018 Leak Report.txt`](https://zenodo.org/records/4017659/files/2018_Fixed_Leakages_Report.txt?download=1):
+The repair times of pipe bursts that have been fixed are provided.
+- [`2018_Leakages.csv`](https://zenodo.org/records/4017659/files/2018_Leakages.csv?download=1):
+Contains the leak demands at all leaky pipes over time in the historical data set.
+This file was disclosed after the competition.
+- [`L-TOWN_Real.inp`](https://zenodo.org/records/4017659/files/L-TOWN_Real.inp?download=1)
+The L-Town network .inp file with realistic demand patterns -- this .inp file was used
 for simulating the provided SCADA data. This file was disclosed after the competition.
-- `2019 SCADA.xlsx` evaluation Dataset (also in CSV): The evaluation data have been collected for
-the period 2019-01-01 00:00 until 2019-12-31 23:55, at 5-minute time steps. The SCADA dataset is
-comprised of the water tank level, the flow sensors, the AMR measurements and the pressure sensors.
+- [`2019 SCADA.xlsx`](https://zenodo.org/records/4017659/files/2019_SCADA.xlsx?download=1)
+evaluation Dataset: The evaluation data have been collected for the period 2019-01-01 00:00 until
+2019-12-31 23:55, at 5-minute time steps. The SCADA dataset is comprised of the water tank level,
+the flow sensors, the AMR measurements and the pressure sensors.
 This dataset was used for the evaluation of the competing leakage detection methodologies,
 and was disclosed in January 2020.
-- `2019_Leakages.csv` Contains the leak demands at all leaky pipes over time in the
-evaluation data set. This file was disclosed after the competition.
+- [`2019_Leakages.csv`](https://zenodo.org/records/4017659/files/2019_Leakages.csv?download=1):
+Contains the leak demands at all leaky pipes over time in the evaluation data set. This file was
+disclosed after the competition.
 
 The SCADA data contains the readings of 33 pressure sensors (in m), 1 water tank level sensor (in m),
 3 flow sensors (in m^3/h), and 82 demand (AMR) sensors (in L/h).

@@ -29,13 +29,16 @@ Testing dataset - 45 days
 ## How to Use
 
 - **Train Files:**
-`Trainset.csv`: CSV file containing the 6 columns of data. The total consuption and 5 columns
+[`Trainset.csv`](https://raw.githubusercontent.com/KIOS-Research/Water-Usage-Dataset/main/Dataset/Trainset.csv):
+CSV file containing the 6 columns of data. The total consuption and 5 columns
 indicating the consumption of the appliance/s that is/are active.
 - **Validation Files:**
-`Validationset.csv`: CSV file containing the 6 columns of data. The total consuption and 5 columns
+[`Validationset.csv`](https://raw.githubusercontent.com/KIOS-Research/Water-Usage-Dataset/main/Dataset/Validationset.csv):
+CSV file containing the 6 columns of data. The total consuption and 5 columns
 indicating the consumption of the appliance/s that is/are active.
 - **Test Files:**
-`Testset.csv`: CSV file containing the 6 columns of data. The total consuption and 5 columns
+[`Testset.csv`](https://raw.githubusercontent.com/KIOS-Research/Water-Usage-Dataset/main/Dataset/Testset.csv):
+CSV file containing the 6 columns of data. The total consuption and 5 columns
 indicating the consumption of the appliance/s that is/are active.
 
 ### Usage in Python

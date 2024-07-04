@@ -26,13 +26,13 @@ Results were presented at the Water Distribution Systems Analysis Symposium
 
 ## How to Use
 
-- **Training Dataset 1:** ```BATADAL_dataset03.csv```: This dataset was released on November 20 2016,
-and it was generated from a one-year long simulation. The dataset does not contain any attacks, i.e.
-all the data pertains to C-Town normal operations.
-- **Training Dataset 2:** ```BATADAL_dataset04.csv```: This dataset with partially labeled data was
-released on November 28 2016. The dataset is around 6 months long and contains several attacks,
-some of which are approximately labeled.
-- **Test Dataset:** ```BATADAL_test_dataset.csv``` (in ```BATADAL_test_dataset.zip```):
+- **Training Dataset 1:** [`BATADAL_dataset03.csv`](https://www.batadal.net/data/BATADAL_dataset03.csv):
+This dataset was released on November 20 2016, and it was generated from a one-year long simulation.
+The dataset does not contain any attacks, i.e. all the data pertains to C-Town normal operations.
+- **Training Dataset 2:** [`BATADAL_dataset04.csv`](https://www.batadal.net/data/BATADAL_dataset04.csv):
+This dataset with partially labeled data was released on November 28 2016. The dataset is around
+6 months long and contains several attacks, some of which are approximately labeled.
+- **Test Dataset:** `BATADAL_test_dataset.csv` (in [`BATADAL_test_dataset.zip`](https://www.batadal.net/data/BATADAL_test_dataset.zip)):
 This 3-months long dataset contains several attacks but no labels. The dataset was released on
 February 20 2017, and it is used to compare the performance of the algorithms
 (see competition rules document for details).

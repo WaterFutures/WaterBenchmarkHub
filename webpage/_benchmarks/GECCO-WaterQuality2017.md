@@ -20,7 +20,7 @@ data set, 9 numeric water quality features are given at a sampling rate of 1 min
 
 ## How to Use
 
-`1_gecco2017_water_quality.csv` contains the entire data set.
+[`1_gecco2017_water_quality.csv`](https://zenodo.org/records/3884465/files/1_gecco2017_water_quality.csv?download=1) contains the entire data set.
 
 | Column  | Description                                                                                      |
 |---------|--------------------------------------------------------------------------------------------------|

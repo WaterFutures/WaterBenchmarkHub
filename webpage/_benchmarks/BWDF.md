@@ -28,12 +28,14 @@ and statistical methods, machine learning tools, and signal-processing models.
 
 ## How to Use
 
-- `Inflow_Data_4.xlsx` All inflows (L/s) over time (at a sampling rate of 1h) at the DMAs.
+- [`Inflow_Data_4.xlsx`](https://wdsa-ccwi2024.it/wp-content/uploads/2024/03/Inflow_Data_4.xlsx):
+All inflows (L/s) over time (at a sampling rate of 1h) at the DMAs.
 Participants had to provide fours forecasts during the competition: weeks 30/2022, 44/2022, 3/2023,
 and 10/2023 based on the data BEFORE that weeks. 
-- `Weather_Data_4.xlsx` The weather -- i.e. rainfall depth (mm), air temperature (°C),
-air humidity (%), and windspeed (km/h) -- over time in the unknown city where the DMAs are located.
-This data is supposed to help forecasting the demands.
+- [`Weather_Data_4.xlsx`](https://wdsa-ccwi2024.it/wp-content/uploads/2024/03/Weather_Data_4.xlsx):
+The weather -- i.e. rainfall depth (mm), air temperature (°C), air humidity (%), and
+windspeed (km/h) -- over time in the unknown city where the DMAs are located. This data is supposed
+to help forecasting the demands.
 
 ## Reference
 

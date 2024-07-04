@@ -22,9 +22,9 @@ The data set itself comes in three splits: A train set, a validation set, and a 
 
 ## How to Use
 
-- **Training data:** `7_gecco2019_train_water_quality.csv`
-- **Validation data:** `8_gecco2019_valid_water_qulity.csv`
-- **Test data:** `6_gecco2019_test_water_quality.csv`
+- **Training data:** [`7_gecco2019_train_water_quality.csv`](https://zenodo.org/records/4304080/files/7_gecco2019_train_water_quality.csv?download=1)
+- **Validation data:** [`8_gecco2019_valid_water_qulity.csv`](https://zenodo.org/records/4304080/files/8_gecco2019_valid_water_qulity.csv?download=1)
+- **Test data:** [`6_gecco2019_test_water_quality.csv`](https://zenodo.org/records/4304080/files/6_gecco2019_test_water_quality.csv?download=1)
 
 
 | Column  | Description                                                                                      |

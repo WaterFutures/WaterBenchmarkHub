@@ -465,12 +465,11 @@ class BattLeDIM(BenchmarkResource):
 
         # Load L-Town network including the sensor placement
         if download_dir is not None:
-            ltown_config = WaterDistributionNetworks.load_ltown(download_dir=download_dir,
-                                                                use_realistic_demands=True,
-                                                                include_default_sensor_placement=True)
+            ltown_config = LTown.load(download_dir=download_dir, use_realistic_demands=True,
+                                      include_default_sensor_placement=True, return_scenario=True)
         else:
-            ltown_config = WaterDistributionNetworks.load_ltown(use_realistic_demands=True,
-                                                                include_default_sensor_placement=True)
+            ltown_config = LTown.load(use_realistic_demands=True,
+                                      include_default_sensor_placement=True, return_scenario=True)
 
         # Set simulation duration
         general_params = {"simulation_duration": to_seconds(days=365),    # One year

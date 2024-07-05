@@ -287,8 +287,8 @@ class LeakDB(BenchmarkResource):
                 X = df_final[list(pressure_readings.keys()) + list(flow_readings.keys())].to_numpy()
                 y = labels.to_numpy()
 
-                network_config = WaterDistributionNetworks.load_net1(download_dir) if use_net1 is True \
-                    else WaterDistributionNetworks.load_hanoi(download_dir)
+                network_config = Net1.load(download_dir, return_scenario=True) if use_net1 is True \
+                    else Hanoi.load(download_dir, return_scenario=True)
                 nodes = network_config.sensor_config.nodes
                 _, y_leak_locations = LeakDB.__create_labels(s_id, X.shape[0], nodes, leaks_info)
 
@@ -434,9 +434,10 @@ class LeakDB(BenchmarkResource):
         scenarios_inp = []
 
         # Load the network
-        load_network = WaterDistributionNetworks.load_net1 if use_net1 is True else WaterDistributionNetworks.load_hanoi
+        load_network = Net1.load if use_net1 is True else Hanoi.load
         download_dir = download_dir if download_dir is not None else get_temp_folder()
-        network_config = load_network(download_dir, verbose=verbose)
+        network_config = load_network(download_dir=download_dir, verbose=verbose,
+                                      return_scenario=True)
 
         # Set simulation duration
         hydraulic_time_step = to_seconds(minutes=30)    # 30min time steps
@@ -523,6 +524,7 @@ class LeakDB(BenchmarkResource):
                     wdn.epanet_api.setTimeHydraulicStep(general_params["hydraulic_time_step"])
                     wdn.epanet_api.setTimeSimulationDuration(general_params["simulation_duration"])
                     wdn.epanet_api.setTimePatternStep(general_params["hydraulic_time_step"])
+                    wdn.epanet_api.setFlowUnitsCMH()
 
                     wdn.epanet_api.deletePatternsAll()
 

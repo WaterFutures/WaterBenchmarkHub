@@ -1,6 +1,6 @@
 # WaterBenchmarkHub
 
-The *WaterBenchmarkHub* is a platform for providing benchmark resources regarding
+The [*WaterBenchmarkHub*](https://waterfutures.github.io/WaterBenchmarkHub) is a platform for providing benchmark resources regarding
 Water Distribution Networks (WDNs).
 The webpage is available at
 [https://waterfutures.github.io/WaterBenchmarkHub](https://waterfutures.github.io/WaterBenchmarkHub)

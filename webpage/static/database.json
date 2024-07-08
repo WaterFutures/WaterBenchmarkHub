@@ -193,6 +193,17 @@
             "doi": "10.1029/WR026i004p00539",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Hanoi.inp",
             "permalink": "benchmarks/network-Hanoi.html"
+        },
+        "network-ca1": {
+            "name": "CA1",
+            "desc": "The CA1 system is based on the Fairfield, CA Distribution system",
+            "year": 2016,
+            "tags": ["tanks", "junctions"],
+            "keywords": ["CA1", "Fairfield", "distribution dense-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1000&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/1/",
+            "permalink": "benchmarks/network-CA1.html"
         }
     }
 }

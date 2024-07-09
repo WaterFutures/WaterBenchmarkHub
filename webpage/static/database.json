@@ -229,7 +229,7 @@
             "name": "PA2",
             "desc": "A network based on a portion of the Cheshire Distribution system near Harrisburg, PA",
             "year": 2016,
-            "tags": ["junctions"],
+            "tags": ["junctions", "pumps"],
             "keywords": ["PA2", "Harrisburg", "distribution branch", "US Systems"],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional",
@@ -246,6 +246,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/4/",
             "permalink": "benchmarks/network-WA1.html"
+        },
+        "network-nj1": {
+            "name": "NJ1",
+            "desc": "A network based on the Dover Township, NJ Distribution system",
+            "year": 2021,
+            "tags": ["tanks", "junctions", "pumps"],
+            "keywords": ["NJ1", "Dover Township", "distribution sparse-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/5/",
+            "permalink": "benchmarks/network-NJ1.html"
         }
     }
 }

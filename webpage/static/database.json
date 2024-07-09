@@ -216,7 +216,7 @@
         },
         "network-pa1": {
             "name": "PA1",
-            "desc": "A system based on the North Penn Water Authority Distribution system in Pennsylvania",
+            "desc": "A network based on the North Penn Water Authority Distribution system in Pennsylvania",
             "year": 2016,
             "tags": ["tanks", "junctions"],
             "keywords": ["PA1", "North Penn", "distribution dense-grid", "US Systems"],
@@ -227,14 +227,25 @@
         },
         "network-pa2": {
             "name": "PA2",
-            "desc": "A system based on a portion of the Cheshire Distribution system near Harrisburg, PA",
+            "desc": "A network based on a portion of the Cheshire Distribution system near Harrisburg, PA",
             "year": 2016,
-            "tags": ["tanks", "junctions"],
+            "tags": ["junctions"],
             "keywords": ["PA2", "Harrisburg", "distribution branch", "US Systems"],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/3/",
             "permalink": "benchmarks/network-PA2.html"
+        },
+        "network-wa1": {
+            "name": "WA1",
+            "desc": "A network based on the Bellingham, WA distribution system",
+            "year": 2016,
+            "tags": ["tanks", "junctions"],
+            "keywords": ["WA1", "Bellingham", "distribution dense-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/4/",
+            "permalink": "benchmarks/network-WA1.html"
         }
     }
 }

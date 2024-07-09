@@ -213,6 +213,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1000&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/1/",
             "permalink": "benchmarks/network-CA1.html"
+        },
+        "network-pa1": {
+            "name": "PA1",
+            "desc": "A system based on the North Penn Water Authority Distribution system in Pennsylvania",
+            "year": 2016,
+            "tags": ["tanks", "junctions"],
+            "keywords": ["PA1", "North Penn", "distribution dense-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/2/",
+            "permalink": "benchmarks/network-PA1.html"
         }
     }
 }

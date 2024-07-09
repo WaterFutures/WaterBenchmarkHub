@@ -205,7 +205,7 @@
         },
         "network-ca1": {
             "name": "CA1",
-            "desc": "The CA1 system is based on the Fairfield, CA Distribution system",
+            "desc": "A system based on the Fairfield, CA Distribution system",
             "year": 2016,
             "tags": ["tanks", "junctions"],
             "keywords": ["CA1", "Fairfield", "distribution dense-grid", "US Systems"],
@@ -224,6 +224,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/2/",
             "permalink": "benchmarks/network-PA1.html"
+        },
+        "network-pa2": {
+            "name": "PA2",
+            "desc": "A system based on a portion of the Cheshire Distribution system near Harrisburg, PA",
+            "year": 2016,
+            "tags": ["tanks", "junctions"],
+            "keywords": ["PA2", "Harrisburg", "distribution branch", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/3/",
+            "permalink": "benchmarks/network-PA2.html"
         }
     }
 }

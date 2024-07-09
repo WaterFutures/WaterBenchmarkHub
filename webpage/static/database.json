@@ -2,7 +2,7 @@
     "tags": {
         "tasks_types": ["leakage detection", "leakage localization", "sensor placement", "leakage",
                         "event detection", "competition", "battle competition"],
-        "networks": ["valves", "tanks", "pumps", "large", "small", "demand patterns"],
+        "networks": ["valves", "tanks", "pumps", "large", "small", "medium", "demand patterns"],
         "other": ["quality", "chlorine", "real world"]
     },
     "resources": {
@@ -207,7 +207,7 @@
             "name": "CA1",
             "desc": "The CA1 system is based on the Fairfield, CA Distribution system",
             "year": 2016,
-            "tags": ["tanks", "junctions"],
+            "tags": ["tanks", "medium", "network"],
             "keywords": ["CA1", "Fairfield", "distribution dense-grid", "US Systems"],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1000&context=wdst_us&type=additional",

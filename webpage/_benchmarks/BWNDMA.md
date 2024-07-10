@@ -8,7 +8,7 @@ layout: benchmark
 
 ## Description
 
-The Battle of Background Leakage Assessment for Water Networks is the sixth in the series of
+The Battle of Water Networks District Metered Areas is the sixth in the series of
 "Battle Competitions" dating back to the Battle of the Water Networks (BWN) in 1985.
 It was part of the 18th Water Distribution Systems Analysis Conference (WDSA 2016) in Cartagena,
 Colombia in July 2016.

@@ -193,6 +193,16 @@
             "download_url": "https://www.batadal.net/data/CTOWN.INP",
             "permalink": "benchmarks/network-CTown.html"
         },
+        "network-etown": {
+            "name": "E-Town",
+            "desc": "E-Town or BIWS Network",
+            "year": 2022,
+            "tags": ["pumps", "tanks", "valves", "large", "demand patterns", "network"],
+            "keywords": ["E-Town"],
+            "download_url": "https://wdsa-ccwi2022.upv.es/wp-content/uploads/descargas/BIWS.inp",
+            "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
+            "permalink": "benchmarks/network-ETown.html"
+        },
         "network-hanoi": {
             "name": "Hanoi",
             "desc": "Hanoi Network",

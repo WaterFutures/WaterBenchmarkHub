@@ -14,12 +14,12 @@ It took place during the 2nd International Joint Conference on Water Distributio
 (WDSA) and Computing and Control in the Water Industry (CCWI), held in Valencia (Spain) in
 July 2022 at the Polytechnic University of Valencia (Valencia Tech).
 
-Participants had to find the best solution to reverse the situation of the BIWS network
-(also refered to as the E-Town network) from intermittent supply to continuous 24x7 supply with
-enough pressure. The current state and mode of operation of a given pilot network was the
-starting point of the battle. Leaks are assumed pinpointed and were provided as starting data.
-The demand is satisfied through household roof tanks or ground level tanks, which data was given
-as well. Besides, the total quantity of water available is limited.
+Participants had to find the best solution to reverse the situation of the
+[BIWS network](network-ETown.html) (also refered to as the E-Town network) from intermittent supply
+to continuous 24x7 supply with enough pressure. The current state and mode of operation of a given
+pilot network was the starting point of the battle. Leaks are assumed pinpointed and were provided
+as starting data. The demand is satisfied through household roof tanks or ground level tanks,
+which data was given as well. Besides, the total quantity of water available is limited.
 
 Although recovering normal supply conditions is a complex problem, the battle focused on improving
 the network infrastructure. It is assumed that the manager has a certain amount of money to invest

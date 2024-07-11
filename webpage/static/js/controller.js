@@ -106,6 +106,8 @@ window.onload = () => {
                     }
 
                     this.benchmarks = benchmarks
+
+                    this.currentPage = 1;
                 }
             }
           });

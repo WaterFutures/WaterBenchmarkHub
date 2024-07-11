@@ -2,7 +2,7 @@
     "tags": {
         "tasks_types": ["leakage detection", "leakage localization", "sensor placement", "leakage",
                         "event detection", "competition", "battle competition"],
-        "networks": ["valves", "tanks", "pumps", "large", "small", "demand patterns"],
+        "networks": ["valves", "tanks", "pumps", "large", "small", "medium", "demand patterns"],
         "other": ["quality", "chlorine", "real world"]
     },
     "resources": {
@@ -193,6 +193,16 @@
             "download_url": "https://www.batadal.net/data/CTOWN.INP",
             "permalink": "benchmarks/network-CTown.html"
         },
+        "network-etown": {
+            "name": "E-Town",
+            "desc": "E-Town or BIWS Network",
+            "year": 2022,
+            "tags": ["pumps", "tanks", "valves", "large", "demand patterns", "network"],
+            "keywords": ["E-Town"],
+            "download_url": "https://wdsa-ccwi2022.upv.es/wp-content/uploads/descargas/BIWS.inp",
+            "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
+            "permalink": "benchmarks/network-ETown.html"
+        },
         "network-hanoi": {
             "name": "Hanoi",
             "desc": "Hanoi Network",
@@ -207,7 +217,7 @@
             "name": "CA1",
             "desc": "A system based on the Fairfield, CA Distribution system",
             "year": 2016,
-            "tags": ["tanks", "junctions"],
+            "tags": ["tanks", "medium", "network"],
             "keywords": ["CA1", "Fairfield", "distribution dense-grid", "US Systems"],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1000&context=wdst_us&type=additional",

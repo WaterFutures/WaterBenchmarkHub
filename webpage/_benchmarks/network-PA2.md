@@ -16,7 +16,7 @@ developed by Vasconcelos et al. in 1997 as part of a water quality modelling stu
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 262 nodes (junctions), 290 pipes, 1 pump and 1 water source.
+The network consists of 262 nodes (junctions), 290 pipes, 1 pump and 1 reservoir.
 
 <img src="../static/benchmarks/network-pa2/pa2_plot.png"/>
 

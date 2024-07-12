@@ -267,6 +267,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/5/",
             "permalink": "benchmarks/network-NJ1.html"
+        },
+        "network-fossolo": {
+            "name": "Fossolo",
+            "desc": "A network based on the Fossolo neighborhood distribution system in Bologna, Italy",
+            "year": 2016,
+            "tags": ["network", "small"],
+            "keywords": ["Fossolo", "Bologna", "Italy", "transmission dense-loop", "International Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_international&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_international/3/",
+            "permalink": "benchmarks/network-Fossolo.html"
         }
     }
 }

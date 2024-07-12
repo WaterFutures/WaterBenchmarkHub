@@ -215,7 +215,7 @@
         },
         "network-ca1": {
             "name": "CA1",
-            "desc": "The CA1 system is based on the Fairfield, CA Distribution system",
+            "desc": "A system based on the Fairfield, CA Distribution system",
             "year": 2016,
             "tags": ["tanks", "medium", "network"],
             "keywords": ["CA1", "Fairfield", "distribution dense-grid", "US Systems"],
@@ -223,6 +223,50 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1000&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/1/",
             "permalink": "benchmarks/network-CA1.html"
+        },
+        "network-pa1": {
+            "name": "PA1",
+            "desc": "A network based on the North Penn Water Authority Distribution system in Pennsylvania",
+            "year": 2016,
+            "tags": ["tanks", "network", "medium"],
+            "keywords": ["PA1", "North Penn", "distribution dense-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/2/",
+            "permalink": "benchmarks/network-PA1.html"
+        },
+        "network-pa2": {
+            "name": "PA2",
+            "desc": "A network based on a portion of the Cheshire Distribution system near Harrisburg, PA",
+            "year": 2016,
+            "tags": ["network", "pumps", "medium"],
+            "keywords": ["PA2", "Harrisburg", "distribution branch", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/3/",
+            "permalink": "benchmarks/network-PA2.html"
+        },
+        "network-wa1": {
+            "name": "WA1",
+            "desc": "A network based on the Bellingham, WA distribution system",
+            "year": 2016,
+            "tags": ["tanks", "network", "medium"],
+            "keywords": ["WA1", "Bellingham", "distribution dense-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/4/",
+            "permalink": "benchmarks/network-WA1.html"
+        },
+        "network-nj1": {
+            "name": "NJ1",
+            "desc": "A network based on the Dover Township, NJ Distribution system",
+            "year": 2021,
+            "tags": ["tanks", "network", "pumps", "large"],
+            "keywords": ["NJ1", "Dover Township", "distribution sparse-grid", "US Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_us&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/5/",
+            "permalink": "benchmarks/network-NJ1.html"
         }
     }
 }

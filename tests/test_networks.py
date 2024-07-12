@@ -72,6 +72,18 @@ def test_etown():
                       ScenarioConfig)
 
 
+def test_bwsn():
+    res = load("Network-BWSN-1")
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+    res = load("Network-BWSN-2")
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
 def test_kentucky():
     res = load("Network-Kentucky")
 

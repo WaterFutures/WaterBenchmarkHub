@@ -757,25 +757,19 @@ class ETown(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the E-Town network.
-
         Parameters
         ----------
         download_dir : `str`, optional
             Path to the directory where the .inp file is stored.
-
             The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
         verbose : `bool`, optional
             If True, a progress bar is shown while downloading the file.
-
             The default is True.
         flow_units_id : `int`, optional
             Specifies the flow units to be used in this scenario.
             If None, the units from the .inp file will be used.
-
             Only relevant if 'return_scenario=True'.
-
             Must be one of the following EPANET toolkit constants:
-
                 - EN_CFS  = 0  (cubic foot/sec)
                 - EN_GPM  = 1  (gal/min)
                 - EN_MGD  = 2  (Million gal/day)
@@ -786,14 +780,11 @@ class ETown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
-
             The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
-
             The default is False.
-
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
@@ -816,17 +807,17 @@ class ETown(WaterDistributionNetwork):
 register("Network-ETown", ETown)
 
 
-@meta_data("network-bwsn1")
-class BWSN1(WaterDistributionNetwork):
+@meta_data("network-pa1")
+class PA1(WaterDistributionNetwork):
     """
-    Class for loading the BWSN-1 network.
+    Class for loading the PA1 network.
     """
     @staticmethod
     def load(download_dir: str = get_temp_folder(),
              flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
              ) -> Union[ScenarioConfig, str]:
         """
-        Loads (and downloads if necessary) the BWSN-1 network.
+        Loads (and downloads if necessary) the PA1 network.
 
         Parameters
         ----------
@@ -867,14 +858,12 @@ class BWSN1(WaterDistributionNetwork):
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
-            If `return_scenario` is True, the BWSN-1 network loaded into a scenario configuration
-            that can be passed on to
-            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            If `return_scenario` is True, the PA1 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the .inp file is returned.
         """
-        f_in = os.path.join(download_dir, "BWSN_Network_1.inp")
-        url = "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/" + \
-              "asce-tf-wdst/BWSN_Network_1.inp"
+        f_in = os.path.join(download_dir, "PA1.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_us&type=additional"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -884,20 +873,20 @@ class BWSN1(WaterDistributionNetwork):
             return f_in
 
 
-register("Network-BWSN-1", BWSN1)
+register("Network-PA1", PA1)
 
 
-@meta_data("network-bwsn2")
-class BWSN2(WaterDistributionNetwork):
+@meta_data("network-pa2")
+class PA2(WaterDistributionNetwork):
     """
-    Class for loading the BWSN-2 network.
+    Class for loading the PA2 network.
     """
     @staticmethod
     def load(download_dir: str = get_temp_folder(),
              flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
              ) -> Union[ScenarioConfig, str]:
         """
-        Loads (and downloads if necessary) the BWSN-2 network.
+        Loads (and downloads if necessary) the PA2 network.
 
         Parameters
         ----------
@@ -938,14 +927,12 @@ class BWSN2(WaterDistributionNetwork):
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
-            If `return_scenario` is True, the BWSN-2 network loaded into a scenario configuration
-            that can be passed on to
-            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            If `return_scenario` is True, the PA2 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
             Otherwise, the path to the .inp file is returned.
         """
-        f_in = os.path.join(download_dir, "BWSN_Network_2.inp")
-        url = "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/" + \
-              "asce-tf-wdst/BWSN_Network_2.inp"
+        f_in = os.path.join(download_dir, "PA2.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -955,4 +942,142 @@ class BWSN2(WaterDistributionNetwork):
             return f_in
 
 
-register("Network-BWSN-2", BWSN2)
+register("Network-PA2", PA2)
+
+
+@meta_data("network-wa1")
+class WA1(WaterDistributionNetwork):
+    """
+    Class for loading the WA1 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the WA1 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the WA1 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "WA1.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst_us&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-WA1", WA1)
+
+
+@meta_data("network-nj1")
+class NJ1(WaterDistributionNetwork):
+    """
+    Class for loading the NJ1 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the NJ1 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the NJ1 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "NJ1.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_us&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-NJ1", NJ1)

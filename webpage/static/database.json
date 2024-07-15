@@ -300,6 +300,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/6/",
             "permalink": "benchmarks/network-Zhi-Jiang.html"
+        },
+        "network-marchi-rural": {
+            "name": "Marchi Rural",
+            "desc": "A network based on an irrigation system in Australia",
+            "year": 2016,
+            "tags": ["network", "medium"],
+            "keywords": ["Marchi Rural", "Australia", "transmission dense-loop", "International Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_international&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_international/7/",
+            "permalink": "benchmarks/network-Marchi-Rural.html"
         }
     }
 }

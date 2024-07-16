@@ -9,9 +9,9 @@ layout: benchmark
 
 ## Description
 
-The KY 11 system is based on a real-world system in KY and was originally used by Jolly et al. in 2014 as part of a
-classification study. The system has a total demand of 1.93 MGD, one reservoir, 28 tanks, 21 pumps, and 278 miles of
-pipe. It is classified as distribution branch by Hwang & Lansey (2017) and branched by Hoagland et al. (2015).
+The KY 12 system is based on a real-world system in KY and was originally used by Jolly et al. in 2014 as part of a
+classification study. The system has a total demand of 1.38 MGD, one reservoir, seven tanks, 15 pumps, and 399 miles of
+pipe. It is classified as distribution branch by Hwang & Lansey et al. (2017) and branched by Hoagland et al. (2015).
 
 It was published 2016 by University of Kentucky Libraries.
 

@@ -487,6 +487,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1035&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/36/",
             "permalink": "benchmarks/network-KY16.html"
+        },
+        "network-ky17": {
+            "name": "KY17",
+            "desc": "A network based on a real-world system in Kentucky",
+            "year": 2021,
+            "tags": ["network", "large", "tanks", "pumps"],
+            "keywords": ["Kentucky", "distribution hybrid", "Kentucky Dataset"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1036&context=wdst&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst/37/",
+            "permalink": "benchmarks/network-KY17.html"
         }
     }
 }

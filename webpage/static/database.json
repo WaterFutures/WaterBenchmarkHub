@@ -333,6 +333,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/4/",
             "permalink": "benchmarks/network-KY2.html"
+        },
+        "network-ky3": {
+            "name": "KY3",
+            "desc": "A network based on a real-world system in Kentucky",
+            "year": 2016,
+            "tags": ["network", "medium", "tanks", "pumps"],
+            "keywords": ["Kentucky", "distribution dense-grid", "Kentucky Dataset"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst/5/",
+            "permalink": "benchmarks/network-KY3.html"
         }
     }
 }

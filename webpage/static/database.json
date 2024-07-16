@@ -465,6 +465,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1015&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/16/",
             "permalink": "benchmarks/network-KY14.html"
+        },
+        "network-ky15": {
+            "name": "KY15",
+            "desc": "A network based on a real-world system in Kentucky",
+            "year": 2016,
+            "tags": ["network", "medium", "tanks", "pumps", "valves"],
+            "keywords": ["Kentucky", "distribution branch", "Kentucky Dataset"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1016&context=wdst&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst/17/",
+            "permalink": "benchmarks/network-KY15.html"
         }
     }
 }

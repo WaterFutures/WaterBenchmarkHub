@@ -203,6 +203,24 @@
             "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
             "permalink": "benchmarks/network-ETown.html"
         },
+        "network-bwsn1": {
+            "name": "BWSN-1",
+            "desc": "BWSN-1 Network",
+            "year": 2006,
+            "tags": ["pumps", "valves", "tanks", "medium", "demand patterns", "network"],
+            "keywords": ["BWSN-1"],
+            "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/BWSN_Network_1.inp",
+            "permalink": "benchmarks/network-BWSN-1.html"
+        },
+        "network-bwsn2": {
+            "name": "BWSN-2",
+            "desc": "BWSN-2 Network",
+            "year": 2006,
+            "tags": ["pumps", "valves", "tanks", "large", "demand patterns", "network"],
+            "keywords": ["BWSN-2"],
+            "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/BWSN_Network_2.inp",
+            "permalink": "benchmarks/network-BWSN-2.html"
+        },
         "network-hanoi": {
             "name": "Hanoi",
             "desc": "Hanoi Network",

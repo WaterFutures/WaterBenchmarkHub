@@ -8,7 +8,7 @@ layout: benchmark
 
 ## Description
 
-The Battle of Intermittent Water Supply (BIWS) is the 10th in the series of
+The Battle of Water Demand Forecasting (BWDF) is the 10th in the series of
 "Battle Competitions" dating back to the Battle of the Water Networks (BWN) in 1985.
 It took place during the 3nd International Joint Conference on Water Distribution System Analysis
 (WDSA) and Computing and Control in the Water Industry (CCWI), held in Ferrara, Italy in July 2024.

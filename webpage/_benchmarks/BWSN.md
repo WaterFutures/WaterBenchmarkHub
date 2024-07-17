@@ -23,8 +23,8 @@ Battle of the Water Sensor Networks (BWSN) was undertaken as part of the
 
 Participants were asked to provide designs for locating five sensors and 20 sensors for a
 base case (A) and three derivative cases (B), (C), and (D). In this context, two new
-water distribution networks, BWSN-1 and BWSN-2, were introduced. Participants had to provide
-sensor placements for both networks.
+water distribution networks, [BWSN-1](network-BWSN-1.html) and [BWSN-2](network-BWSN-2.html),
+were introduced. Participants had to provide sensor placements for both networks.
 
 #### Base Case A
 1. All quantities affecting network model water quality predictions were assumed to be known and

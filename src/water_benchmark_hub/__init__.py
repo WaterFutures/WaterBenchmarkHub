@@ -13,3 +13,4 @@ from . import networks
 from . import batadal
 from . import leakdb
 from . import battledim
+from . import bwdf

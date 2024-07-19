@@ -2,6 +2,7 @@ water_benchmark_hub
 ===================
 
 .. toctree::
+   water_benchmark_hub.bwdf
    water_benchmark_hub.batadal
    water_benchmark_hub.leakdb
    water_benchmark_hub.battledim

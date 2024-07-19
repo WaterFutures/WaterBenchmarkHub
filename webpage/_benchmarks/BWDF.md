@@ -37,6 +37,16 @@ The weather -- i.e. rainfall depth (mm), air temperature (°C), air humidity (%)
 windspeed (km/h) -- over time in the unknown city where the DMAs are located. This data is supposed
 to help forecasting the demands.
 
+### Usage in Python
+
+This benchmark is also available in Python under the key "*BWDF*":
+```python
+bwdf = load("BWDF")
+```
+
+Detailed information about the provided functionality can be found in the
+[documentation](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.bwdf.html).
+
 ## Reference
 
 S. Alvisi, M. Franchini, V. Marsili, F. Mazzoni, E. Salomons (2024).

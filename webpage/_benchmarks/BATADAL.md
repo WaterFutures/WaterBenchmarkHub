@@ -59,3 +59,4 @@ Taormina, R., Galelli, S., Tippenhauer, N. O., Salomons, E., Ostfeld, A., Eliade
 Ohar, Z. (2018).
 *Battle of the attack detection algorithms: Disclosing cyber attacks on water distribution networks.*
 Journal of Water Resources Planning and Management, 144(8), 04018048.
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000969)

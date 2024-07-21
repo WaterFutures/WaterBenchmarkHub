@@ -64,3 +64,4 @@ Detailed information about the provided functionality can be found in the
 P. Pavlou, S. Filippou, S. Solonos, S. G. Vrachimis, K. Malialis, D. G. Eliades, T. Theocharides,
 M. M. Polycarpou. *Monitoring domestic water consumption: A comparative study of model-based and
 data-driven end-use disaggregation methods.* Journal of Hydroinformatics.
+[<i class="bi bi-link"></i>](https://doi.org/10.2166/hydro.2024.120)

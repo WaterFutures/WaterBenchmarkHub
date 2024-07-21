@@ -74,4 +74,5 @@ Detailed information about the provided functionality can be found in the
 
 S. G. Vrachimis, D. G. Eliades, R. Taormina, Z. Kapelan, A. Ostfeld, S. Liu, M. Kyriakou, P. Pavlou,
 M. Qiu, and M. M. Polycarpou. Forthcoming. *Battle of the Leakage Detection and Isolation Methods*,
-Journal of Water Resources Planning and Management, 10.1061/(ASCE)WR.1943-5452.0001601
+Journal of Water Resources Planning and Management
+[<i class="bi bi-link"></i>](https://ascelibrary.org/jwrmd5/leakage_detection_isolation_methods)

@@ -23,3 +23,4 @@ Giustolisi, O., Berardi, L., Laucelli, D., Savic, D., & Kapelan, Z. (2016).
 *Operational and tactical management of water and energy resources in pressurized systems:
 Competition at WDSA 2014.*
 Journal of Water Resources Planning and Management, 142(5).
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000583)

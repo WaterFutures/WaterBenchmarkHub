@@ -47,3 +47,4 @@ Zoran Kapelan, Dragan Savic, Luigi Berardi, Giuseppe Barbaro, Orazio Giustolisi,
 Bryan A. Tolson, and Robert McKillop (2012).
 *Battle of the water calibration networks.* Journal of water resources planning and management,
 138(5).
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000378)

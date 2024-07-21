@@ -53,3 +53,4 @@ S. Alvisi, M. Franchini, V. Marsili, F. Mazzoni, E. Salomons (2024).
 *Battle of Water Demand Forecasting (BWDF).*
 3nd International Joint Conference on Water Distribution System Analysis (WDSA) and Computing and
 Control in the Water Industry (CCWI)
+[<i class="bi bi-link"></i>](https://wdsa-ccwi2024.it/battle-of-water-networks/)

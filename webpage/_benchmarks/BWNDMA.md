@@ -26,3 +26,4 @@ Juan Saldarriaga, Jessica Bohorquez, David Celeita, Laura Vega, Diego Paez, Drag
 Graeme Dandy, Yves Filion, Walter Grayman, and Zoran Kapelan (2019).
 *Battle of the water networks district metered areas.*
 Journal of Water Resources Planning and Management, 145(4)
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0001035)

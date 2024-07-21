@@ -35,3 +35,4 @@ Kristen Drake, Ehsan Shafiee, Mehdy Amirkhanzadeh Barandouzi, Andrew David Bergl
 Gnanamanikam Mahinthakumar, Ranji Ranjithan, Emily Michelle Zechman, Mark S. Morley,
 Carla Tricarico, Giovanni de Marinis, Bryan A. Tolson, Ayman Khedr, and Masoud Asadzadeh
 (2014). *Battle of the water networks II.* Journal of water resources planning and management, 140(7)
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000378)

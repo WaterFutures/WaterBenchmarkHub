@@ -57,3 +57,4 @@ The official evaluation function is implemented in [```compute_evaluation_score(
 Moritz, S., Friese, M., Stork, J., Rebolledo, M., Fischbach, A., & Bartz-Beielstein, T. (2017).
 *GECCO Industrial Challenge 2017 Dataset: A water quality dataset for the 'Monitoring of drinking-water quality'*
 competition at the Genetic and Evolutionary Computation Conference 2017, Berlin, Germany.
+[<i class="bi bi-link"></i>](https://doi.org/10.5281/zenodo.3884464)

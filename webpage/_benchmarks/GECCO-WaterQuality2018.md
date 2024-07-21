@@ -58,5 +58,7 @@ The official evaluation function is implemented in [```compute_evaluation_score(
 ## Reference
 
 Moritz, S., Rehbach, F., Chandrasekaran, S., Rebolledo, M., & Thomas Bartz-Beielstein. (2018).
-*GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the 'Internet of Things: Online Anomaly Detection for Drinking Water Quality'*
-competition at the Genetic and Evolutionary Computation Conference 2018, Kyoto, Japan.
+*GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the 'Internet of Things:
+Online Anomaly Detection for Drinking Water Quality'* competition at the
+Genetic and Evolutionary Computation Conference 2018, Kyoto, Japan.
+[<i class="bi bi-link"></i>](https://doi.org/10.5281/zenodo.3884397)

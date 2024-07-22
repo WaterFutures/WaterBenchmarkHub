@@ -757,6 +757,7 @@ class ETown(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the E-Town network.
+
         Parameters
         ----------
         download_dir : `str`, optional
@@ -770,6 +771,7 @@ class ETown(WaterDistributionNetwork):
             If None, the units from the .inp file will be used.
             Only relevant if 'return_scenario=True'.
             Must be one of the following EPANET toolkit constants:
+
                 - EN_CFS  = 0  (cubic foot/sec)
                 - EN_GPM  = 1  (gal/min)
                 - EN_MGD  = 2  (Million gal/day)
@@ -780,11 +782,13 @@ class ETown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+
             The default is None.
         return_scenario : `bool`, optional
             If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
             Otherwise, the path to the .inp file is returned as a string.
             The default is False.
+
         Returns
         -------
         :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`

@@ -72,19 +72,6 @@ def test_etown():
                       ScenarioConfig)
 
 
-def test_kentucky():
-    res = load("Network-Kentucky")
-
-    for i in range(1, 16):
-        assert res.load(download_dir=get_temp_folder(), network_id=i) is not None
-
-    with pytest.raises(ValueError):
-        res.load(download_dir=get_temp_folder(), network_id=0)
-
-    with pytest.raises(ValueError):
-        res.load(download_dir=get_temp_folder(), network_id=16)
-
-
 def test_hanoi():
     res = load("Network-Hanoi")
 

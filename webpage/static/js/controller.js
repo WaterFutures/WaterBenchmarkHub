@@ -2,10 +2,17 @@
 
 window.onload = () => {
     new Database().getDatabase().then(database => {
-        var myBenchmarks = []
+        var myBenchmarks = [];
+        var allKeyworkds = database.tags.tasks_types.concat(database.tags.networks).concat(database.tags.other);
         for (var [key, value] of Object.entries(database.resources)) {
             value["id"] = key;
             myBenchmarks.push(value);
+            for(var i=0; i != value["keywords"].length; i++) {
+                var k = value["keywords"][i];
+                if(allKeyworkds.includes(k) == false) {
+                    allKeyworkds.push(k);
+                }
+            }
         }
         myBenchmarks = myBenchmarks.sort((a, b) => -1 * (a["year"] - b["year"]));
 
@@ -42,6 +49,7 @@ window.onload = () => {
                 activeTags: [],
                 searchText: "",
                 allSearchTexts: [],
+                queryPredictions: allKeyworkds,
                 allBenchmarks: myBenchmarks,
                 benchmarks: myBenchmarks,
                 currentPage: 1,

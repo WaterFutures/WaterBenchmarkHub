@@ -60,16 +60,22 @@
               </b-navbar-nav>
         
               <b-navbar-nav class="ml-auto">
-                  <b-input
-                    size="sm"
-                    class="mr-sm-2"
+                <div>
+                  <b-form-input
+                    class="sm mr-sm-2"
+                    autocomplete="off"
                     v-model="searchText"
+                    list="search-field"
+                    id="searchBox"
                     placeholder="Search for benchmarks"
                     v-on:keyup.enter="onClickSearch">
-                  </b-input>
-                  <b-button size="sm" class="my-2 my-sm-0" @click="onClickSearch">
-                    Search
-                  </b-button>
+                  </b-form-input>
+                  <b-form-datalist id="search-field" :options="queryPredictions" v-if="searchText.length >= 3">
+                  </b-form-datalist>
+                </div>
+                <b-button size="sm" class="my-2 my-sm-0" @click="onClickSearch">
+                  Search
+                </b-button>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>

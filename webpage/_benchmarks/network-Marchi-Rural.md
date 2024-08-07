@@ -41,10 +41,10 @@ Detailed information about the provided functionality can be found in the docume
 Dandy, Graeme, "07 Marchi Rural" (2016). International Systems. 7.
 [<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_international/7)
 
-Marchi, A., Dandy, G., Wilkins, A. and Rohrlach, H., 2014. Methodology for comparing evolutionary algorithms for
-optimization of water distribution systems. Journal of water resources planning and management, 140(1), pp.22-31.
+Marchi, A., Dandy, G., Wilkins, A. and Rohrlach, H., 2014. *Methodology for comparing evolutionary algorithms for
+optimization of water distribution systems.* Journal of water resources planning and management, 140(1), pp.22-31.
 [<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000321)
 
-Bi, W., Dandy, G. C. and Maier, H. R. (2015) Improved genetic algorithm optimization of water distribution system design
-by incorporating domain knowledge, Environmental Modelling & Software, Vol. 69, 370-381.
+Bi, W., Dandy, G. C. and Maier, H. R. (2015) *Improved genetic algorithm optimization of water distribution system design
+by incorporating domain knowledge*, Environmental Modelling & Software, Vol. 69, 370-381.
 [<i class="bi bi-link"></i>](https://doi.org/10.1016/j.envsoft.2014.09.010)

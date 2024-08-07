@@ -37,3 +37,4 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Rossman, L. A. (2000). *EPANET 2: users manual.*
+[<i class="bi bi-link"></i>](https://www.engr.colostate.edu/CIVE572/Projects/PROJ%202-Urban%20Water%20Dist%20System%20Analysis/EN2manual.pdf)

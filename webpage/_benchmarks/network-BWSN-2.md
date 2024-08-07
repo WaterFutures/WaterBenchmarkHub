@@ -48,3 +48,4 @@ Paul Fischbeck, Ami Preis, Marco Propato, Olivier Piller, Gary B. Trachtman, Zhe
 and Tom Walski. (2008).
 *The battle of the water sensor networks (BWSN): A design challenge for engineers and algorithms.*
 Journal of water resources planning and management, 134(6).
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)0733-9496(2008)134:6(556))

@@ -41,6 +41,6 @@ Detailed information about the provided functionality can be found in the docume
 Hoagland, Steven, "14 KY 14" (2016). Kentucky Dataset. 16.
 [<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst/16)
 
-Schal, S., Bryson, L.S. and Ormsbee, L., 2014. A graphical procedure for sensor-placement guidance for small utilities.
+Schal, S., Bryson, L.S. and Ormsbee, L., 2014. *A graphical procedure for sensor-placement guidance for small utilities.*
 Journal-American Water Works Association, 106(10), pp.E459-E469.
 [<i class="bi bi-link"></i>](https://doi.org/10.5942/JAWWA.2014.106.0093)

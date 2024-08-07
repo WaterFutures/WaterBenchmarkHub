@@ -42,6 +42,6 @@ Detailed information about the provided functionality can be found in the docume
 Boccelli, Dominic L., "03 PA 2" (2016). US Systems. 3.
 [<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_us/3)
 
-Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. Kinetics of chlorine decay.
+Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. *Kinetics of chlorine decay.*
 Journal-American Water Works Association, 89(7), pp.54-65. 
 [<i class="bi bi-link"></i>](https://doi.org/10.1002/j.1551-8833.1997.tb08259.x)

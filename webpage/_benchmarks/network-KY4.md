@@ -39,7 +39,8 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Hoagland, Steven, "04 KY 4" (2016). Kentucky Dataset. 6.
-https://uknowledge.uky.edu/wdst/6
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst/6)
 
 Jolly, M. D., Lothes, A. D., Bryson, L. S., & Ormsbee, L. (2014). Research Database of Water Distribution System Models.
 Journal of Water Resources Planning and Management, 410-416. 10.1061/(ASCE)WR.1943-5452.0000352
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000352)

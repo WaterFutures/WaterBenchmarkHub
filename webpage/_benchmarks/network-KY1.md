@@ -39,7 +39,8 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Hoagland, Steven, "01 KY 1" (2016). Kentucky Dataset. 3.
-https://uknowledge.uky.edu/wdst/3
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst/3)
 
 Hoagland, Steven & Schal, Stacey & Ormsbee, Lindell & Bryson, Lindsey. (2015). Classification of Water Distribution
 Systems for Research Applications. 696-702. 10.1061/9780784479162.064.
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/9780784479162.064)

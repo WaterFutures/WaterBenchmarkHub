@@ -39,8 +39,9 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Maslia, Morris, "05 NJ 1" (2021). US Systems. 5.
-https://uknowledge.uky.edu/wdst_us/5
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_us/5)
 
 Maslia, M.L., Sautner, J.B., Aral, M.M., Reyes, J.J., Abraham, J.E. and Williams, R.C., 2000. Using water-distribution
 system modeling to assist epidemiologic investigations. Journal of Water Resources Planning and Management, 126(4),
 pp.180-198.
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)0733-9496(2000)126:4(180))

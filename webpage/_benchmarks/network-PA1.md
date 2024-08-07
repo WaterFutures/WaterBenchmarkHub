@@ -40,10 +40,12 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Boccelli, Dominic L., "02 PA 1" (2016). US Systems. 2.
-https://uknowledge.uky.edu/wdst_us/2
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_us/2)
 
 Clark, R.M., 1994. Applying water quality models. In Computer Modeling of Free-Surface and Pressurized Flows
 (pp. 581-612). Springer, Dordrecht.
+[<i class="bi bi-link"></i>](https://link.springer.com/chapter/10.1007/978-94-011-0964-2_20)
 
 Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. Kinetics of chlorine decay.
-Journal-American Water Works Association, 89(7), pp.54-65. https://doi.org/10.1002/j.1551-8833.1997.tb08259.x
+Journal-American Water Works Association, 89(7), pp.54-65.
+[<i class="bi bi-link"></i>](https://doi.org/10.1002/j.1551-8833.1997.tb08259.x)

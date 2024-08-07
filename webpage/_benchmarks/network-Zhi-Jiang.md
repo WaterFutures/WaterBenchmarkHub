@@ -40,10 +40,12 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Dandy, Graeme, "06 Zhi Jiang" (2016). International Systems. 6.
-https://uknowledge.uky.edu/wdst_international/6
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_international/6)
 
 Zheng, Feifei, Simpson, Angus R & Zecchin, Aaron C, 2011. A combined NLP-differential evolution algorithm approach for
-the optimization of looped water distribution systems. Water resources research, 47(8), https://doi.org/10.1029/2011WR010394
+the optimization of looped water distribution systems. Water resources research, 47(8)
+[<i class="bi bi-link"></i>](https://doi.org/10.1029/2011WR010394)
 
 Bi, W., Dandy, G. C. and Maier, H. R. (2015) Improved genetic algorithm optimization of water distribution system design
 by incorporating domain knowledge, Environmental Modelling & Software, Vol. 69, 370-381.
+[<i class="bi bi-link"></i>](https://doi.org/10.1016/j.envsoft.2014.09.010)

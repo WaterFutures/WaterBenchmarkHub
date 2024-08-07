@@ -40,13 +40,16 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Dandy, Graeme, "03 Fossolo" (2016). International Systems. 3.
-https://uknowledge.uky.edu/wdst_international/3
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_international/3)
 
 Bragalli, C. Ambrosio, D., Lee, J., Lodi, A., Toth, P. 2008. IBM Research Report: Water Network Design by MINLP. RC24495
-(W0802-056) https://dominoweb.draco.res.ibm.com/ef1b90113cc7b03a852573fc00529261.html
+(W0802-056)
+[<i class="bi bi-link"></i>](https://dominoweb.draco.res.ibm.com/ef1b90113cc7b03a852573fc00529261.html)
 
 Creaco, E. and Franchini, M. (2014) Low level hybrid procedure for the multi-objective design of water distribution
 networks, Procedia Engineering 70, 369 – 378
+[<i class="bi bi-link"></i>](https://doi.org/10.1016/j.proeng.2014.02.042)
 
 Bi, W., Dandy, G. C. and Maier, H. R. (2015) Improved genetic algorithm optimization of water distribution system design
 by incorporating domain knowledge, Environmental Modelling & Software, Vol. 69, 370-381.
+[<i class="bi bi-link"></i>](https://doi.org/10.1016/j.envsoft.2014.09.010)

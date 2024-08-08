@@ -16,7 +16,8 @@ developed by Vasconcelos et al. in 1997 as part of a water quality modelling stu
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 262 nodes (junctions), 290 pipes, 1 pump and 1 reservoir.
+The network consists of 262 nodes (junctions), 290 pipes, 1 pump and 1 reservoir. It contains a demand pattern for 1
+day and 11 hours.
 
 <img src="../static/benchmarks/network-pa2/pa2_plot.png"/>
 

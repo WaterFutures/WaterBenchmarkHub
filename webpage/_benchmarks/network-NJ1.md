@@ -15,7 +15,8 @@ pipe. It is classified as distribution sparse-grid by Hwang & Lansey (2017) and 
 
 It was published 2021 by University of Kentucky Libraries.
 
-The network consists of 14991 nodes (junctions), 16090 pipes and 8 tanks and 12 pumps.
+The network consists of 14991 nodes (junctions), 16090 pipes and 8 tanks and 12 pumps. It contains a demand pattern for
+2 days.
 
 <img src="../static/benchmarks/network-nj1/nj1_plot.png" width="100%"/>
 

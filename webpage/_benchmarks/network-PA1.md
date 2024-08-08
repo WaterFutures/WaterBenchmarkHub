@@ -16,7 +16,8 @@ miles of pipe. It is classified as distribution dense-grid by Hwang & Lansey (20
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 337 nodes (junctions), 399 pipes, and 2 tanks.
+The network consists of 337 nodes (junctions), 399 pipes, and 2 tanks. It contains a demand pattern for one and a half
+days.
 
 <img src="../static/benchmarks/network-pa1/pa1_plot.png"/>
 

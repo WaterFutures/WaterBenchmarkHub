@@ -527,6 +527,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/6/",
             "permalink": "benchmarks/network-KYV21.html"
+        },
+        "network-kyv22": {
+            "name": "KYV22",
+            "desc": "A network based on a real-world system in Kentucky",
+            "year": 2021,
+            "tags": ["network", "medium", "tanks", "pumps"],
+            "keywords": ["Kentucky", "distribution branch", "Kentucky Valved Dataset"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_ky_valved&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/7/",
+            "permalink": "benchmarks/network-KYV22.html"
         }
     }
 }

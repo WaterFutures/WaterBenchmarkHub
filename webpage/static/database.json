@@ -549,6 +549,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/8/",
             "permalink": "benchmarks/network-KYV23.html"
+        },
+        "network-kyv24": {
+            "name": "KYV24",
+            "desc": "A network based on a real-world system in Kentucky",
+            "year": 2021,
+            "tags": ["network", "medium", "tanks"],
+            "keywords": ["Kentucky", "distribution branch", "Kentucky Valved Dataset"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_ky_valved&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/9/",
+            "permalink": "benchmarks/network-KYV24.html"
         }
     }
 }

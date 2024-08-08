@@ -17,7 +17,7 @@ It was published 2021 by University of Kentucky Libraries.
 
 The network consists of 14991 nodes (junctions), 16090 pipes and 8 tanks and 12 pumps.
 
-<img src="../static/benchmarks/network-nj1/nj1_plot.png"/>
+<img src="../static/benchmarks/network-nj1/nj1_plot.png" width="100%"/>
 
 ## How to Use
 

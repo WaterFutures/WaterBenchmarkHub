@@ -17,7 +17,7 @@ It was published 2016 by University of Kentucky Libraries.
 
 The network consists of 2273 nodes (junctions), 2426 pipes, 7 tanks, 15 pumps and 1 reservoir.
 
-<img src="../static/benchmarks/network-ky12/ky12_plot.png"/>
+<img src="../static/benchmarks/network-ky12/ky12_plot.png" width="100%"/>
 
 ## How to Use
 

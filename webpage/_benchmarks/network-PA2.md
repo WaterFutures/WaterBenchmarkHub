@@ -16,7 +16,8 @@ developed by Vasconcelos et al. in 1997 as part of a water quality modelling stu
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 262 nodes (junctions), 290 pipes, 1 pump and 1 reservoir.
+The network consists of 262 nodes (junctions), 290 pipes, 1 pump and 1 reservoir. It contains a demand pattern for 1
+day and 11 hours.
 
 <img src="../static/benchmarks/network-pa2/pa2_plot.png"/>
 
@@ -40,7 +41,8 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Boccelli, Dominic L., "03 PA 2" (2016). US Systems. 3.
-https://uknowledge.uky.edu/wdst_us/3
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_us/3)
 
-Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. Kinetics of chlorine decay.
-Journal-American Water Works Association, 89(7), pp.54-65. https://doi.org/10.1002/j.1551-8833.1997.tb08259.x
+Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. *Kinetics of chlorine decay.*
+Journal-American Water Works Association, 89(7), pp.54-65. 
+[<i class="bi bi-link"></i>](https://doi.org/10.1002/j.1551-8833.1997.tb08259.x)

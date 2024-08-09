@@ -15,7 +15,8 @@ of pipe. It is classified as distribution dense-grid by Hwang & Lansey (2017) an
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 121 nodes (junctions), 170 pipes and 2 tanks.
+The network consists of 121 nodes (junctions), 170 pipes and 2 tanks. It contains a demand pattern for 1 day and 11
+hours.
 
 <img src="../static/benchmarks/network-wa1/wa1_plot.png"/>
 
@@ -39,7 +40,8 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Boccelli, Dominic L., "04 WA 1" (2016). US Systems. 4.
-https://uknowledge.uky.edu/wdst_us/4
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_us/4)
 
-Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. Kinetics of chlorine decay.
-Journal-American Water Works Association, 89(7), pp.54-65. https://doi.org/10.1002/j.1551-8833.1997.tb08259.x
+Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. *Kinetics of chlorine decay.*
+Journal-American Water Works Association, 89(7), pp.54-65.
+[<i class="bi bi-link"></i>](https://doi.org/10.1002/j.1551-8833.1997.tb08259.x)

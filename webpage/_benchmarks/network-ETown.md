@@ -41,3 +41,4 @@ Pedro L. Iglesias-Rey, Fernando Martínez-Alzamora, F. Javier Martínez Solano, 
 *Battle of Intermittent Water Supply (BIWS).*
 2nd International Joint Conference on Water Distribution System Analysis (WDSA) and Computing and
 Control in the Water Industry (CCWI)
+[<i class="bi bi-link"></i>](https://ascelibrary.org/jwrmd5/battle-intermittent-biws)

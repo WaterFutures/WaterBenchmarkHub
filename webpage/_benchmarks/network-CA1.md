@@ -15,7 +15,7 @@ of pipe. It is classified as distribution dense-grid by Hwang & Lansey (2017) an
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 111 nodes (junctions), 126 pipes, and 1 tank.
+The network consists of 111 nodes (junctions), 126 pipes, and 1 tank. It contains a demand pattern for one day.
 
 <img src="../static/benchmarks/network-ca1/ca1_plot.png"/>
 
@@ -39,11 +39,12 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Boccelli, Dominic L., "01 CA 1" (2016). US Systems. 1.
-https://uknowledge.uky.edu/wdst_us/1
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst_us/1)
 
-Rossman, L.A. and Boulos, P.F., 1996. Numerical methods for modeling water quality in distribution systems: A
-comparison. Journal of Water Resources planning and management, 122(2), pp.137-146.
+Rossman, L.A. and Boulos, P.F., 1996. *Numerical methods for modeling water quality in distribution systems: A
+comparison.* Journal of Water Resources planning and management, 122(2), pp.137-146.
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)0733-9496(1996)122:2(137))
 
-Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. Kinetics of chlorine decay.
-Journal-American Water Works Association, 89(7), pp.54-65. https://doi.org/10.1002/j.1551-8833.1997.tb08259.x
-
+Vasconcelos, J.J., Rossman, L.A., Grayman, W.M., Boulos, P.F. and Clark, R.M., 1997. *Kinetics of chlorine decay.*
+Journal-American Water Works Association, 89(7), pp.54-65.
+[<i class="bi bi-link"></i>](https://doi.org/10.1002/j.1551-8833.1997.tb08259.x)

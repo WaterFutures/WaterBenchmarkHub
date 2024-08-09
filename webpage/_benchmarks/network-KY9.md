@@ -17,7 +17,7 @@ It was published 2016 by University of Kentucky Libraries.
 
 The network consists of 1096 nodes (junctions), 1270 pipes, 15 tanks, 17 pumps and 4 reservoirs.
 
-<img src="../static/benchmarks/network-ky9/ky9_plot.png"/>
+<img src="../static/benchmarks/network-ky9/ky9_plot.png" width="100%"/>
 
 ## How to Use
 
@@ -39,7 +39,8 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Hoagland, Steven, "09 KY 9" (2016). Kentucky Dataset. 11.
-https://uknowledge.uky.edu/wdst/11
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst/11)
 
-Jolly, M. D., Lothes, A. D., Bryson, L. S., & Ormsbee, L. (2014). Research Database of Water Distribution System Models.
+Jolly, M. D., Lothes, A. D., Bryson, L. S., & Ormsbee, L. (2014). *Research Database of Water Distribution System Models.*
 Journal of Water Resources Planning and Management, 410-416. 10.1061/(ASCE)WR.1943-5452.0000352
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000352)

@@ -15,7 +15,8 @@ of pipe. It is classified as distribution hybrid by Hwang & Lansey (2017) and lo
 
 It was published 2021 by University of Kentucky Libraries.
 
-The network consists of 777 nodes (junctions), 907 pipes, 4 tanks, 7 pumps and 3 reservoirs.
+The network consists of 777 nodes (junctions), 907 pipes, 4 tanks, 7 pumps and 3 reservoirs. It contains a demand
+pattern for one day.
 
 <img src="../static/benchmarks/network-ky16/ky16_plot.png"/>
 
@@ -39,7 +40,8 @@ Detailed information about the provided functionality can be found in the docume
 ## Reference
 
 Hoagland, Steven, "16 KY 16" (2021). Kentucky Dataset. 36.
-https://uknowledge.uky.edu/wdst/36
+[<i class="bi bi-link"></i>](https://uknowledge.uky.edu/wdst/36)
 
-Jolly, M. D., Lothes, A. D., Bryson, L. S., & Ormsbee, L. (2014). Research Database of Water Distribution System Models.
+Jolly, M. D., Lothes, A. D., Bryson, L. S., & Ormsbee, L. (2014). *Research Database of Water Distribution System Models.*
 Journal of Water Resources Planning and Management, 410-416. 10.1061/(ASCE)WR.1943-5452.0000352
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/(ASCE)WR.1943-5452.0000352)

@@ -36,5 +36,6 @@ Detailed information about the provided functionality can be found in the docume
 
 ## Reference
 
-Fujiwara, O. and Khang, D.B. (1990), A two-phase decomposition method for optimal
-design of looped water distribution networks, Water Resour. Res., 26(4), 539-549.
+Fujiwara, O. and Khang, D.B. (1990), *A two-phase decomposition method for optimal
+design of looped water distribution networks*, Water Resour. Res., 26(4), 539-549.
+[<i class="bi bi-link"></i>](https://doi.org/10.1029/WR026i004p00539)

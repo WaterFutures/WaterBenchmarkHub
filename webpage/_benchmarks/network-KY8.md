@@ -13,7 +13,7 @@ The KY 8 system is based on a real-world system in KY and was originally used by
 classification study. The system has a total demand of 2.47 MGD, two reservoirs, five tanks, four pumps, and 150 miles
 of pipe. It is classified as distribution sparse-grid by Hwang & Lansey (2017) and looped by Hoagland et al. (2015).
 
-It was published 2016 by University of Kentucky Libraries.
+It was published 2016 by University of Kentucky Libraries. A valved version with demand pattern is available at [KYV8](network-KYV8.html).
 
 The network consists of 1317 nodes (junctions), 1614 pipes, 5 tanks, 4 pumps and 2 reservoirs.
 

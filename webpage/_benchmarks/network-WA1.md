@@ -15,7 +15,7 @@ of pipe. It is classified as distribution dense-grid by Hwang & Lansey (2017) an
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 121 nodes (junctions), 170 pipes and 2 tanks. It contains a demand pattern for 1 day and 11
+The network consists of 121 nodes (junctions), 170 pipes, 1 valve and 2 tanks. It contains a demand pattern for 1 day and 11
 hours.
 
 <img src="../static/benchmarks/network-wa1/wa1_plot.png"/>

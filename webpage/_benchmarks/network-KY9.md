@@ -15,7 +15,7 @@ pipe. It is classified as distribution branch by Hwang & Lansey (2017) and branc
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 1096 nodes (junctions), 1270 pipes, 15 tanks, 17 pumps and 4 reservoirs.
+The network consists of 1096 nodes (junctions), 1270 pipes, 56 valves, 15 tanks, 17 pumps and 4 reservoirs.
 
 <img src="../static/benchmarks/network-ky9/ky9_plot.png" width="100%"/>
 

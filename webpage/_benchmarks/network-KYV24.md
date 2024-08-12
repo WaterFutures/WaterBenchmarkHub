@@ -15,7 +15,7 @@ classified as distribution branch by Hwang & Lansey (2017) and branched by Hoagl
 
 It was published 2021 by University of Kentucky Libraries.
 
-The network consists of 202 nodes (junctions), 249 pipes and 2 tanks.
+The network consists of 202 nodes (junctions), 249 pipes, 43 valves and 2 tanks.
 
 <img src="../static/benchmarks/network-kyv24/kyv24_plot.png"/>
 

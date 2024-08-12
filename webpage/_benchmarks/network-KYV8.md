@@ -15,7 +15,7 @@ miles of pipe. It is classified as distribution branch by Hwang & Lansey (2017) 
 
 It was published 2021 by University of Kentucky Libraries. A non valved version is available at [KY8](network-KY8.html).
 
-The network consists of 2439 nodes (junctions), 3221 pipes, 5 tanks, 4 pumps and 2 reservoirs. It contains a demand
+The network consists of 2439 nodes (junctions), 3221 pipes, 488 valves, 5 tanks, 4 pumps and 2 reservoirs. It contains a demand
 pattern for one day.
 
 <img src="../static/benchmarks/network-kyv8/kyv8_plot.png" width="100%"/>

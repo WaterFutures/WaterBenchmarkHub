@@ -15,7 +15,7 @@ of pipe. It is classified as distribution dense-grid by Hwang & Lansey (2017) an
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 537 nodes (junctions), 644 pipes, 3 tanks, 2 pumps and 2 reservoirs.
+The network consists of 537 nodes (junctions), 644 pipes, 1 valve, 3 tanks, 2 pumps and 2 reservoirs.
 
 <img src="../static/benchmarks/network-ky6/ky6_plot.png"/>
 

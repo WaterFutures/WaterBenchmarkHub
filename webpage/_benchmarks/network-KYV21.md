@@ -29,7 +29,7 @@ supporting .inp files.
 The KYV21 network is also available in Python through the key "*Network-KYV21*":
 ```python
 network = load("Network-KYV21")
-ky17_inp = network.load()
+kyv21_inp = network.load()
 ```
 
 Detailed information about the provided functionality can be found in the documentation of

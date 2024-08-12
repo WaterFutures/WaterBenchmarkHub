@@ -308,6 +308,15 @@ def test_kyv8():
                       ScenarioConfig)
 
 
+def test_kyv18():
+    res = load("Network-KYV18")
+
+    assert res.get_meta_info() != {}
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
 def test_ky17():
     res = load("Network-KY17")
 

@@ -2597,3 +2597,417 @@ class KY17(WaterDistributionNetwork):
 
 
 register("Network-KY17", KY17)
+
+
+@meta_data("network-kyv8")
+class KYV8(WaterDistributionNetwork):
+    """
+    Class for loading the KYV8 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the KYV8 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the KYV8 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "KYV8.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_ky_valved&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-KYV8", KYV8)
+
+
+@meta_data("network-kyv18")
+class KYV18(WaterDistributionNetwork):
+    """
+    Class for loading the KYV18 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the KYV18 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the KYV18 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "KYV18.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_ky_valved&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-KYV18", KYV18)
+
+
+@meta_data("network-kyv21")
+class KYV21(WaterDistributionNetwork):
+    """
+    Class for loading the KYV21 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the KYV21 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the KYV21 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "KYV21.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_ky_valved&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-KYV21", KYV21)
+
+
+@meta_data("network-kyv22")
+class KYV22(WaterDistributionNetwork):
+    """
+    Class for loading the KYV22 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the KYV22 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the KYV22 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "KYV22.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_ky_valved&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-KYV22", KYV22)
+
+
+@meta_data("network-kyv23")
+class KYV23(WaterDistributionNetwork):
+    """
+    Class for loading the KYV23 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the KYV23 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the KYV23 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "KYV23.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst_ky_valved&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-KYV23", KYV23)
+
+
+@meta_data("network-kyv24")
+class KYV24(WaterDistributionNetwork):
+    """
+    Class for loading the KYV24 network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the KYV24 network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+            If `return_scenario` is True, the KYV24 network loaded into a scenario configuration that
+            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "KYV24.inp")
+        url = "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_ky_valved&type=additional"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-KYV24", KYV24)

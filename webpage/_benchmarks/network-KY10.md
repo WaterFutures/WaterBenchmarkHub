@@ -15,7 +15,7 @@ pipe. It is classified as distribution hybrid by Hwang & Lansey (2017) and gridd
 
 It was published 2016 by University of Kentucky Libraries.
 
-The network consists of 884 nodes (junctions), 1043 pipes, 13 tanks, 13 pumps and 2 reservoirs.
+The network consists of 884 nodes (junctions), 1043 pipes, 5 valves, 13 tanks, 13 pumps and 2 reservoirs.
 
 <img src="../static/benchmarks/network-ky10/ky10_plot.png"/>
 

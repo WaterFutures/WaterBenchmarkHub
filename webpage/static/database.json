@@ -582,6 +582,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/9/",
             "permalink": "benchmarks/network-KYV24.html"
+        },
+        "network-nyc-tunnel": {
+            "name": "New York Tunnel",
+            "desc": "A network based on the real-world transmission system in New York City",
+            "year": 2016,
+            "tags": ["network", "small", "demand patterns"],
+            "keywords": ["New York", "distribution dense-grid", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=7&article=1000&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/1/",
+            "permalink": "benchmarks/network-nyc-tunnel.html"
         }
     }
 }

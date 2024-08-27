@@ -615,6 +615,17 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/7/",
             "permalink": "benchmarks/network-Modified-Nineteen-Pipe.html"
+        },
+        "network-fowm": {
+            "name": "Federally Owned Water Main",
+            "desc": "A network based on the water distribution system servicing northern Arlington County, VA",
+            "year": 2021,
+            "tags": ["network", "small"],
+            "keywords": ["transmission branch", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/8/",
+            "permalink": "benchmarks/network-FOWM.html"
         }
     }
 }

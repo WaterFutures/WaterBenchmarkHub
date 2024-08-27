@@ -11,7 +11,7 @@ layout: benchmark
 
 The Nineteen Pipe system was created by Wood et al. in 1972 for use in computer modelling. The system has two reservoirs
 and 5.2 miles of pipe. It is classified as distribution dense-grid by Hwang & Lansey (2017) and gridded by Hoagland et
-al. (2015).
+al. (2015). There also exists a [modified version](network-Modified-Nineteen-Pipe.md) of this system.
 
 It was published 2021 by University of Kentucky Libraries.
 

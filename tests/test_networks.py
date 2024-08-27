@@ -377,3 +377,11 @@ def test_nineteen_pipe():
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
+
+
+def test_modified_nineteen_pipe():
+    res = load("Network-Modified-Nineteen-Pipe")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)

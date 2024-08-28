@@ -642,7 +642,7 @@
             "name": "Net2",
             "desc": "EPANET Example Network 2",
             "year": 2000,
-            "tags": ["tanks", "small", "quality", "chlorine", "network"],
+            "tags": ["tanks", "small", "quality", "chlorine", "network", "demand patterns"],
             "keywords": ["Net2", "Software Manual Examples", "distribution dense-grid"],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net2.inp",
             "permalink": "benchmarks/network-Net2.html"
@@ -651,10 +651,20 @@
             "name": "Net3",
             "desc": "EPANET Example Network 3",
             "year": 2000,
-            "tags": ["pumps", "tanks", "medium", "quality", "chlorine", "network"],
-            "keywords": ["Net3", "Software Manual Examples"],
+            "tags": ["pumps", "tanks", "medium", "quality", "chlorine", "network", "demand patterns"],
+            "keywords": ["Net3", "Software Manual Examples", "transmission dense-loop"],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net3.inp",
             "permalink": "benchmarks/network-Net3.html"
+        },
+        "network-micropolis": {
+            "name": "Micropolis",
+            "desc": "A synthetic system developed as part of a virtual city for studies on infrastructure security",
+            "year": 2007,
+            "tags": ["network", "large", "tanks", "pumps", "demand patterns"],
+            "keywords": ["distribution branch", "Synthetic Systems"],
+            "license": "EUPL-1.2",
+            "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/",
+            "permalink": "benchmarks/network-micropolis.html"
         }
     }
 }

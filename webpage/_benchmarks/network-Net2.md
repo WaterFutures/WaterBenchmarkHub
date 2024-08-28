@@ -12,7 +12,7 @@ layout: benchmark
 The EPANET Example Network 2 (short `Net2`) constitutes a simple example of modeling chlorine decay.
 Both bulk and wall reactions are included.
 
-The network consists of 35 junctions, 40 pipes and 1 tank.
+The network consists of 35 junctions, 40 pipes and 1 tank. It contains a demand pattern for 2 days and 7 hours.
 
 <img src="../static/benchmarks/network-net2/net2_plot.png"/>
 

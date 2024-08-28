@@ -12,7 +12,7 @@ layout: benchmark
 The EPANET Example Network 3 (short `Net3`) constitutes a simple example of modeling chlorine decay.
 Both bulk and wall reactions are included.
 
-The network consists of 91 junctions, 121 pipes, 3 tanks, 2 pumps and 2 reservoirs.
+The network consists of 91 junctions, 121 pipes, 3 tanks, 2 pumps and 2 reservoirs. It contains a demand pattern for 1 day.
 
 <img src="../static/benchmarks/network-net3/net3_plot.png"/>
 

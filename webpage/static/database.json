@@ -637,6 +637,24 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/9/",
             "permalink": "benchmarks/network-Fourteen-Pipe.html"
+        },
+        "network-net2": {
+            "name": "Net2",
+            "desc": "EPANET Example Network 2",
+            "year": 2000,
+            "tags": ["tanks", "small", "quality", "chlorine", "network"],
+            "keywords": ["Net2", "Software Manual Examples", "distribution dense-grid"],
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net2.inp",
+            "permalink": "benchmarks/network-Net2.html"
+        },
+        "network-net3": {
+            "name": "Net3",
+            "desc": "EPANET Example Network 3",
+            "year": 2000,
+            "tags": ["pumps", "tanks", "medium", "quality", "chlorine", "network"],
+            "keywords": ["Net3", "Software Manual Examples"],
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net3.inp",
+            "permalink": "benchmarks/network-Net3.html"
         }
     }
 }

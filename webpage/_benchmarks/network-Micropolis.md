@@ -11,7 +11,8 @@ layout: benchmark
 
 Micropolis is a virtual city designed to research critical infrastructure and be able to publish the results.
 
-The network consists of 1574 junctions, 1823 pipes, 2 reservoirs, 1 tank and 8 pumps.
+The network consists of 1574 junctions, 1823 pipes, 2 reservoirs, 1 tank and 8 pumps. It contains a demand pattern for
+1 week and 3 days.
 
 <img src="../static/benchmarks/network-micropolis/micropolis_plot.png" width="100%"/>
 

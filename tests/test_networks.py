@@ -410,3 +410,11 @@ def test_kl():
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
+
+
+def test_jilin():
+    res = load("Network-Jilin")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)

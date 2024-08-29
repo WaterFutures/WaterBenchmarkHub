@@ -663,7 +663,7 @@
             "tags": ["network", "large", "tanks", "pumps", "demand patterns"],
             "keywords": ["distribution branch", "Synthetic Systems"],
             "license": "EUPL-1.2",
-            "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/MICROPOLIS_v1.inp",
             "permalink": "benchmarks/network-micropolis.html"
         },
         "network-kl": {
@@ -673,8 +673,18 @@
             "tags": ["network", "large"],
             "keywords": ["distribution dense-grid", "Synthetic Systems"],
             "license": "EUPL-1.2",
-            "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/KL.inp",
             "permalink": "benchmarks/network-kl.html"
+        },
+        "network-jilin": {
+            "name": "Jilin",
+            "desc": "A synthetic network designed to study the optimization of pipe sizes",
+            "year": 2014,
+            "tags": ["network", "small", "demand patterns"],
+            "keywords": ["distribution dense-grid", "Synthetic Systems"],
+            "license": "EUPL-1.2",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Jilin%20including%20water%20quality.inp",
+            "permalink": "benchmarks/network-jilin.html"
         }
     }
 }

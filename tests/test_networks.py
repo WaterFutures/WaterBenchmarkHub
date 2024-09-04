@@ -418,3 +418,11 @@ def test_jilin():
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
+
+
+def test_dma():
+    res = load("Network-DMA")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)

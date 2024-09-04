@@ -19,6 +19,8 @@ constraints related to costs, pressure uniformity, and water quality. Changes in
 operations were needed to supply demands at adequate pressures and acceptable water quality for
 the given supply scenarios: a wet season and a dry season with water shortages.
 
+Networks associated with this competition:
+- [DMA](network-DMA.html)
 
 ## Reference
 

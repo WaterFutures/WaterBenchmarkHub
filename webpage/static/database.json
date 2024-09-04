@@ -700,12 +700,23 @@
             "name": "D-Town",
             "desc": "A synthetic network designed to research long term network improvement",
             "year": 2013,
-            "tags": ["network", "medium", "tanks", "pumps", "demand patterns"],
+            "tags": ["network", "medium", "tanks", "pumps", "demand patterns", "valves"],
             "keywords": ["distribution sparse-grid", "BWN"],
             "license": "EUPL-1.2",
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/#a5",
             "permalink": "benchmarks/network-dtown.html"
+        },
+        "network-dma": {
+            "name": "Demand Management Areas",
+            "desc": "A synthetic network designed to research district metering area optimization",
+            "year": 2016,
+            "tags": ["network", "large", "tanks", "pumps", "valves"],
+            "keywords": ["distribution sparse-grid", "BWN"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_models&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_models/6/",
+            "permalink": "benchmarks/network-dma.html"
         }
     }
 }

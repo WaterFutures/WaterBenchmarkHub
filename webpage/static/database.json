@@ -582,6 +582,141 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/9/",
             "permalink": "benchmarks/network-KYV24.html"
+        },
+        "network-nyc-tunnel": {
+            "name": "New York Tunnel",
+            "desc": "A network based on the real-world transmission system in New York City",
+            "year": 2016,
+            "tags": ["network", "small", "demand patterns"],
+            "keywords": ["New York", "distribution dense-grid", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=7&article=1000&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/1/",
+            "permalink": "benchmarks/network-nyc-tunnel.html"
+        },
+        "network-nineteen-pipe": {
+            "name": "Nineteen Pipe",
+            "desc": "An artificial network created for use in computer modelling",
+            "year": 2021,
+            "tags": ["network", "small"],
+            "keywords": ["distribution dense-grid", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/5/",
+            "permalink": "benchmarks/network-Nineteen-Pipe.html"
+        },
+        "network-modified-nineteen-pipe": {
+            "name": "Modified Nineteen Pipe",
+            "desc": "An artificial network created for use in computer modelling based on the Nineteen Pipe system",
+            "year": 2021,
+            "tags": ["network", "small"],
+            "keywords": ["distribution dense-grid", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/7/",
+            "permalink": "benchmarks/network-Modified-Nineteen-Pipe.html"
+        },
+        "network-fowm": {
+            "name": "Federally Owned Water Main",
+            "desc": "A network based on the water distribution system servicing northern Arlington County, VA",
+            "year": 2021,
+            "tags": ["network", "small"],
+            "keywords": ["transmission branch", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/8/",
+            "permalink": "benchmarks/network-FOWM.html"
+        },
+        "network-fourteen-pipe": {
+            "name": "Fourteen Pipe",
+            "desc": "A simple example system originally used in 1985 to test pipe size optimization software. ",
+            "year": 2021,
+            "tags": ["network", "small"],
+            "keywords": ["distribution dense-grid", "Historic Literature Systems"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_systems&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_systems/9/",
+            "permalink": "benchmarks/network-Fourteen-Pipe.html"
+        },
+        "network-net2": {
+            "name": "Net2",
+            "desc": "EPANET Example Network 2",
+            "year": 2000,
+            "tags": ["tanks", "small", "quality", "chlorine", "network", "demand patterns"],
+            "keywords": ["Net2", "Software Manual Examples", "distribution dense-grid"],
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net2.inp",
+            "permalink": "benchmarks/network-Net2.html"
+        },
+        "network-net3": {
+            "name": "Net3",
+            "desc": "EPANET Example Network 3",
+            "year": 2000,
+            "tags": ["pumps", "tanks", "medium", "quality", "chlorine", "network", "demand patterns"],
+            "keywords": ["Net3", "Software Manual Examples", "transmission dense-loop"],
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net3.inp",
+            "permalink": "benchmarks/network-Net3.html"
+        },
+        "network-micropolis": {
+            "name": "Micropolis",
+            "desc": "A synthetic system developed as part of a virtual city for studies on infrastructure security",
+            "year": 2007,
+            "tags": ["network", "large", "tanks", "pumps", "demand patterns"],
+            "keywords": ["distribution branch", "Synthetic Systems"],
+            "license": "EUPL-1.2",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/MICROPOLIS_v1.inp",
+            "permalink": "benchmarks/network-micropolis.html"
+        },
+        "network-kl": {
+            "name": "KL",
+            "desc": "A synthetic network designed to study WDN optimization",
+            "year": 2012,
+            "tags": ["network", "large"],
+            "keywords": ["distribution dense-grid", "Synthetic Systems"],
+            "license": "EUPL-1.2",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/KL.inp",
+            "permalink": "benchmarks/network-kl.html"
+        },
+        "network-jilin": {
+            "name": "Jilin",
+            "desc": "A synthetic network designed to study the optimization of pipe sizes",
+            "year": 2014,
+            "tags": ["network", "small", "demand patterns"],
+            "keywords": ["distribution dense-grid", "Synthetic Systems"],
+            "license": "EUPL-1.2",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Jilin%20including%20water%20quality.inp",
+            "permalink": "benchmarks/network-jilin.html"
+        },
+        "network-anytown": {
+            "name": "Anytown",
+            "desc": "A synthetic network designed to research network extension challenges",
+            "year": 1987,
+            "tags": ["network", "medium", "demand patterns"],
+            "keywords": ["distribution dense-grid", "BWN"],
+            "license": "EUPL-1.2",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Anytown.inp",
+            "permalink": "benchmarks/network-anytown.html"
+        },
+        "network-dtown": {
+            "name": "D-Town",
+            "desc": "A synthetic network designed to research long term network improvement",
+            "year": 2013,
+            "tags": ["network", "medium", "tanks", "pumps", "demand patterns", "valves"],
+            "keywords": ["distribution sparse-grid", "BWN"],
+            "license": "EUPL-1.2",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/#a5",
+            "permalink": "benchmarks/network-dtown.html"
+        },
+        "network-dma": {
+            "name": "Demand Management Areas",
+            "desc": "A synthetic network designed to research district metering area optimization",
+            "year": 2016,
+            "tags": ["network", "large", "tanks", "pumps", "valves"],
+            "keywords": ["distribution sparse-grid", "BWN"],
+            "license": "CC BY-NC 4.0",
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_models&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_models/6/",
+            "permalink": "benchmarks/network-dma.html"
         }
     }
 }

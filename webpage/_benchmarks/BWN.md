@@ -11,6 +11,9 @@ layout: benchmark
 The Battle of the Water Networks (BWN), 1985, is the first competition in a series of
 "Battle Competitions".
 
+Networks in the context of this competition:
+- [Anytown](network-Anytown.html)
+
 
 ## Reference
 

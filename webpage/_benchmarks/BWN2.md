@@ -20,6 +20,8 @@ operational controls for pumps and valves, and sizing of backup power supply.
 Design criteria involved hydraulic, water quality, reliability, and environmental
 performance measures.
 
+Networks in the context of this competition:
+- [DTown](network-DTown.html)
 
 ## Reference
 

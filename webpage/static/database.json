@@ -592,7 +592,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=7&article=1000&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/1/",
-            "permalink": "benchmarks/network-nyc-tunnel.html"
+            "permalink": "benchmarks/network-NYC-Tunnel.html"
         },
         "network-nineteen-pipe": {
             "name": "Nineteen Pipe",
@@ -664,7 +664,7 @@
             "keywords": ["distribution branch", "Synthetic Systems"],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/MICROPOLIS_v1.inp",
-            "permalink": "benchmarks/network-micropolis.html"
+            "permalink": "benchmarks/network-Micropolis.html"
         },
         "network-kl": {
             "name": "KL",
@@ -674,7 +674,7 @@
             "keywords": ["distribution dense-grid", "Synthetic Systems"],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/KL.inp",
-            "permalink": "benchmarks/network-kl.html"
+            "permalink": "benchmarks/network-KL.html"
         },
         "network-jilin": {
             "name": "Jilin",
@@ -684,7 +684,7 @@
             "keywords": ["distribution dense-grid", "Synthetic Systems"],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Jilin%20including%20water%20quality.inp",
-            "permalink": "benchmarks/network-jilin.html"
+            "permalink": "benchmarks/network-Jilin.html"
         },
         "network-anytown": {
             "name": "Anytown",
@@ -694,7 +694,7 @@
             "keywords": ["distribution dense-grid", "BWN"],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Anytown.inp",
-            "permalink": "benchmarks/network-anytown.html"
+            "permalink": "benchmarks/network-Anytown.html"
         },
         "network-dtown": {
             "name": "D-Town",
@@ -705,7 +705,7 @@
             "license": "EUPL-1.2",
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/#a5",
-            "permalink": "benchmarks/network-dtown.html"
+            "permalink": "benchmarks/network-DTown.html"
         },
         "network-dma": {
             "name": "Demand Management Areas",
@@ -716,7 +716,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_models&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_models/6/",
-            "permalink": "benchmarks/network-dma.html"
+            "permalink": "benchmarks/network-DMA.html"
         }
     }
 }

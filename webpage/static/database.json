@@ -712,7 +712,7 @@
             "desc": "A synthetic network designed to research district metering area optimization",
             "year": 2016,
             "tags": ["network", "large", "tanks", "pumps", "valves"],
-            "keywords": ["distribution sparse-grid", "BWN"],
+            "keywords": ["distribution sparse-grid", "BWN", "dma"],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_models&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_models/6/",

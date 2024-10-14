@@ -17,7 +17,7 @@ The WaterBenchmarkHub is also available as a Python package *water-benchmark-hub
 
 If you have a benchmark (resource) that is not yet available in the *WaterBenchmarkHub*,
 please either create a new issue or read on
-[How to Contribute](https://waterfutures.github.io/WaterBenchmarkHub/en/stable/how_to_contribute.html).
+[How to Contribute](https://waterbenchmarkhub.readthedocs.io/en/latest/how_to_contribute.html).
 
 ## Installation of the Python Package
 
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 ## Documentation
 
 Documentation is available on readthedocs:
-[https://water-benchmark-hub.readthedocs.io/en/latest/](https://water-benchmark-hub.readthedocs.io/en/latest/)
+[https://waterbenchmarkhub.readthedocs.io/en/latest/](https://waterbenchmarkhub.readthedocs.io/en/latest/)
 
 ## License
 
@@ -97,5 +97,5 @@ If you come across any bug or need assistance please feel free to open a new iss
 ## How to Contribute?
 
 Contributions (e.g. creating issues, pull-requests, etc.) are welcome -- please make sure to read
-[How to Contribute](https://waterfutures.github.io/WaterBenchmarkHub/en/stable/how_to_contribute.html),
+[How to Contribute](https://waterbenchmarkhub.readthedocs.io/en/latest/how_to_contribute.html),
 the [code of conduct](CODE_OF_CONDUCT.md) and follow the [developers' guidelines](DEVELOPERS.md).

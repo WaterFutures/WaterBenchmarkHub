@@ -119,21 +119,21 @@ In addition to the previous steps, the benchmark (resource) should made be avail
 For this, the following steps are necessary:
 
 1. If the new benchmark (resource) is a network, a new class has to be derived from the
-   `WaterDistributionNetwork <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetwork>`_
+   `WaterDistributionNetwork <https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetwork>`_
    class and put into
    `src/water_benchmark_hub/networks/networks.py <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/src/water_benchmark_hub/networks/networks.py>`_
    (if justified, a new .py file can also be created).
 
    For all other types of benchmark (resources), a new directory should be created and
    the benchmark itself must be implemented by deriving a new class from the
-   `BenchmarkResource <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.html#water_benchmark_hub.benchmark_resource.BenchmarkResource>`_
+   `BenchmarkResource <https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.benchmark_resource.BenchmarkResource>`_
    class and importing this new class in
    `src/water_benchmark_hub/__init__.py <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/src/water_benchmark_hub/__init__.py>`_.
 2. In all cases, the new benchmark (resource) must be registered by calling the
-   `register() <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.html#water_benchmark_hub.benchmarks.register>`_
+   `register() <https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.benchmarks.register>`_
    function right after the class declaration -- the argument is a *key* that is used to load
    the benchmark (resource), which is usually similar (but nicely formatted) to the unique ID of
    the benchmark resource as used in the database.
 3. Also, in all cases, the new class must be decoratated with the
-   `@meta_data() <https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.html#water_benchmark_hub.meta_data.meta_data>`_
+   `@meta_data() <https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.meta_data.meta_data>`_
    decorator -- the argument is the unique ID of the benchmark resource as used in the database.

@@ -33,7 +33,7 @@ Meta data
 +++++++++
 
 For each benchmark (resource), a new entry (dictionary) in the database
-`webpage/static/database.json <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/webpage/static/database.json>`_
+`docs/static/database.json <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/docs/static/database.json>`_
 must be created with the following content -- if a field is not available,
 it should dropped from the database entry:
 
@@ -75,7 +75,7 @@ Description
 +++++++++++
 
 The complete description of the benchmark resource must be placed in a Markdown file in the
-`webpage/_benchmarks <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/webpage/_benchmarks>`_ folder.
+`docs/_benchmarks <https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/docs/_benchmarks>`_ folder.
 The name of the Markdown file must be the same as specified in the :code:`permalink` field
 in the database.
 

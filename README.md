@@ -4,7 +4,7 @@ The [*WaterBenchmarkHub*](https://waterfutures.github.io/WaterBenchmarkHub) is a
 Water Distribution Networks (WDNs).
 The webpage is available at
 [https://waterfutures.github.io/WaterBenchmarkHub](https://waterfutures.github.io/WaterBenchmarkHub)
--- see [webpage/](webpage/) for details such as source code, etc.
+-- see [docs/](docs/) for details such as source code, etc.
 
 The availability and accessibility of benchmarks are essential for reproducible research as well as
 for accelerating scientific progress.

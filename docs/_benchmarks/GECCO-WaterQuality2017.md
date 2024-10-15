@@ -40,7 +40,7 @@ data set, 9 numeric water quality features are given at a sampling rate of 1 min
 
 This benchmark is also available in Python in the GECCO water quality collection (key: *GECCO-WaterQuality2017*)
 through the
-[```load_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.load_data)
+[```load_data()```](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.load_data)
 function:
 ```python
 # Load GECCO water quality benchmark
@@ -50,7 +50,7 @@ benchmark = load("GECCO-WaterQuality2017")
 data = benchmark.load_data(return_X_y=True)
 ```
 
-The official evaluation function is implemented in [```compute_evaluation_score()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score).
+The official evaluation function is implemented in [```compute_evaluation_score()```](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score).
 
 ## Reference
 

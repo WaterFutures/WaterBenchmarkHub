@@ -36,7 +36,7 @@ dtown_inp = network.load()
 ```
 
 Detailed information about the provided functionality can be found in the documentation of
-[`load()`](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DTown.load).
+[`load()`](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DTown.load).
 
 
 ## Reference

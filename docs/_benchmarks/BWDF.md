@@ -45,7 +45,7 @@ bwdf = load("BWDF")
 ```
 
 Detailed information about the provided functionality can be found in the
-[documentation](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.bwdf.html).
+[documentation](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.bwdf.html).
 
 ## Reference
 

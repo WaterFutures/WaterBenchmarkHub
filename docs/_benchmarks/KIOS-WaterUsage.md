@@ -49,15 +49,15 @@ water_usage = load("KIOS-WaterUsage")
 ```
 
 The entire data set (i.e. train, validation, and test data) can be loaded using the
-[```load_data()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data)
+[```load_data()```](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data)
 function.
 
 Besides the data set, this benchmark also provides the original evaluation function implemented in
-[```compute_evaluation_score()```](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score)
+[```compute_evaluation_score()```](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score)
 which computes the accuracy, precision, F1-score, Cohen's kappa, and ROC AUC.
 
 Detailed information about the provided functionality can be found in the
-[documentation](https://water-benchmark-hub.readthedocs.io/en/stable/water_benchmark_hub.water_usage.html).
+[documentation](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.water_usage.html).
 
 ## Reference
 

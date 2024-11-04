@@ -65,16 +65,18 @@ class LTown(WaterDistributionNetwork):
 
             The default is None.
         return_scenario : `bool`, optional
-            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
             Otherwise, the path to the .inp file is returned as a string.
 
             The default is False.
 
         Returns
         -------
-        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
             If `return_scenario` is True, L-TOWN_v2 network loaded into a scenario configuration that
-            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the .inp file is returned.
         """
         f_inp = "L-TOWN_v2_Model.inp" if use_realistic_demands is False else "L-TOWN_v2_Real.inp"
@@ -164,16 +166,17 @@ class LTown(WaterDistributionNetwork):
 
             The default is None.
         return_scenario : `bool`, optional
-            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
             Otherwise, the path to the .inp file is returned as a string.
 
             The default is False.
 
         Returns
         -------
-        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
             If `return_scenario` is True, L-TOWN-A network loaded into a scenario configuration that
-            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            can be passed on to `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the .inp file is returned.
         """
         f_inp = "L-TOWN_v2-A_Model.inp" if use_realistic_demands is False else "L-TOWN_v2-A_Real.inp"

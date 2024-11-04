@@ -107,7 +107,7 @@ class LeakDB(BenchmarkResource):
             List of scenarios ID that are to be evaluated -- there is a total number of 1000 scenarios.
         use_net1 : `bool`
             If True, Net1 LeakDB will be used for evaluation, otherwise the Hanoi LeakDB will be used.
-        y_pred_labels_per_scenario : `list[numpy.ndarray]`
+        y_pred_labels_per_scenario : `list[numpy.ndarray] <https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html>`_
             Predicted binary labels (over time) for each scenario in `scenarios_id`.
 
         Returns
@@ -215,7 +215,7 @@ class LeakDB(BenchmarkResource):
             The default is False.
         return_leak_locations : `bool`
             If True and if `return_X_y` is True, the leak locations are returned as well --
-            as an instance of `scipy.sparse.bsr_array`.
+            as an instance of `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_.
 
             The default is False.
         verbose : `bool`, optional
@@ -336,12 +336,12 @@ class LeakDB(BenchmarkResource):
         return_X_y : `bool`, optional
             If True, the data is returned together with the labels (presence of a leakage) as
             two Numpy arrays, otherwise, the data is returned as
-            `epyt_flow.simulation.scada.scada_data.ScadaData` instances.
+            `epyt_flow.simulation.scada.scada_data.ScadaData <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ instances.
 
             The default is False.
         return_leak_locations : `bool`
             If True, the leak locations are returned as well --
-            as an instance of `scipy.sparse.bsr_array`.
+            as an instance of `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_.
 
             The default is False.
         verbose : `bool`, optional
@@ -351,11 +351,13 @@ class LeakDB(BenchmarkResource):
 
         Returns
         -------
-        `list[epyt_flow.simulation.scada.scada_data.ScadaData`] or `list[tuple[numpy.ndarray, numpy.ndarray]]`
+        `list[epyt_flow.simulation.scada.scada_data.ScadaData] <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ or `list[tuple[numpy.ndarray, numpy.ndarray]]`
             The simulated benchmark scenarios as either a list of
-            `epyt_flow.simulation.scada.scada_data.ScadaData` instances or as a list of
+            `epyt_flow.simulation.scada.scada_data.ScadaData <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ instances or as a list of
             (X, y) Numpy arrays. If 'return_leak_locations' is True, the leak locations are included
-            as an instance of `scipy.sparse.bsr_array` as well.
+            as an instance of
+            `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_
+            as well.
         """
         download_dir = download_dir if download_dir is not None else get_temp_folder()
 
@@ -398,7 +400,7 @@ class LeakDB(BenchmarkResource):
         """
         Creates and returns the LeakDB scenarios -- they can be either modified or
         passed directly to the EPyT-Flow simulator
-        `epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+        `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
 
         .. note::
             Note that due to the randomness in the demand creation as well as in the model
@@ -428,7 +430,7 @@ class LeakDB(BenchmarkResource):
 
         Returns
         -------
-        `list[~epyt_flow.simulation.scenario_config.ScenarioConfig]`
+        `list[epyt_flow.simulation.scenario_config.ScenarioConfig] <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_
             LeakDB scenarios.
         """
         scenarios_inp = []

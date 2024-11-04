@@ -56,16 +56,18 @@ class Net1(WaterDistributionNetwork):
 
             The default is None.
         return_scenario : `bool`, optional
-            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            If True, the network is returned as a
+            `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
             Otherwise, the path to the .inp file is returned as a string.
 
             The default is False.
 
         Returns
         -------
-        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
             If `return_scenario` is True, Net1 network loaded into a scenario configuration that
-            can be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the Net1.inp file is returned.
         """
         f_in = os.path.join(download_dir, "Net1.inp")
@@ -126,16 +128,18 @@ class Net2(WaterDistributionNetwork):
 
             The default is None.
         return_scenario : `bool`, optional
-            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            If True, the network is returned as a
+            `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
             Otherwise, the path to the .inp file is returned as a string.
 
             The default is False.
 
         Returns
         -------
-        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
             If `return_scenario` is True, Net2 network loaded into a scenario configuration that can
-            be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the Net2.inp file is returned.
         """
         f_in = os.path.join(download_dir, "Net2.inp")
@@ -196,16 +200,18 @@ class Net3(WaterDistributionNetwork):
 
             The default is None.
         return_scenario : `bool`, optional
-            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            If True, the network is returned as a
+            `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
             Otherwise, the path to the .inp file is returned as a string.
 
             The default is False.
 
         Returns
         -------
-        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
             If `return_scenario` is True, Net3 network loaded into a scenario configuration that can
-            be passed on to :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the Net3.inp file is returned.
         """
         f_in = os.path.join(download_dir, "Net3.inp")
@@ -266,17 +272,18 @@ class Net6(WaterDistributionNetwork):
 
             The default is None.
         return_scenario : `bool`, optional
-            If True, the network is returned as a `epyt_flow.simulation.ScenarioConfig` instance.
+            If True, the network is returned as a
+            `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
             Otherwise, the path to the .inp file is returned as a string.
 
             The default is False.
 
         Returns
         -------
-        :class:`~epyt_flow.simulation.scenario_config.ScenarioConfig` or `str`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
             If `return_scenario` is True,  Net6 network loaded into a scenario configuration
             that can be passed on to
-            :class:`~epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the Net6.inp file is returned.
         """
         f_in = os.path.join(download_dir, "Net6.inp")

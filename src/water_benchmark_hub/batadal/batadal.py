@@ -100,7 +100,8 @@ class BATADAL(BenchmarkResource):
         `dict`
             Dictionary of the loaded benchmark data. The dictionary contains the two training
             data sets ("train_1" and "train_2"), as well as the test data set ("test").
-            If `return_X_y` is False, each dictionary entry is a Pandas dataframe.
+            If `return_X_y` is False, each dictionary entry is a
+            `Pandas dataframe <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html>`_.
             Otherwise, it is a tuple of sensor readings and labels (except for the test set) --
             if `return_ground_truth` is True or `return_features_desc` is True, the corresponding
             data is appended to the tuple.
@@ -203,7 +204,7 @@ class BATADAL(BenchmarkResource):
         Loads the SCADA data of the simulated BATADAL benchmark scenario -- note that due to
         randomness and undocumented aspects of the original BATADAL data set, these differ from
         the original data set which can be loaded by calling
-        :func:`epyt_flow.data.benchmarks.batadal.load_data`.
+        :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_data`.
 
         Parameters
         ----------
@@ -239,7 +240,8 @@ class BATADAL(BenchmarkResource):
     def load_scenario(download_dir: str = None, verbose: bool = True) -> ScenarioConfig:
         """
         Creates and returns the BATADAL scenario -- it can be either modified or directly passed
-        to the EPyT-Flow simulator :class:`epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+        to the EPyT-Flow simulator
+        `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
 
         .. note::
 
@@ -261,7 +263,7 @@ class BATADAL(BenchmarkResource):
 
         Returns
         -------
-        :class:`epyt_flow.simulation.scenario_config.ScenarioConfig`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_
             The BATADAL scenario.
         """
         raise NotImplementedError()

@@ -273,7 +273,7 @@ class BattLeDIM(BenchmarkResource):
         return_X_y : `bool`, optional
             If True, the data is returned together with the labels (presence of a leakage) as
             two Numpy arrays, otherwise, the data is returned as a
-            :class:`epyt_flow.simulation.scada.scada_data.ScadaData` instance.
+            `epyt_flow.simulation.scada.scada_data.ScadaData <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ instance.
 
             The default is False.
         return_features_desc : `bool`, optional
@@ -283,7 +283,7 @@ class BattLeDIM(BenchmarkResource):
             The default is False.
         return_leak_locations : `bool`
             If True, the leak locations are returned as well --
-            as an instance of `scipy.sparse.bsr_array`.
+            as an instance of `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_.
 
             The default is False.
         verbose : `bool`, optional
@@ -293,7 +293,7 @@ class BattLeDIM(BenchmarkResource):
 
         Returns
         -------
-        Either a `pandas.DataFrame` instance or a tuple of Numpy arrays.
+        Either a `pandas.DataFrame <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html>`_ instance or a tuple of Numpy arrays.
             Benchmark data set.
         """
         # Download data files if necessary
@@ -382,12 +382,12 @@ class BattLeDIM(BenchmarkResource):
         return_X_y : `bool`, optional
             If True, the data is returned together with the labels (presence of a leakage) as
             two Numpy arrays, otherwise, the data is returned as a
-            `~epyt_flow.simulation.scada.scada_data.ScadaData` instance.
+            `epyt_flow.simulation.scada.scada_data.ScadaData <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ instance.
 
             The default is False.
         return_leak_locations : `bool`
             If True, the leak locations are returned as well --
-            as an instance of `scipy.sparse.bsr_array`.
+            as an instance of `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_.
 
             The default is False.
         verbose : `bool`, optional
@@ -397,11 +397,13 @@ class BattLeDIM(BenchmarkResource):
 
         Returns
         -------
-        `epyt_flow.simulation.scada.scada_data.ScadaData` or `list[tuple[numpy.ndarray, numpy.ndarray]]`
+        `epyt_flow.simulation.scada.scada_data.ScadaData <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ or `list[tuple[numpy.ndarray, numpy.ndarray]]`
             The simulated benchmark scenario as either a
-            `epyt_flow.simulation.scada.scada_data.ScadaData` instance or as a tuple of
+            `epyt_flow.simulation.scada.scada_data.ScadaData <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData>`_ instance or as a tuple of
             (X, y) Numpy arrays. If 'return_leak_locations' is True, the leak locations are included
-            as an instance of `scipy.sparse.bsr_array` as well.
+            as an instance of
+            `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_
+            as well.
         """
         download_dir = download_dir if download_dir is not None else get_temp_folder()
 
@@ -434,7 +436,7 @@ class BattLeDIM(BenchmarkResource):
         """
         Creates and returns the BattLeDIM scenario -- it can be either modified or
         passed directly to the EPyT-Flow simulator
-        `epyt_flow.simulation.scenario_simulator.ScenarioSimulator`.
+        `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
 
         .. note::
 
@@ -459,7 +461,7 @@ class BattLeDIM(BenchmarkResource):
 
         Returns
         -------
-        `~epyt_flow.simulation.scenario_config.ScenarioConfig`
+        `epyt_flow.simulation.scenario_config.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_
             Complete scenario configuration of the BattLeDIM benchmark scenario.
         """
 

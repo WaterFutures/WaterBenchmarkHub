@@ -48,7 +48,7 @@ class BWDF(BenchmarkResource):
 
         Returns
         -------
-        `pandas.DataFrame`
+        `pandas.DataFrame <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html>`_
             Original competition data.
         """
         # Download (if necessary) and load files

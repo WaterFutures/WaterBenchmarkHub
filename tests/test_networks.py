@@ -8,6 +8,14 @@ from water_benchmark_hub import load
 from .utils import get_temp_folder
 
 
+def test_cydbp():
+    res = load("Network-CY-DBP")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
 def test_richmond():
     res = load("Network-Richmond")
 

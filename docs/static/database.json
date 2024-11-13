@@ -162,6 +162,18 @@
             "external_url": "https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php",
             "permalink": "benchmarks/GECCO-WaterQuality2019.html"
         },
+        "network-cy-dbp": {
+            "name": "CY-DBP",
+            "desc": "Real-world inspired network from Cyprus for modeling disinfection byproducts",
+            "year": 2024,
+            "tags": ["network", "pumps", "tanks", "valves", "demand patterns", "medium"],
+            "keywords": ["CY-DBP"],
+            "license": "BSD 3-Clause License",
+            "download_url": "https://raw.githubusercontent.com/KIOS-Research/dbp-virtual-water-testbed/refs/heads/main/Networks/CY-DBP.inp",
+            "doi": "10.3390/engproc2024069033",
+            "external_url": "https://github.com/KIOS-Research/dbp-virtual-water-testbed",
+            "permalink": "benchmarks/network-CY-DBP.html"
+        },
         "network-net1": {
             "name": "Net1",
             "desc": "EPANET Example Network 1",

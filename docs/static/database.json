@@ -729,6 +729,18 @@
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_models&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_models/6/",
             "permalink": "benchmarks/network-DMA.html"
+        },
+        "network-tln": {
+            "name": "Two Loop Network",
+            "desc": "A synthetic network designed for research",
+            "year": 1977,
+            "tags": ["network", "small"],
+            "keywords": ["exeter", "pareto", "tln"],
+            "license": "",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp",
+            "doi": "10.1029/WR013i006p00885",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a9",
+            "permalink": "benchmarks/network-TLN.html"
         }
     }
 }

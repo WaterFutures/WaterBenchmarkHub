@@ -1354,6 +1354,24 @@
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/GOY.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
             "permalink": "benchmarks/network-GOY.html"
+        },
+        "network-bin": {
+            "name": "Balerma Irrigation Network",
+            "desc": "A network for researching genetic algorithms for the design of looped irrigation water distribution networks.",
+            "year": "2006",
+            "tags": [
+                "medium"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto",
+                "balerma"
+            ],
+            "doi": "10.1029/2005WR004383",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BIN.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
+            "permalink": "benchmarks/network-BIN.html"
         }
     }
 }

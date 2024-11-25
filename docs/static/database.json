@@ -1305,8 +1305,15 @@
             "name": "Two Loop Network",
             "desc": "A synthetic network designed for research",
             "year": 1977,
-            "tags": ["network", "small"],
-            "keywords": ["exeter", "pareto", "tln"],
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto",
+                "tln"
+            ],
             "license": "",
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp",
             "doi": "10.1029/WR013i006p00885",
@@ -1329,6 +1336,24 @@
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BAK.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a1",
             "permalink": "benchmarks/network-BAK.html"
+        },
+        "network-goy": {
+            "name": "GoYang Network",
+            "desc": "A network designed for researching network system design using non-linear programming.",
+            "year": "1994",
+            "tags": [
+                "pumps",
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/GOY.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
+            "permalink": "benchmarks/network-GOY.html"
         }
     }
 }

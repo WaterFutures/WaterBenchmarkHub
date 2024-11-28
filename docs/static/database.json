@@ -1408,6 +1408,28 @@
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/wolf-initial-fig.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
             "permalink": "benchmarks/network-WCR.html"
+        },
+        "network-rch": {
+            "name": "Richmond Standard",
+            "desc": "Description of the Richmond water distribution system.",
+            "year": "2001",
+            "tags": [
+                "real world",
+                "valves",
+                "tanks",
+                "pumps",
+                "medium",
+                "demand patterns"
+            ],
+            "keywords": [
+                "exeter",
+                "yorkshire"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/Richmond_standard.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
+            "permalink": "benchmarks/network-RCH.html"
         }
     }
 }

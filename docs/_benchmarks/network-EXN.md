@@ -8,7 +8,7 @@ layout: benchmark
 
 ## Description
 
-A benchmark system for optimization models.
+This benchmark water system has been set up by the Centre for Water Systems of Exeter University as a realistic challenging problem. The aim is to determine the most economically effective design to reinforce the existing system to meet projected demands as a network. The network serves a population of approximately 400,000. It consists of relatively small pipes and few transmission mains, with a large head-loss range at the extremities of the system, making it highly sensitive to demand increases.
 
 The network consists of 1893 nodes, 3029 pipes, 2 reservoirs and 2 valves.
 

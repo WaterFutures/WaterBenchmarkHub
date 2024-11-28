@@ -1390,6 +1390,24 @@
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/EXN.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
             "permalink": "benchmarks/network-EXN.html"
+        },
+        "network-wcr": {
+            "name": "Wolf-Cordera Ranch Model",
+            "desc": "A model created to optimize water system design.",
+            "year": "2005",
+            "tags": [
+                "valves",
+                "pumps",
+                "large"
+            ],
+            "keywords": [
+                "exeter"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/wolf-initial-fig.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
+            "permalink": "benchmarks/network-WCR.html"
         }
     }
 }

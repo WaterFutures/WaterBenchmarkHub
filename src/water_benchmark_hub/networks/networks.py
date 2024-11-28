@@ -3729,3 +3729,499 @@ class DMA(WaterDistributionNetwork):
 
 
 register("Network-DMA", DMA)
+
+
+@meta_data("network-tln")
+class TLN(WaterDistributionNetwork):
+    """
+    Class for loading the TLN network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the TLN network.
+
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the TLN network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "TLN.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-TLN", TLN)
+
+
+@meta_data("network-bak")
+class BAK(WaterDistributionNetwork):
+    """
+    Class for loading the BAK network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the BAK network.
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the BAK network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "BAK.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BAK.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-BAK", BAK)
+
+
+@meta_data("network-goy")
+class GOY(WaterDistributionNetwork):
+    """
+    Class for loading the GOY network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the GOY network.
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the GOY network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "GOY.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/GOY.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-GOY", GOY)
+
+
+
+@meta_data("network-bin")
+class BIN(WaterDistributionNetwork):
+    """
+    Class for loading the BIN network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the BIN network.
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the BIN network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "BIN.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BIN.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-BIN", BIN)
+
+
+
+@meta_data("network-exn")
+class EXN(WaterDistributionNetwork):
+    """
+    Class for loading the EXN network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the EXN network.
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the EXN network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "EXN.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/EXN.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-EXN", EXN)
+
+
+
+@meta_data("network-wcr")
+class WCR(WaterDistributionNetwork):
+    """
+    Class for loading the WCR network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the WCR network.
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the WCR network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "WCR.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/wolf-initial-fig.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-WCR", WCR)
+
+
+
+@meta_data("network-rch")
+class RCH(WaterDistributionNetwork):
+    """
+    Class for loading the RCH network.
+    """
+    @staticmethod
+    def load(download_dir: str = get_temp_folder(),
+             flow_units_id: int = None, verbose: bool = True, return_scenario: bool = False
+             ) -> Union[ScenarioConfig, str]:
+        """
+        Loads (and downloads if necessary) the RCH network.
+        Parameters
+        ----------
+        download_dir : `str`, optional
+            Path to the directory where the .inp file is stored.
+
+            The default is the OS-specific temporary directory (e.g. "C:\\temp", "/tmp/", etc.)
+        verbose : `bool`, optional
+            If True, a progress bar is shown while downloading the file.
+
+            The default is True.
+        flow_units_id : `int`, optional
+            Specifies the flow units to be used in this scenario.
+            If None, the units from the .inp file will be used.
+
+            Only relevant if 'return_scenario=True'.
+
+            Must be one of the following EPANET toolkit constants:
+
+                - EN_CFS  = 0  (cubic foot/sec)
+                - EN_GPM  = 1  (gal/min)
+                - EN_MGD  = 2  (Million gal/day)
+                - EN_IMGD = 3  (Imperial MGD)
+                - EN_AFD  = 4  (ac-foot/day)
+                - EN_LPS  = 5  (liter/sec)
+                - EN_LPM  = 6  (liter/min)
+                - EN_MLD  = 7  (Megaliter/day)
+                - EN_CMH  = 8  (cubic meter/hr)
+                - EN_CMD  = 9  (cubic meter/day)
+
+            The default is None.
+        return_scenario : `bool`, optional
+            If True, the network is returned as a
+            `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ instance.
+            Otherwise, the path to the .inp file is returned as a string.
+
+            The default is False.
+
+        Returns
+        -------
+        `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
+            If `return_scenario` is True, the RCH network loaded into a scenario configuration that
+            can be passed on to
+            `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
+            Otherwise, the path to the .inp file is returned.
+        """
+        f_in = os.path.join(download_dir, "RCH.inp")
+        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/Richmond_standard.inp"
+
+        download_if_necessary(f_in, url, verbose)
+
+        if return_scenario is True:
+            return load_inp(f_in, flow_units_id=flow_units_id)
+        else:
+            return f_in
+
+
+register("Network-RCH", RCH)
+

@@ -434,3 +434,59 @@ def test_dma():
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
+
+
+def test_tln():
+    res = load("Network-TLN")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_bak():
+    res = load("Network-BAK")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_goy():
+    res = load("Network-GOY")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_bin():
+    res = load("Network-BIN")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_exn():
+    res = load("Network-EXN")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_wcr():
+    res = load("Network-WCR")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_rch():
+    res = load("Network-RCH")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)

@@ -1,17 +1,44 @@
 {
     "tags": {
-        "tasks_types": ["leakage detection", "leakage localization", "sensor placement", "leakage",
-                        "event detection", "competition", "battle competition"],
-        "networks": ["valves", "tanks", "pumps", "large", "small", "medium", "demand patterns"],
-        "other": ["quality", "chlorine", "real world"]
+        "tasks_types": [
+            "leakage detection",
+            "leakage localization",
+            "sensor placement",
+            "leakage",
+            "event detection",
+            "competition",
+            "battle competition"
+        ],
+        "networks": [
+            "valves",
+            "tanks",
+            "pumps",
+            "large",
+            "small",
+            "medium",
+            "demand patterns"
+        ],
+        "other": [
+            "quality",
+            "chlorine",
+            "real world"
+        ]
     },
     "resources": {
         "kios-leakdb": {
             "name": "LeakDB",
             "desc": "LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.",
             "year": 2018,
-            "tags": ["leakage detection", "leakage localization", "leakage", "event detection"],
-            "keywords": ["Net1", "Hanoi"],
+            "tags": [
+                "leakage detection",
+                "leakage localization",
+                "leakage",
+                "event detection"
+            ],
+            "keywords": [
+                "Net1",
+                "Hanoi"
+            ],
             "doi": "10.5281/zenodo.1313116",
             "license": "EUPL-1.2",
             "download_url": "https://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A",
@@ -22,8 +49,17 @@
             "name": "BattLeDIM",
             "desc": "The Battle of the Leakage Detection and Isolation Methods (BattLeDIM)",
             "year": 2020,
-            "tags": ["leakage detection", "leakage localization", "leakage", "event detection", "competition", "battle competition"],
-            "keywords": ["L-Town"],
+            "tags": [
+                "leakage detection",
+                "leakage localization",
+                "leakage",
+                "event detection",
+                "competition",
+                "battle competition"
+            ],
+            "keywords": [
+                "L-Town"
+            ],
             "doi": "10.5281/zenodo.4017658",
             "license": "CC BY 4.0",
             "download_url": "https://zenodo.org/api/records/4017659/files-archive",
@@ -46,8 +82,14 @@
             "name": "BATADAL",
             "desc": "The BATtle of the Attack Detection ALgorithms (BATADAL)",
             "year": 2018,
-            "tags": ["competition", "event detection", "battle competition"],
-            "keywords": ["C-Town"],
+            "tags": [
+                "competition",
+                "event detection",
+                "battle competition"
+            ],
+            "keywords": [
+                "C-Town"
+            ],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000969",
             "license": "CC BY 4.0",
             "download_url": "https://www.batadal.net/data.html",
@@ -58,7 +100,11 @@
             "name": "BWSN",
             "desc": "The Battle of the Water Sensor Networks (BWSN)",
             "year": 2006,
-            "tags": ["competition", "sensor placement", "battle competition"],
+            "tags": [
+                "competition",
+                "sensor placement",
+                "battle competition"
+            ],
             "keywords": [],
             "doi": "10.1061/(ASCE)0733-9496(2008)134:6(556)",
             "permalink": "benchmarks/BWSN.html"
@@ -67,8 +113,13 @@
             "name": "BWCN",
             "desc": "Battle of the Water Calibration Networks (BWCN)",
             "year": 2010,
-            "tags": ["competition", "battle competition"],
-            "keywords": ["C-Town"],
+            "tags": [
+                "competition",
+                "battle competition"
+            ],
+            "keywords": [
+                "C-Town"
+            ],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000191",
             "permalink": "benchmarks/BWCN.html"
         },
@@ -76,7 +127,10 @@
             "name": "BWN-II",
             "desc": "Battle of the Water Networks (BWN-II)",
             "year": 2012,
-            "tags": ["competition", "battle competition"],
+            "tags": [
+                "competition",
+                "battle competition"
+            ],
             "keywords": [],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000378",
             "permalink": "benchmarks/BWN2.html"
@@ -85,8 +139,13 @@
             "name": "BBLAWN",
             "desc": "Battle of Background Leakage Assessment for Water Networks (BBLAWN)",
             "year": 2014,
-            "tags": ["competition", "battle competition"],
-            "keywords": ["C-Town"],
+            "tags": [
+                "competition",
+                "battle competition"
+            ],
+            "keywords": [
+                "C-Town"
+            ],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000583",
             "permalink": "benchmarks/BBLAWN.html"
         },
@@ -94,7 +153,10 @@
             "name": "BIWS",
             "desc": "Battle of the Intermittent Water Supply (BIWS)",
             "year": 2022,
-            "tags": ["competition", "battle competition"],
+            "tags": [
+                "competition",
+                "battle competition"
+            ],
             "keywords": [],
             "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
             "permalink": "benchmarks/BIWS.html"
@@ -103,7 +165,11 @@
             "name": "BWDF",
             "desc": "Battle of Water Demand Forecasting (BWDF)",
             "year": 2024,
-            "tags": ["competition", "battle competition", "real world"],
+            "tags": [
+                "competition",
+                "battle competition",
+                "real world"
+            ],
             "keywords": [],
             "external_url": "https://wdsa-ccwi2024.it/battle-of-water-networks/",
             "permalink": "benchmarks/BWDF.html"
@@ -112,7 +178,10 @@
             "name": "BWNDMA",
             "desc": "Battle of Water Networks District Metered Areas (BWNDMA)",
             "year": 2016,
-            "tags": ["competition", "battle competition"],
+            "tags": [
+                "competition",
+                "battle competition"
+            ],
             "keywords": [],
             "doi": "10.1061/(ASCE)WR.1943-5452.0001035",
             "permalink": "benchmarks/BWNDMA.html"
@@ -121,7 +190,10 @@
             "name": "BWN",
             "desc": "Battle of the Water Networks (BWN)",
             "year": 1985,
-            "tags": ["competition", "battle competition"],
+            "tags": [
+                "competition",
+                "battle competition"
+            ],
             "keywords": [],
             "doi": "10.1061/(ASCE)0733-9496(1987)113:2(191)",
             "permalink": "benchmarks/BWN.html"
@@ -130,7 +202,12 @@
             "name": "GECCO Industrial Challenge 2017 Dataset",
             "desc": "A water quality dataset for the Monitoring of drinking-water quality",
             "year": 2017,
-            "tags": ["competition", "event detection", "quality", "real world"],
+            "tags": [
+                "competition",
+                "event detection",
+                "quality",
+                "real world"
+            ],
             "keywords": [],
             "doi": "10.5281/zenodo.3884464",
             "license": "CC BY 4.0",
@@ -142,7 +219,12 @@
             "name": "GECCO Industrial Challenge 2018 Dataset",
             "desc": "A water quality dataset for the Internet of Things: Online Anomaly Detection for Drinking Water Quality",
             "year": 2018,
-            "tags": ["competition", "event detection", "quality", "real world"],
+            "tags": [
+                "competition",
+                "event detection",
+                "quality",
+                "real world"
+            ],
             "keywords": [],
             "doi": "10.5281/zenodo.3884397",
             "license": "CC BY 4.0",
@@ -154,7 +236,12 @@
             "name": "GECCO Industrial Challenge 2019 Dataset",
             "desc": "A water quality dataset for the Internet of Things: Online Event Detection for Drinking Water Quality Control",
             "year": 2019,
-            "tags": ["competition", "event detection", "quality", "real world"],
+            "tags": [
+                "competition",
+                "event detection",
+                "quality",
+                "real world"
+            ],
             "keywords": [],
             "doi": "10.5281/zenodo.3884443",
             "license": "CC BY 4.0",
@@ -166,8 +253,17 @@
             "name": "CY-DBP",
             "desc": "Real-world inspired network from Cyprus for modeling disinfection byproducts",
             "year": 2024,
-            "tags": ["network", "pumps", "tanks", "valves", "demand patterns", "medium"],
-            "keywords": ["CY-DBP"],
+            "tags": [
+                "network",
+                "pumps",
+                "tanks",
+                "valves",
+                "demand patterns",
+                "medium"
+            ],
+            "keywords": [
+                "CY-DBP"
+            ],
             "license": "BSD 3-Clause License",
             "download_url": "https://raw.githubusercontent.com/KIOS-Research/dbp-virtual-water-testbed/refs/heads/main/Networks/CY-DBP.inp",
             "doi": "10.3390/engproc2024069033",
@@ -178,8 +274,17 @@
             "name": "Net1",
             "desc": "EPANET Example Network 1",
             "year": 2000,
-            "tags": ["pumps", "tanks", "small", "quality", "chlorine", "network"],
-            "keywords": ["Net1"],
+            "tags": [
+                "pumps",
+                "tanks",
+                "small",
+                "quality",
+                "chlorine",
+                "network"
+            ],
+            "keywords": [
+                "Net1"
+            ],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net1.inp",
             "permalink": "benchmarks/network-Net1.html"
         },
@@ -187,8 +292,17 @@
             "name": "L-Town",
             "desc": "L-Town Network",
             "year": 2020,
-            "tags": ["pumps", "tanks", "valves", "large", "demand patterns", "network"],
-            "keywords": ["L-Town"],
+            "tags": [
+                "pumps",
+                "tanks",
+                "valves",
+                "large",
+                "demand patterns",
+                "network"
+            ],
+            "keywords": [
+                "L-Town"
+            ],
             "doi": "10.5281/zenodo.4017658",
             "license": "CC BY 4.0",
             "download_url": "https://zenodo.org/records/4017659",
@@ -198,8 +312,17 @@
             "name": "C-Town",
             "desc": "C-Town Network",
             "year": 2010,
-            "tags": ["pumps", "tanks", "valves", "large", "demand patterns", "network"],
-            "keywords": ["C-Town"],
+            "tags": [
+                "pumps",
+                "tanks",
+                "valves",
+                "large",
+                "demand patterns",
+                "network"
+            ],
+            "keywords": [
+                "C-Town"
+            ],
             "doi": "10.1061/(ASCE)WR.1943-5452.0000191",
             "license": "CC BY 4.0",
             "download_url": "https://www.batadal.net/data/CTOWN.INP",
@@ -209,8 +332,17 @@
             "name": "E-Town",
             "desc": "E-Town or BIWS Network",
             "year": 2022,
-            "tags": ["pumps", "tanks", "valves", "large", "demand patterns", "network"],
-            "keywords": ["E-Town"],
+            "tags": [
+                "pumps",
+                "tanks",
+                "valves",
+                "large",
+                "demand patterns",
+                "network"
+            ],
+            "keywords": [
+                "E-Town"
+            ],
             "download_url": "https://wdsa-ccwi2022.upv.es/wp-content/uploads/descargas/BIWS.inp",
             "external_url": "https://wdsa-ccwi2022.upv.es/battle-of-water-networks/",
             "permalink": "benchmarks/network-ETown.html"
@@ -219,8 +351,17 @@
             "name": "BWSN-1",
             "desc": "BWSN-1 Network",
             "year": 2006,
-            "tags": ["pumps", "valves", "tanks", "medium", "demand patterns", "network"],
-            "keywords": ["BWSN-1"],
+            "tags": [
+                "pumps",
+                "valves",
+                "tanks",
+                "medium",
+                "demand patterns",
+                "network"
+            ],
+            "keywords": [
+                "BWSN-1"
+            ],
             "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/BWSN_Network_1.inp",
             "permalink": "benchmarks/network-BWSN-1.html"
         },
@@ -228,8 +369,17 @@
             "name": "BWSN-2",
             "desc": "BWSN-2 Network",
             "year": 2006,
-            "tags": ["pumps", "valves", "tanks", "large", "demand patterns", "network"],
-            "keywords": ["BWSN-2"],
+            "tags": [
+                "pumps",
+                "valves",
+                "tanks",
+                "large",
+                "demand patterns",
+                "network"
+            ],
+            "keywords": [
+                "BWSN-2"
+            ],
             "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/BWSN_Network_2.inp",
             "permalink": "benchmarks/network-BWSN-2.html"
         },
@@ -237,8 +387,13 @@
             "name": "Hanoi",
             "desc": "Hanoi Network",
             "year": 1990,
-            "tags": ["small", "network"],
-            "keywords": ["Hanoi"],
+            "tags": [
+                "small",
+                "network"
+            ],
+            "keywords": [
+                "Hanoi"
+            ],
             "doi": "10.1029/WR026i004p00539",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Hanoi.inp",
             "permalink": "benchmarks/network-Hanoi.html"
@@ -247,8 +402,18 @@
             "name": "CA1",
             "desc": "A system based on the Fairfield, CA Distribution system",
             "year": 1996,
-            "tags": ["tanks", "medium", "network", "demand patterns"],
-            "keywords": ["CA1", "Fairfield", "distribution dense-grid", "US Systems"],
+            "tags": [
+                "tanks",
+                "medium",
+                "network",
+                "demand patterns"
+            ],
+            "keywords": [
+                "CA1",
+                "Fairfield",
+                "distribution dense-grid",
+                "US Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1000&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/1/",
@@ -258,8 +423,18 @@
             "name": "PA1",
             "desc": "A network based on the North Penn Water Authority Distribution system in Pennsylvania",
             "year": 1994,
-            "tags": ["tanks", "network", "medium", "demand patterns"],
-            "keywords": ["PA1", "North Penn", "distribution dense-grid", "US Systems"],
+            "tags": [
+                "tanks",
+                "network",
+                "medium",
+                "demand patterns"
+            ],
+            "keywords": [
+                "PA1",
+                "North Penn",
+                "distribution dense-grid",
+                "US Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/2/",
@@ -269,8 +444,18 @@
             "name": "PA2",
             "desc": "A network based on a portion of the Cheshire Distribution system near Harrisburg, PA",
             "year": 1997,
-            "tags": ["network", "pumps", "medium", "demand patterns"],
-            "keywords": ["PA2", "Harrisburg", "distribution branch", "US Systems"],
+            "tags": [
+                "network",
+                "pumps",
+                "medium",
+                "demand patterns"
+            ],
+            "keywords": [
+                "PA2",
+                "Harrisburg",
+                "distribution branch",
+                "US Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/3/",
@@ -280,8 +465,19 @@
             "name": "WA1",
             "desc": "A network based on the Bellingham, WA distribution system",
             "year": 1997,
-            "tags": ["tanks", "network", "medium", "demand patterns", "valves"],
-            "keywords": ["WA1", "Bellingham", "distribution dense-grid", "US Systems"],
+            "tags": [
+                "tanks",
+                "network",
+                "medium",
+                "demand patterns",
+                "valves"
+            ],
+            "keywords": [
+                "WA1",
+                "Bellingham",
+                "distribution dense-grid",
+                "US Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/4/",
@@ -291,8 +487,19 @@
             "name": "NJ1",
             "desc": "A network based on the Dover Township, NJ Distribution system",
             "year": 2000,
-            "tags": ["tanks", "network", "pumps", "large", "demand patterns"],
-            "keywords": ["NJ1", "Dover Township", "distribution sparse-grid", "US Systems"],
+            "tags": [
+                "tanks",
+                "network",
+                "pumps",
+                "large",
+                "demand patterns"
+            ],
+            "keywords": [
+                "NJ1",
+                "Dover Township",
+                "distribution sparse-grid",
+                "US Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_us&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_us/5/",
@@ -302,8 +509,17 @@
             "name": "Fossolo",
             "desc": "A network based on the Fossolo neighborhood distribution system in Bologna, Italy",
             "year": 2008,
-            "tags": ["network", "small"],
-            "keywords": ["Fossolo", "Bologna", "Italy", "transmission dense-loop", "International Systems"],
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "Fossolo",
+                "Bologna",
+                "Italy",
+                "transmission dense-loop",
+                "International Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/3/",
@@ -313,8 +529,16 @@
             "name": "Modena",
             "desc": "A network based on the water distribution system in Modena, Italy",
             "year": 2008,
-            "tags": ["network", "medium"],
-            "keywords": ["Modena", "Italy", "distribution dense-grid", "International Systems"],
+            "tags": [
+                "network",
+                "medium"
+            ],
+            "keywords": [
+                "Modena",
+                "Italy",
+                "distribution dense-grid",
+                "International Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/5/",
@@ -324,8 +548,16 @@
             "name": "Zhi Jiang",
             "desc": "A network based on the Zhi Jiang water distribution system in the eastern province of China",
             "year": 2011,
-            "tags": ["network", "medium"],
-            "keywords": ["Zhi Jiang", "China", "transmission dense-loop", "International Systems"],
+            "tags": [
+                "network",
+                "medium"
+            ],
+            "keywords": [
+                "Zhi Jiang",
+                "China",
+                "transmission dense-loop",
+                "International Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/6/",
@@ -335,8 +567,16 @@
             "name": "Marchi Rural",
             "desc": "A network based on an irrigation system in Australia",
             "year": 2014,
-            "tags": ["network", "medium"],
-            "keywords": ["Marchi Rural", "Australia", "transmission dense-loop", "International Systems"],
+            "tags": [
+                "network",
+                "medium"
+            ],
+            "keywords": [
+                "Marchi Rural",
+                "Australia",
+                "transmission dense-loop",
+                "International Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/7/",
@@ -346,8 +586,17 @@
             "name": "KY1",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2015,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution sparse-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution sparse-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/3/",
@@ -357,8 +606,17 @@
             "name": "KY2",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution dense-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution dense-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/4/",
@@ -368,8 +626,17 @@
             "name": "KY3",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution dense-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution dense-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/5/",
@@ -379,8 +646,17 @@
             "name": "KY4",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution sparse-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution sparse-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/6/",
@@ -390,8 +666,17 @@
             "name": "KY5",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution sparse-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution sparse-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/7/",
@@ -401,8 +686,18 @@
             "name": "KY6",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution dense-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution dense-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/8/",
@@ -412,8 +707,17 @@
             "name": "KY7",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution dense-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution dense-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/9/",
@@ -423,8 +727,17 @@
             "name": "KY8",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "large", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution sparse-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution sparse-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1009&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/10/",
@@ -434,8 +747,19 @@
             "name": "KY9",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "large", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Dataset", "valves"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Dataset",
+                "valves"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1010&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/11/",
@@ -445,8 +769,19 @@
             "name": "KY10",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution hybrid", "Kentucky Dataset", "valves"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution hybrid",
+                "Kentucky Dataset",
+                "valves"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1011&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/12/",
@@ -456,8 +791,19 @@
             "name": "KY11",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Dataset", "valves"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Dataset",
+                "valves"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1012&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/13/",
@@ -467,8 +813,19 @@
             "name": "KY12",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "large", "tanks", "pumps", "valves", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "valves",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1013&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/14/",
@@ -478,8 +835,17 @@
             "name": "KY13",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution sparse-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution sparse-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1014&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/15/",
@@ -489,8 +855,17 @@
             "name": "KY14",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps"],
-            "keywords": ["Kentucky", "distribution dense-grid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution dense-grid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1015&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/16/",
@@ -500,8 +875,19 @@
             "name": "KY15",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps", "valves", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "valves",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1016&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/17/",
@@ -511,8 +897,18 @@
             "name": "KY16",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2014,
-            "tags": ["network", "medium", "tanks", "pumps", "demand patterns"],
-            "keywords": ["Kentucky", "distribution hybrid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "demand patterns"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution hybrid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1035&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/36/",
@@ -522,8 +918,18 @@
             "name": "KY17",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2015,
-            "tags": ["network", "large", "tanks", "pumps", "demand patterns"],
-            "keywords": ["Kentucky", "distribution hybrid", "Kentucky Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "demand patterns"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution hybrid",
+                "Kentucky Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1036&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/37/",
@@ -533,8 +939,19 @@
             "name": "KYV8",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2020,
-            "tags": ["network", "large", "tanks", "pumps", "demand patterns", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Valved Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "demand patterns",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Valved Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/2/",
@@ -544,8 +961,19 @@
             "name": "KYV18",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2020,
-            "tags": ["network", "large", "tanks", "pumps", "demand patterns", "valves"],
-            "keywords": ["Kentucky", "distribution sparse-grid", "Kentucky Valved Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "demand patterns",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution sparse-grid",
+                "Kentucky Valved Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/3/",
@@ -555,8 +983,18 @@
             "name": "KYV21",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2020,
-            "tags": ["network", "large", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution hybrid", "Kentucky Valved Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution hybrid",
+                "Kentucky Valved Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/6/",
@@ -566,8 +1004,18 @@
             "name": "KYV22",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2020,
-            "tags": ["network", "medium", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Valved Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Valved Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/7/",
@@ -577,8 +1025,18 @@
             "name": "KYV23",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2020,
-            "tags": ["network", "large", "tanks", "pumps", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Valved Dataset"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Valved Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/8/",
@@ -588,8 +1046,17 @@
             "name": "KYV24",
             "desc": "A network based on a real-world system in Kentucky",
             "year": 2020,
-            "tags": ["network", "medium", "tanks", "valves"],
-            "keywords": ["Kentucky", "distribution branch", "Kentucky Valved Dataset"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "valves"
+            ],
+            "keywords": [
+                "Kentucky",
+                "distribution branch",
+                "Kentucky Valved Dataset"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_ky_valved&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_ky_valved/9/",
@@ -599,8 +1066,16 @@
             "name": "New York Tunnel",
             "desc": "A network based on the real-world transmission system in New York City",
             "year": 1969,
-            "tags": ["network", "small", "demand patterns"],
-            "keywords": ["New York", "distribution dense-grid", "Historic Literature Systems"],
+            "tags": [
+                "network",
+                "small",
+                "demand patterns"
+            ],
+            "keywords": [
+                "New York",
+                "distribution dense-grid",
+                "Historic Literature Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=7&article=1000&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/1/",
@@ -610,8 +1085,14 @@
             "name": "Nineteen Pipe",
             "desc": "An artificial network created for use in computer modelling",
             "year": 1972,
-            "tags": ["network", "small"],
-            "keywords": ["distribution dense-grid", "Historic Literature Systems"],
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "distribution dense-grid",
+                "Historic Literature Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/5/",
@@ -621,8 +1102,14 @@
             "name": "Modified Nineteen Pipe",
             "desc": "An artificial network created for use in computer modelling based on the Nineteen Pipe system",
             "year": 1981,
-            "tags": ["network", "small"],
-            "keywords": ["distribution dense-grid", "Historic Literature Systems"],
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "distribution dense-grid",
+                "Historic Literature Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/7/",
@@ -632,8 +1119,14 @@
             "name": "Federally Owned Water Main",
             "desc": "A network based on the water distribution system servicing northern Arlington County, VA",
             "year": 1985,
-            "tags": ["network", "small"],
-            "keywords": ["transmission branch", "Historic Literature Systems"],
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "transmission branch",
+                "Historic Literature Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/8/",
@@ -643,8 +1136,14 @@
             "name": "Fourteen Pipe",
             "desc": "A simple example system originally used in 1985 to test pipe size optimization software. ",
             "year": 1985,
-            "tags": ["network", "small"],
-            "keywords": ["distribution dense-grid", "Historic Literature Systems"],
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "distribution dense-grid",
+                "Historic Literature Systems"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst_systems&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_systems/9/",
@@ -654,8 +1153,19 @@
             "name": "Net2",
             "desc": "EPANET Example Network 2",
             "year": 2000,
-            "tags": ["tanks", "small", "quality", "chlorine", "network", "demand patterns"],
-            "keywords": ["Net2", "Software Manual Examples", "distribution dense-grid"],
+            "tags": [
+                "tanks",
+                "small",
+                "quality",
+                "chlorine",
+                "network",
+                "demand patterns"
+            ],
+            "keywords": [
+                "Net2",
+                "Software Manual Examples",
+                "distribution dense-grid"
+            ],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net2.inp",
             "permalink": "benchmarks/network-Net2.html"
         },
@@ -663,8 +1173,20 @@
             "name": "Net3",
             "desc": "EPANET Example Network 3",
             "year": 2000,
-            "tags": ["pumps", "tanks", "medium", "quality", "chlorine", "network", "demand patterns"],
-            "keywords": ["Net3", "Software Manual Examples", "transmission dense-loop"],
+            "tags": [
+                "pumps",
+                "tanks",
+                "medium",
+                "quality",
+                "chlorine",
+                "network",
+                "demand patterns"
+            ],
+            "keywords": [
+                "Net3",
+                "Software Manual Examples",
+                "transmission dense-loop"
+            ],
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/dev/example-networks/Net3.inp",
             "permalink": "benchmarks/network-Net3.html"
         },
@@ -672,8 +1194,17 @@
             "name": "Micropolis",
             "desc": "A synthetic system developed as part of a virtual city for studies on infrastructure security",
             "year": 2007,
-            "tags": ["network", "large", "tanks", "pumps", "demand patterns"],
-            "keywords": ["distribution branch", "Synthetic Systems"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "demand patterns"
+            ],
+            "keywords": [
+                "distribution branch",
+                "Synthetic Systems"
+            ],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/MICROPOLIS_v1.inp",
             "permalink": "benchmarks/network-Micropolis.html"
@@ -682,8 +1213,14 @@
             "name": "KL",
             "desc": "A synthetic network designed to study WDN optimization",
             "year": 2012,
-            "tags": ["network", "large"],
-            "keywords": ["distribution dense-grid", "Synthetic Systems"],
+            "tags": [
+                "network",
+                "large"
+            ],
+            "keywords": [
+                "distribution dense-grid",
+                "Synthetic Systems"
+            ],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/KL.inp",
             "permalink": "benchmarks/network-KL.html"
@@ -692,8 +1229,15 @@
             "name": "Jilin",
             "desc": "A synthetic network designed to study the optimization of pipe sizes",
             "year": 2014,
-            "tags": ["network", "small", "demand patterns"],
-            "keywords": ["distribution dense-grid", "Synthetic Systems"],
+            "tags": [
+                "network",
+                "small",
+                "demand patterns"
+            ],
+            "keywords": [
+                "distribution dense-grid",
+                "Synthetic Systems"
+            ],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Jilin%20including%20water%20quality.inp",
             "permalink": "benchmarks/network-Jilin.html"
@@ -702,8 +1246,15 @@
             "name": "Anytown",
             "desc": "A synthetic network designed to research network extension challenges",
             "year": 1987,
-            "tags": ["network", "medium", "demand patterns"],
-            "keywords": ["distribution dense-grid", "BWN"],
+            "tags": [
+                "network",
+                "medium",
+                "demand patterns"
+            ],
+            "keywords": [
+                "distribution dense-grid",
+                "BWN"
+            ],
             "license": "EUPL-1.2",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Anytown.inp",
             "permalink": "benchmarks/network-Anytown.html"
@@ -712,8 +1263,18 @@
             "name": "D-Town",
             "desc": "A synthetic network designed to research long term network improvement",
             "year": 2013,
-            "tags": ["network", "medium", "tanks", "pumps", "demand patterns", "valves"],
-            "keywords": ["distribution sparse-grid", "BWN"],
+            "tags": [
+                "network",
+                "medium",
+                "tanks",
+                "pumps",
+                "demand patterns",
+                "valves"
+            ],
+            "keywords": [
+                "distribution sparse-grid",
+                "BWN"
+            ],
             "license": "EUPL-1.2",
             "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/#a5",
@@ -723,12 +1284,152 @@
             "name": "Demand Management Areas",
             "desc": "A synthetic network designed to research district metering area optimization",
             "year": 2016,
-            "tags": ["network", "large", "tanks", "pumps", "valves"],
-            "keywords": ["distribution sparse-grid", "BWN", "dma"],
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps",
+                "valves"
+            ],
+            "keywords": [
+                "distribution sparse-grid",
+                "BWN",
+                "dma"
+            ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_models&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_models/6/",
             "permalink": "benchmarks/network-DMA.html"
+        },
+        "network-tln": {
+            "name": "Two Loop Network",
+            "desc": "A synthetic network designed for research",
+            "year": 1977,
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto",
+                "tln"
+            ],
+            "license": "",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp",
+            "doi": "10.1029/WR013i006p00885",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a9",
+            "permalink": "benchmarks/network-TLN.html"
+        },
+        "network-bak": {
+            "name": "BakRyan Network",
+            "desc": "A system designed to test new algorithms for network design.",
+            "year": "2001",
+            "tags": [
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto"
+            ],
+            "doi": "10.21203/rs.3.rs-574714/v1",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BAK.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a1",
+            "permalink": "benchmarks/network-BAK.html"
+        },
+        "network-goy": {
+            "name": "GoYang Network",
+            "desc": "A network designed for researching network system design using non-linear programming.",
+            "year": "1994",
+            "tags": [
+                "pumps",
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/GOY.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
+            "permalink": "benchmarks/network-GOY.html"
+        },
+        "network-bin": {
+            "name": "Balerma Irrigation Network",
+            "desc": "A network for researching genetic algorithms for the design of looped irrigation water distribution networks.",
+            "year": "2006",
+            "tags": [
+                "medium"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto",
+                "balerma"
+            ],
+            "doi": "10.1029/2005WR004383",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BIN.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
+            "permalink": "benchmarks/network-BIN.html"
+        },
+        "network-exn": {
+            "name": "EXNET",
+            "desc": "A benchmark system for optimization models.",
+            "year": "2004",
+            "tags": [
+                "valves",
+                "large"
+            ],
+            "keywords": [
+                "pareto",
+                "exeter"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/EXN.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
+            "permalink": "benchmarks/network-EXN.html"
+        },
+        "network-wcr": {
+            "name": "Wolf-Cordera Ranch Model",
+            "desc": "A model created to optimize water system design.",
+            "year": "2005",
+            "tags": [
+                "valves",
+                "pumps",
+                "large"
+            ],
+            "keywords": [
+                "exeter"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/wolf-initial-fig.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
+            "permalink": "benchmarks/network-WCR.html"
+        },
+        "network-rch": {
+            "name": "Richmond Standard",
+            "desc": "Description of the Richmond water distribution system.",
+            "year": "2001",
+            "tags": [
+                "real world",
+                "valves",
+                "tanks",
+                "pumps",
+                "medium",
+                "demand patterns"
+            ],
+            "keywords": [
+                "exeter",
+                "yorkshire"
+            ],
+            "doi": "",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/Richmond_standard.inp",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
+            "permalink": "benchmarks/network-RCH.html"
         }
     }
 }

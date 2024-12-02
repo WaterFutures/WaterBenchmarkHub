@@ -1,7 +1,7 @@
 # WaterBenchmarkHub
 
-The [*WaterBenchmarkHub*](https://waterfutures.github.io/WaterBenchmarkHub) is a platform for providing benchmark resources regarding
-Water Distribution Networks (WDNs).
+The [*WaterBenchmarkHub*](https://waterfutures.github.io/WaterBenchmarkHub) is a platform for
+accessing and sharing Water Distribution Network (WDN) benchmarks and data sets.
 The webpage is available at
 [https://waterfutures.github.io/WaterBenchmarkHub](https://waterfutures.github.io/WaterBenchmarkHub)
 -- see [docs/](docs/) for details such as source code, etc.
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 ## Documentation
 
 Documentation is available on readthedocs:
-[https://waterbenchmarkhub.readthedocs.io/en/latest/](https://waterbenchmarkhub.readthedocs.io/en/latest/)
+[https://waterbenchmarkhub.readthedocs.io/en/stable/](https://waterbenchmarkhub.readthedocs.io/en/stable/)
 
 ## License
 

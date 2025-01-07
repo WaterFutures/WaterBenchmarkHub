@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath('../src/'))
 # -- Project information -----------------------------------------------------
 
 project = 'WaterBenchmarkHub'
-copyright = 'WaterBenchmarkHub Developers, 2024'
+copyright = 'WaterBenchmarkHub Developers'
 author = 'André Artelt'
 
 

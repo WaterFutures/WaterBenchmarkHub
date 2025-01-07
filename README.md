@@ -21,7 +21,7 @@ please either create a new issue or read on
 
 ## Installation of the Python Package
 
-The Python package supports Python 3.9 - 3.12
+The Python package supports Python 3.9 - 3.13
 
 ### PyPI
 

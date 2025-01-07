@@ -7,7 +7,7 @@ Installation
 Besides the `webpage <https://waterfutures.github.io/WaterBenchmarkHub>`_, the Water Benchmark Hub
 is also available as a Python package called *water-benchmark-hub*.
 
-Note that the *water-benchmark-hub* package supports Python 3.9 - 3.12
+Note that the *water-benchmark-hub* package supports Python 3.9 - 3.13
 
 
 PyPI

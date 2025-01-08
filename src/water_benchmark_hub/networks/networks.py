@@ -3813,6 +3813,7 @@ class BAK(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the BAK network.
+
         Parameters
         ----------
         download_dir : `str`, optional
@@ -3883,6 +3884,7 @@ class GOY(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the GOY network.
+
         Parameters
         ----------
         download_dir : `str`, optional
@@ -3954,6 +3956,7 @@ class BIN(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the BIN network.
+
         Parameters
         ----------
         download_dir : `str`, optional
@@ -4025,6 +4028,7 @@ class EXN(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the EXN network.
+
         Parameters
         ----------
         download_dir : `str`, optional
@@ -4096,6 +4100,7 @@ class WCR(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the WCR network.
+
         Parameters
         ----------
         download_dir : `str`, optional
@@ -4167,6 +4172,7 @@ class RCH(WaterDistributionNetwork):
              ) -> Union[ScenarioConfig, str]:
         """
         Loads (and downloads if necessary) the RCH network.
+
         Parameters
         ----------
         download_dir : `str`, optional

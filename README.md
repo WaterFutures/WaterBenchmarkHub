@@ -1,4 +1,10 @@
 # WaterBenchmarkHub
+[![pypi](https://img.shields.io/pypi/v/water-benchmark-hub.svg)](https://pypi.org/project/water-benchmark-hub/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/water-benchmark-hub)
+[![Documentation Status](https://readthedocs.org/projects/waterbenchmarkhub/badge/?version=stable)](https://waterbenchmarkhub.readthedocs.io/en/stable/?badge=stable)
+[![Downloads](https://static.pepy.tech/badge/water-benchmark-hub)](https://pepy.tech/project/water-benchmark-hub)
+[![Downloads](https://static.pepy.tech/badge/water-benchmark-hub/month)](https://pepy.tech/project/water-benchmark-hub)
 
 The [*WaterBenchmarkHub*](https://waterfutures.github.io/WaterBenchmarkHub) is a platform for
 accessing and sharing Water Distribution Network (WDN) benchmarks and data sets.

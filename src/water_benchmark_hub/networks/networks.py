@@ -511,7 +511,7 @@ class DTown(WaterDistributionNetwork):
             Otherwise, the path to the d-town.inp file is returned.
         """
         f_in = os.path.join(download_dir, "d-town.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp"
+        url = "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/d-town.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -3789,7 +3789,7 @@ class TLN(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "TLN.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp"
+        url = "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/TLN.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -3860,7 +3860,7 @@ class BAK(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "BAK.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BAK.inp"
+        url = "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/BAK.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -3931,7 +3931,7 @@ class GOY(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "GOY.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/GOY.inp"
+        url = "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/GOY.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -4003,7 +4003,7 @@ class BIN(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "BIN.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BIN.inp"
+        url = "https://github.com/KIOS-Research/EPANET-Benchmarks/raw/refs/heads/master/collect-epanet-inp/BIN.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -4075,7 +4075,7 @@ class EXN(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "EXN.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/EXN.inp"
+        url = "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/EXN.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -4147,7 +4147,7 @@ class WCR(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "WCR.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/wolf-initial-fig.inp"
+        url = "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/wolf-initial-fig.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -4219,7 +4219,7 @@ class RCH(WaterDistributionNetwork):
             Otherwise, the path to the .inp file is returned.
         """
         f_in = os.path.join(download_dir, "RCH.inp")
-        url = "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/Richmond_standard.inp"
+        url = "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/Richmond_standard.inp"
 
         download_if_necessary(f_in, url, verbose)
 
@@ -4230,4 +4230,3 @@ class RCH(WaterDistributionNetwork):
 
 
 register("Network-RCH", RCH)
-

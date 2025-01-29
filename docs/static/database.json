@@ -1276,7 +1276,7 @@
                 "BWN"
             ],
             "license": "EUPL-1.2",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/d-town.inp",
+            "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/d-town.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/#a5",
             "permalink": "benchmarks/network-DTown.html"
         },
@@ -1315,7 +1315,7 @@
                 "tln"
             ],
             "license": "",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp",
+            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/TLN.inp",
             "doi": "10.1029/WR013i006p00885",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a9",
             "permalink": "benchmarks/network-TLN.html"
@@ -1333,7 +1333,7 @@
             ],
             "doi": "10.21203/rs.3.rs-574714/v1",
             "license": " ",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BAK.inp",
+            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/BAK.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a1",
             "permalink": "benchmarks/network-BAK.html"
         },
@@ -1351,7 +1351,7 @@
             ],
             "doi": "",
             "license": " ",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/GOY.inp",
+            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/GOY.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
             "permalink": "benchmarks/network-GOY.html"
         },
@@ -1369,7 +1369,7 @@
             ],
             "doi": "10.1029/2005WR004383",
             "license": " ",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BIN.inp",
+            "download_url": "https://github.com/KIOS-Research/EPANET-Benchmarks/raw/refs/heads/master/collect-epanet-inp/BIN.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
             "permalink": "benchmarks/network-BIN.html"
         },
@@ -1387,7 +1387,7 @@
             ],
             "doi": "",
             "license": " ",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/data/3-epanet/EXN.inp",
+            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/EXN.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
             "permalink": "benchmarks/network-EXN.html"
         },
@@ -1405,7 +1405,7 @@
             ],
             "doi": "",
             "license": " ",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/wolf-initial-fig.inp",
+            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/wolf-initial-fig.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
             "permalink": "benchmarks/network-WCR.html"
         },
@@ -1427,7 +1427,7 @@
             ],
             "doi": "",
             "license": " ",
-            "download_url": "https://www.exeter.ac.uk/media/universityofexeter/emps/research/cws/downloads/Richmond_standard.inp",
+            "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/Richmond_standard.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
             "permalink": "benchmarks/network-RCH.html"
         }

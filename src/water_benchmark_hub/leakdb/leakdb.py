@@ -559,10 +559,10 @@ class LeakDB(BenchmarkResource):
                 return lower + np.random.uniform() * (upper - lower)
 
         my_uncertainty = MyUniformUncertainty(low=0, high=0.25)
-        model_uncertainty = ModelUncertainty(pipe_length_uncertainty=my_uncertainty,
-                                             pipe_diameter_uncertainty=my_uncertainty,
-                                             pipe_roughness_uncertainty=my_uncertainty,
-                                             demand_base_uncertainty=my_uncertainty)
+        model_uncertainty = ModelUncertainty(global_pipe_length_uncertainty=my_uncertainty,
+                                             global_pipe_diameter_uncertainty=my_uncertainty,
+                                             global_pipe_roughness_uncertainty=my_uncertainty,
+                                             global_base_demand_uncertainty=my_uncertainty)
 
         # Create sensor config (place pressure and flow sensors everywhere)
         sensor_config = network_config.sensor_config

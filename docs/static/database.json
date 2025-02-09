@@ -45,6 +45,27 @@
             "external_url": "https://github.com/KIOS-Research/LeakDB",
             "permalink": "benchmarks/KIOS-LeakDB.html"
         },
+        "leakg3pd": {
+            "name": "LeakG3PD",
+            "desc": "LeakG3PD: A Python Generator and Simulated Water Distribution System Dataset",
+            "year": "2024",
+            "tags": [
+                "leakage detection",
+                "leakage localization",
+                "leakage",
+                "event detection"
+            ],
+            "keywords": [
+                "Net1",
+                "Net3",
+                "Hanoi"
+            ],
+            "doi": "10.1007/978-3-031-77738-7_7",
+            "license": " EUPL-1.2",
+            "download_url": "https://drive.google.com/drive/folders/1HM2xI9VpC4us7rFX4IuXXCoHDrnWfC17?usp=sharing",
+            "external_url": "https://github.com/matheuspilotto/LeakG3PD",
+            "permalink": "benchmarks/LeakG3PD.html"
+        },
         "battledim": {
             "name": "BattLeDIM",
             "desc": "The Battle of the Leakage Detection and Isolation Methods (BattLeDIM)",

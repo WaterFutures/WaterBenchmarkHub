@@ -87,8 +87,8 @@ If you use the WaterBenchmarkHub in your research, please cite it as follows:
 
 ```
 @misc{github:water_benchmark_hub,
-        author = {André Artelt and Katharina Giese},
-        title = {WaterBenchmarkHub},
+        author = {André Artelt and Katharina Giese and and Stelios G. Vrachimis and Demetrios G. Eliades and Marios M. Polycarpou and Barbara Hammer},
+        title = {{WaterBenchmarkHub}},
         year = {2024},
         publisher = {GitHub},
         journal = {GitHub repository},

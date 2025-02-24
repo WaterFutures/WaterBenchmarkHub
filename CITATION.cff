@@ -5,6 +5,18 @@ authors:
     orcid: "https://orcid.org/0000-0002-2426-3126"
   - family-names: Giese
     given-names: Katharina
+  - family-names: Vrachimis
+    given-names: Stelios G.
+    orcid: "https://orcid.org/0000-0001-8862-5205"
+  - family-names: Eliades
+    given-names: Demetrios G.
+    orcid: "https://orcid.org/0000-0001-6184-6366"
+  - family-names: Polycarpou
+    given-names: Marios M.
+    orcid: "https://orcid.org/0000-0001-6495-9171"
+  - family-names: Hammer
+    given-names: Barbara
+    orcid: "https://orcid.org/0000-0002-0935-5591"
 contact:
   - family-names: Artelt
     given-names: André

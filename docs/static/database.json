@@ -45,6 +45,25 @@
             "external_url": "https://github.com/KIOS-Research/LeakDB",
             "permalink": "benchmarks/KIOS-LeakDB.html"
         },
+        "leaktestbed": {
+            "name": "LeakTestbed",
+            "desc": "Dataset of Leak Simulations in Experimental Testbed Water Distribution System",
+            "year": "2022",
+            "tags": [
+                "leakage detection",
+                "leakage localization",
+                "leakage",
+                "event detection",
+                "real world"
+            ],
+            "keywords": [
+            ],
+            "doi": "10.1016/j.dib.2023.109148",
+            "license": " CC BY 4.0",
+            "download_url": "https://data.mendeley.com/datasets/tbrnp6vrnj/1",
+            "external_url": "https://data.mendeley.com/datasets/tbrnp6vrnj/1",
+            "permalink": "benchmarks/LeakTestbed.html"
+        },
         "leakg3pd": {
             "name": "LeakG3PD",
             "desc": "LeakG3PD: A Python Generator and Simulated Water Distribution System Dataset",

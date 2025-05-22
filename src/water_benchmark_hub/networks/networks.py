@@ -25,7 +25,7 @@ class WaterDistributionNetwork(BenchmarkResource):
 @meta_data("network-cy-dbp")
 class CYDBP(WaterDistributionNetwork):
     """
-    Class for loading the Richmond network.
+    Class for loading the CY-DBP network.
     """
     @staticmethod
     def load(download_dir: str = get_temp_folder(), verbose: bool = True,
@@ -74,7 +74,7 @@ class CYDBP(WaterDistributionNetwork):
         Returns
         -------
         `epyt_flow.simulation.ScenarioConfig <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig>`_ or `str`
-            If `return_scenario` is True, Richmond network loaded into a scenario configuration that
+            If `return_scenario` is True, CY-DBP network loaded into a scenario configuration that
             can be passed on to
             `epyt_flow.simulation.scenario_simulator.ScenarioSimulator <https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator>`_.
             Otherwise, the path to the CY-DBP.inp file is returned.

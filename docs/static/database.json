@@ -25,6 +25,24 @@
         ]
     },
     "resources": {
+        "clstateestimate": {
+            "name": "Chlorine State Estimation",
+            "desc": "A Benchmark for Physics-informed Machine Learning of Chlorine Concentration States in Water Distribution Networks",
+            "year": 2025,
+            "tags": [
+                "quality"
+            ],
+            "keywords": [
+                "Net1",
+                "Hanoi",
+                "CY-DBP"
+            ],
+            "doi": "10.1007/s42979-025-04008-y",
+            "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/A-Benchmark-for-Physics-informed-Deep-Learning-of-Chlorine-States-in-Water-Distribution-Networks/data",
+            "external_url": "https://github.com/andreartelt/A-Benchmark-for-Physics-informed-Machine-Learning-of-Chlorine-States-in-Water-Distribution-Networks",
+            "license": "MIT",
+            "permalink": "benchmarks/ClStateEstimate.html"
+        },
         "kios-leakdb": {
             "name": "LeakDB",
             "desc": "LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.",

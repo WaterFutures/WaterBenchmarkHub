@@ -43,6 +43,24 @@
             "license": "MIT",
             "permalink": "benchmarks/ClStateEstimate.html"
         },
+        "ai4waterclorinationchallenge": {
+            "name": "AI for Water Chlorination Challenge",
+            "desc": "1st AI for Drinking Water Chlorination Challenge @ IJCAI-2025",
+            "year": 2025,
+            "tags": [
+                "quality",
+                "competition",
+                "event detection"
+            ],
+            "keywords": [
+                "CY-DBP"
+            ],
+            "doi": "",
+            "download_url": "https://github.com/WaterFutures/AI-for-Drinking-Water-Chlorination-Challenge-IJCAI-25/archive/refs/heads/main.zip",
+            "external_url": "https://github.com/WaterFutures/AI-for-Drinking-Water-Chlorination-Challenge-IJCAI-25",
+            "license": "MIT",
+            "permalink": "benchmarks/AI4WaterChlorinationChallenge.html"
+        },
         "kios-leakdb": {
             "name": "LeakDB",
             "desc": "LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.",

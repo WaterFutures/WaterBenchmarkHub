@@ -22,7 +22,7 @@ contact:
     given-names: André
     orcid: "https://orcid.org/0000-0002-2426-3126"
 message: "If you use this software, please cite it using these metadata."
-title: "WaterBenchmarkHub"
+title: "The WaterBenchmarkHub: A Platform for Benchmarks in Water Distribution Networks"
 keywords:
   - python
   - simulation

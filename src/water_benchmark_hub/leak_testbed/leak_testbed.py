@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from enum import Enum
 from pathlib import Path
+from typing import Union
 
 from epyt_flow.utils import to_seconds, get_temp_folder, unpack_zip_archive, \
     create_path_if_not_exist, download_from_gdrive_if_necessary, download_if_necessary
@@ -46,31 +47,28 @@ class Demand(Enum):
 @meta_data("LeakTestbed")
 class LeakTestbed(BenchmarkResource):
     """
-    LeakG3PD is an updated version of the LeakDB benchmark created by
-    Pilotto Figueiredo, M. , de Souza Oliveira, L., Lucca, G., Correa Yamin, A.
-    , Huckembeck dos Santos, W. and da Rosa Lopes, T.
+    LeakTestbed is a laborstory-scale dataset of sensory measurements for leak
+    detection and localization by Aghashahi, M., Sela, L., Banks, K.
 
-    The dataset extends LeakDB by:
-    1. Tracking of leak pressure values
-    2. NET3 in addition to NET1 and HANOI
-    3. Leakages are represented as new junctions which are inserted at random
-    points along random pipes
-    4. More variability in demand patterns
-    5. New storage
+    The benchmark comprises 280 sensory measurements, divided into:
+    - 3 sensor types: accelerometer, hydrophone and dynamic pressure sensor
+    - 4 leak types: orifice leak, longitudinal and circumferential cracks,
+    gasket leak and no-leak
+    - 2 network topologies: looped and branched
+    - 6 background conditions with variations in noise and demand
 
-    The benchmark comprises 1500 leakage scenarios, 500 scenarios per network,
-    under varying conditions.
+    See https://data.mendeley.com/datasets/tbrnp6vrnj/1 for details.
 
-    See https://github.com/matheuspilotto/LeakG3PD/ for details.
-
-    This module provides functions for loading the LeakG3PD data set
-    :func:`~water_benchmark_hub.leakg3pd.leakg3pd.LeakG3PD.load_data`, as well as for loading the scenarios:
-    :func:`~water_benchmark_hub.leakg3pd.leakg3pd.LeakG3PD.load_scenarios`.
+    This module provides a function for loading the LeakTestbed data set:
+    :func:`~water_benchmark_hub.leak_testbed.leak_testbed.LeakTestbed.load_data`.
     """
 
     @staticmethod
     def raw_to_time_series(raw_file_path, channels=1, samplerate=8000,
                            subtype='PCM_32', endian='LITTLE'):
+        """Function to read .raw hydrophone files and create a pandas Dataframe
+        containing the signal and time steps.
+        """
         dtype_map = {
             'PCM_16': np.int16,
             'PCM_32': np.int32,
@@ -105,42 +103,38 @@ class LeakTestbed(BenchmarkResource):
 
     @staticmethod
     def load_data(network: str = None, download_dir: str = None,
-                  leak_types = (1, 2, 3, 4, 5), demands = (1, 2, 3, 4),
-                  background_noise = False, verbose: bool = True) -> dict:
+                  leak_types: Union[int, LeakType, list, tuple] = (1, 2, 3, 4, 5),
+                  demands: Union[int, Demand, list, tuple] = (1, 2, 3, 4),
+                  background_noise: bool = False,
+                  verbose: bool = True) -> dict:
         """
-        Loads the original LeakG3PD benchmark data set.
-
-        .. warning::
-
-            All scenarios together are a huge data set -- approx. 6GB for Net1,
-            39 GB for Net3 and 15GB for Hanoi. Downloading and loading might
-            take some time! Also, a sufficient amount of hard disk memory is required.
+        Loads the LeakTestbed benchmark data set.
 
         Parameters
         ----------
-        scenarios_id : `list[int]`
-            List of scenarios ID that are to be loaded -- there are a total number
-            of 500 scenarios per network.
         network : `str`
-            For choosing the network: Can be net1, net3 or hanoi.
+            For choosing the network: Can be branched or looped.
+
+            The default is both.
         download_dir : `str`, optional
             Path to the data files -- if None, the temp folder will be used.
             If the path does not exist, the data files will be downloaded to the given path.
 
             The default is None.
-        return_X_y : `bool`, optional
-            If True, the data is returned together with the labels (presence of a leakage) as
-            two Numpy arrays, otherwise, the data is returned as Pandas data frames.
+        leak_types : either `list`, `tuple` or single value of type `LeakType`
+            or `int`
+            Defines subset of leaks which is to be loaded. Leaks can be
+            referenced by using enum LeakType or just the number.
 
-            The default is False.
-        return_features_desc : `bool`, optional
-            If True and if `return_X_y` is True, the returned dictionary contains the
-            features' descriptions (i.e. names) under the key "features_desc".
+            The default includes all possible leak types.
+        demands : either `list`, `tuple` or single value of type `Demand`
+            or `int`
+            Defines subset of background demands which is to be loaded. Demands
+            can be referenced by using enum Demand or just the number.
 
-            The default is False.
-        return_leak_locations : `bool`
-            If True and if `return_X_y` is True, the leak locations are returned as well --
-            as an instance of `scipy.sparse.bsr_array <https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html>`_.
+            The default includes all possible background demands.
+        background_noise : `bool`
+            If True, scenarios with background noise are returned.
 
             The default is False.
         verbose : `bool`, optional
@@ -191,14 +185,11 @@ class LeakTestbed(BenchmarkResource):
         elif type(demands) is Demand:
             demands = [demands]
 
-        #raw_reader = RAWReader()
-
         if background_noise:
             background_noise_folder = os.path.join(download_dir, 'Hydrophone', 'Background Noise')
             backgound_noise_file_list = [f for f in Path(background_noise_folder).glob('Background Noise*.raw') if f.is_file()]
 
             for j, i in enumerate(backgound_noise_file_list):
-                #df_temp = raw_reader.raw_to_time_series(i)
                 df_temp = LeakTestbed.raw_to_time_series(i)
                 df_temp = df_temp.set_index('Sample')
                 df_temp = df_temp.rename(columns={'Value': 'background_noise-' + str(i).split('.')[0].split('_')[-1]})
@@ -235,8 +226,6 @@ class LeakTestbed(BenchmarkResource):
 
                         for i in file_list:
                             if str(i).split('.')[-1] == 'raw':
-                                # read hydrophone raw file, out: df_temp of type dataframe
-                                # df_temp = raw_reader.raw_to_time_series(i)
                                 df_temp = LeakTestbed.raw_to_time_series(i)
                             else:
                                 df_temp = pd.read_csv(i)

@@ -212,7 +212,7 @@ class LeakG3PD(BenchmarkResource):
 
         return results
 
-'''    @staticmethod
+    @staticmethod
     def load_scenarios(scenarios_id: list[int], network: str,
                        download_dir: str = None, verbose: bool = True) -> list[ScenarioConfig]:
         """
@@ -269,6 +269,7 @@ class LeakG3PD(BenchmarkResource):
         unpack_zip_archive(zip_dir, download_dir_net)
 
         scenarios_inp = []
+        scenarios_configs = []
 
         # Set simulation duration
         hydraulic_time_step = to_seconds(minutes=30)    # 30min time steps
@@ -402,6 +403,12 @@ class LeakG3PD(BenchmarkResource):
                 with ScenarioSimulator(f_inp_in=scenario_inp_path) as wdn:
                     sensor_config = wdn.sensor_config
 
+            # Place pressure and flow sensors everywhere)
+            sensor_config.pressure_sensors = sensor_config.nodes
+            sensor_config.flow_sensors = sensor_config.links
+
+            scenarios_configs.append(sensor_config)
+
         # Create uncertainties
         class MyUniformUncertainty(UniformUncertainty):
             """
@@ -418,10 +425,6 @@ class LeakG3PD(BenchmarkResource):
                                              global_pipe_diameter_uncertainty=my_uncertainty,
                                              global_pipe_roughness_uncertainty=my_uncertainty,
                                              global_base_demand_uncertainty=my_uncertainty)
-
-        # Place pressure and flow sensors everywhere)
-        sensor_config.pressure_sensors = sensor_config.nodes
-        sensor_config.flow_sensors = sensor_config.links
 
         # Add leakages
         leaks_all = []
@@ -452,7 +455,7 @@ class LeakG3PD(BenchmarkResource):
         return [ScenarioConfig(f_inp_in=f_inp_in, general_params=general_params,
                                sensor_config=sensor_config, model_uncertainty=model_uncertainty,
                                system_events=leaks)
-                for f_inp_in, leaks in zip(scenarios_inp, leaks_all)]'''
+                for f_inp_in, sensor_config, leaks in zip(scenarios_inp, scenarios_configs, leaks_all)]
 
 
 register("LeakG3PD", LeakG3PD)

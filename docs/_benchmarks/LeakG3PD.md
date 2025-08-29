@@ -59,24 +59,6 @@ X, y_leak = leakg3pd.load_data(scenarios_id=range(10), network='net1', return_X_
 ```
 The other networks can be called by using the network parameters net3 or hanoi.
 
-#### Loading the scenario configurations
-
-Besides loading the original (already simulated) data sets, it is also possible to load the
-scenario configuration in [EPyT-Flow](https://github.com/WaterFutures/EPyT-Flow) by calling
-the [```load_scenarios()```](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.leakg3pd.html#water_benchmark_hub.leakg3pd.leakg3pd.LeakG3PD.load_scenarios)
-function -- i.e. the user can modify the scenarios and run the simulation themself:
-```python
-# Load the first Net1 scenarios as an EPyT-Flow scenario
-scenario, = leakg3pd.load_scenarios(scenarios_id=[0], network='net1')
-
-# Modify scenario and run simulation
-from epyt_flow.simulation import ScenarioSimulator
-with ScenarioSimulator(scenario_config=scenario) as scenario:
-    # ....
-```
-Note that due to uncertainties and other factors in the original simulation, the simulated
-results will differ from the original data set and differ between runs.
-
 ## Reference
 
 Pilotto Figueiredo, M., de Souza Oliveira, L., Lucca, G., Correa Yamin, A.,

@@ -212,7 +212,7 @@ class LeakG3PD(BenchmarkResource):
 
         return results
 
-    @staticmethod
+'''    @staticmethod
     def load_scenarios(scenarios_id: list[int], network: str,
                        download_dir: str = None, verbose: bool = True) -> list[ScenarioConfig]:
         """
@@ -281,11 +281,11 @@ class LeakG3PD(BenchmarkResource):
         def gen_dem(download_dir, network, use_gen_dem2=False):
             # Taken from https://github.com/matheuspilotto/LeakG3PD/blob/main/LeakG3PD_Dataset_Generator_Py3/leakG3PDDatasetGenerator.py
             week_pat = scipy.io.loadmat(
-                os.path.join(download_dir, "weekPat_30min.mat"))
+                os.path.join(download_dir, "leakg3pd_weekPat_30min.mat"))
             a_w = week_pat['Aw']
             nw = week_pat['nw']
             year_offset = scipy.io.loadmat(
-                os.path.join(download_dir, "yearOffset_30min.mat"))
+                os.path.join(download_dir, "leakg3pd_yearOffset_30min.mat"))
             a_y = year_offset['Ay']
             ny = year_offset['ny']
 
@@ -353,8 +353,8 @@ class LeakG3PD(BenchmarkResource):
 
             return dem_final
 
-        week_pattern_url = "https://github.com/matheuspilotto/LeakG3PD/blob/main/LeakG3PD_Dataset_Generator_Py3/weekPat_30min.mat"
-        year_offset_url = "https://github.com/matheuspilotto/LeakG3PD/blob/main/LeakG3PD_Dataset_Generator_Py3/yearOffset_30min.mat"
+        week_pattern_url = "https://github.com/matheuspilotto/LeakG3PD/raw/refs/heads/main/LeakG3PD_Dataset_Generator_Py3/weekPat_30min.mat"
+        year_offset_url = "https://github.com/matheuspilotto/LeakG3PD/raw/refs/heads/main/LeakG3PD_Dataset_Generator_Py3/yearOffset_30min.mat"
 
         download_if_necessary(os.path.join(download_dir, "leakg3pd_weekPat_30min.mat"),
                               week_pattern_url, verbose)
@@ -452,7 +452,7 @@ class LeakG3PD(BenchmarkResource):
         return [ScenarioConfig(f_inp_in=f_inp_in, general_params=general_params,
                                sensor_config=sensor_config, model_uncertainty=model_uncertainty,
                                system_events=leaks)
-                for f_inp_in, leaks in zip(scenarios_inp, leaks_all)]
+                for f_inp_in, leaks in zip(scenarios_inp, leaks_all)]'''
 
 
 register("LeakG3PD", LeakG3PD)

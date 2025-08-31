@@ -15,7 +15,7 @@ The main differences are the following:
 - In addition to [Hanoi](network-Hanoi.html) and [Net1](network-Net1.html), [Net3](network-Net3.html) is also included.
 - More realistic representations of possible leak locations: Leaks are represented as new nodes inserted within random points along random pipes.
 - More variability of physical values during time: Demand patterns for different nodes are time shifted of up to 2h with 30min intervals; demand patterns have value 0 at random times.
-- Improved storage features: Files for diferent nodes and links are grouped into single archives according to physical variables; the only scenario without any leak during the entire simulation time is scenario 0.
+- Improved storage features: Files for different nodes and links are grouped into single archives according to physical variables; the only scenario without any leak during the entire simulation time is scenario 0.
 
 ## How to Use
 
@@ -28,6 +28,36 @@ Furthermore, the .inp file used for the simulation is available as well.
 Labels for each time step (30-minute steps) indicating the presence of a leak
 are given in ```Labels.csv```.
 
+### Usage in Python
+
+This benchmark is also available in Python under the key "*LeakG3PD*":
+```python
+leakg3pd = load("LeakG3PD")
+```
+
+Detailed information about the provided functionality can be found in the
+[documentation](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.leakg3pd.html#module-water_benchmark_hub.leakg3pd.leakg3pd).
+
+#### Loading the original data set
+
+The original data set can be loaded as Numpy arrays by calling the
+[```load_data()```](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.leakg3pd.html#water_benchmark_hub.leakg3pd.leakg3pd.LeakG3PD.load_data)
+function:
+```python
+# Load original data set for Net1 as labeled Numpy array
+# Labels:
+#   1: Leak is present
+#   0: No leak is present
+X, y_leak = leakg3pd.load_data(network='net1', return_X_y=True)
+```
+
+Besides loading the entire data set of 500 scenarios per network, it is also possible to load a sub-set
+of scenarios only:
+```python
+# Load the first 10 Net1 scenarios as labeled Numpy array
+X, y_leak = leakg3pd.load_data(scenarios_id=range(10), network='net1', return_X_y=True)
+```
+The other networks can be called by using the network parameters net3 or hanoi.
 
 ## Reference
 

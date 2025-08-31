@@ -14,3 +14,5 @@ from . import batadal
 from . import leakdb
 from . import battledim
 from . import bwdf
+from . import leakg3pd
+from . import leak_testbed

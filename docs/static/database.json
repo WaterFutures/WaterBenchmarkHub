@@ -1506,6 +1506,42 @@
             "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/Richmond_standard.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
             "permalink": "benchmarks/network-RCH.html"
+        },
+        "ditec": {
+            "name": "DiTEC-WDN",
+            "desc": "DiTEC-WDN: A Large-Scale Dataset of Hydraulic Scenarios across Multiple Water Distribution Networks",
+            "year": "2025",
+            "tags": [
+                "demand patterns"
+            ],
+            "keywords": [
+                "Net1",
+                "Net3",
+                "Hanoi",
+                "Kentucky Dataset",
+                "19 Pipe System",
+                "Anytown",
+                "New York",
+                "Jilin",
+                "Fossolo",
+                "FOWM",
+                "FFCL-1",
+                "Zhi Jiang",
+                "OBCL-1",
+                "Modena",
+                "NPCL-1",
+                "Marchi Rural",
+                "C Town",
+                "D Town",
+                "L Town",
+                "KL",
+                "Exnet",
+                "Large"
+            ],
+            "doi": "https://doi.org/10.48550/arXiv.2503.17167",
+            "license": "CC BY 4.0",
+            "external_url": "https://ditec-project.github.io/DiTEC_WDN_dataset/",
+            "permalink": "benchmarks/DiTEC.html"
         }
     }
 }

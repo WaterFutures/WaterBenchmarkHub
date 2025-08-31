@@ -35,6 +35,38 @@ are in ‘.raw’ format with 8000 Hz frequency.
 The file [Python code to convert raw acoustic data to pandas DataFrame.py](https://data.mendeley.com/public-files/datasets/tbrnp6vrnj/files/dc9d459b-ec6d-4a64-ab69-d2bac7396a5c/file_downloaded) converts the
 raw hydrophone data to DataFrame in Python. 
 
+### Usage in Python
+
+This benchmark is also available through the WaterBenchmarkHub under the key "*LeakTestbed*":
+
+```python
+from water_benchmark_hub import load
+
+leak_testbed = load("LeakTestbed")
+data = leak_testbed.load_data()
+```
+
+This loads the data without background noise. To further subset the scenarios,
+the following parameters can be used:
+
+- network can be 'branched' or 'looped'
+- background demand and leak types are defined by the corresponding enum classes
+  - leak types: circumferential_crack, gasket_leak, longitudinal_crack, no_leak, orifice_leak
+  - background demands: zero, small (0.18 LPS), large (0.47 LPS), transient
+- background noise can be True or False
+
+The following example load all datasets of the branched network without background noise,
+of the leak types orifice leak or gasket leak and with a large background demand.
+
+```python
+from water_benchmark_hub import load
+from water_benchmark_hub.leak_testbed import LeakType, Demand
+
+leak_testbed = load("LeakTestbed")
+data = leak_testbed.load_data(network='branched',
+                              leak_types=(LeakType.GASKET_LEAK, LeakType.ORIFICE_LEAK),
+                              demands=Demand.LARGE)
+```
 
 ## Reference
 

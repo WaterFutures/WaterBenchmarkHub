@@ -194,7 +194,7 @@ class LeakG3PD(BenchmarkResource):
                 X = df_final.drop(['labels', 'timestamps'], axis=1, inplace=False).to_numpy()
                 y = df_final[['labels']].to_numpy()
 
-                scenario_inp_path = os.path.join(scenario_path, f'{zip_mapping[network].split('.')[0]}_Scenario-{s_id}.inp')
+                scenario_inp_path = os.path.join(scenario_path, f"{zip_mapping[network].split('.')[0]}_Scenario-{s_id}.inp")
                 sim = ScenarioSimulator(f_inp_in=scenario_inp_path)
                 nodes = sim.sensor_config.nodes
 
@@ -365,7 +365,7 @@ class LeakG3PD(BenchmarkResource):
         for s_id in scenarios_id:   # Create new .inp files with demands if necessary
 
             scenario_path = os.path.join(download_dir_net, network_mapping[network], f'Scenario-{s_id}')
-            scenario_inp_path = os.path.join(scenario_path, f'{zip_mapping[network].split('.')[0]}_Scenario-{s_id}.inp')
+            scenario_inp_path = os.path.join(scenario_path, f"{zip_mapping[network].split('.')[0]}_Scenario-{s_id}.inp")
 
             f_inp_in = os.path.join(download_dir,
                                     f"{network.capitalize()}_LeakG3PD_ID=" +

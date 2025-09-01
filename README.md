@@ -86,12 +86,15 @@ MIT license -- see [LICENSE](LICENSE)
 If you use the WaterBenchmarkHub in your research, please cite it as follows:
 
 ```
-@misc{github:water_benchmark_hub,
-        author = {André Artelt and Katharina Giese and and Stelios G. Vrachimis and Demetrios G. Eliades and Marios M. Polycarpou and Barbara Hammer},
-        title = {{The WaterBenchmarkHub: A Platform for Benchmarks in Water Distribution Networks}},
-        year = {2025},
-        url = {https://github.com/WaterFutures/WaterBenchmarkHub}
-    }
+@article{Artelt_Giese_Vrachimis_Eliades_Polycarpou_Hammer_2025,
+    title={{The WaterBenchmarkHub: A Platform for Benchmarks in Water Distribution Networks}},
+    DOI={10.15131/SHEF.DATA.29921051.V1},
+    journal={21st Computing and Control in the Water Industry Conference (CCWI 2025) at the University of Sheffield (1st - 3rd September 2025)},
+    publisher={The University of Sheffield},
+    author={Artelt, André and Giese, Katharina and Vrachimis, Stelios G. and Eliades, Demetris G. and Polycarpou, Marios M. and Hammer, Barbara},
+    year={2025},
+    url = {https://github.com/WaterFutures/WaterBenchmarkHub}
+}
 ```
 
 ## How to get Support?

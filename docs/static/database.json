@@ -241,6 +241,7 @@
             "name": "BWDF",
             "desc": "Battle of Water Demand Forecasting (BWDF)",
             "year": 2024,
+            "doi": "10.1061/JWRMD5.WRENG-6887",
             "tags": [
                 "competition",
                 "battle competition",

@@ -49,8 +49,5 @@ Detailed information about the provided functionality can be found in the
 
 ## Reference
 
-S. Alvisi, M. Franchini, V. Marsili, F. Mazzoni, E. Salomons (2024).
-*Battle of Water Demand Forecasting (BWDF).*
-3nd International Joint Conference on Water Distribution System Analysis (WDSA) and Computing and
-Control in the Water Industry (CCWI)
-[<i class="bi bi-link"></i>](https://wdsa-ccwi2024.it/battle-of-water-networks/)
+S. Alvisi et al. (2025). *Battle of Water Demand Forecasting*, Journal of water resources planning and management, vol. 151, no. 10
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/JWRMD5.WRENG-6887)

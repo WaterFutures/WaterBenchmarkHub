@@ -7,7 +7,8 @@
             "leakage",
             "event detection",
             "competition",
-            "battle competition"
+            "battle competition",
+            "water demand forecasting"
         ],
         "networks": [
             "valves",
@@ -245,10 +246,13 @@
             "tags": [
                 "competition",
                 "battle competition",
-                "real world"
+                "real world",
+                "water demand forecasting"
             ],
             "keywords": [],
-            "external_url": "https://wdsa-ccwi2024.it/battle-of-water-networks/",
+            "license": "CC BY 4.0",
+            "external_url": "https://ascelibrary.org/doi/10.1061/JWRMD5.WRENG-6887",
+            "download_url": "https://ascelibrary.org/doi/suppl/10.1061/JWRMD5.WRENG-6887/suppl_file/supplemental_materials_jwrmd5.wreng-6887_alvisi.zip",
             "permalink": "benchmarks/BWDF.html"
         },
         "bwndma": {

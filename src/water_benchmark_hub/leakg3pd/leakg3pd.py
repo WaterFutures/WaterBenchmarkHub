@@ -14,7 +14,7 @@ from epyt_flow.simulation.events import AbruptLeakage, IncipientLeakage
 from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.uncertainty import ModelUncertainty, UniformUncertainty
 from epyt_flow.utils import to_seconds, get_temp_folder, unpack_zip_archive, \
-    create_path_if_not_exist, download_from_gdrive_if_necessary, download_if_necessary
+    create_path_if_not_exist, robust_download, download_if_necessary
 
 from .leakg3pd_data import NET1_LEAKAGES, NET3_LEAKAGES, HANOI_LEAKAGES
 from ..benchmark_resource import BenchmarkResource
@@ -149,10 +149,12 @@ class LeakG3PD(BenchmarkResource):
 
         zip_mapping = {"net3": "EPANET Net 3.zip", "hanoi": "Hanoi", "net1": "Net1.zip"}
         network_mapping = {"net3": "EPANET Net 3", "hanoi": "HanoiOK", "net1": "Net1OK"}
+
         file_ids = {"net3": "1Obbk91MyzrYDpDV7TL7s1pIwk5r3E2tl", "hanoi": "1Fc-RQAoQ658C7tshhG9f8sx72vEnJ4LU",
                            "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
 
-        url_data = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
+        url_gdrive = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
+        url_backup = f'https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip'
 
         if network == 'net1':
             leaks_info = json.loads(NET1_LEAKAGES)
@@ -168,7 +170,7 @@ class LeakG3PD(BenchmarkResource):
         download_dir = os.path.join(download_dir, network_desc)
 
         zip_dir = os.path.join(download_dir, zip_mapping[network])
-        download_from_gdrive_if_necessary(zip_dir, url_data, verbose)
+        robust_download(zip_dir, [url_gdrive, url_backup], verbose, timeout=45)
         unpack_zip_archive(zip_dir, download_dir)
 
         results = {}
@@ -258,14 +260,15 @@ class LeakG3PD(BenchmarkResource):
         file_ids = {"net3": "1Obbk91MyzrYDpDV7TL7s1pIwk5r3E2tl", "hanoi": "1Fc-RQAoQ658C7tshhG9f8sx72vEnJ4LU",
                            "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
 
-        url_data = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
+        url_gdrive = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
+        url_backup = f'https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip'
 
         network_desc = network.capitalize()
         download_dir = download_dir if download_dir is not None else get_temp_folder()
         download_dir_net = os.path.join(download_dir, network_desc)
 
         zip_dir = os.path.join(download_dir_net, zip_mapping[network])
-        download_from_gdrive_if_necessary(zip_dir, url_data, verbose)
+        robust_download(zip_dir, [url_gdrive, url_backup], verbose, timeout=45)
         unpack_zip_archive(zip_dir, download_dir_net)
 
         scenarios_inp = []

@@ -254,6 +254,8 @@ class LeakDB(BenchmarkResource):
             create_path_if_not_exist(scenario_data_folder_in)
             unpack_zip_archive(scenario_data_file_in, scenario_data_folder_in)
 
+            scenario_data_folder_in = os.path.join(scenario_data_folder_in, f"Scenario-{s_id}")
+
             # Load and parse data
             pressure_files = list(filter(lambda d: d.endswith(".csv"),
                                          os.listdir(os.path.join(scenario_data_folder_in,

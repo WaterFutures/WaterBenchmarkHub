@@ -1,2 +1,2 @@
-epyt-flow>=0.10
+epyt-flow>=0.15.0
 wf4bwdf>=1.0.0

@@ -1,2 +1,5 @@
 epyt-flow>=0.15.0
 wf4bwdf>=1.0.0
+numpy>=1.26.4
+pandas>=2.2.3
+datasets>=4.4.1

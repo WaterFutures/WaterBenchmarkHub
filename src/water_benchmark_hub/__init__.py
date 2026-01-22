@@ -16,3 +16,4 @@ from . import battledim
 from . import bwdf
 from . import leakg3pd
 from . import leak_testbed
+from . import ditec_wdn

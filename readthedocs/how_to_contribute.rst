@@ -137,3 +137,113 @@ For this, the following steps are necessary:
 3. Also, in all cases, the new class must be decoratated with the
    `@meta_data() <https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.meta_data.meta_data>`_
    decorator -- the argument is the unique ID of the benchmark resource as used in the database.
+
+Command-Line Interface (CLI)
+----------------------------
+
+To simplify the process of adding new benchmark resources, the
+WaterBenchmarkHub provides an interactive command-line interface (CLI).
+The CLI automates several steps described in this document and reduces
+the risk of formatting or consistency errors.
+
+The CLI is intended as a convenience tool and does **not** replace the
+contribution guidelines described above. Contributors are still
+responsible for reviewing the generated files before submitting a
+pull request.
+
+Usage
++++++
+
+From the root directory of the WaterBenchmarkHub repository, run:
+
+.. code:: bash
+
+    python add_benchmark_cli.py
+
+This will start an interactive session guiding the user through all
+required steps to add a new benchmark resource.
+
+During execution, the CLI will prompt the user for:
+
+- Network or benchmark identifier
+- Download link
+- Full name and descriptions
+- Publication year and DOI
+- Keywords, license, and external URLs
+- References and citations
+
+Based on the provided information, the CLI automatically performs the
+following actions:
+
+- Generate a load function for the benchmark
+- Analyse the network topology and create a plot
+- Create a unit test and execute it
+- Generate the markdown file in ``docs/_benchmarks/``
+- Update the JSON metadata file
+- Create tags based on network characteristics (e.g. size, components)
+
+If the generated unit test fails, the CLI **aborts the process** and
+does not update the JSON database or documentation files. The generated load
+function and unit test must be removed manually in this case.
+
+Sample CLI Run
+++++++++++++++
+
+The following example demonstrates a complete CLI session for adding a
+network benchmark using the interactive tool.
+
+.. code:: text
+
+    Adding new benchmark
+
+    Network short ID (e.g. BAK or KY13): LeakDB
+    Download link: hhttps://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A
+    Full network name: KIOS LeakDB
+    Short description: LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.
+    Long description (multi-sentence): Long description of KIOS LeakDB. May contain multiple sentences.
+    Year: 2018
+    DOI (optional): 10.5281/zenodo.1313116
+    Keywords (comma separated, optional): Net1, Hanoi
+    License (optional): EUPL-1.2
+    External URL (optional): https://github.com/KIOS-Research/LeakDB
+
+    Add references (empty to stop):
+    Reference text:
+
+During this process, the CLI:
+
+- Constructs the full benchmark identifier (e.g. ``Network-LeakDB``)
+- Generates a loader function in the Python package
+- Analyses the network topology and creates a plot
+- Creates and runs a unit test for validation
+- Generates a Markdown description file in ``docs/_benchmarks/``
+- Updates the JSON metadata database
+- Assigns tags based on network characteristics
+
+If all tests pass successfully, the benchmark is fully integrated into
+the local repository and ready for review and submission via pull
+request.
+
+
+Output and Verification
++++++++++++++++++++++++
+
+After successful execution, contributors should manually verify:
+
+- The generated Markdown file in ``docs/_benchmarks/``
+- The updated entry in ``docs/static/database.json``
+- The newly added load and test functions
+- Correct rendering of images and references
+
+Only after verification should the changes be committed and submitted
+as a pull request.
+
+Limitations
++++++++++++
+
+Currently, the CLI is primarily designed for benchmarks only consisting of a
+.inp file.
+For other types of benchmark resources, manual implementation may still
+be required, particularly for custom Python classes or non-standard
+metadata.
+

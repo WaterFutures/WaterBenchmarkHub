@@ -15,6 +15,7 @@ from . import leakdb
 from . import battledim
 from . import leakg3pd
 from . import leak_testbed
+from . import ditec_wdn
 try:
     from . import bwdf
 except:

@@ -47,6 +47,12 @@ For more details, visit the [wf4bwdf documentation or repository](https://github
 
 ### 1. Load complete dataset
 
+Make sure that you have installed the the optinal `bwdf` dependencies by running
+
+```bash
+pip install water-benchmark-hub[bwdf]
+```
+
 The function `load_complete_dataset` provides access to **DMA inflows and weather data** from the supplementary information of Alvisi et al. (2025), as well as calendar information and other problem metadata in machine-readable format.
 
 ```python

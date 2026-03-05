@@ -261,7 +261,7 @@ class LeakG3PD(BenchmarkResource):
                            "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
 
         url_gdrive = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
-        url_backup = f'https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip'
+        url_backup = f"https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip"
 
         network_desc = network.capitalize()
         download_dir = download_dir if download_dir is not None else get_temp_folder()

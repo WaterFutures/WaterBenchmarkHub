@@ -153,8 +153,8 @@ class LeakG3PD(BenchmarkResource):
         file_ids = {"net3": "1Obbk91MyzrYDpDV7TL7s1pIwk5r3E2tl", "hanoi": "1Fc-RQAoQ658C7tshhG9f8sx72vEnJ4LU",
                            "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
 
-        url_gdrive = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
-        url_backup = f'https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip'
+        url_gdrive = f"https://drive.google.com/uc?export=download&id={file_ids[network]}"
+        url_backup = f"https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip"
 
         if network == 'net1':
             leaks_info = json.loads(NET1_LEAKAGES)

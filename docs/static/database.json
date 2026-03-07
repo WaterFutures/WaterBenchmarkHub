@@ -1401,6 +1401,25 @@
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a9",
             "permalink": "benchmarks/network-TLN.html"
         },
+        "network-trn": {
+            "name": "Two-Reservoir Network (TRN)",
+            "desc": "A synthetic network created for networl design research",
+            "year": 1985,
+            "tags": [
+                "network",
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto",
+                "trn"
+            ],
+            "license": "",
+            "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TRN.inp",
+            "doi": "",
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a8",
+            "permalink": "benchmarks/network-TRN.html"
+        },
         "network-bak": {
             "name": "BakRyan Network",
             "desc": "A system designed to test new algorithms for network design.",

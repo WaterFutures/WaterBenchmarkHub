@@ -1,5 +1,5 @@
 ---
-title: "TLN"
+title: "Two-Loop Network (TLN)"
 id: "network-tln"
 permalink: /benchmarks/network-TLN.html
 collection: benchmarks
@@ -8,7 +8,7 @@ layout: benchmark
 
 ## Description
 
-The synthetic Two Loop Network was created in order to test the optimization of the network design for different flow rates via the linear programing gradient method.
+The synthetic Two-Loop Network (TLN) was created in order to test the optimization of the network design for different flow rates via the linear programing gradient method.
 
 The network consists of 6 nodes, 8 pipes and 1 reservoir.
 

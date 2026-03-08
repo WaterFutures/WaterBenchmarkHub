@@ -1383,8 +1383,8 @@
             "permalink": "benchmarks/network-DMA.html"
         },
         "network-tln": {
-            "name": "Two Loop Network",
-            "desc": "A synthetic network designed for research",
+            "name": "Two-Loop Network (TLN)",
+            "desc": "A synthetic network created for networl design research",
             "year": 1977,
             "tags": [
                 "network",

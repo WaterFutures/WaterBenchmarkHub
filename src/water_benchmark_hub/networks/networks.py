@@ -3805,7 +3805,7 @@ register("Network-TRN", TRN)
 @meta_data("network-tln")
 class TLN(WaterDistributionNetwork):
     """
-    Class for loading the TLN network.
+    Class for loading the Two-Loop Network (TLN).
     """
     @staticmethod
     def load(download_dir: str = get_temp_folder(),

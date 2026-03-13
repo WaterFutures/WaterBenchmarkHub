@@ -31,5 +31,5 @@ function insertTable(tableDivId, url) {
     fetch(url).then(res => res.text()).then(text => processData(text));
     
     var node = document.getElementById(tableDivId);
-    node.insertAdjacentHTML('afterend', `<a href="${url}" class="btn btn-primary btn-sm" role="button" id="costsTableDownloadUrl"><i class="bi bi-download"></i>Download</a>`);
+    node.insertAdjacentHTML('afterend', `<a href="${url}" class="btn btn-primary btn-sm" role="button" id="costsTableDownloadUrl"><i class="bi bi-download"></i> Download</a>`);
 };

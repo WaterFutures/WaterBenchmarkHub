@@ -1563,7 +1563,7 @@
             ],
             "doi": "10.1061/(ASCE)0733-9496(2004)130:2(160)",
             "license": " ",
-            "download_url": "https://github.com/lanl-ansi/WaterModels.jl/blob/master/examples/data/epanet/van_zyl.inp",
+            "download_url": "https://lopez-ibanez.eu/ps_instances",
             "external_url": "https://doi.org/10.1061/(ASCE)0733-9496(2004)130:2(160)",
             "permalink": "benchmarks/network-van_zyl_2004.html"
         }

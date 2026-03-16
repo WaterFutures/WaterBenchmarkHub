@@ -1,2 +1,2 @@
-epyt-flow>=0.16.1
+epyt-flow>=0.17.0
 datasets>=4.4.1

@@ -1,6 +1,6 @@
 "use strict";
 
-function insertTable(tableDivId, url) {
+function insertTable(tableDivId, url, caption) {
     function processData(csv) {
         var data = csv.split(/\r\n|\n/).map(v => v.split(','));
 
@@ -9,6 +9,10 @@ function insertTable(tableDivId, url) {
         var table = document.createElement('table');
         table.classList.add("table");
         table.classList.add("table-striped");
+
+        var cap = document.createElement('caption');
+        cap.innerHTML = caption + `<a href="${url}" class="btn btn-link"><i class="bi bi-download"></i> Download</a>`;
+        table.appendChild(cap);
 
         var thead = document.createElement('thead');
         table.appendChild(thead);
@@ -29,7 +33,4 @@ function insertTable(tableDivId, url) {
     }
 
     fetch(url).then(res => res.text()).then(text => processData(text));
-    
-    var node = document.getElementById(tableDivId);
-    node.insertAdjacentHTML('afterend', `<a href="${url}" class="btn btn-primary btn-sm" role="button" id="costsTableDownloadUrl"><i class="bi bi-download"></i> Download</a>`);
 };

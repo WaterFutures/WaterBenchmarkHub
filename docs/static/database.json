@@ -27,6 +27,24 @@
         ]
     },
     "resources": {
+        "network-pamapur": {
+            "name": "Pamapur",
+            "desc": "Pamapur Network",
+            "year": 2020,
+            "tags": [
+                "tanks",
+                "medium",
+                "demand patterns",
+                "network"
+            ],
+            "keywords": [
+                "Pamur"
+            ],
+            "doi": "10.1007/s11269-020-02597-2",
+            "license": "",
+            "download_url": "https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-pamapur/pamapur.inp",
+            "permalink": "benchmarks/network-Pamapur.html"
+        },
         "clstateestimate": {
             "name": "Chlorine State Estimation",
             "desc": "A Benchmark for Physics-informed Machine Learning of Chlorine Concentration States in Water Distribution Networks",

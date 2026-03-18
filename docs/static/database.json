@@ -9,7 +9,8 @@
             "competition",
             "battle competition",
             "water demand forecasting",
-            "pump scheduling"
+            "pump scheduling",
+            "design optimization"
         ],
         "networks": [
             "valves",
@@ -1603,6 +1604,24 @@
             "download_url": "https://lopez-ibanez.eu/ps_instances",
             "external_url": "https://doi.org/10.1061/(ASCE)0733-9496(2004)130:2(160)",
             "permalink": "benchmarks/network-van_zyl_2004.html"
+        },
+        "network-blacksburg": {
+            "name": "Blacksburg",
+            "desc": "A network presented for optimal design studies including expanding an already existing system.",
+            "year": 2001,
+            "tags": [
+                "small",
+                "design optimization"
+            ],
+            "keywords": [
+                "exeter",
+                "pareto"
+            ],
+            "doi": "10.1023/A:1008368330827",
+            "license": " ",
+            "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BLA.inp",
+            "external_url": "https://uknowledge.uky.edu/wdst_us/6/",
+            "permalink": "benchmarks/network-blacksburg.html"
         }
     }
 }

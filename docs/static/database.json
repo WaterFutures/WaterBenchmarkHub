@@ -28,6 +28,18 @@
         ]
     },
     "resources": {
+        "networkdesign": {
+            "name": "Network Design Problems",
+            "desc": "Collection of Network Design Problems",
+            "year": "1969 - 2026",
+            "tags": [
+            ],
+            "keywords": [
+                "design optimization"
+            ],
+            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
+            "permalink": "benchmarks/NetworkDesign.html"
+        },
         "network-pamapur": {
             "name": "Pamapur",
             "desc": "Pamapur Network",

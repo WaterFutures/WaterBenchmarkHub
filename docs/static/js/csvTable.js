@@ -1,6 +1,10 @@
 "use strict";
 
 function insertTable(tableDivId, url, caption) {
+    if (caption == undefined) {
+        caption = "";
+    }
+
     function processData(csv) {
         var data = csv.split(/\r\n|\n/).map(v => v.split(','));
 

@@ -14,6 +14,14 @@ The network consists of 6 nodes, 8 pipes and 1 reservoir.
 
 <img src="../static/benchmarks/network-tln/tln_plot.png"/>
 
+## Costs in the Network Design Problem
+
+Diameter options and associdated costs:
+
+<div id="tab-diameter-costs"></div>
+<script type="text/javascript">insertTable("tab-diameter-costs", "../static/benchmarks/network-tln/tln-design_problem.csv");</script>
+<br>
+
 ## How to Use
 
 The TLN network is provided as an .inp file and can be loaded into EPANET or any other software package

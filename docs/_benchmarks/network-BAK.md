@@ -15,6 +15,16 @@ The network consists of 36 nodes, 58 pipes and 1 reservoir.
 
 <img src="../static/benchmarks/network-bak/bak_plot.png"/>
 
+
+## Costs in the Network Design Problem
+
+Diameter options and associdated costs:
+
+<div id="tab-diameter-costs"></div>
+<script type="text/javascript">insertTable("tab-diameter-costs", "../static/benchmarks/network-bak/bak-design_problem.csv");</script>
+<br>
+
+
 ## How to Use
 
 The BAK network is provided as an .inp file and can be loaded into EPANET or any other software package

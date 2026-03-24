@@ -53,6 +53,39 @@ The page provides an overview of twelve benchmark design problems of Water Distr
     <td>11</td>
     <td>2.36 &times; 10<sup>9</sup></td>
 </tr>
+<tr>
+    <th rowspan=4 style="vertical-align : middle;text-align:center;">Medium problems</th>
+    <td><a href="#NYT">New York Tunnel Network (NYT)</a></td>
+    <td>1</td>
+    <td>1</td>
+    <td>21</td>
+    <td>16</td>
+    <td>1.93 &times; 10<sup>25</sup></td>
+</tr>
+<tr>
+    <td><a href="#BLA">Blacksburg Network (BLA)</a></td>
+    <td>1</td>
+    <td>1</td>
+    <td>23</td>
+    <td>14</td>
+    <td>2.30 &times; 10<sup>26</sup></td>
+</tr>
+<tr>
+    <td><a href="#HAN">Hanoi Network (HAN)</a></td>
+    <td>1</td>
+    <td>1</td>
+    <td>34</td>
+    <td>6</td>
+    <td>2.87 &times; 10<sup>26</sup></td>
+</tr>
+<tr>
+    <td><a href="#GOY">GoYang Network (GOY)</a></td>
+    <td>1</td>
+    <td>1</td>
+    <td>30</td>
+    <td>8</td>
+    <td>1.24 &times; 10<sup>27</sup></td>
+</tr>
 </tbody>
 </table>
 
@@ -128,7 +161,65 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 ## Medium problems
 
-TODO
+<details id="NYT">
+  <summary><h4 style="display:inline-block">New York Tunnel Network (NYT)</h4></summary>
+  The <a href="network-NYC-Tunnel.html">TLN</a> The NYT is comprised of twenty-one pipes organised in two loops, nineteen demand nodes, and one reservoir with a fixed head of 300 ft (1 ft=0.3048 m). All the existing pipes are considered for duplication in order to meet the projected future demand. The Hazen-Williams roughness coefficient for both new and existing pipes is 100. The minimum pressure of all demand nodes is fixed at 255 ft except for node 16 and 17 that are 260 ft and 272.8 ft, respectively. A selection of fifteen diameter sizes are available as well as a ‘do nothing’ option. Table NYT.1 shows the diameter options and associated unit costs. Figure NYT.1 depicts the layout of NYT.
+
+  <div id="nyt-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("nyt-tab-diameter-costs", "../static/benchmarks/network-nyc-tunnel/nyt-design_problem.csv", "Table NYT.1: Diameter options and associated unit costs.");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-nyc-tunnel/nyc_tunnel_plot.png"/>
+    <figcaption>Figure NYT.1: Layout of the New Tork Tunnel Network.</figcaption>
+  </figure>
+</details>
+
+<details id="BLA">
+  <summary><h4 style="display:inline-block">Blacksburg Network (BLA)</h4></summary>
+  The <a href="benchmarks/network-blacksburg.html">BLA</a> Blacksburg Network (BLA) consists of thirty-five pipes of which twelve have fixed diameters, one reservoir with a fixed head of 715.56 m, and thirty demand nodes. A universal Hazen-Williams coefficient of 120 is applied to all the pipes under consideration. The pressure requirement of each node is limited within a specified range under the single loading condition. The minimum pressure head for each node is 30 m, while the maximum pressure head varies from node to node and is provided in Table BLA.1. Table BLA.2 shows commercially available diameters and the corresponding unit costs. Figure 5 depicts the layout of BLA.
+
+  <div id="bla-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("bla-tab-diameter-costs", "../static/benchmarks/network-blacksburg/bla-design_problem.csv", "Table BLA.1: Diameter options and associated unit costs.");</script>
+  <br>
+
+  <div id="bla-tab-max-pressure"></div>
+  <script type="text/javascript">insertTable("bla-tab-max-pressure", "../static/benchmarks/network-blacksburg/bla-max-p-design_problem.csv", "Table BLA.2: Diameter options and associated unit costs of BLA.");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-blacksburg/blacksburg_plot.png"/>
+    <figcaption>Figure BLA.1: Layout of the Blacksburg Network.</figcaption>
+  </figure>
+</details>
+
+<details id="HAN">
+  <summary><h4 style="display:inline-block">Hanoi Network (HAN)</h4></summary>
+  The <a href="benchmarks/network-Hanoi.html">HAN</a> Hanoi network consists of thirty-four pipes organised in three loops, thirty-one demand nodes and one reservoir with a fixed head of 100 m. The Hazen-Williams roughness coefficient for all pipes is 130. The minimum head above the ground elevation of each node is 30 m. There are six commercially available pipe sizes, ranging from 12 in. to 40 in. (1 in.=0.0254 m). Table HAN.1 shows the diameter options and associated unit costs. Figure HAN.1 depicts the layout of HAN.
+
+  <div id="han-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("han-tab-diameter-costs", "../static/benchmarks/network-hanoi/han-design_problem.csv", "Table HAN.1: Diameter options and associated unit costs.");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-hanoi/hanoi_plot.png"/>
+    <figcaption>Figure HAN.1: Layout of the Hanoi Network.</figcaption>
+  </figure>
+</details>
+
+<details id="GOY">
+  <summary><h4 style="display:inline-block">GoYang Network (GOY)</h4></summary>
+  The <a href="benchmarks/network-GOY.html">GOY</a> GoYang Network includes thirty pipes, twenty-two demand nodes, and one constant pump of 4.52 kW linking to one reservoir with a constant head of 71 m. The Hazen-Williams roughness coefficient for each new pipe is 100. The minimum pressure head above the ground elevation of each node is 15 m. Table GOY.1 shows commercially available diameters and the corresponding unit costs. Figure GOY.1 depicts the layout of GOY.
+
+  <div id="goy-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("goy-tab-diameter-costs", "../static/benchmarks/network-goy/goy-design_problem.csv", "Table GOY.1: Diameter options and associated unit costs.");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-goy/goy_plot.png"/>
+    <figcaption>Figure GOY.1: Layout of the GoYang Network.</figcaption>
+  </figure>
+</details>
 
 
 ## Intermediate problems

@@ -11,14 +11,15 @@ import pandas as pd
 import numpy as np
 from scipy.sparse import bsr_array
 
-from .battledim_data import START_TIME_TEST, START_TIME_TRAIN, LEAKS_CONFIG_TEST, \
-    LEAKS_CONFIG_TRAIN
 from epyt_flow.simulation.events import AbruptLeakage, IncipientLeakage, Leakage
 from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.topology import NetworkTopology
 from epyt_flow.simulation.scada import ScadaData
-from epyt_flow.utils import get_temp_folder, to_seconds, create_path_if_not_exist, download_if_necessary
+from epyt_flow.utils import get_temp_folder, to_seconds, create_path_if_not_exist, \
+    download_if_necessary
 
+from .battledim_data import START_TIME_TEST, START_TIME_TRAIN, LEAKS_CONFIG_TEST, \
+    LEAKS_CONFIG_TRAIN
 from ..networks import LTown
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register

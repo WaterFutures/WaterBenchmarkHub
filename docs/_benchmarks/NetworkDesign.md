@@ -112,7 +112,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="TRN">
   <summary><h4 style="display:inline-block">Two-Reservoir Network (TRN)</h4></summary>
-  The <a href="network-TRN.html">TRN</a> has eight undetermined pipes and nine prefixed pipes, two reservoirs fixed at 365.76 m (left) and 371.86 m (right) and nine demand nodes. New and cleaned pipes have the same Hazen-Williams roughness coefficient of 120.
+  The <a href="network-TRN.html">Two-Reservoir Network (TRN)</a> has eight undetermined pipes and nine prefixed pipes, two reservoirs fixed at 365.76 m (left) and 371.86 m (right) and nine demand nodes. New and cleaned pipes have the same Hazen-Williams roughness coefficient of 120.
   The minimum pressure of all the nodes under three demand patterns is specified in Table TRN.1.
   The decision variables are the pipe diameters for five new pipes and alternative options (duplication or cleaning or leaving alone) for three existing pipes
   Each pipe has eight diameter options to choose from. Table TRN.2 shows available options for pipe diameter and the corresponding unit costs. Figure TRN.1 depicts the layout of TRN.
@@ -133,7 +133,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="TLN">
   <summary><h4 style="display:inline-block">Two-Loop Network (TLN)</h4></summary>
-  The <a href="network-TLN.html">TLN</a> consists of one reservoir, six demand nodes and eight pipes organised in two loops. The reservoir has a constant head fixed at 210 m. As a hypothetical network, all pipes have the same length (1000 m) and the Hazen-Williams coefficient of 130. The pressure is set to be at least 30.0 m at all demand nodes. Table TLN.1 shows commercially available diameters and the corresponding unit costs (1 in.=0.0254 m). Figure TLN.1 depicts the layout of TLN.
+  The <a href="network-TLN.html">Two-Loop Network (TLN)</a> consists of one reservoir, six demand nodes and eight pipes organised in two loops. The reservoir has a constant head fixed at 210 m. As a hypothetical network, all pipes have the same length (1000 m) and the Hazen-Williams coefficient of 130. The pressure is set to be at least 30.0 m at all demand nodes. Table TLN.1 shows commercially available diameters and the corresponding unit costs (1 in.=0.0254 m). Figure TLN.1 depicts the layout of TLN.
 
   <div id="tln-tab-diameter-costs"></div>
   <script type="text/javascript">insertTable("tln-tab-diameter-costs", "../static/benchmarks/network-tln/tln-design_problem.csv", "Table TLN.1: Diameter options and associated unit costs.");</script>
@@ -147,7 +147,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="BAK">
   <summary><h4 style="display:inline-block">BakRyan Network (BAK)</h4></summary>
-  The <a href="network-BAK.html">BAK</a> has fifty-eight pipes including nine new pipes to be sized, thirty-five demand nodes, one reservoir with a fixed head of 58 m. The Hazen-Williams roughness coefficient for each new pipe is 100. The minimum pressure head above the ground elevation of each node is 15 m. Among the new pipes, six of them are parallel. Table BAK.1 shows commercially available diameters and the corresponding unit costs. Figure BAK.1 depicts the layout of BAK.
+  The <a href="network-BAK.html">BakRyan Network (BAK)</a> has fifty-eight pipes including nine new pipes to be sized, thirty-five demand nodes, one reservoir with a fixed head of 58 m. The Hazen-Williams roughness coefficient for each new pipe is 100. The minimum pressure head above the ground elevation of each node is 15 m. Among the new pipes, six of them are parallel. Table BAK.1 shows commercially available diameters and the corresponding unit costs. Figure BAK.1 depicts the layout of BAK.
 
   <div id="bak-tab-diameter-costs"></div>
   <script type="text/javascript">insertTable("bak-tab-diameter-costs", "../static/benchmarks/network-bak/bak-design_problem.csv", "Table BAK.1: Diameter options and associated unit costs.");</script>
@@ -163,7 +163,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="NYT">
   <summary><h4 style="display:inline-block">New York Tunnel Network (NYT)</h4></summary>
-  The <a href="network-NYC-Tunnel.html">TLN</a> The NYT is comprised of twenty-one pipes organised in two loops, nineteen demand nodes, and one reservoir with a fixed head of 300 ft (1 ft=0.3048 m). All the existing pipes are considered for duplication in order to meet the projected future demand. The Hazen-Williams roughness coefficient for both new and existing pipes is 100. The minimum pressure of all demand nodes is fixed at 255 ft except for node 16 and 17 that are 260 ft and 272.8 ft, respectively. A selection of fifteen diameter sizes are available as well as a ‘do nothing’ option. Table NYT.1 shows the diameter options and associated unit costs. Figure NYT.1 depicts the layout of NYT.
+  The <a href="network-NYC-Tunnel.html">New York Tunnel Network (NYT)</a> is comprised of twenty-one pipes organised in two loops, nineteen demand nodes, and one reservoir with a fixed head of 300 ft (1 ft=0.3048 m). All the existing pipes are considered for duplication in order to meet the projected future demand. The Hazen-Williams roughness coefficient for both new and existing pipes is 100. The minimum pressure of all demand nodes is fixed at 255 ft except for node 16 and 17 that are 260 ft and 272.8 ft, respectively. A selection of fifteen diameter sizes are available as well as a ‘do nothing’ option. Table NYT.1 shows the diameter options and associated unit costs. Figure NYT.1 depicts the layout of NYT.
 
   <div id="nyt-tab-diameter-costs"></div>
   <script type="text/javascript">insertTable("nyt-tab-diameter-costs", "../static/benchmarks/network-nyc-tunnel/nyt-design_problem.csv", "Table NYT.1: Diameter options and associated unit costs.");</script>
@@ -177,7 +177,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="BLA">
   <summary><h4 style="display:inline-block">Blacksburg Network (BLA)</h4></summary>
-  The <a href="benchmarks/network-blacksburg.html">BLA</a> Blacksburg Network (BLA) consists of thirty-five pipes of which twelve have fixed diameters, one reservoir with a fixed head of 715.56 m, and thirty demand nodes. A universal Hazen-Williams coefficient of 120 is applied to all the pipes under consideration. The pressure requirement of each node is limited within a specified range under the single loading condition. The minimum pressure head for each node is 30 m, while the maximum pressure head varies from node to node and is provided in Table BLA.1. Table BLA.2 shows commercially available diameters and the corresponding unit costs. Figure 5 depicts the layout of BLA.
+  The <a href="benchmarks/network-blacksburg.html">Blacksburg Network (BLA)</a> consists of thirty-five pipes of which twelve have fixed diameters, one reservoir with a fixed head of 715.56 m, and thirty demand nodes. A universal Hazen-Williams coefficient of 120 is applied to all the pipes under consideration. The pressure requirement of each node is limited within a specified range under the single loading condition. The minimum pressure head for each node is 30 m, while the maximum pressure head varies from node to node and is provided in Table BLA.1. Table BLA.2 shows commercially available diameters and the corresponding unit costs. Figure 5 depicts the layout of BLA.
 
   <div id="bla-tab-diameter-costs"></div>
   <script type="text/javascript">insertTable("bla-tab-diameter-costs", "../static/benchmarks/network-blacksburg/bla-design_problem.csv", "Table BLA.1: Diameter options and associated unit costs.");</script>
@@ -195,7 +195,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="HAN">
   <summary><h4 style="display:inline-block">Hanoi Network (HAN)</h4></summary>
-  The <a href="benchmarks/network-Hanoi.html">HAN</a> Hanoi network consists of thirty-four pipes organised in three loops, thirty-one demand nodes and one reservoir with a fixed head of 100 m. The Hazen-Williams roughness coefficient for all pipes is 130. The minimum head above the ground elevation of each node is 30 m. There are six commercially available pipe sizes, ranging from 12 in. to 40 in. (1 in.=0.0254 m). Table HAN.1 shows the diameter options and associated unit costs. Figure HAN.1 depicts the layout of HAN.
+  The <a href="benchmarks/network-Hanoi.html">Hanoi network (HAN)</a> consists of thirty-four pipes organised in three loops, thirty-one demand nodes and one reservoir with a fixed head of 100 m. The Hazen-Williams roughness coefficient for all pipes is 130. The minimum head above the ground elevation of each node is 30 m. There are six commercially available pipe sizes, ranging from 12 in. to 40 in. (1 in.=0.0254 m). Table HAN.1 shows the diameter options and associated unit costs. Figure HAN.1 depicts the layout of HAN.
 
   <div id="han-tab-diameter-costs"></div>
   <script type="text/javascript">insertTable("han-tab-diameter-costs", "../static/benchmarks/network-hanoi/han-design_problem.csv", "Table HAN.1: Diameter options and associated unit costs.");</script>

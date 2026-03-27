@@ -62,6 +62,7 @@ class LTown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -163,6 +164,7 @@ class LTown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional

@@ -62,6 +62,7 @@ class CYDBP(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -133,6 +134,7 @@ class Richmond(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -205,6 +207,7 @@ class Micropolis(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -277,6 +280,7 @@ class Balerma(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -349,6 +353,7 @@ class Rural(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -421,6 +426,7 @@ class Anytown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -493,6 +499,7 @@ class DTown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -564,6 +571,7 @@ class CTown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -640,6 +648,7 @@ class Hanoi(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -721,6 +730,7 @@ class CA1(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -788,6 +798,7 @@ class ETown(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -858,6 +869,7 @@ class PA1(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -929,6 +941,7 @@ class PA2(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1000,6 +1013,7 @@ class WA1(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1071,6 +1085,7 @@ class NJ1(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1142,6 +1157,7 @@ class BWSN1(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1214,6 +1230,7 @@ class BWSN2(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1286,6 +1303,7 @@ class Fossolo(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1357,6 +1375,7 @@ class Modena(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1428,6 +1447,7 @@ class ZhiJiang(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1499,6 +1519,7 @@ class MarchiRural(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1570,6 +1591,7 @@ class KY1(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1641,6 +1663,7 @@ class KY2(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1712,6 +1735,7 @@ class KY3(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1783,6 +1807,7 @@ class KY4(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1854,6 +1879,7 @@ class KY5(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1925,6 +1951,7 @@ class KY6(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -1996,6 +2023,7 @@ class KY7(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2067,6 +2095,7 @@ class KY8(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2138,6 +2167,7 @@ class KY9(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2209,6 +2239,7 @@ class KY10(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2280,6 +2311,7 @@ class KY11(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2351,6 +2383,7 @@ class KY12(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2422,6 +2455,7 @@ class KY13(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2493,6 +2527,7 @@ class KY14(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2564,6 +2599,7 @@ class KY15(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2635,6 +2671,7 @@ class KY16(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2706,6 +2743,7 @@ class KY17(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2777,6 +2815,7 @@ class KYV8(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2848,6 +2887,7 @@ class KYV18(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2919,6 +2959,7 @@ class KYV21(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -2990,6 +3031,7 @@ class KYV22(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3061,6 +3103,7 @@ class KYV23(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3132,6 +3175,7 @@ class KYV24(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3203,6 +3247,7 @@ class NYC_Tunnel(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3274,6 +3319,7 @@ class NineteenPipe(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3345,6 +3391,7 @@ class ModifiedNineteenPipe(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3416,6 +3463,7 @@ class FOWM(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3487,6 +3535,7 @@ class FourteenPipe(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3558,6 +3607,7 @@ class KL(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3629,6 +3679,7 @@ class Jilin(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3700,6 +3751,7 @@ class DMA(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3771,6 +3823,7 @@ class TRN(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3842,6 +3895,7 @@ class TLN(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3913,6 +3967,7 @@ class BAK(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -3984,6 +4039,7 @@ class GOY(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -4056,6 +4112,7 @@ class BIN(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -4128,6 +4185,7 @@ class EXN(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -4200,6 +4258,7 @@ class WCR(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional
@@ -4272,6 +4331,7 @@ class RCH(WaterDistributionNetwork):
                 - EN_MLD  = 7  (Megaliter/day)
                 - EN_CMH  = 8  (cubic meter/hr)
                 - EN_CMD  = 9  (cubic meter/day)
+                - EN_CMS  = 10 (cubic meters per second)
 
             The default is None.
         return_scenario : `bool`, optional

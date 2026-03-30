@@ -1,0 +1,216 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 1               	80          	-1650       	                	;
+ 2               	90          	0           	                	;
+ 3               	100         	0           	                	;
+ 4               	90          	500         	1               	;
+ 5               	100         	-550        	                	;
+ 6               	100         	400         	1               	;
+ 7               	80          	0           	                	;
+ 8               	60          	0           	                	;
+ 9               	80          	600         	1               	;
+ 10              	100         	0           	                	;
+ 11              	100         	700         	1               	;
+ 12              	100         	0           	                	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+ R-1             	1000        	                	;
+ R-2             	1000        	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 1               	1               	2               	1500        	12          	130         	0           	Open  	;
+ 2               	2               	3               	1000        	8           	130         	0           	Open  	;
+ 3               	3               	4               	1200        	8           	120         	0           	Open  	;
+ 4               	4               	5               	2000        	8           	120         	0           	Open  	;
+ 5               	6               	5               	2800        	8           	120         	0           	Open  	;
+ 6               	7               	6               	1100        	8           	120         	0           	Open  	;
+ 7               	8               	7               	1000        	8           	120         	0           	Open  	;
+ 8               	9               	8               	2500        	8           	120         	0           	Open  	;
+ 9               	1               	9               	800         	8           	100         	0           	Open  	;
+ 10              	9               	10              	1300        	6           	100         	0           	Open  	;
+ 11              	10              	11              	1000        	6           	100         	0           	Open  	;
+ 12              	11              	12              	1100        	10          	130         	0           	Open  	;
+ 13              	12              	5               	1000        	10          	130         	0           	Open  	;
+ 14              	10              	8               	1800        	6           	120         	0           	Open  	;
+ 15              	2               	10              	1100        	6           	120         	0           	Open  	;
+ 16              	11              	7               	1800        	6           	120         	0           	Open  	;
+ 17              	3               	11              	1200        	10          	130         	0           	Open  	;
+ 18              	12              	6               	1800        	6           	120         	0           	Open  	;
+ 19              	4               	12              	1300        	6           	120         	0           	Open  	;
+ inflow_1        	R-1             	1               	82.699      	12          	125         	0           	Open  	;
+ inflow_2        	5               	R-2             	48.299      	12          	125         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ 1               	1           
+;
+ 11              	1           
+;
+ ENRG1           	1           
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+
+[CONTROLS]
+
+[RULES]
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+ Bulk     	1               	-0.75
+ Wall     	1               	-0.5
+ Bulk     	2               	-0.75
+ Wall     	2               	-0.5
+ Bulk     	3               	-0.75
+ Wall     	3               	-0.5
+ Bulk     	4               	-0.75
+ Wall     	4               	-0.5
+ Bulk     	5               	-0.75
+ Wall     	5               	-0.5
+ Bulk     	6               	-0.75
+ Wall     	6               	-0.5
+ Bulk     	7               	-0.75
+ Wall     	7               	-0.5
+ Bulk     	8               	-0.75
+ Wall     	8               	-0.5
+ Bulk     	9               	-0.75
+ Wall     	9               	-0.5
+ Bulk     	10              	-0.75
+ Wall     	10              	-0.5
+ Bulk     	11              	-0.75
+ Wall     	11              	-0.5
+ Bulk     	12              	-0.75
+ Wall     	12              	-0.5
+ Bulk     	13              	-0.75
+ Wall     	13              	-0.5
+ Bulk     	14              	-0.75
+ Wall     	14              	-0.5
+ Bulk     	15              	-0.75
+ Wall     	15              	-0.5
+ Bulk     	16              	-0.75
+ Wall     	16              	-0.5
+ Bulk     	17              	-0.75
+ Wall     	17              	-0.5
+ Bulk     	18              	-0.75
+ Wall     	18              	-0.5
+ Bulk     	19              	-0.75
+ Wall     	19              	-0.5
+ Bulk     	inflow_1        	-0.75
+ Wall     	inflow_1        	-0.5
+ Bulk     	inflow_2        	-0.75
+ Wall     	inflow_2        	-0.5
+
+
+[REACTIONS]
+ Order Bulk            	0
+ Order Tank            	0
+ Order Wall            	0
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	0
+ Hydraulic Timestep 	1:00
+ Quality Timestep   	0:05
+ Pattern Timestep   	1:00
+ Pattern Start      	0:00
+ Report Timestep    	1:00
+ Report Start       	0:00
+ Start ClockTime    	12 am
+ Statistic          	None
+
+[REPORT]
+ Status             	Full
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	GPM
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	50
+ Accuracy           	0.0001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Emitter Exponent   	0.5
+ Quality            	AGE mg/L
+ Diffusivity        	0.05
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ 1               	120.12          	254.00          
+ 2               	179.35          	254.00          
+ 3               	239.68          	254.00          
+ 4               	300.25          	254.00          
+ 5               	332.58          	194.00          
+ 6               	300.10          	136.00          
+ 7               	239.06          	135.00          
+ 8               	120.42          	135.00          
+ 9               	120.16          	195.00          
+ 10              	179.50          	194.00          
+ 11              	239.55          	194.00          
+ 12              	300.25          	194.00          
+ R-1             	37.40           	254.00          
+ R-2             	380.87          	195.00          
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	20.22           	129.05          	398.05          	259.95          
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]

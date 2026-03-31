@@ -1,0 +1,259 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 501             	150         	0           	                	;
+ 502             	155         	0           	                	;
+ 301             	75          	5000        	                	;
+ 302             	75          	0           	                	;
+ 309             	15          	0           	                	;
+ 130             	50          	0           	                	;
+ 310             	10          	0           	                	;
+ 131             	10          	0           	                	;
+ 311             	35          	0           	                	;
+ 101             	65          	200         	                	;
+ 102             	65          	0           	                	;
+ 312             	20          	0           	                	;
+ 313             	30          	0           	                	;
+ 103             	60          	50          	                	;
+ 104             	50          	50          	                	;
+ 314             	30          	0           	                	;
+ 105             	60          	0           	                	;
+ 106             	60          	0           	                	;
+ 107             	65          	0           	                	;
+ 108             	65          	0           	                	;
+ 109             	65          	0           	                	;
+ 110             	85          	0           	                	;
+ 113             	150         	0           	                	;
+ 114             	150         	100         	                	;
+ 112             	150         	100         	                	;
+ 111             	150         	100         	                	;
+ 120             	18          	100         	                	;
+ 119             	40          	100         	                	;
+ 118             	39          	100         	                	;
+ 117             	40          	100         	                	;
+ 115             	30          	0           	                	;
+ 116             	30          	100         	                	;
+ 121             	30          	0           	                	;
+ 203             	50          	0           	                	;
+ 202             	45          	0           	                	;
+ 201             	45          	0           	                	;
+ 405             	10          	0           	                	;
+ 404             	10          	100         	                	;
+ 403             	30          	200         	                	;
+ 406             	30          	600         	                	;
+ 407             	50          	0           	                	;
+ 401             	30          	0           	                	;
+ 402             	30          	0           	                	;
+ 315             	12          	0           	                	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+ 503             	245         	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve        	Overflow
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 2               	501             	502             	11900       	48          	70          	0           	Open  	;
+ 3               	502             	301             	7420        	48          	70          	0           	Open  	;
+ 4               	502             	302             	7320        	30          	70          	0           	Open  	;
+ 6               	309             	310             	2590        	30          	70          	0           	Open  	;
+ 7               	310             	311             	3340        	30          	70          	0           	Open  	;
+ 8               	311             	312             	340         	30          	70          	0           	Open  	;
+ 9               	312             	313             	1890        	30          	70          	0           	Open  	;
+ 10              	313             	314             	1960        	30          	70          	0           	Open  	;
+ 11              	314             	315             	1210        	8           	70          	0           	Open  	;
+ 12              	315             	402             	1600        	8           	70          	0           	Open  	;
+ 13              	402             	401             	1220        	16          	70          	0           	Open  	;
+ 14              	401             	407             	1225        	16          	70          	0           	Open  	;
+ 15              	405             	404             	1170        	6           	70          	0           	Open  	;
+ 16              	404             	403             	1120        	8           	70          	0           	Open  	;
+ 17              	403             	406             	1940        	16          	70          	0           	Open  	;
+ 18              	406             	401             	1700        	24          	70          	0           	Open  	;
+ 19              	314             	401             	1830        	30          	70          	0           	Open  	;
+ 20              	406             	201             	700         	18          	70          	0           	Open  	;
+ 21              	201             	202             	1860        	24          	70          	0           	Open  	;
+ 22              	202             	203             	2800        	24          	70          	0           	Open  	;
+ 23              	203             	121             	1730        	16          	70          	0           	Open  	;
+ 24              	121             	115             	1540        	16          	70          	0           	Open  	;
+ 25              	115             	116             	1250        	8           	70          	0           	Open  	;
+ 26              	115             	117             	1650        	16          	70          	0           	Open  	;
+ 27              	117             	118             	1100        	8           	70          	0           	Open  	;
+ 28              	117             	119             	570         	16          	70          	0           	Open  	;
+ 29              	119             	120             	1330        	8           	70          	0           	Open  	;
+ 30              	201             	108             	1610        	12          	70          	0           	Open  	;
+ 31              	108             	109             	420         	10          	70          	0           	Open  	;
+ 32              	109             	110             	66          	8           	70          	0           	Open  	;
+ 33              	111             	112             	1400        	8           	70          	0           	Open  	;
+ 34              	110             	113             	1460        	8           	70          	0           	Open  	;
+ 35              	113             	114             	1150        	8           	70          	0           	Open  	;
+ 36              	110             	111             	720         	8           	70          	0           	Open  	;
+ 37              	108             	107             	240         	16          	70          	0           	Open  	;
+ 38              	107             	106             	670         	16          	70          	0           	Open  	;
+ 39              	106             	105             	880         	16          	70          	0           	Open  	;
+ 40              	105             	104             	1260        	16          	70          	0           	Open  	;
+ 41              	104             	103             	1390        	16          	70          	0           	Open  	;
+ 42              	103             	102             	1900        	16          	70          	0           	Open  	;
+ 43              	102             	101             	63          	16          	70          	0           	Open  	;
+ 44              	101             	131             	3450        	16          	70          	0           	Open  	;
+ 45              	131             	130             	2360        	16          	70          	0           	Open  	;
+ 46              	130             	302             	1820        	16          	70          	0           	Open  	;
+ 47              	311             	101             	530         	16          	70          	0           	Open  	;
+ 48              	313             	103             	1000        	12          	70          	0           	Open  	;
+ 49              	302             	309             	1580        	30          	70          	0           	Open  	;
+ 5               	301             	302             	1000        	12          	70          	0           	Open  	;
+ 50              	503             	502             	1200        	48          	70          	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+
+[CONTROLS]
+
+[RULES]
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	0
+ Hydraulic Timestep 	1:00
+ Quality Timestep   	0:05
+ Pattern Timestep   	1:00
+ Pattern Start      	0:00
+ Report Timestep    	1:00
+ Report Start       	0:00
+ Start ClockTime    	12 am
+ Statistic          	None
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	GPM
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	40
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Emitter Exponent   	0.5
+ Quality            	None mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord           	Y-Coord
+501             	861.028           	8475.359          
+502             	1512.835          	9004.605          
+301             	2281.634          	9138.309          
+302             	2292.776          	8976.750          
+309             	2337.344          	7862.548          
+130             	2209.211          	7712.131          
+310             	3078.288          	7834.693          
+131             	3017.007          	7628.566          
+311             	3635.389          	7817.980          
+101             	3679.957          	7533.859          
+102             	3952.936          	7478.149          
+312             	4042.072          	7812.409          
+313             	4398.617          	7801.267          
+103             	4404.188          	7444.723          
+104             	4816.442          	7483.720          
+314             	4905.578          	7834.693          
+105             	5217.555          	7500.433          
+106             	5624.238          	7539.430          
+107             	6025.350          	7578.427          
+108             	6454.318          	7806.838          
+109             	6727.297          	7617.424          
+110             	6955.708          	7634.137          
+113             	6866.572          	7160.602          
+114             	6710.584          	6586.788          
+112             	7323.395          	6642.498          
+111             	7078.271          	7277.593          
+120             	8660.436          	6547.791          
+119             	8454.309          	7065.894          
+118             	8716.146          	7717.702          
+117             	8365.173          	7400.155          
+115             	8058.768          	7695.418          
+116             	8420.883          	8096.531          
+121             	7824.785          	8001.824          
+203             	7696.652          	8291.516          
+202             	7250.972          	8308.229          
+201             	6649.303          	8040.821          
+405             	7585.232          	9795.688          
+404             	7167.407          	9472.569          
+403             	6749.581          	8854.187          
+406             	6588.022          	8280.374          
+407             	6125.629          	8386.223          
+401             	6019.779          	8174.525          
+402             	6131.200          	8865.330          
+315             	5395.827          	8469.788          
+503             	994.694           	9313.007          
+
+[VERTICES]
+;Link            	X-Coord           	Y-Coord
+17              	6922.282          	8464.217          
+
+[LABELS]
+;X-Coord             Y-Coord             Label & Anchor Node
+
+[BACKDROP]
+  DIMENSIONS  	0.000             	0.000             	10000.000         	10000.000         
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]

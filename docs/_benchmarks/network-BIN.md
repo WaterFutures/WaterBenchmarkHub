@@ -37,7 +37,7 @@ Detailed information about the provided functionality can be found in the docume
 Diameter options and associdated costs:
 
 <div id="tab-diameter-costs"></div>
-<script type="text/javascript">insertTable("tab-diameter-costs", "../static/benchmarks/network-BIN/BIN_Cost.csv");</script>
+<script type="text/javascript">insertTable("tab-diameter-costs", "../static/benchmarks/network-bin/BIN_Cost.csv");</script>
 <br>
 
 

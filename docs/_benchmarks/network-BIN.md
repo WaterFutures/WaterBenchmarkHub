@@ -32,6 +32,15 @@ Detailed information about the provided functionality can be found in the docume
 [`load()`](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BIN.load).
 
 
+## Costs in the Network Design Problem
+
+Diameter options and associdated costs:
+
+<div id="tab-diameter-costs"></div>
+<script type="text/javascript">insertTable("tab-diameter-costs", "../static/benchmarks/network-bin/BIN_Cost.csv");</script>
+<br>
+
+
 ## Reference
 
 Reca, Juan; Martínez, Juan. Genetic algorithms for the design of looped irrigation water distribution networks. Water resources research, 2006, 42. Jg., Nr. 5.

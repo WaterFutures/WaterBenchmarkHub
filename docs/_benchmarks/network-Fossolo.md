@@ -37,6 +37,26 @@ Detailed information about the provided functionality can be found in the docume
 [`load()`](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Fossolo.load).
 
 
+### Design Problem Description
+Fossolo Network (FOS) includes fifty-eight pipes, thirty-six demand nodes, and one reservoir with a fixed head of 121.00 m. The material for all the pipes is polyethylene. Due to the feature of polyethylene, a relatively high roughness coefficient of 150 is applied to all the pipes. The minimum pressure head of all the demand nodes is maintained at 40 m, while the maximum pressure head of each node is specified in Table FOS.1. In addition, the flow velocity in each pipe is enforced to be less than or equal to 1 m/s. Table FOS.2 shows commercially available diameters and the corresponding unit costs.
+
+#### Maximum Pressure Design Problem
+
+Max Pressure:
+
+<div id="Table FOS1"></div>
+<script type="text/javascript">insertTable("Table FOS1", "../static/benchmarks/network-fossolo/FOS_Pressure.csv");</script>
+<br>
+
+#### Costs in the Network Design Problem
+
+Diameter options and associdated costs:
+
+<div id="Table FOS2"></div>
+<script type="text/javascript">insertTable("Table FOS2", "../static/benchmarks/network-fossolo/FOS_Cost.csv");</script>
+<br>
+
+
 ## Reference
 
 Dandy, Graeme, "03 Fossolo" (2016). International Systems. 3.

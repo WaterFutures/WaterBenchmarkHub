@@ -35,6 +35,24 @@ modena_inp = network.load()
 Detailed information about the provided functionality can be found in the documentation of
 [`load()`](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Modena.load).
 
+### Design Problem Description
+Modena Network (MOD) includes three hundred and seventeen pipes, two hundred and sixty-eight demand nodes, and four reservoirs with fixed head within 72.0 m to 74.5 m. The pipe material is the same as PES. A uniform Hazen-Williams roughness coefficient of 130 is applied to all pipes. The minimum pressure head of all the demand nodes is maintained at 20 m. The maximum pressure head of each node of MOD is provided in Table MOD1 In addition, the flow velocity in each pipe is enforced to be less than or equal to 2 m/s.
+
+#### Costs in the Network Design Problem
+
+Diameter options and associdated costs:
+
+<div id="tab-diameter-costs"></div>
+<script type="text/javascript">insertTable("tab-diameter-costs", "../static/benchmarks/network-modena/PES_Cost.csv");</script>
+<br>
+
+#### Maximum Pressure Design Problem
+
+Max Pressure:
+
+<div id="Table MOD1"></div>
+<script type="text/javascript">insertTable("Table MOD1", "../static/benchmarks/network-modena/MOD_Pressure.csv");</script>
+<br>
 
 ## Reference
 

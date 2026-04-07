@@ -48,6 +48,8 @@ it should dropped from the database entry:
   these keywords are never displayed but used when the user is searching for benchmark (resources).
 - :code:`download_url` External URL where the benchmark (resource) can be downloaded --
   should be direct link to the resource file(s). 
+- :code:`backup_download_urls` Additional external URLs where the benchmark (resource) can be downloaded --
+  will be used if downloading from :code:`download_url` fails.
 - :code:`external_url` External URL to the project page of the benchmark (resource).
 - :code:`permalink` Usually, this is given as `benchmarks/benchmark-ID.html`
   where `benchmark-ID` refers to the unique ID of the benchmark resource.
@@ -67,6 +69,7 @@ A complete example of the `KIOS LeakDB` benchmark is given below:
             "doi": "10.5281/zenodo.1313116",
             "license": "EUPL-1.2",
             "download_url": "https://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A",
+            "backup_download_urls": [],
             "external_url": "https://github.com/KIOS-Research/LeakDB",
             "permalink": "benchmarks/KIOS-LeakDB.html"
         }

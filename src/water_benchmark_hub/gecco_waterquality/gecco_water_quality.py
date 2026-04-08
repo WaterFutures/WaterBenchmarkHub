@@ -64,8 +64,7 @@ class GeccoWaterQuality2017(GeccoWaterQuality):
     More information can be found at https://zenodo.org/records/3884465 and
     http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/
     """
-    @staticmethod
-    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True
+    def load_data(self, download_dir: str = None, return_X_y: bool = True, verbose: bool = True
                   ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
         """
         Loads the original GECCO Industrial Challenge 2017 Dataset.
@@ -138,8 +137,7 @@ class GeccoWaterQuality2018(GeccoWaterQuality):
     More information can be found at https://zenodo.org/records/3884398 and
     http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/
     """
-    @staticmethod
-    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True
+    def load_data(self, download_dir: str = None, return_X_y: bool = True, verbose: bool = True
                   ) -> Union[pd.DataFrame, tuple[np.ndarray, np.ndarray]]:
         """
         Loads the GECCO Industrial Challenge 2018 Dataset.
@@ -214,8 +212,7 @@ class GeccoWaterQuality2019(GeccoWaterQuality):
     More information can be found at https://zenodo.org/records/4304080 and
     https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php
     """
-    @staticmethod
-    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True) -> dict:
+    def load_data(self, download_dir: str = None, return_X_y: bool = True, verbose: bool = True) -> dict:
         """
         Loads GECCO Industrial Challenge 2019 Dataset.
 

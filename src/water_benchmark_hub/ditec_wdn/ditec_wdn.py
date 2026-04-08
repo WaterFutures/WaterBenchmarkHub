@@ -27,9 +27,7 @@ class DiTECWDN(BenchmarkResource):
     This module provides a function for loading the DiTEC-WDN data set:
     :func:`~water_benchmark_hub.ditec_wdn.ditec_wdn.DiTECWDN.load_data`.
     """
-
-    @staticmethod
-    def raw_to_time_series(raw_file_path, channels=1, samplerate=8000,
+    def raw_to_time_series(self, raw_file_path, channels=1, samplerate=8000,
                            subtype='PCM_32', endian='LITTLE'):
         """Function to read .raw hydrophone files and create a pandas Dataframe
         containing the signal and time steps.
@@ -66,8 +64,7 @@ class DiTECWDN(BenchmarkResource):
 
         return df
 
-    @staticmethod
-    def load_data(network: str,
+    def load_data(self, network: str,
                   scenarios_id: Union[tuple, list] = (),
                   download_dir: str = None,
                   use_raw_data: bool = False,

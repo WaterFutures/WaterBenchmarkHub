@@ -8,8 +8,7 @@ from enum import Enum
 from pathlib import Path
 from typing import Union
 
-from epyt_flow.utils import to_seconds, get_temp_folder, unpack_zip_archive, \
-    create_path_if_not_exist, download_from_gdrive_if_necessary, download_if_necessary
+from epyt_flow.utils import get_temp_folder, unpack_zip_archive, download_if_necessary
 
 from ..benchmark_resource import BenchmarkResource
 from ..benchmarks import register
@@ -62,8 +61,6 @@ class LeakTestbed(BenchmarkResource):
     This module provides a function for loading the LeakTestbed data set:
     :func:`~water_benchmark_hub.leak_testbed.leak_testbed.LeakTestbed.load_data`.
     """
-
-    @staticmethod
     def raw_to_time_series(raw_file_path, channels=1, samplerate=8000,
                            subtype='PCM_32', endian='LITTLE'):
         """Function to read .raw hydrophone files and create a pandas Dataframe
@@ -101,8 +98,7 @@ class LeakTestbed(BenchmarkResource):
 
         return df
 
-    @staticmethod
-    def load_data(network: str = None, download_dir: str = None,
+    def load_data(self, network: str = None, download_dir: str = None,
                   leak_types: Union[int, LeakType, list, tuple] = (1, 2, 3, 4, 5),
                   demands: Union[int, Demand, list, tuple] = (1, 2, 3, 4),
                   background_noise: bool = False,

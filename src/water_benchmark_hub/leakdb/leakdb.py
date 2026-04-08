@@ -44,30 +44,27 @@ class LeakDB(BenchmarkResource):
     directly compared to the official paper.
     Besides this, the user can choose to evaluate predictions using any other metric.
     """
-    @staticmethod
-    def __leak_time_to_idx(t: int, round_up: bool = False, hydraulic_time_step: int = 1800):
+    def __leak_time_to_idx(self, t: int, round_up: bool = False, hydraulic_time_step: int = 1800):
         if round_up is False:
             return math.floor(t / hydraulic_time_step)
         else:
             return math.ceil(t / hydraulic_time_step)
 
-    @staticmethod
-    def __get_leak_time_windows(s_id: int, leaks_info: dict,
+    def __get_leak_time_windows(self, s_id: int, leaks_info: dict,
                                 hydraulic_time_step: int = 1800) -> list[tuple[int, int]]:
         time_windows = []
         if str(s_id) in leaks_info:
             for leak in leaks_info[str(s_id)]:
-                t_idx_start = LeakDB.__leak_time_to_idx(leak["leak_start_time"] *
-                                                        hydraulic_time_step)
-                t_idx_end = LeakDB.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
-                                                      round_up=True)
+                t_idx_start = self.__leak_time_to_idx(leak["leak_start_time"] *
+                                                      hydraulic_time_step)
+                t_idx_end = self.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
+                                                    round_up=True)
 
                 time_windows.append((t_idx_start, t_idx_end))
 
         return time_windows
 
-    @staticmethod
-    def __create_labels(s_id: int, n_time_steps: int, nodes: list[str],
+    def __create_labels(self, s_id: int, n_time_steps: int, nodes: list[str],
                         leaks_info: dict, hydraulic_time_step: int = 1800
                         ) -> tuple[np.ndarray, scipy.sparse.bsr_array]:
         y = np.zeros(n_time_steps)
@@ -76,10 +73,10 @@ class LeakDB(BenchmarkResource):
         leak_locations_col = []
         if str(s_id) in leaks_info:
             for leak in leaks_info[str(s_id)]:
-                t_idx_start = LeakDB.__leak_time_to_idx(leak["leak_start_time"] *
-                                                        hydraulic_time_step)
-                t_idx_end = LeakDB.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
-                                                      round_up=True)
+                t_idx_start = self.__leak_time_to_idx(leak["leak_start_time"] *
+                                                      hydraulic_time_step)
+                t_idx_end = self.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
+                                                    round_up=True)
 
                 leak_node_idx = nodes.index(leak["node_id"])
 
@@ -95,8 +92,7 @@ class LeakDB(BenchmarkResource):
 
         return y, y_leak_locations
 
-    @staticmethod
-    def compute_evaluation_score(scenarios_id: list[int], use_net1: bool,
+    def compute_evaluation_score(self, scenarios_id: list[int], use_net1: bool,
                                  y_pred_labels_per_scenario: list[np.ndarray]) -> dict:
         """
         Evaluates the predictions (leakage detection) for a list of given scenarios.
@@ -135,8 +131,8 @@ class LeakDB(BenchmarkResource):
 
         y_true = []
         for i, s_id in enumerate(scenarios_id):
-            y, _ = LeakDB.__create_labels(s_id, len(y_pred_labels_per_scenario[i]),
-                                          nodes, leaks_info)
+            y, _ = self.__create_labels(s_id, len(y_pred_labels_per_scenario[i]),
+                                        nodes, leaks_info)
             if len(y) != len(y_pred_labels_per_scenario[i]):
                 raise ValueError("A prediction must be provided for each time step -- " +
                                  f"mismatch for scenario {i}, expected {len(y)} but got " +
@@ -157,7 +153,7 @@ class LeakDB(BenchmarkResource):
         detection_threshold = .75
         for i, s_id in enumerate(scenarios_id):
             y_pred_i = y_pred_labels_per_scenario[i]
-            leaks_time_window = LeakDB.__get_leak_time_windows(s_id, leaks_info)
+            leaks_time_window = self.__get_leak_time_windows(s_id, leaks_info)
 
             scores = []
             for t0, _ in leaks_time_window:
@@ -178,8 +174,7 @@ class LeakDB(BenchmarkResource):
         return {"f1_score": f1, "true_positive_rate": tpr,
                 "true_negative_rate": tnr, "early_detection_score": early_detection_score}
 
-    @staticmethod
-    def load_data(scenarios_id: list[int], use_net1: bool, download_dir: str = None,
+    def load_data(self, scenarios_id: list[int], use_net1: bool, download_dir: str = None,
                   return_X_y: bool = False, return_features_desc: bool = False,
                   return_leak_locations: bool = False, verbose: bool = True) -> dict:
         """
@@ -292,7 +287,7 @@ class LeakDB(BenchmarkResource):
                 network_config = Net1.load(download_dir, return_scenario=True) if use_net1 is True \
                     else Hanoi.load(download_dir, return_scenario=True)
                 nodes = network_config.sensor_config.nodes
-                _, y_leak_locations = LeakDB.__create_labels(s_id, X.shape[0], nodes, leaks_info)
+                _, y_leak_locations = self.__create_labels(s_id, X.shape[0], nodes, leaks_info)
 
                 if return_features_desc is True and "features_desc" not in results:
                     results["features_desc"] = list(pressure_readings.keys()) + \
@@ -307,8 +302,7 @@ class LeakDB(BenchmarkResource):
 
         return results
 
-    @staticmethod
-    def load_scada_data(scenarios_id: list[int], use_net1: bool = True, download_dir: str = None,
+    def load_scada_data(self, scenarios_id: list[int], use_net1: bool = True, download_dir: str = None,
                         return_X_y: bool = False, return_leak_locations: bool = False,
                         verbose: bool = True
                         ) -> Union[list[ScadaData], list[tuple[np.ndarray, np.ndarray]]]:
@@ -380,8 +374,8 @@ class LeakDB(BenchmarkResource):
             data = ScadaData.load_from_file(os.path.join(download_dir, f_in))
 
             X = data.get_data()
-            y, y_leak_locations = LeakDB.__create_labels(s_id, X.shape[0], data.sensor_config.nodes,
-                                                         leaks_info)
+            y, y_leak_locations = self.__create_labels(s_id, X.shape[0], data.sensor_config.nodes,
+                                                       leaks_info)
 
             if return_X_y is True:
                 if return_leak_locations is True:
@@ -396,8 +390,7 @@ class LeakDB(BenchmarkResource):
 
         return r
 
-    @staticmethod
-    def load_scenarios(scenarios_id: list[int], use_net1: bool = True,
+    def load_scenarios(self, scenarios_id: list[int], use_net1: bool = True,
                        download_dir: str = None, verbose: bool = True) -> list[ScenarioConfig]:
         """
         Creates and returns the LeakDB scenarios -- they can be either modified or

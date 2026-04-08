@@ -47,16 +47,14 @@ class LeakG3PD(BenchmarkResource):
     :func:`~water_benchmark_hub.leakg3pd.leakg3pd.LeakG3PD.load_scenarios`.
     """
 
-    @staticmethod
-    def __leak_time_to_idx(t: int, round_up: bool = False,
+    def __leak_time_to_idx(self, t: int, round_up: bool = False,
                            hydraulic_time_step: int = 1800):
         if round_up is False:
             return math.floor(t / hydraulic_time_step)
         else:
             return math.ceil(t / hydraulic_time_step)
 
-    @staticmethod
-    def __create_labels(s_id: int, n_time_steps: int, nodes: list[str],
+    def __create_labels(self, s_id: int, n_time_steps: int, nodes: list[str],
                         leaks_info: dict, hydraulic_time_step: int = 1800
                         ) -> tuple[np.ndarray, scipy.sparse.bsr_array]:
         y = np.zeros(n_time_steps)
@@ -65,10 +63,10 @@ class LeakG3PD(BenchmarkResource):
         leak_locations_col = []
         if str(s_id) in leaks_info:
             for leak in leaks_info[str(s_id)]:
-                t_idx_start = LeakG3PD.__leak_time_to_idx(leak["leak_start_time"] *
-                                                        hydraulic_time_step)
-                t_idx_end = LeakG3PD.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
-                                                      round_up=True)
+                t_idx_start = self.__leak_time_to_idx(leak["leak_start_time"] *
+                                                      hydraulic_time_step)
+                t_idx_end = self.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
+                                                    round_up=True)
 
                 leak_node_idx = nodes.index(leak["node_id"])
 
@@ -84,8 +82,7 @@ class LeakG3PD(BenchmarkResource):
 
         return y, y_leak_locations
 
-    @staticmethod
-    def load_data(scenarios_id: list[int], network: str, download_dir: str = None,
+    def load_data(self, scenarios_id: list[int], network: str, download_dir: str = None,
                   return_X_y: bool = False, return_features_desc: bool = False,
                   return_leak_locations: bool = False, verbose: bool = True) -> dict:
         """
@@ -163,7 +160,7 @@ class LeakG3PD(BenchmarkResource):
         elif network == 'hanoi':
             leaks_info = json.loads(HANOI_LEAKAGES)
         else:
-            ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
+            raise ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
 
         network_desc = network.capitalize()
         download_dir = download_dir if download_dir is not None else get_temp_folder()
@@ -214,8 +211,7 @@ class LeakG3PD(BenchmarkResource):
 
         return results
 
-    @staticmethod
-    def load_scenarios(scenarios_id: list[int], network: str,
+    def load_scenarios(self, scenarios_id: list[int], network: str,
                        download_dir: str = None, verbose: bool = True) -> list[ScenarioConfig]:
         """
         Creates and returns LeakG3PD scenarios -- they can be either modified or
@@ -439,7 +435,7 @@ class LeakG3PD(BenchmarkResource):
         elif network == 'hanoi':
             leaks_info = json.loads(HANOI_LEAKAGES)
         else:
-            ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
+            raise ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
 
         for s_id in scenarios_id:
             leaks_data = []

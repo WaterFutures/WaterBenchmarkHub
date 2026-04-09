@@ -9,7 +9,7 @@ import scipy
 import numpy as np
 import pandas as pd
 from scipy.sparse import bsr_array
-from epyt_flow.simulation import ScenarioSimulator
+from epyt_flow.simulation import ScenarioSimulator, EpanetConstants
 from epyt_flow.simulation.events import AbruptLeakage, IncipientLeakage
 from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.simulation.scada import ScadaData
@@ -125,8 +125,8 @@ class LeakDB(BenchmarkResource):
         else:
             leaks_info = json.loads(HANOI_LEAKAGES)
 
-        network_config = Net1.load(return_scenario=True) if use_net1 is True \
-            else Hanoi.load(return_scenario=True)
+        network_config = Net1().load(return_scenario=True) if use_net1 is True \
+            else Hanoi().load(return_scenario=True)
         nodes = network_config.sensor_config.nodes
 
         y_true = []
@@ -431,16 +431,21 @@ class LeakDB(BenchmarkResource):
         scenarios_inp = []
 
         # Load the network
-        load_network = Net1.load if use_net1 is True else Hanoi.load
+        load_network = Net1().load if use_net1 is True else Hanoi().load
         download_dir = download_dir if download_dir is not None else get_temp_folder()
         network_config = load_network(download_dir=download_dir, verbose=verbose,
                                       return_scenario=True)
 
-        # Set simulation duration
+        # Set simulation duration and other general parameters such as the demand model and flow units
         hydraulic_time_step = to_seconds(minutes=30)    # 30min time steps
         general_params = {"simulation_duration": to_seconds(days=365),   # One year
                           "hydraulic_time_step": hydraulic_time_step,
-                          "reporting_time_step": hydraulic_time_step} | network_config.general_params
+                          "reporting_time_step": hydraulic_time_step,
+                          "flow_units_id": EpanetConstants.EN_CMH,
+                          "demand_model": {"type": EpanetConstants.EN_PDA, "pressure_min": 0,
+                                           "pressure_required": 0.1,
+                                           "pressure_exponent": 0.5}
+                        } | network_config.general_params
 
         # Add demand patterns
         def gen_dem(download_dir, use_net1):
@@ -518,29 +523,29 @@ class LeakDB(BenchmarkResource):
 
             if not os.path.exists(f_inp_in):
                 with ScenarioSimulator(f_inp_in=network_config.f_inp_in) as wdn:
-                    wdn.epanet_api.setTimeHydraulicStep(general_params["hydraulic_time_step"])
-                    wdn.epanet_api.setTimeSimulationDuration(general_params["simulation_duration"])
-                    wdn.epanet_api.setTimePatternStep(general_params["hydraulic_time_step"])
-                    wdn.epanet_api.setFlowUnitsCMH()
+                    wdn.set_general_parameters(**general_params)
+                    wdn.epanet_api.set_hydraulic_time_step(hydraulic_time_step)
+                    wdn.epanet_api.settimeparam(EpanetConstants.EN_PATTERNSTEP, hydraulic_time_step)
 
-                    wdn.epanet_api.deletePatternsAll()
+                    for idx in range(1, wdn.epanet_api.getcount(EpanetConstants.EN_PATCOUNT) + 1):
+                        wdn.epanet_api.deletepattern(idx)
 
-                    reservoir_nodes_id = wdn.epanet_api.getNodeReservoirNameID()
+                    reservoir_nodes_id = wdn.epanet_api.get_all_reservoirs_id()
                     for node_id in network_config.sensor_config.nodes:
                         if node_id in network_config.sensor_config.tanks or\
                                 node_id in reservoir_nodes_id:
                             continue
 
-                        node_idx = wdn.epanet_api.getNodeIndex(node_id)
-                        base_demand = wdn.epanet_api.getNodeBaseDemands(node_idx)[1][0]
+                        node_idx = wdn.epanet_api.get_node_idx(node_id)
+                        base_demand = wdn.epanet_api.get_node_base_demand(node_idx)
 
-                        my_demand_pattern = np.array(gen_dem(download_dir, use_net1))
+                        my_demand_pattern = np.array(gen_dem(download_dir))
 
                         wdn.set_node_demand_pattern(node_id=node_id, base_demand=base_demand,
                                                     demand_pattern_id=f"demand_{node_id}",
                                                     demand_pattern=my_demand_pattern)
 
-                    wdn.epanet_api.saveInputFile(f_inp_in)
+                    wdn.epanet_api.saveinpfile(f_inp_in)
 
         # Create uncertainties
         class MyUniformUncertainty(UniformUncertainty):

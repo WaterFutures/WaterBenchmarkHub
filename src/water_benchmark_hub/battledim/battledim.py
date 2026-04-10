@@ -81,7 +81,7 @@ class BattLeDIM(BenchmarkResource):
 
         start_time = START_TIME_TEST if return_test_scenario is True else START_TIME_TRAIN
         leaks_config = LEAKS_CONFIG_TEST if return_test_scenario is True else LEAKS_CONFIG_TRAIN
-        leakages = BattLeDIM.__parse_leak_config(start_time, leaks_config)
+        leakages = self.__parse_leak_config(start_time, leaks_config)
 
         def leak_time_to_idx(t: int, round_up: bool = False):
             if round_up is False:
@@ -155,7 +155,7 @@ class BattLeDIM(BenchmarkResource):
         # Load ground truth
         sim_start_time = START_TIME_TEST if test_scenario is True else START_TIME_TRAIN
         leaks_config = LEAKS_CONFIG_TEST if test_scenario is True else LEAKS_CONFIG_TRAIN
-        leakages = BattLeDIM.__parse_leak_config(sim_start_time, leaks_config)
+        leakages = self.__parse_leak_config(sim_start_time, leaks_config)
         n_leakages = len(leakages)
 
         leak_demands = {}
@@ -352,8 +352,7 @@ class BattLeDIM(BenchmarkResource):
         else:
             return df_final
 
-    @staticmethod
-    def load_scada_data(return_test_scenario: bool, download_dir: str = None,
+    def load_scada_data(self, return_test_scenario: bool, download_dir: str = None,
                         return_X_y: bool = False, return_leak_locations: bool = False,
                         verbose: bool = True) -> list[Union[ScadaData, Any]]:
         """
@@ -464,10 +463,12 @@ class BattLeDIM(BenchmarkResource):
         # Load L-Town network including the sensor placement
         if download_dir is not None:
             ltown_config = LTown().load(download_dir=download_dir, use_realistic_demands=True,
-                                        include_default_sensor_placement=True, return_scenario=True)
+                                        include_default_sensor_placement=True, return_scenario=True,
+                                        verbose=verbose)
         else:
             ltown_config = LTown().load(use_realistic_demands=True,
-                                        include_default_sensor_placement=True, return_scenario=True)
+                                        include_default_sensor_placement=True,
+                                        return_scenario=True, verbose=verbose)
 
         # Set simulation duration
         general_params = {"simulation_duration": to_seconds(days=365),    # One year

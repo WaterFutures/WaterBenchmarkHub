@@ -133,7 +133,42 @@ TODO
 
 ## Intermediate problems
 
-TODO
+<details id="FOS">
+  <summary><h4 style="display:inline-block">Fossolo Network (FOS)</h4></summary>
+  The <a href="network-FOS.html">FOS</a> has fifty-eight pipes, thirty-six demand nodes, and one reservoir with a fixed head of 121.00 m. The material for all the pipes is polyethylene. Due to the feature of polyethylene, a relatively high roughness coefficient of 150 is applied to all the pipes. The minimum pressure head of all the demand nodes is maintained at 40 m, while the maximum pressure head of each node is specified in Table FOS.1. In addition, the flow velocity in each pipe is enforced to be less than or equal to 1 m/s. Table FOS.2 shows commercially available diameters and the corresponding unit costs. Figure FOS.1 depicts the layout of FOS.
+  
+  <div id="FOS-tab-Maximum-Pressure"></div>
+  <script type="text/javascript">insertTable("FOS-tab-Maximum-Pressure", "../static/benchmarks/network-fossolo/FOS_Pressure.csv", "Table FOS.1. Maximum pressure head requirement of each node of FOS");</script>
+  <br>
+
+  <div id="FOS-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("FOS-tab-diameter-costs", "../static/benchmarks/network-fossolo/FOS_Cost.csv", "Table FOS.2. Diameter options and associated unit costs of FOS.");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-fossolo/fossolo_plot.png"/>
+    <figcaption>Figure FOS.1. Layout of Fossolo Network</figcaption>
+  </figure>
+</details>
+
+<details id="PES">
+  <summary><h4 style="display:inline-block">Pescara Network (PES)</h4></summary>
+  The <a href="network-PES.html">PES</a> includes ninety-nine pipes, sixty-eight demand nodes, and three reservoirs with fixed head within 53.08 m to 57.00 m. The pipe material is cast iron. A uniform Hazen-Williams roughness coefficient of 130 is applied to all pipes. The minimum pressure head of all the demand nodes is maintained at 20 m, while the maximum pressure head of each node is specified in Table PES.1. In addition, the flow velocity in each pipe is enforced to be less than or equal to 2 m/s. Table PES.2 shows commercially available diameters and the corresponding unit costs. Figure PES.1 depicts the layout of PES.
+  
+  <div id="PES-tab-Maximum-Pressure"></div>
+  <script type="text/javascript">insertTable("PES-tab-Maximum-Pressure", "../static/benchmarks/network-PES/PES_Pressure.csv", "Table PES.1. Maximum pressure head requirement of each node of PES");</script>
+  <br>
+
+  <div id="PES-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("PES-tab-diameter-costs", "../static/benchmarks/network-PES/PES_Cost.csv", "Table PES.2. Diameter options and associated unit costs of PES");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-PES/PES.png"/>
+    <figcaption>Figure PES.1. Layout of Pescara Network</figcaption>
+  </figure>
+</details>
+
 
 ## Large problems
 

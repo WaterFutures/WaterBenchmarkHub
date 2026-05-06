@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>water_benchmark_hub.water_usage &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub.networks" href="water_benchmark_hub.networks.html" />
+    <link rel="prev" title="water_benchmark_hub.gecco_waterquality" href="water_benchmark_hub.gecco_waterquality.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="water_benchmark_hub.html">water_benchmark_hub</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html">water_benchmark_hub.batadal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html">water_benchmark_hub.leakdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html">water_benchmark_hub.battledim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html">water_benchmark_hub.gecco_waterquality</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">water_benchmark_hub.water_usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.water_usage.water_usage">water_benchmark_hub.water_usage.water_usage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage"><code class="docutils literal notranslate"><span class="pre">WaterUsage</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#water-benchmark-hub-benchmark-resource">water_benchmark_hub.benchmark_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.meta_data">water_benchmark_hub.meta_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.benchmarks">water_benchmark_hub.benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.metrics">water_benchmark_hub.metrics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="water_benchmark_hub.html">water_benchmark_hub</a></li>
+      <li class="breadcrumb-item active">water_benchmark_hub.water_usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/water_benchmark_hub.water_usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="water-benchmark-hub-water-usage">
+<h1>water_benchmark_hub.water_usage<a class="headerlink" href="#water-benchmark-hub-water-usage" title="Link to this heading"></a></h1>
+<section id="module-water_benchmark_hub.water_usage.water_usage">
+<span id="water-benchmark-hub-water-usage-water-usage"></span><h2>water_benchmark_hub.water_usage.water_usage<a class="headerlink" href="#module-water_benchmark_hub.water_usage.water_usage" title="Link to this heading"></a></h2>
+<p>Module provides access to the Water Usage Data set by P. Pavlou et al.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.water_usage.water_usage.WaterUsage">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.water_usage.water_usage.</span></span><span class="sig-name descname"><span class="pre">WaterUsage</span></span><a class="headerlink" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code></p>
+<p>“Monitoring domestic water consumption: A comparative study of model-based and data-driven
+end-use disaggregation methods” by P. Pavlou, S. Filippou, S. Solonos, S. G. Vrachimis,
+K. Malialis, D. G. Eliades, T. Theocharides, M. M. Polycarpou is a benchmark concerning the
+monitoring of water usage of different household appliances. Informing consumers about it has
+been shown to have an impact on their behavior toward drinking water conservation. The data
+were created using the STochastic Residential water End-use Model (STREaM)
+(Cominola et al., 2018), a modelling software developed that generates synthetic time series
+data of a household.</p>
+<p>This benchmark data set is for identifying active appliances from the aggregated water
+consumption – i.e. a multi-class classification probelm. The data set considers the use
+of standard toilet, standard shower, standard faucet, high efficiency clothes washer,
+and standard dishwasher in a 2-person household for a period of 180 days (6 months) and
+it has a resolution of 10s.
+The data set is already split into 3 sub-sets for training (90 days), validation (45 days),
+and testing (45 days).</p>
+<p>For more information see <a class="reference external" href="https://github.com/KIOS-Research/Water-Usage-Dataset/">https://github.com/KIOS-Research/Water-Usage-Dataset/</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that although this data set is synthetic, only the final data set is provided.</p>
+</div>
+<p>This class provides a method for loading the original data set –
+see <a class="reference internal" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data" title="water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a> –
+as well as a method implementing the original scoring mechanism – see
+<a class="reference internal" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score" title="water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score"><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_evaluation_score()</span></code></a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">compute_evaluation_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score" title="Link to this definition"></a></dt>
+<dd><p>Evaluates the performance of a detection method.</p>
+<dl class="simple">
+<dt>Note that instead of a single metric, the following set of metrics is used:</dt><dd><ul class="simple">
+<li><p>Accuracy</p></li>
+<li><p>Precision</p></li>
+<li><p>F1-score (using “micro” averaging)</p></li>
+<li><p>Cohen’s kappa</p></li>
+<li><p>ROC AUC</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Event indication prediction over time</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth event indication over time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>All evaluation scores.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.water_usage.water_usage.WaterUsage.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the original data set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the multi-class labels as two Numpy arrays,
+otherwise, the data is returned as Pandas data frame.</p>
+<p>The default is True.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The data set as a dictionary with entries “train”, “validation”, and “test” containing
+the respective data.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="water_benchmark_hub.gecco_waterquality.html" class="btn btn-neutral float-left" title="water_benchmark_hub.gecco_waterquality" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.networks.html" class="btn btn-neutral float-right" title="water_benchmark_hub.networks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

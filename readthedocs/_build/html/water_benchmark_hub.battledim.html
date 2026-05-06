@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>water_benchmark_hub.battledim &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub.gecco_waterquality" href="water_benchmark_hub.gecco_waterquality.html" />
+    <link rel="prev" title="water_benchmark_hub.leakdb" href="water_benchmark_hub.leakdb.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="water_benchmark_hub.html">water_benchmark_hub</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html">water_benchmark_hub.batadal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html">water_benchmark_hub.leakdb</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">water_benchmark_hub.battledim</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.battledim.battledim">water_benchmark_hub.battledim.battledim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM"><code class="docutils literal notranslate"><span class="pre">BattLeDIM</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.battledim.battledim_data">water_benchmark_hub.battledim.battledim_data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html">water_benchmark_hub.gecco_waterquality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.water_usage.html">water_benchmark_hub.water_usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#water-benchmark-hub-benchmark-resource">water_benchmark_hub.benchmark_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.meta_data">water_benchmark_hub.meta_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.benchmarks">water_benchmark_hub.benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.metrics">water_benchmark_hub.metrics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="water_benchmark_hub.html">water_benchmark_hub</a></li>
+      <li class="breadcrumb-item active">water_benchmark_hub.battledim</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/water_benchmark_hub.battledim.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="water-benchmark-hub-battledim">
+<h1>water_benchmark_hub.battledim<a class="headerlink" href="#water-benchmark-hub-battledim" title="Link to this heading"></a></h1>
+<section id="module-water_benchmark_hub.battledim.battledim">
+<span id="water-benchmark-hub-battledim-battledim"></span><h2>water_benchmark_hub.battledim.battledim<a class="headerlink" href="#module-water_benchmark_hub.battledim.battledim" title="Link to this heading"></a></h2>
+<p>Module provides access to the BattLeDIM benchmark.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.battledim.battledim.BattLeDIM">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.battledim.battledim.</span></span><span class="sig-name descname"><span class="pre">BattLeDIM</span></span><a class="headerlink" href="#water_benchmark_hub.battledim.battledim.BattLeDIM" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code></p>
+<p>The Battle of the Leakage Detection and Isolation Methods (<em>BattLeDIM</em>) 2020, organized by
+S. G. Vrachimis, D. G. Eliades, R. Taormina, Z. Kapelan, A. Ostfeld, S. Liu, M. Kyriakou,
+P. Pavlou, M. Qiu, and M. M. Polycarpou, as part of the 2nd International CCWI/WDSA Joint
+Conference in Beijing, China, aims at objectively comparing the performance of methods for
+the detection and localization of leakage events, relying on SCADA measurements of flow and
+pressure sensors installed within water distribution networks.</p>
+<p>See <a class="reference external" href="https://github.com/KIOS-Research/BattLeDIM">https://github.com/KIOS-Research/BattLeDIM</a> for details.</p>
+<p>This module provides functions for loading the original BattLeDIM data set
+<a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_data" title="water_benchmark_hub.battledim.battledim.BattLeDIM.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>, as well as methods for
+loading the scenarios <a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_scenario" title="water_benchmark_hub.battledim.battledim.BattLeDIM.load_scenario"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scenario()</span></code></a>
+and pre-generated SCADA data <a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_scada_data" title="water_benchmark_hub.battledim.battledim.BattLeDIM.load_scada_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scada_data()</span></code></a>.
+The official scoring/evaluation is implemented in
+<a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.compute_evaluation_score" title="water_benchmark_hub.battledim.battledim.BattLeDIM.compute_evaluation_score"><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_evaluation_score()</span></code></a> – i.e.
+those results can be directly compared to the official leaderboard results.
+Besides this, the user can choose to evaluate predictions using any other metric.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.battledim.battledim.BattLeDIM.compute_evaluation_score">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">compute_evaluation_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_leak_locations_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_scenario</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.compute_evaluation_score" title="Link to this definition"></a></dt>
+<dd><p>Evaluates the predictions (i.e. start time and location of leakages) as it was done in the
+BattLeDIM competition – i.e. the output of this functions can be directly compared
+to the official leaderboard results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_leak_locations_pred</strong> (<cite>list[tuple[str, int]]</cite>) – Predictions of location (link/pipe ID) and start time
+(in seconds since simulation start) of leakages.</p></li>
+<li><p><strong>test_scenario</strong> (<cite>bool</cite>) – True if the given predictions are made for the test scenario, False otherwise.</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary containing the true positive rate, true positives, false positives,
+false negatives, and total monetary (Euro) savings (only available if <cite>test_scenario</cite>
+is True).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.battledim.battledim.BattLeDIM.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.battledim.battledim.BattLeDIM.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">return_test_scenario</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_features_desc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_leak_locations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Any</span></span></span><a class="headerlink" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the original BattLeDIM benchmark data set.
+Note that the data set exists in two different version –
+a training version and an evaluation/test version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>return_test_scenario</strong> (<cite>bool</cite>) – If True, the evaluation/test data set is returned, otherwise the historical
+(i.e. training) data set is returned.</p></li>
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels (presence of a leakage) as
+two Numpy arrays, otherwise, the data is returned as a
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">epyt_flow.simulation.scada.scada_data.ScadaData</a> instance.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_features_desc</strong> (<cite>bool</cite>, optional) – <p>If True and if <cite>return_X_y</cite> is True, the returned dictionary contains the
+features’ descriptions (i.e. names) under the key “features_desc”.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_leak_locations</strong> (<cite>bool</cite>) – <p>If True, the leak locations are returned as well –
+as an instance of <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html">scipy.sparse.bsr_array</a>.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Benchmark data set.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Either a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html">pandas.DataFrame</a> instance or a tuple of Numpy arrays.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.battledim.battledim.BattLeDIM.load_scada_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_scada_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">return_test_scenario</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_leak_locations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">epyt_flow.simulation.scada.ScadaData</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_scada_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the SCADA data of the simulated BattLeDIM benchmark scenario – note that due to
+randomness, these differ from the original data set which can be loaded by calling
+<a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_data" title="water_benchmark_hub.battledim.battledim.BattLeDIM.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A large file (approx. 4GB) will be downloaded and loaded into memory –
+this might take some time.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>return_test_scenario</strong> (<cite>bool</cite>) – If True, the evaluation/test scenario is returned, otherwise the historical
+(i.e. training) scenario is returned.</p></li>
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels (presence of a leakage) as
+two Numpy arrays, otherwise, the data is returned as a
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">epyt_flow.simulation.scada.scada_data.ScadaData</a> instance.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_leak_locations</strong> (<cite>bool</cite>) – <p>If True, the leak locations are returned as well –
+as an instance of <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html">scipy.sparse.bsr_array</a>.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>The simulated benchmark scenario as either a
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">epyt_flow.simulation.scada.scada_data.ScadaData</a> instance or as a tuple of
+(X, y) Numpy arrays. If ‘return_leak_locations’ is True, the leak locations are included
+as an instance of
+<a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html">scipy.sparse.bsr_array</a>
+as well.</p>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><p><a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">epyt_flow.simulation.scada.scada_data.ScadaData</a> or <cite>list[tuple[numpy.ndarray, numpy.ndarray]]</cite></p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.battledim.battledim.BattLeDIM.load_scenario">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_scenario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">return_test_scenario</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">epyt_flow.simulation.ScenarioConfig</span></span></span><a class="headerlink" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_scenario" title="Link to this definition"></a></dt>
+<dd><p>Creates and returns the BattLeDIM scenario – it can be either modified or
+passed directly to the EPyT-Flow simulator
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator">epyt_flow.simulation.scenario_simulator.ScenarioSimulator</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that due to randomness, the simulation results differ from the original
+data set which can be loaded by calling
+<a class="reference internal" href="#water_benchmark_hub.battledim.battledim.BattLeDIM.load_data" title="water_benchmark_hub.battledim.battledim.BattLeDIM.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>return_test_scenario</strong> (<cite>bool</cite>) – If True, the evaluation/test scenario is returned, otherwise the historical
+(i.e. training) scenario is returned.</p></li>
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the L-TOWN.inp file – if None, the temp folder will be used.
+If the path does not exist, the .inp will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Complete scenario configuration of the BattLeDIM benchmark scenario.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig">epyt_flow.simulation.scenario_config.ScenarioConfig</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-water_benchmark_hub.battledim.battledim_data">
+<span id="water-benchmark-hub-battledim-battledim-data"></span><h2>water_benchmark_hub.battledim.battledim_data<a class="headerlink" href="#module-water_benchmark_hub.battledim.battledim_data" title="Link to this heading"></a></h2>
+<p>Module provides the leakage configurations for BattLeDIM.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="water_benchmark_hub.leakdb.html" class="btn btn-neutral float-left" title="water_benchmark_hub.leakdb" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.gecco_waterquality.html" class="btn btn-neutral float-right" title="water_benchmark_hub.gecco_waterquality" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

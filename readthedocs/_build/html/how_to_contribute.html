@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Contribute &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub" href="water_benchmark_hub.html" />
+    <link rel="prev" title="Basic Usage" href="basicusage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general">General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#naming">Naming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#meta-data">Meta data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python-package">Python package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sample-cli-run">Sample CLI Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-and-verification">Output and Verification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.html">water_benchmark_hub</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to Contribute</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/how_to_contribute.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-contribute">
+<span id="id1"></span><h1>How to Contribute<a class="headerlink" href="#how-to-contribute" title="Link to this heading"></a></h1>
+<p>This document describes how researchers/users can contribute their own benchmark (resources)
+to the WaterBenchmarkHub.</p>
+<p>In order to add a new benchmark (resource), the WaterBenchmarkHub Git repository has to be cloned
+and a pull-request with all necessary changes (see next sections) must be submitted.
+The pull-requests will be reviewed by the WaterBenchmarkHub team before it gets accepted and
+finally integrated into the WaterBenchmarkHub.</p>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading"></a></h2>
+<p>When adding a new benchmark (resource), there are a few aspects that must be considered:</p>
+<section id="naming">
+<h3>Naming<a class="headerlink" href="#naming" title="Link to this heading"></a></h3>
+<p>The unique identifier of a new benchmark (resource) must consist of two parts:</p>
+<ol class="arabic simple">
+<li><p>Category or user/organization</p></li>
+<li><p>Name of the benchmark (resource)</p></li>
+</ol>
+<p>Both parts (lowercase!) are concatenated by a hyphen – i.e. let’s assume we add a network
+called <cite>Net2</cite>, then the final name would be <cite>network-net2</cite> (note that we use the category <cite>network</cite>
+to denote a network resource).</p>
+</section>
+<section id="meta-data">
+<h3>Meta data<a class="headerlink" href="#meta-data" title="Link to this heading"></a></h3>
+<p>For each benchmark (resource), a new entry (dictionary) in the database
+<a class="reference external" href="https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/docs/static/database.json">docs/static/database.json</a>
+must be created with the following content – if a field is not available,
+it should dropped from the database entry:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">name</span></code> Name of the benchmark (resource).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">desc</span></code> Brief description of the benchmark (resource).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">year</span></code> Year in which the benchmark (resource) was published.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">doi</span></code> The doi of the benchmark (resource) or the corresponding publication.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">license</span></code> The license of the benchmark (resource).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">tags</span></code> List of (existing) tags associated with the benchmark (resource) –
+avoid inventing new tags and use existing tags!</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">keywords</span></code> Additional keywords associated with the benchmark (resource) –
+these keywords are never displayed but used when the user is searching for benchmark (resources).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">download_url</span></code> External URL where the benchmark (resource) can be downloaded –
+should be direct link to the resource file(s).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">external_url</span></code> External URL to the project page of the benchmark (resource).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">permalink</span></code> Usually, this is given as <cite>benchmarks/benchmark-ID.html</cite>
+where <cite>benchmark-ID</cite> refers to the unique ID of the benchmark resource.</p></li>
+</ul>
+<p><strong>Note:</strong> The dictionary key (lowercase!) in the database must be the unique identifier of the benchmark (resource).</p>
+<p>A complete example of the <cite>KIOS LeakDB</cite> benchmark is given below:</p>
+<div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;kios-leakdb&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LeakDB&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;desc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;year&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2018</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;leakage detection&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;leakage localization&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;leakage&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;event detection&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;keywords&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Net1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Hanoi&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;doi&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10.5281/zenodo.1313116&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EUPL-1.2&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;download_url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;external_url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/KIOS-Research/LeakDB&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;permalink&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;benchmarks/KIOS-LeakDB.html&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="description">
+<h3>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h3>
+<p>The complete description of the benchmark resource must be placed in a Markdown file in the
+<a class="reference external" href="https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/docs/_benchmarks">docs/_benchmarks</a> folder.
+The name of the Markdown file must be the same as specified in the <code class="code docutils literal notranslate"><span class="pre">permalink</span></code> field
+in the database.</p>
+<p>The Markdown file must start with the following header:</p>
+<div class="highlight-YAML notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;BenchmarkName&quot;</span>
+<span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;benchmark-ID&quot;</span>
+<span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">benchmark-permalink</span>
+<span class="nt">collection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">benchmarks</span>
+<span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">benchmark</span>
+<span class="nn">---</span>
+</pre></div>
+</div>
+<p>where <code class="code docutils literal notranslate"><span class="pre">BenchmarkName</span></code> refers to the name, <code class="code docutils literal notranslate"><span class="pre">benchmark-ID</span></code> to the unique ID (see above),
+and <code class="code docutils literal notranslate"><span class="pre">benchmark-permalink</span></code> to the permalink of the benchmark (resource) as specified in
+the database.
+All other parts of the header must not be changed!</p>
+<p>Regarding the description itself, we do not have any strict rules how to structure
+and what to put into the Markdown file.
+However, we recommend the following layout:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">##</span> <span class="pre">Description</span></code> General (detailed) description of the benchmark (resource).</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">##</span> <span class="pre">How</span> <span class="pre">to</span> <span class="pre">Use</span></code> Description of how to load and utilize the benchmark (resource)</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">###</span> <span class="pre">Usage</span> <span class="pre">in</span> <span class="pre">Python</span></code> If applicable, a description on how to load the benchmark (resource)
+in Python using the <em>water-benchmark-hub</em> Python package.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">##</span> <span class="pre">Reference</span></code> Reference (citation) of the benchmark (resource).</p></li>
+</ul>
+<p>Images or other resources are used in the Markdown file, must be placed in the
+<cite>static/benchmarks/benchmark-ID/</cite> folder – where <cite>benchmark-ID</cite> (lower case!) refers to the
+benchmark ID as given the <code class="code docutils literal notranslate"><span class="pre">permalink</span></code> field.</p>
+</section>
+</section>
+<section id="python-package">
+<h2>Python package<a class="headerlink" href="#python-package" title="Link to this heading"></a></h2>
+<p>In addition to the previous steps, the benchmark (resource) should made be available
+(if possible) in the <em>water-benchmark-hub</em> Python package as well.
+For this, the following steps are necessary:</p>
+<ol class="arabic">
+<li><p>If the new benchmark (resource) is a network, a new class has to be derived from the
+<a class="reference external" href="https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetwork">WaterDistributionNetwork</a>
+class and put into
+<a class="reference external" href="https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/src/water_benchmark_hub/networks/networks.py">src/water_benchmark_hub/networks/networks.py</a>
+(if justified, a new .py file can also be created).</p>
+<p>For all other types of benchmark (resources), a new directory should be created and
+the benchmark itself must be implemented by deriving a new class from the
+<a class="reference external" href="https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.benchmark_resource.BenchmarkResource">BenchmarkResource</a>
+class and importing this new class in
+<a class="reference external" href="https://github.com/WaterFutures/WaterBenchmarkHub/blob/dev/src/water_benchmark_hub/__init__.py">src/water_benchmark_hub/__init__.py</a>.</p>
+</li>
+<li><p>In all cases, the new benchmark (resource) must be registered by calling the
+<a class="reference external" href="https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.benchmarks.register">register()</a>
+function right after the class declaration – the argument is a <em>key</em> that is used to load
+the benchmark (resource), which is usually similar (but nicely formatted) to the unique ID of
+the benchmark resource as used in the database.</p></li>
+<li><p>Also, in all cases, the new class must be decoratated with the
+<a class="reference external" href="https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.html#water_benchmark_hub.meta_data.meta_data">&#64;meta_data()</a>
+decorator – the argument is the unique ID of the benchmark resource as used in the database.</p></li>
+</ol>
+</section>
+<section id="command-line-interface-cli">
+<h2>Command-Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Link to this heading"></a></h2>
+<p>To simplify the process of adding new benchmark resources, the
+WaterBenchmarkHub provides an interactive command-line interface (CLI).
+The CLI automates several steps described in this document and reduces
+the risk of formatting or consistency errors.</p>
+<p>The CLI is intended as a convenience tool and does <strong>not</strong> replace the
+contribution guidelines described above. Contributors are still
+responsible for reviewing the generated files before submitting a
+pull request.</p>
+<section id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h3>
+<p>From the root directory of the WaterBenchmarkHub repository, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>add_benchmark_cli.py
+</pre></div>
+</div>
+<p>This will start an interactive session guiding the user through all
+required steps to add a new benchmark resource.</p>
+<p>During execution, the CLI will prompt the user for:</p>
+<ul class="simple">
+<li><p>Network or benchmark identifier</p></li>
+<li><p>Download link</p></li>
+<li><p>Full name and descriptions</p></li>
+<li><p>Publication year and DOI</p></li>
+<li><p>Keywords, license, and external URLs</p></li>
+<li><p>References and citations</p></li>
+</ul>
+<p>Based on the provided information, the CLI automatically performs the
+following actions:</p>
+<ul class="simple">
+<li><p>Generate a load function for the benchmark</p></li>
+<li><p>Analyse the network topology and create a plot</p></li>
+<li><p>Create a unit test and execute it</p></li>
+<li><p>Generate the markdown file in <code class="docutils literal notranslate"><span class="pre">docs/_benchmarks/</span></code></p></li>
+<li><p>Update the JSON metadata file</p></li>
+<li><p>Create tags based on network characteristics (e.g. size, components)</p></li>
+</ul>
+<p>If the generated unit test fails, the CLI <strong>aborts the process</strong> and
+does not update the JSON database or documentation files. The generated load
+function and unit test must be removed manually in this case.</p>
+</section>
+<section id="sample-cli-run">
+<h3>Sample CLI Run<a class="headerlink" href="#sample-cli-run" title="Link to this heading"></a></h3>
+<p>The following example demonstrates a complete CLI session for adding a
+network benchmark using the interactive tool.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Adding new benchmark
+
+Network short ID (e.g. BAK or KY13): LeakDB
+Download link: hhttps://ucy-my.sharepoint.com/:f:/g/personal/mkiria01_ucy_ac_cy/Eiyah0-TL4dGqt9K4Ln5TN0BRlroASbX35p53bS7or4j5A
+Full network name: KIOS LeakDB
+Short description: LeakDB (Leakage Diagnosis Benchmark) is a realistic leakage dataset for water distribution networks.
+Long description (multi-sentence): Long description of KIOS LeakDB. May contain multiple sentences.
+Year: 2018
+DOI (optional): 10.5281/zenodo.1313116
+Keywords (comma separated, optional): Net1, Hanoi
+License (optional): EUPL-1.2
+External URL (optional): https://github.com/KIOS-Research/LeakDB
+
+Add references (empty to stop):
+Reference text:
+</pre></div>
+</div>
+<p>During this process, the CLI:</p>
+<ul class="simple">
+<li><p>Constructs the full benchmark identifier (e.g. <code class="docutils literal notranslate"><span class="pre">Network-LeakDB</span></code>)</p></li>
+<li><p>Generates a loader function in the Python package</p></li>
+<li><p>Analyses the network topology and creates a plot</p></li>
+<li><p>Creates and runs a unit test for validation</p></li>
+<li><p>Generates a Markdown description file in <code class="docutils literal notranslate"><span class="pre">docs/_benchmarks/</span></code></p></li>
+<li><p>Updates the JSON metadata database</p></li>
+<li><p>Assigns tags based on network characteristics</p></li>
+</ul>
+<p>If all tests pass successfully, the benchmark is fully integrated into
+the local repository and ready for review and submission via pull
+request.</p>
+</section>
+<section id="output-and-verification">
+<h3>Output and Verification<a class="headerlink" href="#output-and-verification" title="Link to this heading"></a></h3>
+<p>After successful execution, contributors should manually verify:</p>
+<ul class="simple">
+<li><p>The generated Markdown file in <code class="docutils literal notranslate"><span class="pre">docs/_benchmarks/</span></code></p></li>
+<li><p>The updated entry in <code class="docutils literal notranslate"><span class="pre">docs/static/database.json</span></code></p></li>
+<li><p>The newly added load and test functions</p></li>
+<li><p>Correct rendering of images and references</p></li>
+</ul>
+<p>Only after verification should the changes be committed and submitted
+as a pull request.</p>
+</section>
+<section id="limitations">
+<h3>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h3>
+<p>Currently, the CLI is primarily designed for benchmarks only consisting of a
+.inp file.
+For other types of benchmark resources, manual implementation may still
+be required, particularly for custom Python classes or non-standard
+metadata.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="basicusage.html" class="btn btn-neutral float-left" title="Basic Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.html" class="btn btn-neutral float-right" title="water_benchmark_hub" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,918 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>water_benchmark_hub &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub.bwdf" href="water_benchmark_hub.bwdf.html" />
+    <link rel="prev" title="How to Contribute" href="how_to_contribute.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">water_benchmark_hub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html">water_benchmark_hub.batadal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html">water_benchmark_hub.leakdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html">water_benchmark_hub.battledim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html">water_benchmark_hub.gecco_waterquality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.water_usage.html">water_benchmark_hub.water_usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#water-benchmark-hub-benchmark-resource">water_benchmark_hub.benchmark_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-water_benchmark_hub.meta_data">water_benchmark_hub.meta_data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.meta_data.MetaData"><code class="docutils literal notranslate"><span class="pre">MetaData</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.meta_data.MetaData.get_meta_info"><code class="docutils literal notranslate"><span class="pre">MetaData.get_meta_info()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.meta_data.meta_data"><code class="docutils literal notranslate"><span class="pre">meta_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-water_benchmark_hub.benchmarks">water_benchmark_hub.benchmarks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.benchmarks.load"><code class="docutils literal notranslate"><span class="pre">load()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.benchmarks.register"><code class="docutils literal notranslate"><span class="pre">register()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-water_benchmark_hub.metrics">water_benchmark_hub.metrics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.accuracy_score"><code class="docutils literal notranslate"><span class="pre">accuracy_score()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.f1_micro_score"><code class="docutils literal notranslate"><span class="pre">f1_micro_score()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.f1_score"><code class="docutils literal notranslate"><span class="pre">f1_score()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.mape"><code class="docutils literal notranslate"><span class="pre">mape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.mase"><code class="docutils literal notranslate"><span class="pre">mase()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.precision_score"><code class="docutils literal notranslate"><span class="pre">precision_score()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.roc_auc_score"><code class="docutils literal notranslate"><span class="pre">roc_auc_score()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.running_mse"><code class="docutils literal notranslate"><span class="pre">running_mse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.smape"><code class="docutils literal notranslate"><span class="pre">smape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.true_negative_rate"><code class="docutils literal notranslate"><span class="pre">true_negative_rate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water_benchmark_hub.metrics.true_positive_rate"><code class="docutils literal notranslate"><span class="pre">true_positive_rate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">water_benchmark_hub</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/water_benchmark_hub.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="water-benchmark-hub">
+<h1>water_benchmark_hub<a class="headerlink" href="#water-benchmark-hub" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html#water-benchmark-hub-bwdf-bwdf">water_benchmark_hub.bwdf.bwdf</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.batadal.html">water_benchmark_hub.batadal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html#module-water_benchmark_hub.batadal.batadal">water_benchmark_hub.batadal.batadal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.batadal.html#water_benchmark_hub.batadal.batadal.BATADAL"><code class="docutils literal notranslate"><span class="pre">BATADAL</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.batadal.html#water_benchmark_hub.batadal.batadal.BATADAL.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BATADAL.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.batadal.html#water_benchmark_hub.batadal.batadal.BATADAL.load_data"><code class="docutils literal notranslate"><span class="pre">BATADAL.load_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.batadal.html#water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data"><code class="docutils literal notranslate"><span class="pre">BATADAL.load_scada_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.batadal.html#water_benchmark_hub.batadal.batadal.BATADAL.load_scenario"><code class="docutils literal notranslate"><span class="pre">BATADAL.load_scenario()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html#module-water_benchmark_hub.batadal.batadal_data">water_benchmark_hub.batadal.batadal_data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.leakdb.html">water_benchmark_hub.leakdb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html#module-water_benchmark_hub.leakdb.leakdb">water_benchmark_hub.leakdb.leakdb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB"><code class="docutils literal notranslate"><span class="pre">LeakDB</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.compute_evaluation_score"><code class="docutils literal notranslate"><span class="pre">LeakDB.compute_evaluation_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.get_meta_info"><code class="docutils literal notranslate"><span class="pre">LeakDB.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.load_data"><code class="docutils literal notranslate"><span class="pre">LeakDB.load_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scada_data"><code class="docutils literal notranslate"><span class="pre">LeakDB.load_scada_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.leakdb.html#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios"><code class="docutils literal notranslate"><span class="pre">LeakDB.load_scenarios()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html#module-water_benchmark_hub.leakdb.leakdb_data">water_benchmark_hub.leakdb.leakdb_data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.battledim.html">water_benchmark_hub.battledim</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html#module-water_benchmark_hub.battledim.battledim">water_benchmark_hub.battledim.battledim</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.battledim.html#water_benchmark_hub.battledim.battledim.BattLeDIM"><code class="docutils literal notranslate"><span class="pre">BattLeDIM</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.battledim.html#water_benchmark_hub.battledim.battledim.BattLeDIM.compute_evaluation_score"><code class="docutils literal notranslate"><span class="pre">BattLeDIM.compute_evaluation_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.battledim.html#water_benchmark_hub.battledim.battledim.BattLeDIM.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BattLeDIM.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.battledim.html#water_benchmark_hub.battledim.battledim.BattLeDIM.load_data"><code class="docutils literal notranslate"><span class="pre">BattLeDIM.load_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.battledim.html#water_benchmark_hub.battledim.battledim.BattLeDIM.load_scada_data"><code class="docutils literal notranslate"><span class="pre">BattLeDIM.load_scada_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.battledim.html#water_benchmark_hub.battledim.battledim.BattLeDIM.load_scenario"><code class="docutils literal notranslate"><span class="pre">BattLeDIM.load_scenario()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html#module-water_benchmark_hub.battledim.battledim_data">water_benchmark_hub.battledim.battledim_data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html">water_benchmark_hub.gecco_waterquality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#module-water_benchmark_hub.gecco_waterquality.gecco_water_quality">water_benchmark_hub.gecco_waterquality.gecco_water_quality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality.compute_evaluation_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.get_meta_info"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality.get_meta_info()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2017</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.get_meta_info"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2017.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.load_data"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2017.load_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2018</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.get_meta_info"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2018.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.load_data"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2018.load_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2019</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.get_meta_info"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2019.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.load_data"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2019.load_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.water_usage.html">water_benchmark_hub.water_usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.water_usage.html#module-water_benchmark_hub.water_usage.water_usage">water_benchmark_hub.water_usage.water_usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage"><code class="docutils literal notranslate"><span class="pre">WaterUsage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score"><code class="docutils literal notranslate"><span class="pre">WaterUsage.compute_evaluation_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.get_meta_info"><code class="docutils literal notranslate"><span class="pre">WaterUsage.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.water_usage.html#water_benchmark_hub.water_usage.water_usage.WaterUsage.load_data"><code class="docutils literal notranslate"><span class="pre">WaterUsage.load_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html#module-water_benchmark_hub.networks.networks">water_benchmark_hub.networks.networks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Anytown"><code class="docutils literal notranslate"><span class="pre">Anytown</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Anytown.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Anytown.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Anytown.load"><code class="docutils literal notranslate"><span class="pre">Anytown.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BAK"><code class="docutils literal notranslate"><span class="pre">BAK</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BAK.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BAK.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BAK.load"><code class="docutils literal notranslate"><span class="pre">BAK.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BIN"><code class="docutils literal notranslate"><span class="pre">BIN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BIN.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BIN.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BIN.load"><code class="docutils literal notranslate"><span class="pre">BIN.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BWSN1"><code class="docutils literal notranslate"><span class="pre">BWSN1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BWSN1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BWSN1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BWSN1.load"><code class="docutils literal notranslate"><span class="pre">BWSN1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BWSN2"><code class="docutils literal notranslate"><span class="pre">BWSN2</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BWSN2.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BWSN2.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.BWSN2.load"><code class="docutils literal notranslate"><span class="pre">BWSN2.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Balerma"><code class="docutils literal notranslate"><span class="pre">Balerma</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Balerma.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Balerma.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Balerma.load"><code class="docutils literal notranslate"><span class="pre">Balerma.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CA1"><code class="docutils literal notranslate"><span class="pre">CA1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CA1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">CA1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CA1.load"><code class="docutils literal notranslate"><span class="pre">CA1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CTown"><code class="docutils literal notranslate"><span class="pre">CTown</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CTown.get_meta_info"><code class="docutils literal notranslate"><span class="pre">CTown.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CTown.load"><code class="docutils literal notranslate"><span class="pre">CTown.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CYDBP"><code class="docutils literal notranslate"><span class="pre">CYDBP</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CYDBP.get_meta_info"><code class="docutils literal notranslate"><span class="pre">CYDBP.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.CYDBP.load"><code class="docutils literal notranslate"><span class="pre">CYDBP.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DMA"><code class="docutils literal notranslate"><span class="pre">DMA</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DMA.get_meta_info"><code class="docutils literal notranslate"><span class="pre">DMA.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DMA.load"><code class="docutils literal notranslate"><span class="pre">DMA.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DTown"><code class="docutils literal notranslate"><span class="pre">DTown</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DTown.get_meta_info"><code class="docutils literal notranslate"><span class="pre">DTown.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.DTown.load"><code class="docutils literal notranslate"><span class="pre">DTown.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ETown"><code class="docutils literal notranslate"><span class="pre">ETown</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ETown.get_meta_info"><code class="docutils literal notranslate"><span class="pre">ETown.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ETown.load"><code class="docutils literal notranslate"><span class="pre">ETown.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.EXN"><code class="docutils literal notranslate"><span class="pre">EXN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.EXN.get_meta_info"><code class="docutils literal notranslate"><span class="pre">EXN.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.EXN.load"><code class="docutils literal notranslate"><span class="pre">EXN.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.FOWM"><code class="docutils literal notranslate"><span class="pre">FOWM</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.FOWM.get_meta_info"><code class="docutils literal notranslate"><span class="pre">FOWM.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.FOWM.load"><code class="docutils literal notranslate"><span class="pre">FOWM.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Fossolo"><code class="docutils literal notranslate"><span class="pre">Fossolo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Fossolo.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Fossolo.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Fossolo.load"><code class="docutils literal notranslate"><span class="pre">Fossolo.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.FourteenPipe"><code class="docutils literal notranslate"><span class="pre">FourteenPipe</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.FourteenPipe.get_meta_info"><code class="docutils literal notranslate"><span class="pre">FourteenPipe.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.FourteenPipe.load"><code class="docutils literal notranslate"><span class="pre">FourteenPipe.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.GOY"><code class="docutils literal notranslate"><span class="pre">GOY</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.GOY.get_meta_info"><code class="docutils literal notranslate"><span class="pre">GOY.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.GOY.load"><code class="docutils literal notranslate"><span class="pre">GOY.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Hanoi"><code class="docutils literal notranslate"><span class="pre">Hanoi</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Hanoi.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Hanoi.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Hanoi.load"><code class="docutils literal notranslate"><span class="pre">Hanoi.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Jilin"><code class="docutils literal notranslate"><span class="pre">Jilin</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Jilin.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Jilin.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Jilin.load"><code class="docutils literal notranslate"><span class="pre">Jilin.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KL"><code class="docutils literal notranslate"><span class="pre">KL</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KL.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KL.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KL.load"><code class="docutils literal notranslate"><span class="pre">KL.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY1"><code class="docutils literal notranslate"><span class="pre">KY1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY1.load"><code class="docutils literal notranslate"><span class="pre">KY1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY10"><code class="docutils literal notranslate"><span class="pre">KY10</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY10.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY10.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY10.load"><code class="docutils literal notranslate"><span class="pre">KY10.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY11"><code class="docutils literal notranslate"><span class="pre">KY11</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY11.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY11.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY11.load"><code class="docutils literal notranslate"><span class="pre">KY11.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY12"><code class="docutils literal notranslate"><span class="pre">KY12</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY12.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY12.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY12.load"><code class="docutils literal notranslate"><span class="pre">KY12.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY13"><code class="docutils literal notranslate"><span class="pre">KY13</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY13.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY13.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY13.load"><code class="docutils literal notranslate"><span class="pre">KY13.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY14"><code class="docutils literal notranslate"><span class="pre">KY14</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY14.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY14.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY14.load"><code class="docutils literal notranslate"><span class="pre">KY14.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY15"><code class="docutils literal notranslate"><span class="pre">KY15</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY15.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY15.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY15.load"><code class="docutils literal notranslate"><span class="pre">KY15.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY16"><code class="docutils literal notranslate"><span class="pre">KY16</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY16.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY16.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY16.load"><code class="docutils literal notranslate"><span class="pre">KY16.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY17"><code class="docutils literal notranslate"><span class="pre">KY17</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY17.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY17.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY17.load"><code class="docutils literal notranslate"><span class="pre">KY17.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY2"><code class="docutils literal notranslate"><span class="pre">KY2</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY2.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY2.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY2.load"><code class="docutils literal notranslate"><span class="pre">KY2.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY3"><code class="docutils literal notranslate"><span class="pre">KY3</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY3.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY3.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY3.load"><code class="docutils literal notranslate"><span class="pre">KY3.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY4"><code class="docutils literal notranslate"><span class="pre">KY4</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY4.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY4.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY4.load"><code class="docutils literal notranslate"><span class="pre">KY4.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY5"><code class="docutils literal notranslate"><span class="pre">KY5</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY5.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY5.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY5.load"><code class="docutils literal notranslate"><span class="pre">KY5.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY6"><code class="docutils literal notranslate"><span class="pre">KY6</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY6.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY6.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY6.load"><code class="docutils literal notranslate"><span class="pre">KY6.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY7"><code class="docutils literal notranslate"><span class="pre">KY7</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY7.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY7.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY7.load"><code class="docutils literal notranslate"><span class="pre">KY7.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY8"><code class="docutils literal notranslate"><span class="pre">KY8</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY8.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY8.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY8.load"><code class="docutils literal notranslate"><span class="pre">KY8.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY9"><code class="docutils literal notranslate"><span class="pre">KY9</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY9.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KY9.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KY9.load"><code class="docutils literal notranslate"><span class="pre">KY9.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV18"><code class="docutils literal notranslate"><span class="pre">KYV18</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV18.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KYV18.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV18.load"><code class="docutils literal notranslate"><span class="pre">KYV18.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV21"><code class="docutils literal notranslate"><span class="pre">KYV21</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV21.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KYV21.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV21.load"><code class="docutils literal notranslate"><span class="pre">KYV21.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV22"><code class="docutils literal notranslate"><span class="pre">KYV22</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV22.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KYV22.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV22.load"><code class="docutils literal notranslate"><span class="pre">KYV22.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV23"><code class="docutils literal notranslate"><span class="pre">KYV23</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV23.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KYV23.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV23.load"><code class="docutils literal notranslate"><span class="pre">KYV23.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV24"><code class="docutils literal notranslate"><span class="pre">KYV24</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV24.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KYV24.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV24.load"><code class="docutils literal notranslate"><span class="pre">KYV24.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV8"><code class="docutils literal notranslate"><span class="pre">KYV8</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV8.get_meta_info"><code class="docutils literal notranslate"><span class="pre">KYV8.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.KYV8.load"><code class="docutils literal notranslate"><span class="pre">KYV8.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.MarchiRural"><code class="docutils literal notranslate"><span class="pre">MarchiRural</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.MarchiRural.get_meta_info"><code class="docutils literal notranslate"><span class="pre">MarchiRural.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.MarchiRural.load"><code class="docutils literal notranslate"><span class="pre">MarchiRural.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Micropolis"><code class="docutils literal notranslate"><span class="pre">Micropolis</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Micropolis.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Micropolis.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Micropolis.load"><code class="docutils literal notranslate"><span class="pre">Micropolis.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Modena"><code class="docutils literal notranslate"><span class="pre">Modena</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Modena.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Modena.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Modena.load"><code class="docutils literal notranslate"><span class="pre">Modena.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ModifiedNineteenPipe"><code class="docutils literal notranslate"><span class="pre">ModifiedNineteenPipe</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ModifiedNineteenPipe.get_meta_info"><code class="docutils literal notranslate"><span class="pre">ModifiedNineteenPipe.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ModifiedNineteenPipe.load"><code class="docutils literal notranslate"><span class="pre">ModifiedNineteenPipe.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NJ1"><code class="docutils literal notranslate"><span class="pre">NJ1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NJ1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">NJ1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NJ1.load"><code class="docutils literal notranslate"><span class="pre">NJ1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NYC_Tunnel"><code class="docutils literal notranslate"><span class="pre">NYC_Tunnel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NYC_Tunnel.get_meta_info"><code class="docutils literal notranslate"><span class="pre">NYC_Tunnel.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NYC_Tunnel.load"><code class="docutils literal notranslate"><span class="pre">NYC_Tunnel.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NineteenPipe"><code class="docutils literal notranslate"><span class="pre">NineteenPipe</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NineteenPipe.get_meta_info"><code class="docutils literal notranslate"><span class="pre">NineteenPipe.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.NineteenPipe.load"><code class="docutils literal notranslate"><span class="pre">NineteenPipe.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.PA1"><code class="docutils literal notranslate"><span class="pre">PA1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.PA1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">PA1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.PA1.load"><code class="docutils literal notranslate"><span class="pre">PA1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.PA2"><code class="docutils literal notranslate"><span class="pre">PA2</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.PA2.get_meta_info"><code class="docutils literal notranslate"><span class="pre">PA2.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.PA2.load"><code class="docutils literal notranslate"><span class="pre">PA2.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.RCH"><code class="docutils literal notranslate"><span class="pre">RCH</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.RCH.get_meta_info"><code class="docutils literal notranslate"><span class="pre">RCH.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.RCH.load"><code class="docutils literal notranslate"><span class="pre">RCH.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Richmond"><code class="docutils literal notranslate"><span class="pre">Richmond</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Richmond.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Richmond.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Richmond.load"><code class="docutils literal notranslate"><span class="pre">Richmond.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Rural"><code class="docutils literal notranslate"><span class="pre">Rural</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Rural.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Rural.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.Rural.load"><code class="docutils literal notranslate"><span class="pre">Rural.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.TLN"><code class="docutils literal notranslate"><span class="pre">TLN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.TLN.get_meta_info"><code class="docutils literal notranslate"><span class="pre">TLN.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.TLN.load"><code class="docutils literal notranslate"><span class="pre">TLN.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.TRN"><code class="docutils literal notranslate"><span class="pre">TRN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.TRN.get_meta_info"><code class="docutils literal notranslate"><span class="pre">TRN.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.TRN.load"><code class="docutils literal notranslate"><span class="pre">TRN.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WA1"><code class="docutils literal notranslate"><span class="pre">WA1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WA1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">WA1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WA1.load"><code class="docutils literal notranslate"><span class="pre">WA1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WCR"><code class="docutils literal notranslate"><span class="pre">WCR</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WCR.get_meta_info"><code class="docutils literal notranslate"><span class="pre">WCR.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WCR.load"><code class="docutils literal notranslate"><span class="pre">WCR.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetwork"><code class="docutils literal notranslate"><span class="pre">WaterDistributionNetwork</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.WaterDistributionNetwork.get_meta_info"><code class="docutils literal notranslate"><span class="pre">WaterDistributionNetwork.get_meta_info()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ZhiJiang"><code class="docutils literal notranslate"><span class="pre">ZhiJiang</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ZhiJiang.get_meta_info"><code class="docutils literal notranslate"><span class="pre">ZhiJiang.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.ZhiJiang.load"><code class="docutils literal notranslate"><span class="pre">ZhiJiang.load()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html#module-water_benchmark_hub.networks.epanet_examples">water_benchmark_hub.networks.epanet_examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net1"><code class="docutils literal notranslate"><span class="pre">Net1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Net1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net1.load"><code class="docutils literal notranslate"><span class="pre">Net1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net2"><code class="docutils literal notranslate"><span class="pre">Net2</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net2.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Net2.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net2.load"><code class="docutils literal notranslate"><span class="pre">Net2.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net3"><code class="docutils literal notranslate"><span class="pre">Net3</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net3.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Net3.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net3.load"><code class="docutils literal notranslate"><span class="pre">Net3.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net6"><code class="docutils literal notranslate"><span class="pre">Net6</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net6.get_meta_info"><code class="docutils literal notranslate"><span class="pre">Net6.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.epanet_examples.Net6.load"><code class="docutils literal notranslate"><span class="pre">Net6.load()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html#module-water_benchmark_hub.networks.ltown">water_benchmark_hub.networks.ltown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.ltown.LTown"><code class="docutils literal notranslate"><span class="pre">LTown</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.ltown.LTown.get_meta_info"><code class="docutils literal notranslate"><span class="pre">LTown.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.ltown.LTown.load"><code class="docutils literal notranslate"><span class="pre">LTown.load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.ltown.LTown.load_ltown_a"><code class="docutils literal notranslate"><span class="pre">LTown.load_ltown_a()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html#module-water_benchmark_hub.networks.bwsn_networks">water_benchmark_hub.networks.bwsn_networks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.bwsn_networks.BWSN1"><code class="docutils literal notranslate"><span class="pre">BWSN1</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.bwsn_networks.BWSN1.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BWSN1.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.bwsn_networks.BWSN1.load"><code class="docutils literal notranslate"><span class="pre">BWSN1.load()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.bwsn_networks.BWSN2"><code class="docutils literal notranslate"><span class="pre">BWSN2</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.bwsn_networks.BWSN2.get_meta_info"><code class="docutils literal notranslate"><span class="pre">BWSN2.get_meta_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="water_benchmark_hub.networks.html#water_benchmark_hub.networks.bwsn_networks.BWSN2.load"><code class="docutils literal notranslate"><span class="pre">BWSN2.load()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html#water-benchmark-hub-gym-scenario-control-env">water_benchmark_hub.gym.scenario_control_env</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="water-benchmark-hub-benchmark-resource">
+<h2>water_benchmark_hub.benchmark_resource<a class="headerlink" href="#water-benchmark-hub-benchmark-resource" title="Link to this heading"></a></h2>
+</section>
+<section id="module-water_benchmark_hub.meta_data">
+<span id="water-benchmark-hub-meta-data"></span><h2>water_benchmark_hub.meta_data<a class="headerlink" href="#module-water_benchmark_hub.meta_data" title="Link to this heading"></a></h2>
+<p>This module contains a class for querying the database.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.meta_data.MetaData">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.meta_data.</span></span><span class="sig-name descname"><span class="pre">MetaData</span></span><a class="headerlink" href="#water_benchmark_hub.meta_data.MetaData" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for querying the database (“webpage/static/database.json”) and
+retrieving the meta info of each benchmark resource.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.meta_data.MetaData.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resource_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.meta_data.MetaData.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of a specific resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.meta_data.meta_data">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.meta_data.</span></span><span class="sig-name descname"><span class="pre">meta_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">benchmark_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#water_benchmark_hub.meta_data.meta_data" title="Link to this definition"></a></dt>
+<dd><p>Decorator for making the meta data available in the benchmark resource class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>benchmark_id</strong> (<cite>str</cite>) – ID of the benchmark resource.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Extended class.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>Any</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-water_benchmark_hub.benchmarks">
+<span id="water-benchmark-hub-benchmarks"></span><h2>water_benchmark_hub.benchmarks<a class="headerlink" href="#module-water_benchmark_hub.benchmarks" title="Link to this heading"></a></h2>
+<p>Module provides functions for registering and loading benchmarks.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.benchmarks.load">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.benchmarks.</span></span><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BenchmarkResource</span></span></span><a class="headerlink" href="#water_benchmark_hub.benchmarks.load" title="Link to this definition"></a></dt>
+<dd><p>Loads a registered benchmark.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>res_name</strong> (<cite>str</cite>) – Name of the benchmark.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Benchmark.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.benchmarks.register">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.benchmarks.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BenchmarkResource</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#water_benchmark_hub.benchmarks.register" title="Link to this definition"></a></dt>
+<dd><p>Registers a new benchmark under a given name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>res_name</strong> (<cite>str</cite>) – Name of the benchmark – must be unique among all benchmarks.</p></li>
+<li><p><strong>res</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code>) – Benchmark.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-water_benchmark_hub.metrics">
+<span id="water-benchmark-hub-metrics"></span><h2>water_benchmark_hub.metrics<a class="headerlink" href="#module-water_benchmark_hub.metrics" title="Link to this heading"></a></h2>
+<p>This module provides different metrics for evaluation.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.accuracy_score">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">accuracy_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.accuracy_score" title="Link to this definition"></a></dt>
+<dd><p>Computes the accuracy of a classification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Accuracy score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.f1_micro_score">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">f1_micro_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.f1_micro_score" title="Link to this definition"></a></dt>
+<dd><p>Computes the F1 score using for a multi-class classification by
+counting the total true positives, false negatives and false positives.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>F1 score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.f1_score">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">f1_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.f1_score" title="Link to this definition"></a></dt>
+<dd><p>Computes the F1-score for a binary classification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>F1-score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.mape">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">mape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.05</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.mape" title="Link to this definition"></a></dt>
+<dd><p>Computes the Mean Absolute Percentage Error (MAPE).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted outputs.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth outputs.</p></li>
+<li><p><strong>epsilon</strong> (<cite>float</cite>, optional) – <p>Small number added to predictions and ground truth to avoid division-by-zero.</p>
+<p>The default is 0.05</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>MAPE score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.mase">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">mase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.05</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.mase" title="Link to this definition"></a></dt>
+<dd><p>Computes the Mean Absolute Scaled Error (MASE).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted outputs.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth outputs.</p></li>
+<li><p><strong>epsilon</strong> (<cite>float</cite>, optional) – <p>Small number added to predictions and ground truth to avoid division-by-zero.</p>
+<p>The default is 0.05</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>MASE score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.precision_score">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">precision_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.precision_score" title="Link to this definition"></a></dt>
+<dd><p>Computes the precision of a classification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Precision score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.roc_auc_score">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">roc_auc_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.roc_auc_score" title="Link to this definition"></a></dt>
+<dd><p>Computes the Area Under the Curve (AUC) of a classification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ROC AUC score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.running_mse">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">running_mse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#water_benchmark_hub.metrics.running_mse" title="Link to this definition"></a></dt>
+<dd><p>Computes the running Mean Squared Error (MSE).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted outputs.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth outputs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Running MSE.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.smape">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">smape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.05</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.smape" title="Link to this definition"></a></dt>
+<dd><p>Computes the Symmetric Mean Absolute Percentage Error (SMAPE).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted outputs.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth outputs.</p></li>
+<li><p><strong>epsilon</strong> (<cite>float</cite>, optional) – <p>Small number added to predictions and ground truth to avoid division-by-zero.</p>
+<p>The default is 0.05</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>SMAPE score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.true_negative_rate">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">true_negative_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.true_negative_rate" title="Link to this definition"></a></dt>
+<dd><p>Computes the true negative rate (also called specificity).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True negative rate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="water_benchmark_hub.metrics.true_positive_rate">
+<span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.metrics.</span></span><span class="sig-name descname"><span class="pre">true_positive_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.metrics.true_positive_rate" title="Link to this definition"></a></dt>
+<dd><p>Computes the true positive rate (also called sensitivity).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Predicted labels.</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True positive rate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="how_to_contribute.html" class="btn btn-neutral float-left" title="How to Contribute" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.bwdf.html" class="btn btn-neutral float-right" title="water_benchmark_hub.bwdf" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

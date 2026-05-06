@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>water_benchmark_hub.batadal &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub.leakdb" href="water_benchmark_hub.leakdb.html" />
+    <link rel="prev" title="water_benchmark_hub.bwdf" href="water_benchmark_hub.bwdf.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="water_benchmark_hub.html">water_benchmark_hub</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">water_benchmark_hub.batadal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.batadal.batadal">water_benchmark_hub.batadal.batadal</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.batadal.batadal.BATADAL"><code class="docutils literal notranslate"><span class="pre">BATADAL</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.batadal.batadal_data">water_benchmark_hub.batadal.batadal_data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html">water_benchmark_hub.leakdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html">water_benchmark_hub.battledim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html">water_benchmark_hub.gecco_waterquality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.water_usage.html">water_benchmark_hub.water_usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#water-benchmark-hub-benchmark-resource">water_benchmark_hub.benchmark_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.meta_data">water_benchmark_hub.meta_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.benchmarks">water_benchmark_hub.benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.metrics">water_benchmark_hub.metrics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="water_benchmark_hub.html">water_benchmark_hub</a></li>
+      <li class="breadcrumb-item active">water_benchmark_hub.batadal</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/water_benchmark_hub.batadal.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="water-benchmark-hub-batadal">
+<h1>water_benchmark_hub.batadal<a class="headerlink" href="#water-benchmark-hub-batadal" title="Link to this heading"></a></h1>
+<section id="module-water_benchmark_hub.batadal.batadal">
+<span id="water-benchmark-hub-batadal-batadal"></span><h2>water_benchmark_hub.batadal.batadal<a class="headerlink" href="#module-water_benchmark_hub.batadal.batadal" title="Link to this heading"></a></h2>
+<p>Module provides access to the BATADAL benchmark.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.batadal.batadal.BATADAL">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.batadal.batadal.</span></span><span class="sig-name descname"><span class="pre">BATADAL</span></span><a class="headerlink" href="#water_benchmark_hub.batadal.batadal.BATADAL" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code></p>
+<p>The BATtle of the Attack Detection ALgorithms (<em>BATADAL</em>) by Riccardo Taormina, Stefano Galelli,
+Nils Ole Tippenhauer, Avi Ostfeld, Elad Salomons, Demetrios Eliades is a competition on planning
+and management of water networks undertaken within the Water Distribution Systems Analysis
+Symposium. The goal of the battle was to compare the performance of algorithms for the detection
+of cyber-physical attacks, whose frequency has increased in the last few years along with the
+adoption of smart water technologies. The design challenge was set for the C-Town network,
+a real-world, medium-sized water distribution system operated through programmable logic
+controllers and a supervisory control and data acquisition (SCADA) system. Participants were
+provided with data sets containing (simulated) SCADA observations, and challenged to design
+an attack detection algorithm. The effectiveness of all submitted algorithms was evaluated in
+terms of time-to-detection and classification accuracy. Seven teams participated in the battle
+and proposed a variety of successful approaches leveraging data analysis, model-based detection
+mechanisms, and rule checking. Results were presented at the Water Distribution Systems Analysis
+Symposium (World Environmental and Water Resources Congress) in Sacramento, California on
+May 21-25, 2017.
+The <a class="reference external" href="https://doi.org/10.1061/(ASCE)WR.1943-5452.0000969">paper</a> summarizes the BATADAL
+problem, proposed algorithms, results, and future research directions.</p>
+<p>See <a class="reference external" href="https://www.batadal.net/">https://www.batadal.net/</a> for details.</p>
+<p>This module provides functions for loading the original BATADAL data set
+<a class="reference internal" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_data" title="water_benchmark_hub.batadal.batadal.BATADAL.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>, as well as functions for loading the
+scenarios <a class="reference internal" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_scenario" title="water_benchmark_hub.batadal.batadal.BATADAL.load_scenario"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scenario()</span></code></a> and pre-generated
+SCADA data <a class="reference internal" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data" title="water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scada_data()</span></code></a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.batadal.batadal.BATADAL.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.batadal.batadal.BATADAL.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.batadal.batadal.BATADAL.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_ground_truth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_features_desc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the original BATADAL competition data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data together with the labels is returned as pairs of Numpy arrays.
+Otherwise, the data is returned as Pandas data frames.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_ground_truth</strong> (<cite>bool</cite>) – <p>If True and if <cite>return_X_y</cite> is True, the ground truth labels are included in the
+returned dictionary – note that the labels provided in the benchmark constitute
+a partial labeling only.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_features_desc</strong> (<cite>bool</cite>) – <p>If True and if <cite>return_X_y</cite> is True, feature names (i.e. descriptions) are included
+in the returned dictionary.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary of the loaded benchmark data. The dictionary contains the two training
+data sets (“train_1” and “train_2”), as well as the test data set (“test”).
+If <cite>return_X_y</cite> is False, each dictionary entry is a
+<a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html">Pandas dataframe</a>.
+Otherwise, it is a tuple of sensor readings and labels (except for the test set) –
+if <cite>return_ground_truth</cite> is True or <cite>return_features_desc</cite> is True, the corresponding
+data is appended to the tuple.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_scada_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_ground_truth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_features_desc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the SCADA data of the simulated BATADAL benchmark scenario – note that due to
+randomness and undocumented aspects of the original BATADAL data set, these differ from
+the original data set which can be loaded by calling
+<a class="reference internal" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_data" title="water_benchmark_hub.batadal.batadal.BATADAL.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data together with the labels is returned as pairs of Numpy arrays.
+Otherwisen the data is returned as Pandas data frames.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_ground_truth</strong> (<cite>bool</cite>) – <p>If True and if <cite>return_X_y</cite> is True, the ground truth labels are included in the
+returned dictionary – note that the labels provided in the benchmark constitute
+a partial labeling only.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_features_desc</strong> (<cite>bool</cite>) – <p>If True and if <cite>return_X_y</cite> is True, feature names (i.e. descriptions) are included
+in the returned dictionary.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.batadal.batadal.BATADAL.load_scenario">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_scenario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">epyt_flow.simulation.ScenarioConfig</span></span></span><a class="headerlink" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_scenario" title="Link to this definition"></a></dt>
+<dd><p>Creates and returns the BATADAL scenario – it can be either modified or directly passed
+to the EPyT-Flow simulator
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator">epyt_flow.simulation.scenario_simulator.ScenarioSimulator</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that due to randomness and undocumented aspects of the original BATADAL benchmark,
+the scenario simulation results differ from the original data set which can be loaded by
+calling <a class="reference internal" href="#water_benchmark_hub.batadal.batadal.BATADAL.load_data" title="water_benchmark_hub.batadal.batadal.BATADAL.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The BATADAL scenario.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig">epyt_flow.simulation.scenario_config.ScenarioConfig</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-water_benchmark_hub.batadal.batadal_data">
+<span id="water-benchmark-hub-batadal-batadal-data"></span><h2>water_benchmark_hub.batadal.batadal_data<a class="headerlink" href="#module-water_benchmark_hub.batadal.batadal_data" title="Link to this heading"></a></h2>
+<p>Module provides the event configurations for BATADAL.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="water_benchmark_hub.bwdf.html" class="btn btn-neutral float-left" title="water_benchmark_hub.bwdf" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.leakdb.html" class="btn btn-neutral float-right" title="water_benchmark_hub.leakdb" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

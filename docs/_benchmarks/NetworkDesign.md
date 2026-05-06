@@ -53,6 +53,48 @@ The page provides an overview of twelve benchmark design problems of Water Distr
     <td>11</td>
     <td>2.36 &times; 10<sup>9</sup></td>
 </tr>
+<tr>
+    <th rowspan=2 style="vertical-align : middle;text-align:center;">Intermediate problems</th>
+    <td>Fossolo Network (FOS)</td>
+    <td>1</td>
+    <td>1</td>
+    <td>58</td>
+    <td>22</td>
+    <td>7.25 &times; 10<sup>77</sup></td>
+</tr>
+<tr>
+    <td>Pescara Network (PES)</td>
+    <td>1</td>
+    <td>3</td>
+    <td>99</td>
+    <td>13</td>
+    <td>1.91 &times; 10<sup>110</sup></td>
+</tr>
+<tr>
+    <th rowspan=3 style="vertical-align : middle;text-align:center;">Large problems</th>
+    <td>Modena Network (MOD)</td>
+    <td>1</td>
+    <td>4</td>
+    <td>317</td>
+    <td>13</td>
+    <td>1.32 &times; 10<sup>353</sup></td>
+</tr>
+<tr>
+    <td>Balerma Irrigation Network (BIN)</td>
+    <td>1</td>
+    <td>4</td>
+    <td>454</td>
+    <td>10</td>
+    <td>1.00 &times; 10<sup>455</sup></td>
+</tr>
+<tr>
+    <td>Exeter Network (EXN)</td>
+    <td>1</td>
+    <td>7</td>
+    <td>567</td>
+    <td>11</td>
+    <td>2.95 &times; 10<sup>590</sup></td>
+</tr>
 </tbody>
 </table>
 
@@ -173,3 +215,37 @@ TODO
 ## Large problems
 
 TODO
+
+<details id="BIN">
+  <summary><h4 style="display:inline-block">Balerma Irrigation Network (BIN)</h4></summary>
+  The <a href="network-BIN.html">BIN</a> includes four hundred and fifty-four relatively small length pipes, four hundred and forty-three demand nodes (hydrants), and four reservoirs with fixed heads within 112 m to 127 m. The material of pipes is polyvinyl chloride (PVC). The Darcy-Weisbach roughness coefficient of 0.0025 mm is applied to all the pipes. The minimum pressure head above ground elevation is 20 m for all the demand nodes. Table BIN.1 shows commercially available diameters and the corresponding unit costs. Figure BIN.1 depicts the layout of BIN.
+  
+  <div id="BIN-tab-diameter-costs"></div>
+  <script type="text/javascript">insertTable("BIN-tab-diameter-costs", "../static/benchmarks/network-bin/BIN_Cost.csv", "Table BIN.1 Diameter options and associated unit costs of BIN");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-bin/bin_plot.png"/>
+    <figcaption>Figure BIN.1. Layout of Balerma Irrigation Network</figcaption>
+  </figure>
+</details>
+
+<details id="EXN">
+  <summary><h4 style="display:inline-block">Exeter network (EXN)</h4></summary>
+  The <a href="network-EXN.html">EXN</a> has three thousand and thirty-two pipes including five hundred and sixty-seven considered for duplication, five valves, one thousand eight hundred and ninety-one junction nodes and seven water sources. Two major reservoirs (node 3001 and 3002) supply water to the system at fixed head of 58.4 m and 62.4 m respectively. The system is also fed by its neighbour systems via node 3003 to 3007 at fixed rates. Three non-return valves (also known as check valves) are connected to node 3001 and 3002 to control the flow direction into and outside the system. One pressure reducing valve locates in the downstream of node 3004 to maintain the downstream pressure within 58.4 m. One throttle control valve is also in the link downstream of node 3004 to control the flow and pressure of system.
+
+  The minimum pressure requirement of demand nodes is 20.0 m. There are ten available discrete pipe sizes and one extra option as 'do nothing'. The unit cost for duplicating the existing pipe depends on both the diameter selected and the road type. Table EXN.1 shows the pipe diameters, the corresponding Colebrook-White friction factors (following Darcy-Weisbach formula) and unit costs. The location of major roads is specified in Table EXN.2 in terms of pipe ID. Figure EXN.1 depicts the layout of EXN.
+  
+  <div id="EXN-tab-COST"></div>
+  <script type="text/javascript">insertTable("EXN-tab-COST", "../static/benchmarks/network-exn/EXN_Cost.csv", "Table EXN.1. Roughness coefficients and unit costs of EXN");</script>
+  <br>
+
+  <div id="EXN-tab-MajorRoads"></div>
+  <script type="text/javascript">insertTable("EXN-tab-diameter-costs", "../static/benchmarks/network-exn/EXN_MajorRoad.csv", "Table EXN.2. Location of major road in terms of pipe ID");</script>
+  <br>
+
+  <figure>
+    <img src="../static/benchmarks/network-exn/exn_plot.png"/>
+    <figcaption>Figure EXN.1. Layout of Exeter Network</figcaption>
+  </figure>
+</details>

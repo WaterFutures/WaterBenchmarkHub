@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>water_benchmark_hub.gecco_waterquality &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub.water_usage" href="water_benchmark_hub.water_usage.html" />
+    <link rel="prev" title="water_benchmark_hub.battledim" href="water_benchmark_hub.battledim.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="water_benchmark_hub.html">water_benchmark_hub</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html">water_benchmark_hub.batadal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.leakdb.html">water_benchmark_hub.leakdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html">water_benchmark_hub.battledim</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">water_benchmark_hub.gecco_waterquality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.gecco_waterquality.gecco_water_quality">water_benchmark_hub.gecco_waterquality.gecco_water_quality</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2017</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2018</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019"><code class="docutils literal notranslate"><span class="pre">GeccoWaterQuality2019</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.water_usage.html">water_benchmark_hub.water_usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#water-benchmark-hub-benchmark-resource">water_benchmark_hub.benchmark_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.meta_data">water_benchmark_hub.meta_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.benchmarks">water_benchmark_hub.benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.metrics">water_benchmark_hub.metrics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="water_benchmark_hub.html">water_benchmark_hub</a></li>
+      <li class="breadcrumb-item active">water_benchmark_hub.gecco_waterquality</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/water_benchmark_hub.gecco_waterquality.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="water-benchmark-hub-gecco-waterquality">
+<h1>water_benchmark_hub.gecco_waterquality<a class="headerlink" href="#water-benchmark-hub-gecco-waterquality" title="Link to this heading"></a></h1>
+<section id="module-water_benchmark_hub.gecco_waterquality.gecco_water_quality">
+<span id="water-benchmark-hub-gecco-waterquality-gecco-water-quality"></span><h2>water_benchmark_hub.gecco_waterquality.gecco_water_quality<a class="headerlink" href="#module-water_benchmark_hub.gecco_waterquality.gecco_water_quality" title="Link to this heading"></a></h2>
+<p>Module provides functions for loading different GECCO water quality data sets.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.gecco_waterquality.gecco_water_quality.</span></span><span class="sig-name descname"><span class="pre">GeccoWaterQuality</span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code></p>
+<p>Base class for GECCO Water Quality 2017 - 2019 benchmarks.</p>
+<p>Note that the scoring/evaluation algorithm is the same for all GECCO water quality benchmarks
+and is implemented in
+<a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score" title="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score"><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_evaluation_score()</span></code></a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">compute_evaluation_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.compute_evaluation_score" title="Link to this definition"></a></dt>
+<dd><p>Evaluates the performance of a detection method.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All GECCO water quality challenges use the F1-score for evaluation.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y_pred</strong> (<cite>numpy.ndarray</cite>) – Event indication prediction over time</p></li>
+<li><p><strong>y</strong> (<cite>numpy.ndarray</cite>) – Ground truth event indication over time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Evaluation score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>float</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.gecco_waterquality.gecco_water_quality.</span></span><span class="sig-name descname"><span class="pre">GeccoWaterQuality2017</span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality" title="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeccoWaterQuality</span></code></a></p>
+<p>Class for Loading the original GECCO Industrial Challenge 2017 Dataset: A water quality dataset for the
+“Monitoring of drinking-water quality” competition organized by M. Friese, J. Stork,
+A. Fischbach, M. Rebolledo, T. Bartz-Beielstein at the Genetic and Evolutionary
+Computation Conference 2017, Berlin, Germany</p>
+<p>This is a benchmark for anomaly detection algorithms on water quality. The data is provided by
+the “Thüringer Fernwasserversorgung” (Germany) and constitutes a real-world data set. In this
+data set, 9 numeric water quality features are given at a sampling rate of 1 min over approx.
+3 month. The goal is to predict the presence of an anomaly – i.e. binary classification.</p>
+<p>More information can be found at <a class="reference external" href="https://zenodo.org/records/3884465">https://zenodo.org/records/3884465</a> and
+<a class="reference external" href="http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/">http://www.spotseven.de/gecco-challenge/gecco-challenge-2017/</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2017.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the original GECCO Industrial Challenge 2017 Dataset.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that this is NOT a simulated scenario and therefore only the final
+data set is provided.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels as two Numpy arrays,
+otherwise the data is returned as Pandas data frame.</p>
+<p>The default is True.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The benchmark data set as either a Pandas data frame or as a pair of (X, y) Numpy arrays.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>pandas.DataFrame</cite> or <cite>tuple[numpy.ndarray, numpy.ndarray]</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.gecco_waterquality.gecco_water_quality.</span></span><span class="sig-name descname"><span class="pre">GeccoWaterQuality2018</span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality" title="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeccoWaterQuality</span></code></a></p>
+<p>Class for Loading the GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the
+“Internet of Things: Online Anomaly Detection for Drinking Water Quality” competition
+organized by F. Rehbach, M. Rebolledo, S. Moritz, S. Chandrasekaran, T. Bartz-Beielstein at
+the Genetic and Evolutionary Computation Conference 2018, Kyoto, Japan.</p>
+<p>This is a benchmark (based on
+<code class="xref py py-func docutils literal notranslate"><span class="pre">GeccoWaterQuality2017()</span></code>)
+for anomaly detection algorithms on water quality. The data is provided by the
+“Thüringer Fernwasserversorgung” (Germany) and constitutes a real-world data set. In this
+data set, 9 numeric water quality features are given at a sampling rate of
+1 min over approx. 3 month. The goal is to predict the presence of an anomaly – i.e.
+binary classification.</p>
+<p>More information can be found at <a class="reference external" href="https://zenodo.org/records/3884398">https://zenodo.org/records/3884398</a> and
+<a class="reference external" href="http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/">http://www.spotseven.de/gecco/gecco-challenge/gecco-challenge-2018/</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2018.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the GECCO Industrial Challenge 2018 Dataset.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that this is NOT a simulated scenario and therefore only the final
+data set is provided.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels as two Numpy arrays,
+otherwise the data is returned as Pandas data frame.</p>
+<p>The default is True.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The benchmark data set as either a Pandas data frame or
+as a pair of (X, y) Numpy arrays.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>pandas.DataFrame</cite> or <cite>tuple[numpy.ndarray, numpy.ndarray]</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.gecco_waterquality.gecco_water_quality.</span></span><span class="sig-name descname"><span class="pre">GeccoWaterQuality2019</span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality" title="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeccoWaterQuality</span></code></a></p>
+<p>Class for Loading GECCO Industrial Challenge 2019 Dataset: A water quality dataset for the
+“Internet of Things: Online Event Detection for Drinking Water Quality Control” competition
+organized by F. Rehbach, S. Moritz, T. Bartz-Beielstein at the Genetic and
+Evolutionary Computation Conference 2019, Prague, Czech Republic.</p>
+<p>This is a benchmark (based on
+<code class="xref py py-class docutils literal notranslate"><span class="pre">GeccoWaterQuality2018</span></code>)
+for anomaly detection algorithms on water quality. The data is provided by the
+“Thüringer Fernwasserversorgung” (Germany) and constitutes a real-world data set. In this
+data set, 6 numeric water quality features are given at a sampling rate of 1 min over approx.
+3 month. The goal is to predict the presence of an anomaly – i.e. binary classification.
+The data set itself comes in three splits: A train set, a validation set, and a test set.</p>
+<p>More information can be found at <a class="reference external" href="https://zenodo.org/records/4304080">https://zenodo.org/records/4304080</a> and
+<a class="reference external" href="https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php">https://www.th-koeln.de/informatik-und-ingenieurwissenschaften/gecco-challenge-2019_63244.php</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.gecco_waterquality.gecco_water_quality.GeccoWaterQuality2019.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads GECCO Industrial Challenge 2019 Dataset.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that this is NOT a simulated scenario and therefore only the final
+data set is provided.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels as two Numpy arrays,
+otherwise the data is returned as Pandas data frame.</p>
+<p>The default is True.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The data set as a dictionary with entries “train”, “validation”, and “test” containing
+the respective data.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="water_benchmark_hub.battledim.html" class="btn btn-neutral float-left" title="water_benchmark_hub.battledim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.water_usage.html" class="btn btn-neutral float-right" title="water_benchmark_hub.water_usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

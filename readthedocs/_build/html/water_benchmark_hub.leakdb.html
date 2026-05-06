@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>water_benchmark_hub.leakdb &mdash; WaterBenchmarkHub  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="water_benchmark_hub.battledim" href="water_benchmark_hub.battledim.html" />
+    <link rel="prev" title="water_benchmark_hub.batadal" href="water_benchmark_hub.batadal.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WaterBenchmarkHub
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicusage.html">Basic Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="water_benchmark_hub.html">water_benchmark_hub</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.bwdf.html">water_benchmark_hub.bwdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.batadal.html">water_benchmark_hub.batadal</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">water_benchmark_hub.leakdb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.leakdb.leakdb">water_benchmark_hub.leakdb.leakdb</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB"><code class="docutils literal notranslate"><span class="pre">LeakDB</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-water_benchmark_hub.leakdb.leakdb_data">water_benchmark_hub.leakdb.leakdb_data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.battledim.html">water_benchmark_hub.battledim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gecco_waterquality.html">water_benchmark_hub.gecco_waterquality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.water_usage.html">water_benchmark_hub.water_usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.networks.html">water_benchmark_hub.networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.gym.html">water_benchmark_hub.gym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#water-benchmark-hub-benchmark-resource">water_benchmark_hub.benchmark_resource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.meta_data">water_benchmark_hub.meta_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.benchmarks">water_benchmark_hub.benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_benchmark_hub.html#module-water_benchmark_hub.metrics">water_benchmark_hub.metrics</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WaterBenchmarkHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="water_benchmark_hub.html">water_benchmark_hub</a></li>
+      <li class="breadcrumb-item active">water_benchmark_hub.leakdb</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/water_benchmark_hub.leakdb.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="water-benchmark-hub-leakdb">
+<h1>water_benchmark_hub.leakdb<a class="headerlink" href="#water-benchmark-hub-leakdb" title="Link to this heading"></a></h1>
+<section id="module-water_benchmark_hub.leakdb.leakdb">
+<span id="water-benchmark-hub-leakdb-leakdb"></span><h2>water_benchmark_hub.leakdb.leakdb<a class="headerlink" href="#module-water_benchmark_hub.leakdb.leakdb" title="Link to this heading"></a></h2>
+<p>Module provides access to the LeakDB benchmark.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="water_benchmark_hub.leakdb.leakdb.LeakDB">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">water_benchmark_hub.leakdb.leakdb.</span></span><span class="sig-name descname"><span class="pre">LeakDB</span></span><a class="headerlink" href="#water_benchmark_hub.leakdb.leakdb.LeakDB" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BenchmarkResource</span></code></p>
+<p>LeakDB (Leakage Diagnosis Benchmark) by Vrachimis, S. G., Kyriakou, M. S., Eliades, D. G.,
+and Polycarpou, M. M. (2018), is a realistic leakage dataset for water distribution networks.
+The dataset is comprised of 1000 artificially created but realistic leakage
+scenarios, on different water distribution networks, under varying conditions.</p>
+<p>See <a class="reference external" href="https://github.com/KIOS-Research/LeakDB/">https://github.com/KIOS-Research/LeakDB/</a> for details.</p>
+<p>This module provides functions for loading the original LeakDB data set
+<a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_data" title="water_benchmark_hub.leakdb.leakdb.LeakDB.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>, as well as methods for loading the scenarios
+<a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios" title="water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scenarios()</span></code></a> and pre-generated SCADA data
+<a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scada_data" title="water_benchmark_hub.leakdb.leakdb.LeakDB.load_scada_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scada_data()</span></code></a>.
+The official scoring/evaluation is implemented in
+<a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.compute_evaluation_score" title="water_benchmark_hub.leakdb.leakdb.LeakDB.compute_evaluation_score"><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_evaluation_score()</span></code></a> – i.e. those results can be
+directly compared to the official paper.
+Besides this, the user can choose to evaluate predictions using any other metric.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.leakdb.leakdb.LeakDB.compute_evaluation_score">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">compute_evaluation_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scenarios_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_net1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_pred_labels_per_scenario</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.compute_evaluation_score" title="Link to this definition"></a></dt>
+<dd><p>Evaluates the predictions (leakage detection) for a list of given scenarios.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scenarios_id</strong> (<cite>list[int]</cite>) – List of scenarios ID that are to be evaluated – there is a total number of 1000 scenarios.</p></li>
+<li><p><strong>use_net1</strong> (<cite>bool</cite>) – If True, Net1 LeakDB will be used for evaluation, otherwise the Hanoi LeakDB will be used.</p></li>
+<li><p><strong>y_pred_labels_per_scenario</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html">list[numpy.ndarray]</a>) – Predicted binary labels (over time) for each scenario in <cite>scenarios_id</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary containing the f1-score, true positive rate, true negative rate,
+and early detection score.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.leakdb.leakdb.LeakDB.get_meta_info">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_meta_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.get_meta_info" title="Link to this definition"></a></dt>
+<dd><p>Gets the meta information of this resource.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Meta info.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.leakdb.leakdb.LeakDB.load_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scenarios_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_net1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_features_desc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_leak_locations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the original LeakDB benchmark data set.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>All scenarios together are a huge data set – approx. 8GB for Net1 and 25GB for Hanoi.
+Downloading and loading might take some time! Also, a sufficient amount of hard disk
+memory is required.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scenarios_id</strong> (<cite>list[int]</cite>) – List of scenarios ID that are to be loaded – there are a total number
+of 1000 scenarios.</p></li>
+<li><p><strong>use_net1</strong> (<cite>bool</cite>) – If True, Net1 LeakDB will be loaded, otherwise the Hanoi LeakDB will be loaded.</p></li>
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels (presence of a leakage) as
+two Numpy arrays, otherwise, the data is returned as Pandas data frames.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_features_desc</strong> (<cite>bool</cite>, optional) – <p>If True and if <cite>return_X_y</cite> is True, the returned dictionary contains the
+features’ descriptions (i.e. names) under the key “features_desc”.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_leak_locations</strong> (<cite>bool</cite>) – <p>If True and if <cite>return_X_y</cite> is True, the leak locations are returned as well –
+as an instance of <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html">scipy.sparse.bsr_array</a>.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary containing the scenario data sets. Data of each requested scenario
+can be accessed by using the scenario ID as a key.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>dict</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.leakdb.leakdb.LeakDB.load_scada_data">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_scada_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scenarios_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_net1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_X_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_leak_locations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">epyt_flow.simulation.scada.ScadaData</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scada_data" title="Link to this definition"></a></dt>
+<dd><p>Loads the SCADA data of the simulated LeakDB benchmark scenarios – see
+<a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios" title="water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_scenarios()</span></code></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that due to the randomness in the demand creation as well as in the model
+uncertainties, the SCADA data differs from the original data set
+which can be loaded by calling <a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_data" title="water_benchmark_hub.leakdb.leakdb.LeakDB.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>.
+However, the leakages (i.e. location and profile) are consistent with the original data set.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scenarios_id</strong> (<cite>list[int]</cite>) – List of scenarios ID that are to be loaded – there are a total number of 1000 scenarios.</p></li>
+<li><p><strong>use_net1</strong> (<cite>bool</cite>, optional) – <p>If True, Net1 LeakDB will be loaded, otherwise the Hanoi LeakDB will be loaded.</p>
+<p>The default is True.</p>
+</p></li>
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the data files – if None, the temp folder will be used.
+If the path does not exist, the data files will be downloaded to the given path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>return_X_y</strong> (<cite>bool</cite>, optional) – <p>If True, the data is returned together with the labels (presence of a leakage) as
+two Numpy arrays, otherwise, the data is returned as
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">epyt_flow.simulation.scada.scada_data.ScadaData</a> instances.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>return_leak_locations</strong> (<cite>bool</cite>) – <p>If True, the leak locations are returned as well –
+as an instance of <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html">scipy.sparse.bsr_array</a>.</p>
+<p>The default is False.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>The simulated benchmark scenarios as either a list of
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">epyt_flow.simulation.scada.scada_data.ScadaData</a> instances or as a list of
+(X, y) Numpy arrays. If ‘return_leak_locations’ is True, the leak locations are included
+as an instance of
+<a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.bsr_array.html">scipy.sparse.bsr_array</a>
+as well.</p>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.scada.html#epyt_flow.simulation.scada.scada_data.ScadaData">list[epyt_flow.simulation.scada.scada_data.ScadaData]</a> or <cite>list[tuple[numpy.ndarray, numpy.ndarray]]</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">load_scenarios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scenarios_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_net1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">epyt_flow.simulation.ScenarioConfig</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_scenarios" title="Link to this definition"></a></dt>
+<dd><p>Creates and returns the LeakDB scenarios – they can be either modified or
+passed directly to the EPyT-Flow simulator
+<a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_simulator.ScenarioSimulator">epyt_flow.simulation.scenario_simulator.ScenarioSimulator</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that due to the randomness in the demand creation as well as in the model
+uncertainties, the simulation results will differ between different runs, and
+will also differ from the original data set
+(see <a class="reference internal" href="#water_benchmark_hub.leakdb.leakdb.LeakDB.load_data" title="water_benchmark_hub.leakdb.leakdb.LeakDB.load_data"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_data()</span></code></a>).
+However, the leakages (i.e. location and profile) will be always the same and be
+consistent with the original data set.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scenarios_id</strong> (<cite>list[int]</cite>) – List of scenarios ID that are to be loaded – there is a total number of 1000 scenarios.</p></li>
+<li><p><strong>use_net1</strong> (<cite>bool</cite>, optional) – <p>If True, Net1 network will be used, otherwise the Hanoi network will be used.</p>
+<p>The default is True.</p>
+</p></li>
+<li><p><strong>download_dir</strong> (<cite>str</cite>, optional) – <p>Path to the Net1.inp or Hanoi.inp file – if None, the temp folder will be used.
+If the path does not exist, the .inp will be downloaded to the give path.</p>
+<p>The default is None.</p>
+</p></li>
+<li><p><strong>verbose</strong> (<cite>bool</cite>, optional) – <p>If True, a progress bar is shown while downloading files.</p>
+<p>The default is True.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>LeakDB scenarios.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://epyt-flow.readthedocs.io/en/stable/epyt_flow.simulation.html#epyt_flow.simulation.scenario_config.ScenarioConfig">list[epyt_flow.simulation.scenario_config.ScenarioConfig]</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-water_benchmark_hub.leakdb.leakdb_data">
+<span id="water-benchmark-hub-leakdb-leakdb-data"></span><h2>water_benchmark_hub.leakdb.leakdb_data<a class="headerlink" href="#module-water_benchmark_hub.leakdb.leakdb_data" title="Link to this heading"></a></h2>
+<p>Module provides the leakage configurations for LeakDB.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="water_benchmark_hub.batadal.html" class="btn btn-neutral float-left" title="water_benchmark_hub.batadal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="water_benchmark_hub.battledim.html" class="btn btn-neutral float-right" title="water_benchmark_hub.battledim" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright WaterBenchmarkHub Developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

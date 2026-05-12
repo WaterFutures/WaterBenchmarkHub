@@ -1487,24 +1487,6 @@
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
             "permalink": "benchmarks/network-GOY.html"
         },
-        "network-bin": {
-            "name": "Balerma Irrigation Network",
-            "desc": "A network for researching genetic algorithms for the design of looped irrigation water distribution networks.",
-            "year": "2006",
-            "tags": [
-                "medium"
-            ],
-            "keywords": [
-                "exeter",
-                "pareto",
-                "balerma"
-            ],
-            "doi": "10.1029/2005WR004383",
-            "license": " ",
-            "download_url": "https://github.com/KIOS-Research/EPANET-Benchmarks/raw/refs/heads/master/collect-epanet-inp/BIN.inp",
-            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
-            "permalink": "benchmarks/network-BIN.html"
-        },
         "network-exn": {
             "name": "EXNET",
             "desc": "A benchmark system for optimization models.",
@@ -1634,6 +1616,89 @@
             "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps/research/cws/downloads/data/3-epanet/BLA.inp",
             "external_url": "https://uknowledge.uky.edu/wdst_us/6/",
             "permalink": "benchmarks/network-blacksburg.html"
+        }, 
+        "network-net6": {
+            "name": "Net6",
+            "desc": "Synthetic water distribution network used for robust sensor placement and contaminant warning system research.",
+            "year": 2009,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "pumps", 
+                "large",
+                "sensor placement"
+            ],
+            "keywords": [
+                "Net6", 
+                "Watson 2009", 
+                "Network 2", 
+                "contamination warning system", 
+                "CWS", 
+                "sensor placement", 
+                "security", 
+                "epanet"
+            ],
+            "doi": "10.1061/(ASCE)1076-0342(2009)15:4(330)",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/WNTR/refs/heads/main/examples/networks/Net6.inp",
+            "permalink": "benchmarks/network-Net6.html"
+        }, 
+        "network-balerma": {
+            "name": "Balerma Irrigation Network",
+            "desc": "The Balerma Irrigation Network is an adaption of an existing irrigation network in the Sol-Poniente irrigation district (Spain).",
+            "year": 2006,
+            "tags": [
+                "medium"
+            ],
+            "keywords": [
+                "Balerma", 
+                "Rica & Martinez", 
+                "2006", 
+                "genetic", 
+                "optimization"
+            ],
+            "doi": "10.1029/2005WR004383",
+            "license": "CC BY-NC 4.0", 
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_international&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_international/2/", 
+            "permalink": "benchmarks/network-Balerma.html"
+        }, 
+
+        "network-01-uk-style": {
+            "name": "01-uk-style Network",
+            "desc": "EPANET Example Network 01-uk-style.",
+            "year": 2025,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "pumps", 
+                "demand patterns",
+                "medium" 
+                
+            ],
+            "keywords": [
+                "01-uk-style", 
+                "epanet"
+            ],
+            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/01-uk-style.inp",
+            "permalink": "benchmarks/network-01-uk-style.html"
+        }, 
+
+        "network-02-us-style": {
+            "name": "02-us-style Network",
+            "desc": "EPANET Example Network 02-us-style.",
+            "year": 2025,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "demand patterns",
+                "medium"
+            ],
+            "keywords": [
+                "02-us-style", 
+                "epanet"
+            ],
+            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/02-us-style.inp",
+            "permalink": "benchmarks/network-02-us-style.html"
         }
     }
 }

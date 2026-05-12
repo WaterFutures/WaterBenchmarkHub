@@ -3,6 +3,8 @@
 .vendor/
 _site/
 node_modules/
+vendor/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

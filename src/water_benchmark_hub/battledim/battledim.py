@@ -47,8 +47,7 @@ class BattLeDIM(BenchmarkResource):
     those results can be directly compared to the official leaderboard results.
     Besides this, the user can choose to evaluate predictions using any other metric.
     """
-    @staticmethod
-    def __parse_leak_config(start_time: str, leaks_config: str) -> list[Leakage]:
+    def __parse_leak_config(self, start_time: str, leaks_config: str) -> list[Leakage]:
         leakages = []
         for leak in leaks_config.splitlines():
             # Parse entry
@@ -76,14 +75,13 @@ class BattLeDIM(BenchmarkResource):
 
         return leakages
 
-    @staticmethod
-    def __create_labels(n_time_steps: int, return_test_scenario: bool,
+    def __create_labels(self, n_time_steps: int, return_test_scenario: bool,
                         links: list[str]) -> tuple[np.ndarray, scipy.sparse.bsr_array]:
         y = np.zeros(n_time_steps)
 
         start_time = START_TIME_TEST if return_test_scenario is True else START_TIME_TRAIN
         leaks_config = LEAKS_CONFIG_TEST if return_test_scenario is True else LEAKS_CONFIG_TRAIN
-        leakages = BattLeDIM.__parse_leak_config(start_time, leaks_config)
+        leakages = self.__parse_leak_config(start_time, leaks_config)
 
         def leak_time_to_idx(t: int, round_up: bool = False):
             if round_up is False:
@@ -109,8 +107,7 @@ class BattLeDIM(BenchmarkResource):
 
         return y, y_leak_locations
 
-    @staticmethod
-    def compute_evaluation_score(y_leak_locations_pred: list[tuple[str, int]],
+    def compute_evaluation_score(self, y_leak_locations_pred: list[tuple[str, int]],
                                  test_scenario: bool, verbose: bool = True) -> dict:
         """
         Evaluates the predictions (i.e. start time and location of leakages) as it was done in the
@@ -158,7 +155,7 @@ class BattLeDIM(BenchmarkResource):
         # Load ground truth
         sim_start_time = START_TIME_TEST if test_scenario is True else START_TIME_TRAIN
         leaks_config = LEAKS_CONFIG_TEST if test_scenario is True else LEAKS_CONFIG_TRAIN
-        leakages = BattLeDIM.__parse_leak_config(sim_start_time, leaks_config)
+        leakages = self.__parse_leak_config(sim_start_time, leaks_config)
         n_leakages = len(leakages)
 
         leak_demands = {}
@@ -252,8 +249,7 @@ class BattLeDIM(BenchmarkResource):
                 "false_positives": false_positives, "false_negatives": false_negatives,
                 "total_savings": total_savings if test_scenario is True else None}
 
-    @staticmethod
-    def load_data(return_test_scenario: bool, download_dir: str = None, return_X_y: bool = False,
+    def load_data(self, return_test_scenario: bool, download_dir: str = None, return_X_y: bool = False,
                   return_features_desc: bool = False, return_leak_locations: bool = False,
                   verbose: bool = True) -> Union[pd.DataFrame, Any]:
         """
@@ -341,7 +337,7 @@ class BattLeDIM(BenchmarkResource):
             links = network_config.sensor_config.links
 
             X = df_final[features_desc].to_numpy()
-            y, y_leak_locations = BattLeDIM.__create_labels(X.shape[0], return_test_scenario, links)
+            y, y_leak_locations = self.__create_labels(X.shape[0], return_test_scenario, links)
 
             if return_features_desc is True:
                 if return_leak_locations is True:
@@ -356,8 +352,7 @@ class BattLeDIM(BenchmarkResource):
         else:
             return df_final
 
-    @staticmethod
-    def load_scada_data(return_test_scenario: bool, download_dir: str = None,
+    def load_scada_data(self, return_test_scenario: bool, download_dir: str = None,
                         return_X_y: bool = False, return_leak_locations: bool = False,
                         verbose: bool = True) -> list[Union[ScadaData, Any]]:
         """
@@ -417,8 +412,8 @@ class BattLeDIM(BenchmarkResource):
         data = ScadaData.load_from_file(os.path.join(download_dir, f_in))
 
         X = data.get_data()
-        y, y_leak_locations = BattLeDIM.__create_labels(X.shape[0], return_test_scenario,
-                                                        data.sensor_config.links)
+        y, y_leak_locations = self.__create_labels(X.shape[0], return_test_scenario,
+                                                   data.sensor_config.links)
 
         if return_X_y is True:
             if return_leak_locations is True:
@@ -431,8 +426,7 @@ class BattLeDIM(BenchmarkResource):
             else:
                 return data
 
-    @staticmethod
-    def load_scenario(return_test_scenario: bool, download_dir: str = None,
+    def load_scenario(self, return_test_scenario: bool, download_dir: str = None,
                       verbose: bool = True) -> ScenarioConfig:
         """
         Creates and returns the BattLeDIM scenario -- it can be either modified or
@@ -468,11 +462,13 @@ class BattLeDIM(BenchmarkResource):
 
         # Load L-Town network including the sensor placement
         if download_dir is not None:
-            ltown_config = LTown.load(download_dir=download_dir, use_realistic_demands=True,
-                                      include_default_sensor_placement=True, return_scenario=True)
+            ltown_config = LTown().load(download_dir=download_dir, use_realistic_demands=True,
+                                        include_default_sensor_placement=True, return_scenario=True,
+                                        verbose=verbose)
         else:
-            ltown_config = LTown.load(use_realistic_demands=True,
-                                      include_default_sensor_placement=True, return_scenario=True)
+            ltown_config = LTown().load(use_realistic_demands=True,
+                                        include_default_sensor_placement=True,
+                                        return_scenario=True, verbose=verbose)
 
         # Set simulation duration
         general_params = {"simulation_duration": to_seconds(days=365),    # One year
@@ -482,7 +478,7 @@ class BattLeDIM(BenchmarkResource):
         # Add events
         start_time = START_TIME_TEST if return_test_scenario is True else START_TIME_TRAIN
         leaks_config = LEAKS_CONFIG_TEST if return_test_scenario is True else LEAKS_CONFIG_TRAIN
-        leakages = BattLeDIM.__parse_leak_config(start_time, leaks_config)
+        leakages = self.__parse_leak_config(start_time, leaks_config)
 
         # Build final scenario
         return ScenarioConfig(f_inp_in=ltown_config.f_inp_in, general_params=general_params,

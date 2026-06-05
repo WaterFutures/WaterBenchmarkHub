@@ -44,4 +44,4 @@ def load(res_name: str) -> BenchmarkResource:
     if res_name not in benchmarks:
         raise ValueError(f"Unknown benchmark '{res_name}'.")
 
-    return benchmarks[res_name]
+    return benchmarks[res_name]()

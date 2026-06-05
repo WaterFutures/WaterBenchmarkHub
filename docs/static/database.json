@@ -571,6 +571,7 @@
             ],
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_us&type=additional",
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-pa2/PA2.inp"],
             "external_url": "https://uknowledge.uky.edu/wdst_us/3/",
             "permalink": "benchmarks/network-PA2.html"
         },
@@ -1428,7 +1429,8 @@
                 "tln"
             ],
             "license": "",
-            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/TLN.inp",
+            "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TLN.inp",
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-tln/TLN.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/TLN.inp"],
             "doi": "10.1029/WR013i006p00885",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a9",
             "permalink": "benchmarks/network-TLN.html"
@@ -1448,6 +1450,7 @@
             ],
             "license": "",
             "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TRN.inp",
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-trn/TRN.inp"],
             "doi": "",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a8",
             "permalink": "benchmarks/network-TRN.html"
@@ -1465,7 +1468,8 @@
             ],
             "doi": "10.21203/rs.3.rs-574714/v1",
             "license": " ",
-            "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/BAK.inp",
+            "download_url": "",
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bak/BAK.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/BAK.inp"],
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a1",
             "permalink": "benchmarks/network-BAK.html"
         },

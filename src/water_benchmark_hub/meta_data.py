@@ -52,8 +52,7 @@ def meta_data(benchmark_id: str) -> Any:
         Extended class.
     """
     def wrapper(my_class):
-        @staticmethod
-        def get_meta_info() -> dict:
+        def get_meta_info(self) -> dict:
             return MetaData.get_meta_info(benchmark_id)
 
         setattr(my_class, "get_meta_info", get_meta_info)

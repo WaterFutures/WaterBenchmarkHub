@@ -44,8 +44,7 @@ class BATADAL(BenchmarkResource):
     scenarios :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_scenario` and pre-generated
     SCADA data :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data`.
     """
-    @staticmethod
-    def __parse_attacks_time(start_time: str, attacks_time):
+    def __parse_attacks_time(self, start_time: str, attacks_time):
         events = []
         for event in attacks_time.splitlines():
             # Parse entry
@@ -60,8 +59,7 @@ class BATADAL(BenchmarkResource):
 
         return events
 
-    @staticmethod
-    def load_data(download_dir: str = None, return_X_y: bool = False,
+    def load_data(self, download_dir: str = None, return_X_y: bool = False,
                   return_ground_truth: bool = False, return_features_desc: bool = False,
                   verbose: bool = True) -> dict:
         """
@@ -196,8 +194,7 @@ class BATADAL(BenchmarkResource):
         else:
             return {"train_1": df_train_1, "train_2": df_train_2, "test": df_test}
 
-    @staticmethod
-    def load_scada_data(download_dir: str = None, return_X_y: bool = False,
+    def load_scada_data(self, download_dir: str = None, return_X_y: bool = False,
                         return_ground_truth: bool = False, return_features_desc: bool = False,
                         verbose: bool = True) -> Any:
         """
@@ -236,8 +233,7 @@ class BATADAL(BenchmarkResource):
         """
         raise NotImplementedError()
 
-    @staticmethod
-    def load_scenario(download_dir: str = None, verbose: bool = True) -> ScenarioConfig:
+    def load_scenario(self, download_dir: str = None, verbose: bool = True) -> ScenarioConfig:
         """
         Creates and returns the BATADAL scenario -- it can be either modified or directly passed
         to the EPyT-Flow simulator

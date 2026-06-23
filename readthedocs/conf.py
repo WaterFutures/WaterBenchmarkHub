@@ -24,7 +24,10 @@ author = 'André Artelt'
 
 # -- General configuration ---------------------------------------------------
 
-autodoc_mock_imports = ["epyt", "epyt_flow", "pandas", "numpy", "scipy", "matplotlib", "sklearn", "falcon"]
+#autodoc_mock_imports = ["epyt", "epyt_flow", "pandas", "numpy", "scipy", "matplotlib", "sklearn", "falcon"]
+
+# only for debug LORIN
+autodoc_mock_imports = ["epyt", "epyt_flow", "scipy", "matplotlib", "sklearn", "falcon"]
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom

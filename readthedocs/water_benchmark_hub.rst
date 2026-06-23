@@ -10,6 +10,9 @@ water_benchmark_hub
    water_benchmark_hub.water_usage
    water_benchmark_hub.networks
    water_benchmark_hub.gym
+   water_benchmark_hub.intaset
+   water_benchmark_hub.wds_eventdb
+   water_benchmark_hub.leakage_repairs
 
 
 water_benchmark_hub.benchmark_resource

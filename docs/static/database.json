@@ -1545,25 +1545,6 @@
             "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-goy/GOY.inp"],
             "permalink": "benchmarks/network-GOY.html"
         },
-        "network-bin": {
-            "name": "Balerma Irrigation Network",
-            "desc": "A network for researching genetic algorithms for the design of looped irrigation water distribution networks.",
-            "year": "2006",
-            "tags": [
-                "medium"
-            ],
-            "keywords": [
-                "exeter",
-                "pareto",
-                "balerma"
-            ],
-            "doi": "10.1029/2005WR004383",
-            "license": " ",
-            "download_url": "https://github.com/KIOS-Research/EPANET-Benchmarks/raw/refs/heads/master/collect-epanet-inp/BIN.inp",
-            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bin/BIN.inp"],
-            "permalink": "benchmarks/network-BIN.html"
-        },
         "network-exn": {
             "name": "EXNET",
             "desc": "A benchmark system for optimization models.",
@@ -1698,6 +1679,192 @@
             "external_url": "https://uknowledge.uky.edu/wdst_us/6/",
             "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-blacksburg/VA1.inp"],
             "permalink": "benchmarks/network-blacksburg.html"
+        }, 
+        "network-net6": {
+            "name": "Net6",
+            "desc": "Synthetic water distribution network used for robust sensor placement and contaminant warning system research.",
+            "year": 2009,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "pumps", 
+                "large",
+                "sensor placement"
+            ],
+            "keywords": [
+                "Net6", 
+                "Watson 2009", 
+                "Network 2", 
+                "contamination warning system", 
+                "CWS", 
+                "sensor placement", 
+                "security", 
+                "epanet"
+            ],
+            "doi": "10.1061/(ASCE)1076-0342(2009)15:4(330)",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/WNTR/refs/heads/main/examples/networks/Net6.inp",
+            "permalink": "benchmarks/network-Net6.html"
+        }, 
+        "network-balerma": {
+            "name": "Balerma Irrigation Network",
+            "desc": "The Balerma Irrigation Network is an adaption of an existing irrigation network in the Sol-Poniente irrigation district (Spain).",
+            "year": 2006,
+            "tags": [
+                "medium"
+            ],
+            "keywords": [
+                "Balerma", 
+                "Rica & Martinez", 
+                "2006", 
+                "genetic", 
+                "optimization"
+            ],
+            "doi": "10.1029/2005WR004383",
+            "license": "CC BY-NC 4.0", 
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_international&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_international/2/", 
+            "permalink": "benchmarks/network-Balerma.html"
+        }, 
+
+        "network-01-uk-style": {
+            "name": "01-uk-style Network",
+            "desc": "EPANET Example Network 01-uk-style.",
+            "year": 2025,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "pumps", 
+                "demand patterns",
+                "medium" 
+                
+            ],
+            "keywords": [
+                "01-uk-style", 
+                "epanet"
+            ],
+            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/01-uk-style.inp",
+            "permalink": "benchmarks/network-01-uk-style.html"
+        }, 
+
+        "network-02-us-style": {
+            "name": "02-us-style Network",
+            "desc": "EPANET Example Network 02-us-style.",
+            "year": 2025,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "demand patterns",
+                "medium"
+            ],
+            "keywords": [
+                "02-us-style", 
+                "epanet"
+            ],
+            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/02-us-style.inp",
+            "permalink": "benchmarks/network-02-us-style.html"
+        },
+        "intaset": {
+            "name": "InTaSet",
+            "desc": "A Benchmark Dataset for Data-Driven System Identification and Fault Detection in an Interconnected Water System.",
+            "year": 2025,
+            "tags": [
+                "event detection"
+            ],
+            "keywords": [
+                "sensor fault detection",
+                "system identification"
+            ],
+            "doi": "10.5281/zenodo.17652851",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/records/17652851/files/InTaSet.zip?download=1",
+            "external_url": "https://github.com/Moazeni-s-Concise-Lab/InTaSet",
+            "permalink": "benchmarks/InTaSet.html"
+        },
+        "wdseventdb": {
+            "name": "WDSEventDB",
+            "desc": "A Real-Time Benchmark Dataset for Event Diagnosis in Water Distribution Networks.",
+            "year": 2025,
+            "tags": [
+                "event detection",
+                "leakage"
+            ],
+            "keywords": [
+                "WDS", 
+                "real-time", 
+                "event dataset", 
+                "anomaly detection", 
+                "cyberattack", 
+                "sensor failure", 
+                "leakage", 
+                "event diagnosis"
+            ],
+            "doi": "10.5281/zenodo.17547955",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/records/17547955/files/WDSEventDB.zip?download=1",
+            "external_url": "https://github.com/Moazeni-s-Concise-Lab/WDSEventDB",
+            "permalink": "benchmarks/WDSEventDB.html"
+        },
+        "reservoir-sim-ukb": {
+            "name": "Reservoir Simulation Benchmark",
+            "desc": "Benchmark dataset for simulating and evaluating multi-reservoir operation policies in the Upper Krishna Basin (India).",
+            "year": 2026,
+            "tags": [],
+            "keywords": [
+                "reservoir operation", 
+                "river basin simulation", 
+                "Upper Krishna Basin", 
+                "water demands", 
+                "HEC-ResSIM", 
+                "Mike Hydro Basin"
+            ],
+            "doi": "10.5061/dryad.j0zpc86sc",
+            "license": "CC0 1.0",
+            "download_url": "https://datadryad.org/dataset/doi:10.5061/dryad.j0zpc86sc",
+            "external_url": "https://datadryad.org/dataset/doi:10.5061/dryad.j0zpc86sc",
+            "permalink": "benchmarks/reservoir-sim-ukb.html"
+        },
+        "kios-leakagerepairs": {
+            "name": "Leakage Repairs Dataset",
+            "desc": "A real-world dataset with flow time series from multiple network areas and a leak event log. Useful for leakage detection, event matching, and time-series analysis.",
+            "year": 2026,
+            "tags": [
+                "leakage detection", 
+                "real world"
+            ],
+            "keywords": [
+                "leakage", 
+                "leakage detection", 
+                "repair reports", 
+                "flow monitoring", 
+                "time series", 
+                "real-world"
+            ],
+            "doi": "",
+            "license": "CC BY 4.0",
+            "download_url": "https://github.com/KIOS-Research/Leakage-Repairs-Dataset",
+            "external_url": "https://github.com/KIOS-Research/Leakage-Repairs-Dataset",
+            "permalink": "benchmarks/KIOS-LeakageRepairs.html"
+        }, 
+        "network-pescara": {
+            "name": "Pescara Network",
+            "desc": "Reduced real-world water distribution network based on a medium-sized Italian city, provided as an EPANET model.",
+            "year": 2008,
+            "tags": [
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "Pescara",
+                "Italy", 
+                "Epanet model", 
+                "hydraulics"
+            ],
+            "doi": "",
+            "license": "",
+            "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps//research/cws/downloads/data/3-epanet/PES.inp",
+            "external_url": "https://www.researchgate.net/publication/228410795_Water_network_design_by_MINLP",
+            "permalink": "benchmarks/network-pescara.html"
         }
+
     }
 }

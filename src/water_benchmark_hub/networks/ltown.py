@@ -18,8 +18,7 @@ class LTown(WaterDistributionNetwork):
     """
     Class for loading the L-Town networks.
     """
-    @staticmethod
-    def load(download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
+    def load(self, download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
              include_default_sensor_placement: bool = False,
              verbose: bool = True, flow_units_id: int = None, return_scenario: bool = False
              ) -> Union[ScenarioConfig, str]:
@@ -96,10 +95,10 @@ class LTown(WaterDistributionNetwork):
             if include_default_sensor_placement is True:
                 sensor_config = config.sensor_config
                 sensor_config.pressure_sensors = ["n54", "n105", "n114", "n163", "n188", "n229", "n288",
-                                                "n296", "n332", "n342", "n410", "n415", "n429", "n458",
-                                                "n469", "n495", "n506", "n516", "n519", "n549", "n613",
-                                                "n636", "n644", "n679", "n722", "n726", "n740", "n752",
-                                                "n769"]
+                                                  "n296", "n332", "n342", "n410", "n415", "n429", "n458",
+                                                  "n469", "n495", "n506", "n516", "n519", "n549", "n613",
+                                                  "n636", "n644", "n679", "n722", "n726", "n740", "n752",
+                                                  "n769"]
                 sensor_config.flow_sensors = ["p227", "p235"]
                 sensor_config.tank_volume_sensors = ["T1"]
                 sensor_config.demand_sensors = ["n1", "n2",	"n3", "n4", "n6", "n7",	"n8", "n9",	"n10",
@@ -120,8 +119,7 @@ class LTown(WaterDistributionNetwork):
         else:
             return f_in
 
-    @staticmethod
-    def load_ltown_a(download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
+    def load_ltown_a(self, download_dir: str = get_temp_folder(), use_realistic_demands: bool = False,
                      include_default_sensor_placement: bool = False,
                      verbose: bool = True, flow_units_id: int = None, return_scenario: bool = False
                      ) -> Union[ScenarioConfig, str]:
@@ -194,10 +192,10 @@ class LTown(WaterDistributionNetwork):
             if include_default_sensor_placement is True:
                 sensor_config = config.sensor_config
                 sensor_config.pressure_sensors = ["n54", "n105", "n114", "n163", "n188", "n229", "n288",
-                                                "n296", "n332", "n342", "n410", "n415", "n429", "n458",
-                                                "n469", "n495", "n506", "n516", "n519", "n549", "n613",
-                                                "n636", "n644", "n679", "n722", "n726", "n740", "n752",
-                                                "n769"]
+                                                  "n296", "n332", "n342", "n410", "n415", "n429", "n458",
+                                                  "n469", "n495", "n506", "n516", "n519", "n549", "n613",
+                                                  "n636", "n644", "n679", "n722", "n726", "n740", "n752",
+                                                  "n769"]
                 sensor_config.flow_sensors = ["p227", "p235"]
 
                 config = ScenarioConfig(scenario_config=config, sensor_config=sensor_config)

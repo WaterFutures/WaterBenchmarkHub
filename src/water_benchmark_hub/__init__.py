@@ -16,6 +16,10 @@ from . import battledim
 from . import leakg3pd
 from . import leak_testbed
 from . import ditec_wdn
+from . import intaset
+from . import wds_eventdb
+from . import leakage_repairs
+
 try:
     from . import bwdf
 except:

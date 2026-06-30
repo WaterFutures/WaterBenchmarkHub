@@ -8,8 +8,7 @@ class BenchmarkResource():
     """
     Base class for benchmark resources such as datasets, .inp files, control environments, etc.
     """
-    @staticmethod
-    def get_meta_info() -> dict:
+    def get_meta_info(self) -> dict:
         """
         Gets the meta information of this resource.
 

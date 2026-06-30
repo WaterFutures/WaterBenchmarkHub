@@ -43,8 +43,7 @@ class WaterUsage(BenchmarkResource):
     as well as a method implementing the original scoring mechanism -- see
     :func:`~water_benchmark_hub.water_usage.water_usage.WaterUsage.compute_evaluation_score`.
     """
-    @staticmethod
-    def compute_evaluation_score(y_pred: np.ndarray, y: np.ndarray) -> dict:
+    def compute_evaluation_score(self, y_pred: np.ndarray, y: np.ndarray) -> dict:
         """
         Evaluates the performance of a detection method.
 
@@ -70,8 +69,7 @@ class WaterUsage(BenchmarkResource):
         return {"accuracy": accuracy_score(y_pred, y), "precision": precision_score(y_pred, y),
                 "f1-micro": f1_micro_score(y_pred, y), "roc-auc": roc_auc_score(y_pred, y)}
 
-    @staticmethod
-    def load_data(download_dir: str = None, return_X_y: bool = True, verbose: bool = True) -> dict:
+    def load_data(self, download_dir: str = None, return_X_y: bool = True, verbose: bool = True) -> dict:
         """
         Loads the original data set.
 

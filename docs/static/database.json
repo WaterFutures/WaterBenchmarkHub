@@ -422,7 +422,7 @@
             "doi": "10.5281/zenodo.4017658",
             "license": "CC BY 4.0",
             "download_url": "https://zenodo.org/records/4017659",
-            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ltown/L-Town.inp"], 
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ltown/L-Town.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/L-Town/L-TOWN.inp"], 
             "permalink": "benchmarks/network-LTown.html"
         },
         "network-ctown": {
@@ -482,7 +482,7 @@
                 "BWSN-1"
             ],
             "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/BWSN_Network_1.inp",
-            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bwsn/BWSN_Network_1.inp"],
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bwsn/BWSN_Network_1.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/BWSN_Network_1.inp"],
             "permalink": "benchmarks/network-BWSN-1.html"
         },
         "network-bwsn2": {
@@ -501,7 +501,7 @@
                 "BWSN-2"
             ],
             "download_url": "https://github.com/OpenWaterAnalytics/EPyT/raw/main/epyt/networks/asce-tf-wdst/BWSN_Network_2.inp",
-            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bwsn/BWSN_Network_2.inp"],
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bwsn/BWSN_Network_2.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/BWSN_Network_2.inp"],
             "permalink": "benchmarks/network-BWSN-2.html"
         },
         "network-hanoi": {
@@ -517,7 +517,7 @@
             ],
             "doi": "10.1029/WR026i004p00539",
             "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPyT/main/epyt/networks/asce-tf-wdst/Hanoi.inp",
-            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-hanoi/HAN.inp"],
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-hanoi/HAN.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/HAN.inp"],
             "permalink": "benchmarks/network-Hanoi.html"
         },
         "network-ca1": {
@@ -650,7 +650,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/3/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-fossolo/FOS.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-fossolo/FOS.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/FOS.inp"],
             "permalink": "benchmarks/network-Fossolo.html"
         },
         "network-modena": {
@@ -670,7 +670,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/5/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-modena/MOD.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-modena/MOD.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/MOD.inp"],
             "permalink": "benchmarks/network-Modena.html"
         },
         "network-zhi-jiang": {
@@ -690,7 +690,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/6/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-zhi-jiang/Zhi%20Jiang.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-zhi-jiang/Zhi%20Jiang.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ZJ.inp"],
             "permalink": "benchmarks/network-Zhi-Jiang.html"
         },
         "network-marchi-rural": {
@@ -710,7 +710,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst_international&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst_international/7/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-marchi-rural/MarchiRural.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-marchi-rural/MarchiRural.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/asce-tf-wdst/Rural/RuralNetwork.inp"],
             "permalink": "benchmarks/network-Marchi-Rural.html"
         },
         "network-ky1": {
@@ -731,7 +731,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1002&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/3/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky1/ky1.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky1/ky1.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky1.inp"],
             "permalink": "benchmarks/network-KY1.html"
         },
         "network-ky2": {
@@ -752,7 +752,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1003&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/4/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky2/ky2.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky2/ky2.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky2.inp"],
             "permalink": "benchmarks/network-KY2.html"
         },
         "network-ky3": {
@@ -773,7 +773,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1004&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/5/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky3/ky3.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky3/ky3.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky3.inp"],
             "permalink": "benchmarks/network-KY3.html"
         },
         "network-ky4": {
@@ -794,7 +794,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1005&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/6/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky4/ky4.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky4/ky4.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky4.inp"],
             "permalink": "benchmarks/network-KY4.html"
         },
         "network-ky5": {
@@ -815,7 +815,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1006&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/7/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky5/ky5.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky5/ky5.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky5.inp"],
             "permalink": "benchmarks/network-KY5.html"
         },
         "network-ky6": {
@@ -837,7 +837,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1007&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/8/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky6/ky6.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky6/ky6.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky6.inp"],
             "permalink": "benchmarks/network-KY6.html"
         },
         "network-ky7": {
@@ -858,7 +858,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1008&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/9/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky7/ky7.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky7/ky7.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky7.inp"],
             "permalink": "benchmarks/network-KY7.html"
         },
         "network-ky8": {
@@ -879,7 +879,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1009&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/10/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky8/ky8.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky8/ky8.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky8.inp"],
             "permalink": "benchmarks/network-KY8.html"
         },
         "network-ky9": {
@@ -902,7 +902,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1010&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/11/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky9/ky9.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky9/ky9.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky9.inp"],
             "permalink": "benchmarks/network-KY9.html"
         },
         "network-ky10": {
@@ -925,7 +925,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1011&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/12/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky10/ky10.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky10/ky10.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky10.inp"],
             "permalink": "benchmarks/network-KY10.html"
         },
         "network-ky11": {
@@ -948,7 +948,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1012&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/13/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky11/ky11.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky11/ky11.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky11.inp"],
             "permalink": "benchmarks/network-KY11.html"
         },
         "network-ky12": {
@@ -971,7 +971,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1013&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/14/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky12/ky12.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky12/ky12.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky12.inp"],
             "permalink": "benchmarks/network-KY12.html"
         },
         "network-ky13": {
@@ -992,7 +992,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1014&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/15/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky13/ky13.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky13/ky13.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky13.inp"],
             "permalink": "benchmarks/network-KY13.html"
         },
         "network-ky14": {
@@ -1013,7 +1013,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1015&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/16/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky14/ky14.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky14/ky14.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky14.inp"],
             "permalink": "benchmarks/network-KY14.html"
         },
         "network-ky15": {
@@ -1036,7 +1036,7 @@
             "license": "CC BY-NC 4.0",
             "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1016&context=wdst&type=additional",
             "external_url": "https://uknowledge.uky.edu/wdst/17/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky15/ky15.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-ky15/ky15.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/ky15.inp"],
             "permalink": "benchmarks/network-KY15.html"
         },
         "network-ky16": {
@@ -1443,7 +1443,7 @@
             "license": "EUPL-1.2",
             "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/d-town.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/#a5",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-dtown/d-town.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-dtown/d-town.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/d-town.inp"],
             "permalink": "benchmarks/network-DTown.html"
         },
         "network-dma": {
@@ -1505,7 +1505,7 @@
             "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps/research/cws/downloads/data/3-epanet/TRN.inp",  
             "doi": "",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/#a8",
-            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-trn/TRN.inp"],
+            "backup_download_urls": ["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-trn/TRN.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/TRN.inp"],
             "permalink": "benchmarks/network-TRN.html"
         },
         "network-bak": {
@@ -1542,27 +1542,8 @@
             "license": " ",
             "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/GOY.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-goy/GOY.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-goy/GOY.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/GOY.inp"],
             "permalink": "benchmarks/network-GOY.html"
-        },
-        "network-bin": {
-            "name": "Balerma Irrigation Network",
-            "desc": "A network for researching genetic algorithms for the design of looped irrigation water distribution networks.",
-            "year": "2006",
-            "tags": [
-                "medium"
-            ],
-            "keywords": [
-                "exeter",
-                "pareto",
-                "balerma"
-            ],
-            "doi": "10.1029/2005WR004383",
-            "license": " ",
-            "download_url": "https://github.com/KIOS-Research/EPANET-Benchmarks/raw/refs/heads/master/collect-epanet-inp/BIN.inp",
-            "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-bin/BIN.inp"],
-            "permalink": "benchmarks/network-BIN.html"
         },
         "network-exn": {
             "name": "EXNET",
@@ -1580,7 +1561,7 @@
             "license": " ",
             "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/EXN.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/pareto/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-exn/EXN.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-exn/EXN.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/EXN.inp"],
             "permalink": "benchmarks/network-EXN.html"
         },
         "network-wcr": {
@@ -1599,7 +1580,7 @@
             "license": " ",
             "download_url": "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/wolf-initial-fig.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-wcr/wolf-initial-fig.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-wcr/wolf-initial-fig.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/wolf-initial-fig.inp"],
             "permalink": "benchmarks/network-WCR.html"
         },
         "network-rch": {
@@ -1622,7 +1603,7 @@
             "license": " ",
             "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/EPyT-Flow/Networks/Richmond_standard.inp",
             "external_url": "https://www.exeter.ac.uk/research/centres/cws/resources/benchmarks/",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-rch/Richmond_standard.inp"],
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-rch/Richmond_standard.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/Richmond_standard.inp"],
             "permalink": "benchmarks/network-RCH.html"
         },
         "ditec": {
@@ -1698,6 +1679,197 @@
             "external_url": "https://uknowledge.uky.edu/wdst_us/6/",
             "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-blacksburg/VA1.inp"],
             "permalink": "benchmarks/network-blacksburg.html"
+        }, 
+        "network-net6": {
+            "name": "Net6",
+            "desc": "Synthetic water distribution network used for robust sensor placement and contaminant warning system research.",
+            "year": 2009,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "pumps", 
+                "large",
+                "sensor placement"
+            ],
+            "keywords": [
+                "Net6", 
+                "Watson 2009", 
+                "Network 2", 
+                "contamination warning system", 
+                "CWS", 
+                "sensor placement", 
+                "security", 
+                "epanet"
+            ],
+            "doi": "10.1061/(ASCE)1076-0342(2009)15:4(330)",
+            "download_url": "https://raw.githubusercontent.com/OpenWaterAnalytics/WNTR/refs/heads/main/examples/networks/Net6.inp",
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-net6/Net6.inp"],
+            "permalink": "benchmarks/network-Net6.html"
+        }, 
+        "network-balerma": {
+            "name": "Balerma Irrigation Network",
+            "desc": "The Balerma Irrigation Network is an adaption of an existing irrigation network in the Sol-Poniente irrigation district (Spain).",
+            "year": 2006,
+            "tags": [
+                "medium"
+            ],
+            "keywords": [
+                "Balerma", 
+                "Rica & Martinez", 
+                "2006", 
+                "genetic", 
+                "optimization"
+            ],
+            "doi": "10.1029/2005WR004383",
+            "license": "CC BY-NC 4.0", 
+            "download_url": "https://uknowledge.uky.edu/cgi/viewcontent.cgi?filename=1&article=1001&context=wdst_international&type=additional",
+            "external_url": "https://uknowledge.uky.edu/wdst_international/2/", 
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-balerma/Balerma.inp"],
+            "permalink": "benchmarks/network-Balerma.html"
+        }, 
+
+        "network-01-uk-style": {
+            "name": "01-uk-style Network",
+            "desc": "EPANET Example Network 01-uk-style.",
+            "year": 2025,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "pumps", 
+                "demand patterns",
+                "medium" 
+                
+            ],
+            "keywords": [
+                "01-uk-style", 
+                "epanet"
+            ],
+            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/01-uk-style.inp",
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-01-uk-style/01-uk-style.inp"],
+            "permalink": "benchmarks/network-01-uk-style.html"
+        }, 
+
+        "network-02-us-style": {
+            "name": "02-us-style Network",
+            "desc": "EPANET Example Network 02-us-style.",
+            "year": 2025,
+            "tags": [
+                "valves", 
+                "tanks", 
+                "demand patterns",
+                "medium"
+            ],
+            "keywords": [
+                "02-us-style", 
+                "epanet"
+            ],
+            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/02-us-style.inp",
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-02-us-style/02-us-style.inp"],
+            "permalink": "benchmarks/network-02-us-style.html"
+        },
+        "intaset": {
+            "name": "InTaSet",
+            "desc": "A Benchmark Dataset for Data-Driven System Identification and Fault Detection in an Interconnected Water System.",
+            "year": 2025,
+            "tags": [
+                "event detection"
+            ],
+            "keywords": [
+                "sensor fault detection",
+                "system identification"
+            ],
+            "doi": "10.5281/zenodo.17652851",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/records/17652851/files/InTaSet.zip?download=1",
+            "external_url": "https://github.com/Moazeni-s-Concise-Lab/InTaSet",
+            "permalink": "benchmarks/InTaSet.html"
+        },
+        "wdseventdb": {
+            "name": "WDSEventDB",
+            "desc": "A Real-Time Benchmark Dataset for Event Diagnosis in Water Distribution Networks.",
+            "year": 2025,
+            "tags": [
+                "event detection",
+                "leakage"
+            ],
+            "keywords": [
+                "WDS", 
+                "real-time", 
+                "event dataset", 
+                "anomaly detection", 
+                "cyberattack", 
+                "sensor failure", 
+                "leakage", 
+                "event diagnosis"
+            ],
+            "doi": "10.5281/zenodo.17547955",
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/records/17547955/files/WDSEventDB.zip?download=1",
+            "external_url": "https://github.com/Moazeni-s-Concise-Lab/WDSEventDB",
+            "permalink": "benchmarks/WDSEventDB.html"
+        },
+        "reservoir-sim-ukb": {
+            "name": "Reservoir Simulation Benchmark",
+            "desc": "Benchmark dataset for simulating and evaluating multi-reservoir operation policies in the Upper Krishna Basin (India).",
+            "year": 2026,
+            "tags": [],
+            "keywords": [
+                "reservoir operation", 
+                "river basin simulation", 
+                "Upper Krishna Basin", 
+                "water demands", 
+                "HEC-ResSIM", 
+                "Mike Hydro Basin"
+            ],
+            "doi": "10.5061/dryad.j0zpc86sc",
+            "license": "CC0 1.0",
+            "download_url": "https://datadryad.org/dataset/doi:10.5061/dryad.j0zpc86sc",
+            "external_url": "https://datadryad.org/dataset/doi:10.5061/dryad.j0zpc86sc",
+            "permalink": "benchmarks/reservoir-sim-ukb.html"
+        },
+        "kios-leakagerepairs": {
+            "name": "Leakage Repairs Dataset",
+            "desc": "A real-world dataset with flow time series from multiple network areas and a leak event log. Useful for leakage detection, event matching, and time-series analysis.",
+            "year": 2026,
+            "tags": [
+                "leakage detection", 
+                "real world"
+            ],
+            "keywords": [
+                "leakage", 
+                "leakage detection", 
+                "repair reports", 
+                "flow monitoring", 
+                "time series", 
+                "real-world"
+            ],
+            "doi": "",
+            "license": "CC BY 4.0",
+            "download_url": "https://github.com/KIOS-Research/Leakage-Repairs-Dataset",
+            "external_url": "https://github.com/KIOS-Research/Leakage-Repairs-Dataset",
+            "permalink": "benchmarks/KIOS-LeakageRepairs.html"
+        }, 
+        "network-pescara": {
+            "name": "Pescara Network",
+            "desc": "Reduced real-world water distribution network based on a medium-sized Italian city, provided as an EPANET model.",
+            "year": 2008,
+            "tags": [
+                "small"
+            ],
+            "keywords": [
+                "exeter",
+                "Pescara",
+                "Italy", 
+                "Epanet model", 
+                "hydraulics"
+            ],
+            "doi": "",
+            "license": "",
+            "download_url": "https://www.exeter.ac.uk/v8media/universityofexeter/emps//research/cws/downloads/data/3-epanet/PES.inp",
+            "external_url": "https://www.researchgate.net/publication/228410795_Water_network_design_by_MINLP",
+            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-pescara/PES.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/PES.inp"],
+            "permalink": "benchmarks/network-pescara.html"
         }
+
     }
 }

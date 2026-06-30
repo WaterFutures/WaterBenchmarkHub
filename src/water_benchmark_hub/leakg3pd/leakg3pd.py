@@ -9,12 +9,11 @@ import numpy as np
 import pandas as pd
 
 from scipy.sparse import bsr_array
-from epyt_flow.simulation import ScenarioSimulator, ScenarioConfig
-from epyt_flow.simulation.events import AbruptLeakage, IncipientLeakage
-from epyt_flow.simulation import ScenarioConfig
+from epyt_flow.simulation import ScenarioSimulator, ScenarioConfig, EpanetConstants
+from epyt_flow.simulation.events import AbruptLeakage
 from epyt_flow.uncertainty import ModelUncertainty, UniformUncertainty
 from epyt_flow.utils import to_seconds, get_temp_folder, unpack_zip_archive, \
-    create_path_if_not_exist, robust_download, download_if_necessary
+    robust_download, download_if_necessary
 
 from .leakg3pd_data import NET1_LEAKAGES, NET3_LEAKAGES, HANOI_LEAKAGES
 from ..benchmark_resource import BenchmarkResource
@@ -47,16 +46,14 @@ class LeakG3PD(BenchmarkResource):
     :func:`~water_benchmark_hub.leakg3pd.leakg3pd.LeakG3PD.load_scenarios`.
     """
 
-    @staticmethod
-    def __leak_time_to_idx(t: int, round_up: bool = False,
+    def __leak_time_to_idx(self, t: int, round_up: bool = False,
                            hydraulic_time_step: int = 1800):
         if round_up is False:
             return math.floor(t / hydraulic_time_step)
         else:
             return math.ceil(t / hydraulic_time_step)
 
-    @staticmethod
-    def __create_labels(s_id: int, n_time_steps: int, nodes: list[str],
+    def __create_labels(self, s_id: int, n_time_steps: int, nodes: list[str],
                         leaks_info: dict, hydraulic_time_step: int = 1800
                         ) -> tuple[np.ndarray, scipy.sparse.bsr_array]:
         y = np.zeros(n_time_steps)
@@ -65,10 +62,10 @@ class LeakG3PD(BenchmarkResource):
         leak_locations_col = []
         if str(s_id) in leaks_info:
             for leak in leaks_info[str(s_id)]:
-                t_idx_start = LeakG3PD.__leak_time_to_idx(leak["leak_start_time"] *
-                                                        hydraulic_time_step)
-                t_idx_end = LeakG3PD.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
-                                                      round_up=True)
+                t_idx_start = self.__leak_time_to_idx(leak["leak_start_time"] *
+                                                      hydraulic_time_step)
+                t_idx_end = self.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
+                                                    round_up=True)
 
                 leak_node_idx = nodes.index(leak["node_id"])
 
@@ -84,8 +81,7 @@ class LeakG3PD(BenchmarkResource):
 
         return y, y_leak_locations
 
-    @staticmethod
-    def load_data(scenarios_id: list[int], network: str, download_dir: str = None,
+    def load_data(self, scenarios_id: list[int], network: str, download_dir: str = None,
                   return_X_y: bool = False, return_features_desc: bool = False,
                   return_leak_locations: bool = False, verbose: bool = True) -> dict:
         """
@@ -151,7 +147,7 @@ class LeakG3PD(BenchmarkResource):
         network_mapping = {"net3": "EPANET Net 3", "hanoi": "HanoiOK", "net1": "Net1OK"}
 
         file_ids = {"net3": "1Obbk91MyzrYDpDV7TL7s1pIwk5r3E2tl", "hanoi": "1Fc-RQAoQ658C7tshhG9f8sx72vEnJ4LU",
-                           "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
+                    "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
 
         url_gdrive = f"https://drive.google.com/uc?export=download&id={file_ids[network]}"
         url_backup = f"https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip"
@@ -163,7 +159,7 @@ class LeakG3PD(BenchmarkResource):
         elif network == 'hanoi':
             leaks_info = json.loads(HANOI_LEAKAGES)
         else:
-            ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
+            raise ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
 
         network_desc = network.capitalize()
         download_dir = download_dir if download_dir is not None else get_temp_folder()
@@ -200,7 +196,7 @@ class LeakG3PD(BenchmarkResource):
                 sim = ScenarioSimulator(f_inp_in=scenario_inp_path)
                 nodes = sim.sensor_config.nodes
 
-                _, y_leak_locations = LeakG3PD.__create_labels(s_id, X.shape[0], nodes, leaks_info)
+                _, y_leak_locations = self.__create_labels(s_id, X.shape[0], nodes, leaks_info)
 
                 if return_features_desc is True and "features_desc" not in results:
                     results["features_desc"] = df_pressures.columns.tolist() + df_flows.columns.tolist() + df_demands.columns.tolist()
@@ -214,8 +210,7 @@ class LeakG3PD(BenchmarkResource):
 
         return results
 
-    @staticmethod
-    def load_scenarios(scenarios_id: list[int], network: str,
+    def load_scenarios(self, scenarios_id: list[int], network: str,
                        download_dir: str = None, verbose: bool = True) -> list[ScenarioConfig]:
         """
         Creates and returns LeakG3PD scenarios -- they can be either modified or
@@ -258,7 +253,7 @@ class LeakG3PD(BenchmarkResource):
         zip_mapping = {"net3": "EPANET Net 3.zip", "hanoi": "Hanoi", "net1": "Net1.zip"}
         network_mapping = {"net3": "EPANET Net 3", "hanoi": "HanoiOK", "net1": "Net1OK"}
         file_ids = {"net3": "1Obbk91MyzrYDpDV7TL7s1pIwk5r3E2tl", "hanoi": "1Fc-RQAoQ658C7tshhG9f8sx72vEnJ4LU",
-                           "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
+                    "net1": "1GZ-YxHhsjkOyp_NGRosM7wB8R6P8rf0l"}
 
         url_gdrive = f'https://drive.google.com/uc?export=download&id={file_ids[network]}'
         url_backup = f"https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/LeakG3PD/{zip_mapping[network].split('.')[0]}.zip"
@@ -276,10 +271,14 @@ class LeakG3PD(BenchmarkResource):
 
         # Set simulation duration
         hydraulic_time_step = to_seconds(minutes=30)    # 30min time steps
-        general_params = {"simulation_duration": to_seconds(
-            days=365),  # One year
-            "hydraulic_time_step": hydraulic_time_step,
-            "reporting_time_step": hydraulic_time_step}
+        general_params = {"simulation_duration": to_seconds(days=365),   # One year
+                          "hydraulic_time_step": hydraulic_time_step,
+                          "reporting_time_step": hydraulic_time_step,
+                          "flow_units_id": EpanetConstants.EN_CMH,
+                          "demand_model": {"type": EpanetConstants.EN_PDA, "pressure_min": 0,
+                                           "pressure_required": 0.1,
+                                           "pressure_exponent": 0.5}
+                        }
 
         # Add demand patterns
         def gen_dem(download_dir, network, use_gen_dem2=False):
@@ -375,24 +374,25 @@ class LeakG3PD(BenchmarkResource):
                                     f"{s_id}.inp")
             scenarios_inp.append(f_inp_in)
 
+            sensor_config = None
             if not os.path.exists(f_inp_in):
-                with ScenarioSimulator(f_inp_in=scenario_inp_path) as wdn:
-                    wdn.epanet_api.setTimeHydraulicStep(general_params["hydraulic_time_step"])
-                    wdn.epanet_api.setTimeSimulationDuration(general_params["simulation_duration"])
-                    wdn.epanet_api.setTimePatternStep(general_params["hydraulic_time_step"])
-                    wdn.epanet_api.setFlowUnitsCMH()
+                with ScenarioSimulator(f_inp_in=f_inp_in) as wdn:
+                    wdn.set_general_parameters(**general_params)
+                    wdn.epanet_api.set_hydraulic_time_step(hydraulic_time_step)
+                    wdn.epanet_api.settimeparam(EpanetConstants.EN_PATTERNSTEP, hydraulic_time_step)
 
-                    wdn.epanet_api.deletePatternsAll()
+                    for idx in range(1, wdn.epanet_api.getcount(EpanetConstants.EN_PATCOUNT) + 1):
+                        wdn.epanet_api.deletepattern(idx)
 
-                    reservoir_nodes_id = wdn.epanet_api.getNodeReservoirNameID()
+                    reservoir_nodes_id = wdn.epanet_api.get_all_reservoirs_id()
                     for node_id in wdn.sensor_config.nodes:
                         if node_id in wdn.sensor_config.tanks or\
                                 node_id in reservoir_nodes_id or \
                                 (str(node_id).startswith('leak')):
                             continue
 
-                        node_idx = wdn.epanet_api.getNodeIndex(node_id)
-                        base_demand = wdn.epanet_api.getNodeBaseDemands(node_idx)[1][0]
+                        node_idx = wdn.epanet_api.get_node_idx(node_id)
+                        base_demand = wdn.epanet_api.get_node_base_demand(node_idx)
 
                         my_demand_pattern = np.array(gen_dem(download_dir, network))
 
@@ -400,8 +400,8 @@ class LeakG3PD(BenchmarkResource):
                                                     demand_pattern_id=f"demand_{node_id}",
                                                     demand_pattern=my_demand_pattern)
 
+                    wdn.epanet_api.saveinpfile(f_inp_in)
                     sensor_config = wdn.sensor_config
-                    wdn.epanet_api.saveInputFile(f_inp_in)
             else:
                 with ScenarioSimulator(f_inp_in=scenario_inp_path) as wdn:
                     sensor_config = wdn.sensor_config
@@ -439,7 +439,7 @@ class LeakG3PD(BenchmarkResource):
         elif network == 'hanoi':
             leaks_info = json.loads(HANOI_LEAKAGES)
         else:
-            ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
+            raise ValueError(f'{network} not known. Valid network strings are net1, net3 or hanoi')
 
         for s_id in scenarios_id:
             leaks_data = []

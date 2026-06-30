@@ -9,7 +9,7 @@ import scipy
 import numpy as np
 import pandas as pd
 from scipy.sparse import bsr_array
-from epyt_flow.simulation import ScenarioSimulator
+from epyt_flow.simulation import ScenarioSimulator, EpanetConstants
 from epyt_flow.simulation.events import AbruptLeakage, IncipientLeakage
 from epyt_flow.simulation import ScenarioConfig
 from epyt_flow.simulation.scada import ScadaData
@@ -44,30 +44,27 @@ class LeakDB(BenchmarkResource):
     directly compared to the official paper.
     Besides this, the user can choose to evaluate predictions using any other metric.
     """
-    @staticmethod
-    def __leak_time_to_idx(t: int, round_up: bool = False, hydraulic_time_step: int = 1800):
+    def __leak_time_to_idx(self, t: int, round_up: bool = False, hydraulic_time_step: int = 1800):
         if round_up is False:
             return math.floor(t / hydraulic_time_step)
         else:
             return math.ceil(t / hydraulic_time_step)
 
-    @staticmethod
-    def __get_leak_time_windows(s_id: int, leaks_info: dict,
+    def __get_leak_time_windows(self, s_id: int, leaks_info: dict,
                                 hydraulic_time_step: int = 1800) -> list[tuple[int, int]]:
         time_windows = []
         if str(s_id) in leaks_info:
             for leak in leaks_info[str(s_id)]:
-                t_idx_start = LeakDB.__leak_time_to_idx(leak["leak_start_time"] *
-                                                        hydraulic_time_step)
-                t_idx_end = LeakDB.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
-                                                      round_up=True)
+                t_idx_start = self.__leak_time_to_idx(leak["leak_start_time"] *
+                                                      hydraulic_time_step)
+                t_idx_end = self.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
+                                                    round_up=True)
 
                 time_windows.append((t_idx_start, t_idx_end))
 
         return time_windows
 
-    @staticmethod
-    def __create_labels(s_id: int, n_time_steps: int, nodes: list[str],
+    def __create_labels(self, s_id: int, n_time_steps: int, nodes: list[str],
                         leaks_info: dict, hydraulic_time_step: int = 1800
                         ) -> tuple[np.ndarray, scipy.sparse.bsr_array]:
         y = np.zeros(n_time_steps)
@@ -76,10 +73,10 @@ class LeakDB(BenchmarkResource):
         leak_locations_col = []
         if str(s_id) in leaks_info:
             for leak in leaks_info[str(s_id)]:
-                t_idx_start = LeakDB.__leak_time_to_idx(leak["leak_start_time"] *
-                                                        hydraulic_time_step)
-                t_idx_end = LeakDB.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
-                                                      round_up=True)
+                t_idx_start = self.__leak_time_to_idx(leak["leak_start_time"] *
+                                                      hydraulic_time_step)
+                t_idx_end = self.__leak_time_to_idx(leak["leak_end_time"] * hydraulic_time_step,
+                                                    round_up=True)
 
                 leak_node_idx = nodes.index(leak["node_id"])
 
@@ -95,8 +92,7 @@ class LeakDB(BenchmarkResource):
 
         return y, y_leak_locations
 
-    @staticmethod
-    def compute_evaluation_score(scenarios_id: list[int], use_net1: bool,
+    def compute_evaluation_score(self, scenarios_id: list[int], use_net1: bool,
                                  y_pred_labels_per_scenario: list[np.ndarray]) -> dict:
         """
         Evaluates the predictions (leakage detection) for a list of given scenarios.
@@ -129,14 +125,14 @@ class LeakDB(BenchmarkResource):
         else:
             leaks_info = json.loads(HANOI_LEAKAGES)
 
-        network_config = Net1.load(return_scenario=True) if use_net1 is True \
-            else Hanoi.load(return_scenario=True)
+        network_config = Net1().load(return_scenario=True) if use_net1 is True \
+            else Hanoi().load(return_scenario=True)
         nodes = network_config.sensor_config.nodes
 
         y_true = []
         for i, s_id in enumerate(scenarios_id):
-            y, _ = LeakDB.__create_labels(s_id, len(y_pred_labels_per_scenario[i]),
-                                          nodes, leaks_info)
+            y, _ = self.__create_labels(s_id, len(y_pred_labels_per_scenario[i]),
+                                        nodes, leaks_info)
             if len(y) != len(y_pred_labels_per_scenario[i]):
                 raise ValueError("A prediction must be provided for each time step -- " +
                                  f"mismatch for scenario {i}, expected {len(y)} but got " +
@@ -157,7 +153,7 @@ class LeakDB(BenchmarkResource):
         detection_threshold = .75
         for i, s_id in enumerate(scenarios_id):
             y_pred_i = y_pred_labels_per_scenario[i]
-            leaks_time_window = LeakDB.__get_leak_time_windows(s_id, leaks_info)
+            leaks_time_window = self.__get_leak_time_windows(s_id, leaks_info)
 
             scores = []
             for t0, _ in leaks_time_window:
@@ -178,8 +174,7 @@ class LeakDB(BenchmarkResource):
         return {"f1_score": f1, "true_positive_rate": tpr,
                 "true_negative_rate": tnr, "early_detection_score": early_detection_score}
 
-    @staticmethod
-    def load_data(scenarios_id: list[int], use_net1: bool, download_dir: str = None,
+    def load_data(self, scenarios_id: list[int], use_net1: bool, download_dir: str = None,
                   return_X_y: bool = False, return_features_desc: bool = False,
                   return_leak_locations: bool = False, verbose: bool = True) -> dict:
         """
@@ -292,7 +287,7 @@ class LeakDB(BenchmarkResource):
                 network_config = Net1.load(download_dir, return_scenario=True) if use_net1 is True \
                     else Hanoi.load(download_dir, return_scenario=True)
                 nodes = network_config.sensor_config.nodes
-                _, y_leak_locations = LeakDB.__create_labels(s_id, X.shape[0], nodes, leaks_info)
+                _, y_leak_locations = self.__create_labels(s_id, X.shape[0], nodes, leaks_info)
 
                 if return_features_desc is True and "features_desc" not in results:
                     results["features_desc"] = list(pressure_readings.keys()) + \
@@ -307,8 +302,7 @@ class LeakDB(BenchmarkResource):
 
         return results
 
-    @staticmethod
-    def load_scada_data(scenarios_id: list[int], use_net1: bool = True, download_dir: str = None,
+    def load_scada_data(self, scenarios_id: list[int], use_net1: bool = True, download_dir: str = None,
                         return_X_y: bool = False, return_leak_locations: bool = False,
                         verbose: bool = True
                         ) -> Union[list[ScadaData], list[tuple[np.ndarray, np.ndarray]]]:
@@ -380,8 +374,8 @@ class LeakDB(BenchmarkResource):
             data = ScadaData.load_from_file(os.path.join(download_dir, f_in))
 
             X = data.get_data()
-            y, y_leak_locations = LeakDB.__create_labels(s_id, X.shape[0], data.sensor_config.nodes,
-                                                         leaks_info)
+            y, y_leak_locations = self.__create_labels(s_id, X.shape[0], data.sensor_config.nodes,
+                                                       leaks_info)
 
             if return_X_y is True:
                 if return_leak_locations is True:
@@ -396,8 +390,7 @@ class LeakDB(BenchmarkResource):
 
         return r
 
-    @staticmethod
-    def load_scenarios(scenarios_id: list[int], use_net1: bool = True,
+    def load_scenarios(self, scenarios_id: list[int], use_net1: bool = True,
                        download_dir: str = None, verbose: bool = True) -> list[ScenarioConfig]:
         """
         Creates and returns the LeakDB scenarios -- they can be either modified or
@@ -438,16 +431,21 @@ class LeakDB(BenchmarkResource):
         scenarios_inp = []
 
         # Load the network
-        load_network = Net1.load if use_net1 is True else Hanoi.load
+        load_network = Net1().load if use_net1 is True else Hanoi().load
         download_dir = download_dir if download_dir is not None else get_temp_folder()
         network_config = load_network(download_dir=download_dir, verbose=verbose,
                                       return_scenario=True)
 
-        # Set simulation duration
+        # Set simulation duration and other general parameters such as the demand model and flow units
         hydraulic_time_step = to_seconds(minutes=30)    # 30min time steps
         general_params = {"simulation_duration": to_seconds(days=365),   # One year
                           "hydraulic_time_step": hydraulic_time_step,
-                          "reporting_time_step": hydraulic_time_step} | network_config.general_params
+                          "reporting_time_step": hydraulic_time_step,
+                          "flow_units_id": EpanetConstants.EN_CMH,
+                          "demand_model": {"type": EpanetConstants.EN_PDA, "pressure_min": 0,
+                                           "pressure_required": 0.1,
+                                           "pressure_exponent": 0.5}
+                        } | network_config.general_params
 
         # Add demand patterns
         def gen_dem(download_dir, use_net1):
@@ -525,29 +523,29 @@ class LeakDB(BenchmarkResource):
 
             if not os.path.exists(f_inp_in):
                 with ScenarioSimulator(f_inp_in=network_config.f_inp_in) as wdn:
-                    wdn.epanet_api.setTimeHydraulicStep(general_params["hydraulic_time_step"])
-                    wdn.epanet_api.setTimeSimulationDuration(general_params["simulation_duration"])
-                    wdn.epanet_api.setTimePatternStep(general_params["hydraulic_time_step"])
-                    wdn.epanet_api.setFlowUnitsCMH()
+                    wdn.set_general_parameters(**general_params)
+                    wdn.epanet_api.set_hydraulic_time_step(hydraulic_time_step)
+                    wdn.epanet_api.settimeparam(EpanetConstants.EN_PATTERNSTEP, hydraulic_time_step)
 
-                    wdn.epanet_api.deletePatternsAll()
+                    for idx in range(1, wdn.epanet_api.getcount(EpanetConstants.EN_PATCOUNT) + 1):
+                        wdn.epanet_api.deletepattern(idx)
 
-                    reservoir_nodes_id = wdn.epanet_api.getNodeReservoirNameID()
+                    reservoir_nodes_id = wdn.epanet_api.get_all_reservoirs_id()
                     for node_id in network_config.sensor_config.nodes:
                         if node_id in network_config.sensor_config.tanks or\
                                 node_id in reservoir_nodes_id:
                             continue
 
-                        node_idx = wdn.epanet_api.getNodeIndex(node_id)
-                        base_demand = wdn.epanet_api.getNodeBaseDemands(node_idx)[1][0]
+                        node_idx = wdn.epanet_api.get_node_idx(node_id)
+                        base_demand = wdn.epanet_api.get_node_base_demand(node_idx)
 
-                        my_demand_pattern = np.array(gen_dem(download_dir, use_net1))
+                        my_demand_pattern = np.array(gen_dem(download_dir))
 
                         wdn.set_node_demand_pattern(node_id=node_id, base_demand=base_demand,
                                                     demand_pattern_id=f"demand_{node_id}",
                                                     demand_pattern=my_demand_pattern)
 
-                    wdn.epanet_api.saveInputFile(f_inp_in)
+                    wdn.epanet_api.saveinpfile(f_inp_in)
 
         # Create uncertainties
         class MyUniformUncertainty(UniformUncertainty):

@@ -44,7 +44,7 @@ class BATADAL(BenchmarkResource):
     scenarios :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_scenario` and pre-generated
     SCADA data :func:`~water_benchmark_hub.batadal.batadal.BATADAL.load_scada_data`.
     """
-    def __parse_attacks_time(self, start_time: str, attacks_time):
+    def __parse_attacks_time(start_time: str, attacks_time):
         events = []
         for event in attacks_time.splitlines():
             # Parse entry

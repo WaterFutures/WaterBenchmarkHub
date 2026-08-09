@@ -713,6 +713,25 @@
             "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-marchi-rural/MarchiRural.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/asce-tf-wdst/Rural/RuralNetwork.inp"],
             "permalink": "benchmarks/network-Marchi-Rural.html"
         },
+        "network-ky-all": {
+            "name": "KY-ALL",
+            "desc": "A network based on all main systems in Kentucky",
+            "year": 2026,
+            "tags": [
+                "network",
+                "large",
+                "tanks",
+                "pumps"
+            ],
+            "keywords": [
+                "Kentucky"
+            ],
+            "license": "",
+            "download_url": "",
+            "external_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/ky-all-customers.inp",
+            "backup_download_urls":[],
+            "permalink": "benchmarks/network-KYALL.html"
+        },
         "network-ky1": {
             "name": "KY1",
             "desc": "A network based on a real-world system in Kentucky",

@@ -717,6 +717,7 @@
             "name": "KY-ALL",
             "desc": "A network based on all main systems in Kentucky",
             "year": 2026,
+            "license": "CC BY 4.0",
             "tags": [
                 "network",
                 "large",
@@ -726,7 +727,6 @@
             "keywords": [
                 "Kentucky"
             ],
-            "license": "",
             "download_url": "",
             "external_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/ky-all-customers.inp",
             "backup_download_urls":[],

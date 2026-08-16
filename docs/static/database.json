@@ -1749,7 +1749,7 @@
 
         "network-01-uk-style": {
             "name": "01-uk-style Network",
-            "desc": "EPANET Example Network 01-uk-style.",
+            "desc": "Drumchapel -- UK style network with metric units and flow in l/s.",
             "year": 2025,
             "tags": [
                 "valves", 
@@ -1763,14 +1763,14 @@
                 "01-uk-style", 
                 "epanet"
             ],
-            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/01-uk-style.inp",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-01-uk-style/01-uk-style.inp"],
+            "download_url": "https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-01-uk-style/01-uk-style.inp",
+            "backup_download_urls":[],
             "permalink": "benchmarks/network-01-uk-style.html"
         }, 
 
         "network-02-us-style": {
             "name": "02-us-style Network",
-            "desc": "EPANET Example Network 02-us-style.",
+            "desc": "Waterdown -- North American style network with US units and flow in GPM.",
             "year": 2025,
             "tags": [
                 "valves", 
@@ -1782,8 +1782,8 @@
                 "02-us-style", 
                 "epanet"
             ],
-            "download_url": "https://raw.githubusercontent.com/epanet-js/epanet-js/refs/heads/main/public/example-models/02-us-style.inp",
-            "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-02-us-style/02-us-style.inp"],
+            "download_url": "https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-02-us-style/02-us-style.inp",
+            "backup_download_urls":[],
             "permalink": "benchmarks/network-02-us-style.html"
         },
         "intaset": {

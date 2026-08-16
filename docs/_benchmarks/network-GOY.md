@@ -10,7 +10,7 @@ layout: benchmark
 
 A network designed for researching network system design using non-linear programming.
 
-The network consists of 23 nodes, 30 pipes, 1 pump and 1 reservoir.
+The network consists of 23 nodes, 30 pipes, 1 tank, 1 pump, and 1 reservoir.
 
 
 <img src="../static/benchmarks/network-goy/goy_plot.png"/>

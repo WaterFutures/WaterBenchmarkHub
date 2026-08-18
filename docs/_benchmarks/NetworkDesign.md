@@ -324,7 +324,7 @@ where $$I_n$$=network resilience; $$nn$$=number of demand nodes; $$C_j$$, $$Q_j$
 
 <details id="BIN">
   <summary><h4 style="display:inline-block">Balerma Irrigation Network (BIN)</h4></summary>
-  The <a href="network-BIN.html">BIN</a> includes four hundred and fifty-four relatively small length pipes, four hundred and forty-three demand nodes (hydrants), and four reservoirs with fixed heads within 112 m to 127 m. The material of pipes is polyvinyl chloride (PVC). The Darcy-Weisbach roughness coefficient of 0.0025 mm is applied to all the pipes. The minimum pressure head above ground elevation is 20 m for all the demand nodes. Table BIN.1 shows commercially available diameters and the corresponding unit costs. Figure BIN.1 depicts the layout of BIN.
+  The <a href="network-Balerma.html">BIN</a> includes four hundred and fifty-four relatively small length pipes, four hundred and forty-three demand nodes (hydrants), and four reservoirs with fixed heads within 112 m to 127 m. The material of pipes is polyvinyl chloride (PVC). The Darcy-Weisbach roughness coefficient of 0.0025 mm is applied to all the pipes. The minimum pressure head above ground elevation is 20 m for all the demand nodes. Table BIN.1 shows commercially available diameters and the corresponding unit costs. Figure BIN.1 depicts the layout of BIN.
   
   <div id="BIN-tab-diameter-costs"></div>
   <script type="text/javascript">insertTable("BIN-tab-diameter-costs", "../static/benchmarks/network-bin/BIN_Cost.csv", "Table BIN.1 Diameter options and associated unit costs of BIN");</script>

@@ -97,10 +97,10 @@ class CYDBP(WaterDistributionNetwork):
 register("Network-CY-DBP", CYDBP)
 
 
-@meta_data("network-richmond")
+@meta_data("network-rch")
 class Richmond(WaterDistributionNetwork):
     """
-    Class for loading the Richmond network.
+    Backward-compatible alias for loading the Richmond Standard network.
     """
     pass
 
@@ -130,10 +130,10 @@ class Balerma(WaterDistributionNetwork):
 register("Network-Balerma", Balerma)
 
 
-@meta_data("network-rural")
+@meta_data("network-marchi-rural")
 class Rural(WaterDistributionNetwork):
     """
-    Class for loading the Rural network.
+    Backward-compatible alias for loading the Marchi Rural network.
     """
     pass
 
@@ -703,10 +703,10 @@ register("Network-GOY", GOY)
 
 
 
-@meta_data("network-bin")
+@meta_data("network-balerma")
 class BIN(WaterDistributionNetwork):
     """
-    Class for loading the BIN network.
+    Backward-compatible alias for loading the Balerma irrigation network.
     """
     pass
 

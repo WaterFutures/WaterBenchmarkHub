@@ -4,6 +4,8 @@ Module provides tests to test the `water_benchmark_hub.networks.networks` module
 import pytest
 from epyt_flow.simulation import ScenarioConfig
 from water_benchmark_hub import load
+from water_benchmark_hub.benchmarks import benchmarks as registered_benchmarks
+from water_benchmark_hub.networks.networks import WaterDistributionNetwork
 
 from .utils import get_temp_folder
 
@@ -19,6 +21,7 @@ def test_cydbp():
 def test_richmond():
     res = load("Network-Richmond")
 
+    assert res.get_meta_info() == load("Network-RCH").get_meta_info()
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
@@ -43,6 +46,7 @@ def test_balerma():
 def test_rural():
     res = load("Network-Rural")
 
+    assert res.get_meta_info() == load("Network-Marchi-Rural").get_meta_info()
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
@@ -463,9 +467,16 @@ def test_goy():
 def test_bin():
     res = load("Network-BIN")
 
+    assert res.get_meta_info() == load("Network-Balerma").get_meta_info()
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
+
+
+def test_registered_networks_have_metadata():
+    for benchmark_id, benchmark_class in registered_benchmarks.items():
+        if issubclass(benchmark_class, WaterDistributionNetwork):
+            assert benchmark_class().get_meta_info(), benchmark_id
 
 
 def test_exn():

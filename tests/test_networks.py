@@ -501,3 +501,27 @@ def test_rch():
     assert isinstance(res.load(download_dir=get_temp_folder()), str)
     assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
                       ScenarioConfig)
+
+def test_ukstyle():
+    res = load("Network-UK-Style")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_usstyle():
+    res = load("Network-US-Style")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+    assert isinstance(res.load(download_dir=get_temp_folder(), return_scenario=True),
+                      ScenarioConfig)
+
+
+def test_kyall():
+    res = load("Network-Ky-All")
+
+    assert isinstance(res.load(download_dir=get_temp_folder()), str)
+
+
+    

@@ -727,9 +727,9 @@
             "keywords": [
                 "Kentucky"
             ],
-            "download_url": "",
+            "download_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/ky-all-customers.inp",
             "external_url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/ky-all-customers.inp",
-            "backup_download_urls":[],
+            "backup_download_urls":["https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/Benchmarks/ky-all-customers.inp"],
             "permalink": "benchmarks/network-KYALL.html"
         },
         "network-ky1": {

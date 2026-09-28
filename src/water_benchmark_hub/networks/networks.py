@@ -748,3 +748,36 @@ class RCH(WaterDistributionNetwork):
 
 
 register("Network-RCH", RCH)
+
+
+
+@meta_data("network-01-uk-style")
+class UKStyle(WaterDistributionNetwork):
+    """
+    Class for loading the 01-uk-style network. 
+    """
+    pass 
+
+register("Network-UK-Style", UKStyle)
+
+
+@meta_data("network-02-us-style")
+class USStyle(WaterDistributionNetwork):
+    """
+    Class for loading the 02-us-style network. 
+    """
+    pass
+
+register("Network-US-Style", USStyle)
+
+
+@meta_data("network-ky-all")
+class KYALL(WaterDistributionNetwork):
+    """
+    Class for loading the KY-ALL network. 
+    """
+    pass 
+
+register("Network-Ky-All", KYALL)
+
+

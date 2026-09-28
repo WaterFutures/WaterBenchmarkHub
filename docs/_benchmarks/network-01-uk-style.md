@@ -19,6 +19,18 @@ The network consists of 136 nodes, 153 pipes, 1 valve, 1 reservoir, 1 pump and 1
 
 The 01-uk-style Network is provided as an .inp file and can be loaded into EPANET or any other software package supporting .inp files.
 
+### Usage in Python
+
+01-uk-style Network is also available in Python through the key "*Network-UK-Style*":
+```python
+network = load("Network-UK-Style")
+ukstyle_inp = network.load()
+```
+
+Detailed information about the provided functionality can be found in the documentation of
+[`load()`](https://waterbenchmarkhub.readthedocs.io/en/latest/water_benchmark_hub.networks.html#water_benchmark_hub.networks.networks.UKStyle.load).
+
+
 
 ## Reference
 Example model provided by *epanet.js*: [<i class="bi bi-link"></i>](https://github.com/epanet-js/epanet-js/blob/main/public/example-models/01-uk-style.inp)

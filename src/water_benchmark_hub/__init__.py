@@ -19,6 +19,7 @@ from . import ditec_wdn
 from . import intaset
 from . import wds_eventdb
 from . import leakage_repairs
+from . import clstateestimate
 
 try:
     from . import bwdf

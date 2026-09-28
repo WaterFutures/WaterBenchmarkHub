@@ -13,6 +13,7 @@ water_benchmark_hub
    water_benchmark_hub.intaset
    water_benchmark_hub.wds_eventdb
    water_benchmark_hub.leakage_repairs
+   water_benchmark_hub.clstateestimate
 
 
 water_benchmark_hub.benchmark_resource

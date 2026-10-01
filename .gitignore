@@ -1,13 +1,11 @@
+.DS_Store
+
 # Ruby and NodeJS
 .bundle/
 .vendor/
 _site/
 node_modules/
 vendor/
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

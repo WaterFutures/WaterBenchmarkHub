@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF8">
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+
+        <link type="text/css" rel="stylesheet" href="static/libs/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="static/libs/bootstrap-vue.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+        <script src="static/libs/polyfill.min.js"></script>
+        <script src="static/libs/vue.min.js"></script>
+        <script src="static/libs/bootstrap-vue.min.js"></script>
+        <script src="static/libs/bootstrap-vue-icons.min.js"></script>
+
+        <script src="static/js/controller.js"></script>
+        <script src="static/js/database.js"></script>
+        <link type="text/css" rel="stylesheet" href="static/css/styles.css"/>
+
+        <style>
+        :root {
+            --tc-primary: #0d6efd;
+            --tc-primary-dark: #0b5ed7;
+            --tc-light: #e1ecfd;
+            --tc-surface: #ffffff;
+            --tc-border: #c9dafc;
+            --tc-text: #1f2d3d;
+            }
+
+            body {
+            background-color: var(--tc-light);
+            color: var(--tc-text);
+            padding-bottom: 60px;
+            }
+
+            .site-header {
+            background-color: var(--tc-primary);
+            color: #ffffff;
+            }
+
+            .navbar-custom {
+            background-color: var(--tc-primary-dark);
+            }
+
+            .section-title {
+            color: var(--tc-primary);
+            border-left: 5px solid var(--tc-primary);
+            padding-left: 0.75rem;
+            }
+
+            .card {
+            border: 1px solid var(--tc-border);
+            background-color: var(--tc-surface);
+            }
+
+            .leader-card {
+            border-top: 4px solid var(--tc-primary);
+            }
+
+            .text-brand {
+            color: var(--tc-primary) !important;
+            }
+
+            .footer {
+            background-color: var(--tc-primary);
+            color: #ffffff;
+            }
+
+            .list-group-item {
+            border-color: var(--tc-border);
+            }
+        </style>
+
+        <title>WaterBenchmarkHub -- ASCE EWRI Task Committee</title>
+    </head>
+    <body>
+        <a href="#main-content" class="screen-reader-text skip-to-main-content-link">Skip to main content</a>
+
+        <header class="site-header py-5 text-center">
+            <div class="container">
+            <h1 class="display-5 fw-bold mb-3">WaterBenchmarkHub -- ASCE EWRI Task Committee</h1>
+            <p class="lead mb-0 mx-auto" style="max-width: 800px;">
+                WaterBenchmarkHub – A standardized platform in the community for hosting, sharing, and
+                accessing benchmarks
+            </p>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+            <a class="navbar-brand fw-semibold" href="#">Task Committee</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#topic">Topic</a></li>
+                <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+                <li class="nav-item"><a class="nav-link" href="#purpose">Purpose</a></li>
+                <li class="nav-item"><a class="nav-link" href="#leaders">Leadership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#members">Members</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            <div class="container">
+            <section id="topic" class="mb-4">
+                <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="section-title h3 mb-3">Topic</h2>
+                    <p class="mb-0">
+                        The objective of this task committee is to develop a platform called <i>WaterBenchmarkHub</i>, 
+                        and establish it as a standard platform in the community for hosting, sharing, 
+                        and accessing benchmarks.
+                        <br><br>
+                        This task committee operates under the <i>Planning and Management Council</i> and
+                        the <i>Water Distribution System Analysis committee</i>.
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <section id="background" class="mb-4">
+                <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="section-title h3 mb-3">Background</h2>
+                    <p class="mb-0">
+                        Publicly accessible and user-friendly benchmarks are crucial for advancing and accelerating
+                        research in smart water systems and supporting reproducible studies. Benchmark resources
+                        related to Water Distribution Systems are difficult to access, as they are not consolidated within a
+                        centralized, standardized interface that could enhance their accessibility, usability, and relevance
+                        for researchers. Currently, they are dispersed across various sources, often poorly labelled and
+                        lacking clear guidance on their intended use or the research problems they address. We therefore
+                        aim to build upon initial efforts from the ERC Water Futures project in developing a
+                        WaterBenchmarkHub platform -- an open-source and community-driven platform, designed to
+                        offer a standardized interface for benchmarking resources. The WaterBenchmarkHub will consist
+                        of a web interface for browsing the benchmark resources, and a Python package for easy access
+                        to those benchmark resources in Python. With this initiative, we aim to enhance accessibility for a
+                        broader range of people and ultimately promote and strengthen reproducible research within the
+                        community. To ultimately establish the WaterBenchmarkHub as a standard platform in the
+                        community for hosting, sharing, and accessing benchmarks, we aim to work on the following
+                        action points:
+                        <br><br>
+                        <i>WDSA GitHub organization)</i> We aim to push the establishment of an “official” WDSA GitHub
+                        organization under which not only the WaterBenchmarkHub platform can be hosted, but which can
+                        also be used by other task committees and officials for hosting their software repositories and
+                        other related resources. We envision that this WDSA GitHub organization will be managed by
+                        representatives of the WDSA community, instead of a single individual, and thus ensuring its
+                        success in the long run.
+                        <br><br>
+                        <i>Verified Benchmarks)</i> We aim to contact and work together with the creators/developers of the
+                        original benchmarks to verify their correctness. In this context, we plan to introduce a “verification
+                        badge”, that indicates the given benchmark on the platform has been verified and approved by the
+                        original creators.
+                        <br><br>
+                        <i>Known solutions)</i> For some popular benchmarks and past competitions, a lot of methods and
+                        solutions already exist. To facilitate the comparison to exiting solutions/methods, we aim to include
+                        a list of known solutions for those benchmarks on their respective description page on the
+                        WaterBenchmarkHub.
+                        <br><br>
+                        <i>Versioning and Unique Identifiers)</i> Dealing with the fact that often multiple versions of the same
+                        benchmark (in particular .inp files) exist, we aim to not only ensure that the original version is
+                        available on the platform but also create a list of different versions, together with descriptions of
+                        their origins and characteristics. In this context, we envision introducing unique identifiers (such as
+                        DOIs issued via Zenodo) to avoid any ambiguities and enable easy reproducibility of experiments.
+                        <br><br>
+                        <i>Easy User Experience for Contributing Benchmarks)</i> To make data and benchmark contributions
+                        as simple as possible, we envision developing a user interface that abstracts away from the
+                        underlying database and system.
+                        <br><br>
+                        <i>Persistent and Distributed Storage of (Large) Benchmark Resources)</i> We aim to establish and
+                        promote persistent and permanent storage of publicly available benchmarks. Larger benchmark
+                        resources cannot be stored in GitHub repositories and require hosting on some permanent cloud
+                        storage. Here, we want to establish a system of mirrors, hosted and run at different non-profit
+                        institutes (e.g., universities), to ensure the long-term availability of the benchmarks while
+                        distributing responsibilities and dependencies as much as possible.
+                        <br><br>
+                        <i>Data-Paper Track at Major Journals)</i> We aim to establish “Data-Paper” track at a major journal
+                        such as the Journal of Water Resources Planning and Management (JWRPM), where researchers
+                        can publish their data and getting acknowledged for the work spent on collecting and curation of it.
+                        This is of particular importance, since a lot of data never makes it to publication for various
+                        reasons, yet the data is likely useful for other research projects. Making data for research available
+                        and fostering reproducible research is the key motivation behind the WaterBenchmarkHub.
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <section id="purpose" class="mb-4">
+                <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="section-title h3 mb-3">Purpose</h2>
+                    <p>
+                        Publicly accessible and user-friendly benchmarks are crucial for advancing and
+                        accelerating research in smart water systems and supporting reproducible
+                        studies. Benchmark resources related to Water Distribution Systems are
+                        difficult to access, as they are not consolidated within a centralized,
+                        standardized interface that could enhance their accessibility, usability, and
+                        relevance for researchers. Currently, they are dispersed across various
+                        sources, often poorly labelled and lacking clear guidance on their intended use
+                        or the research problems they address. Based on initial efforts from the ERC
+                        Water Futures project, we therefore aim to build an open-source and
+                        community-driven platform, called WaterBenchmarkHub, designed to offer a
+                        standardized interface for benchmarking resources. The WaterBenchmarkHub
+                        will consist of a web interface for browsing the benchmark resources, and a
+                        Python package for easy access to those benchmark resources in Python.
+                        With this initiative, we aim to enhance accessibility for a broader range of
+                        people and ultimately promote and strengthen reproducible research within the
+                        community.
+                        <br><br>
+                        The platform will feature:
+                        <ul class="mb-0">
+                        <li>Verified benchmarks</li>
+                        <li>A versioning system with unique identifiers for resolving any ambiguities regarding different versions
+                        of specific benchmarks</li>
+                        <li>An intuitive user interface for contributing benchmarks</li>
+                        <li>A persistent and distributed storage system to guarantee long-term availability
+                        of benchmark resources</li>
+                        </ul>
+       
+                        Furthermore, we aim to establish a “Data-Paper”
+                        track at a major journal, where researchers can publish their data and get
+                        acknowledged for the work spent on collecting and curation of it. This is of
+                        particular importance, since a lot of data never makes it to publication for
+                        various reasons, yet the data is likely useful for other research projects.
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <section id="leaders" class="mb-4">
+                <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="section-title h3 mb-3">Task Committee Leadership</h2>
+                    <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card leader-card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 text-brand"><a href="https://andreartelt.github.io">Dr. André Artelt</a></h3>
+                            <p class="fw-bold text-primary mb-2">Chair</p>
+                            <p class="mb-0">
+                            Bielefeld University
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card leader-card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 text-brand"><a href="https://srimanpankaj.github.io/s/">Dr. Sriman Pankaj</a></h3>
+                            <p class="fw-bold text-primary mb-2">Vice Chair</p>
+                            <p class="mb-0">
+                            TU Berlin
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card leader-card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 text-brand"><a href="https://ostfeld.net.technion.ac.il/">Prof. Avi Ostfeld</a></h3>
+                            <p class="fw-bold text-primary mb-2">Secretary / Coordinator</p>
+                            <p class="mb-0">
+                            Israel Institute of Technology
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="members" class="mb-4">
+                <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="section-title h3 mb-3">Member List</h2>
+                    <p class="mb-4">
+                    Please contact the committee chair (<a href="mailto:aartelt@techfak.uni-bielefeld.de">Dr. André Artelt</a>) 
+                    if you are interested in joining this task committee.
+                    </p>
+
+                    <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 text-brand">Members</h3>
+                            <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item">Farrah Moazeni – <i>Lehigh University</i></li>
+                            <li class="list-group-item">Lina Sela – <i>UT Austin</i></li>
+                            <li class="list-group-item">Andrea Cominola – <i>TU Berlin</i></li>
+                            <li class="list-group-item">Demetris Eliades – <i>University of Cyprus</i></li>
+                            <li class="list-group-item">Dennis Zanutto – <i>KWR</i></li>
+                            <li class="list-group-item">Jan Ručka – <i>Brno University of Technology</i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 text-brand">Members</h3>
+                            <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item">Lindell Ormsbee – <i>University of Kentucky</i></li>
+                            <li class="list-group-item">Gal Perelman – <i>Israel Institute of Technology</i></li>
+                            <li class="list-group-item">Rajesh Gupta – <i>Visvesvaraya National Institute of Technology</i></li>
+                            <li class="list-group-item">Juneseok Lee – <i>Manhattan University</i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 text-brand">Members</h3>
+                            <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item">Felipe Francisco Nusda</li>
+                            <li class="list-group-item">Mariam Madbouly – <i>Ain Shams University</i></li>
+                            <li class="list-group-item">Adithya Ramachandran – <i>FAU Erlangen-Nürnberg</i></li>
+                            <li class="list-group-item">Pedro L. Iglesias Rey – <i>Universitat Politècnica de València</i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            </div>
+        </main>
+
+      <footer class="text-center text-white background-layer fixed-bottom">
+        <div class="text-center text-white p-3">
+          © WaterBenchmarkHub Task Committee
+        </div>
+      </footer>
+    </body>
+</html>

@@ -539,7 +539,7 @@ class LeakDB(BenchmarkResource):
                         node_idx = wdn.epanet_api.get_node_idx(node_id)
                         base_demand = wdn.epanet_api.get_node_base_demand(node_idx)
 
-                        my_demand_pattern = np.array(gen_dem(download_dir))
+                        my_demand_pattern = np.array(gen_dem(download_dir, use_net1))
 
                         wdn.set_node_demand_pattern(node_id=node_id, base_demand=base_demand,
                                                     demand_pattern_id=f"demand_{node_id}",

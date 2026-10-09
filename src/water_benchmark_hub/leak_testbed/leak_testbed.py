@@ -213,7 +213,8 @@ class LeakTestbed(BenchmarkResource):
                     for k in files_dic.keys():
                         tmp_path = os.path.join(download_dir, k.split('.')[0], net, leak_folder)
 
-                        file_list = [f for f in Path(tmp_path).glob(f'{file_str}*.csv') if f.is_file()]
+                        file_list = [f for f in Path(tmp_path).glob(f'{file_str}*.csv') if f.is_file()] + \
+                            [f for f in Path(tmp_path).glob(f'{file_str}*.raw') if f.is_file()]
                         if not background_noise:
                             file_str_raw = file_str + '_NN_'
                         else:

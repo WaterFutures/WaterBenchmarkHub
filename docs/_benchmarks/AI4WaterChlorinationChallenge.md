@@ -19,5 +19,5 @@ More information can be found the [official webpage](https://github.com/WaterFut
 
 ## Reference
 
-Artelt, A., Hermes, L., Strotherm, J., Hammer, B., Vrachimis, S. G., Kyriakou, M. S., Eliades, D. G., Polycarpou, M. M., Paraskevopoulos, S., Vrochidis, S., Taormina, R., Savic, D., & Koundouri, P. (2025). *1st AI for Drinking Water Chlorination Challenge (Competition/Challenge)*. 34th International Joint Conference on Artificial Intelligence (IJCAI), Montreal, Canada.
-[<i class="bi bi-link"></i>](https://github.com/WaterFutures/AI-for-Drinking-Water-Chlorination-Challenge-IJCAI-25)
+Artelt, A., Hermes, L., Strotherm, J., Hammer, B., Vrachimis, S. G., Kyriakou, M. S., Eliades, D. G., Polycarpou, M. M., Paraskevopoulos, S., Vrochidis, S., Taormina, R., Savic, D., & Koundouri, P. (2026). *First AI for Drinking Water Chlorination Challenge (Competition/Challenge)*. Journal of Water Resources Planning and Management, 152(12).
+[<i class="bi bi-link"></i>](https://doi.org/10.1061/JWRMD5.WRENG-7562)

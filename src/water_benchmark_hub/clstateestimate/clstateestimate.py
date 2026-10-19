@@ -303,8 +303,8 @@ class ChlorineStateEstimation(BenchmarkResource):
                       y_all[indices[:train_size]]),
             "val": (X_all[indices[train_size:train_size + val_size]],
                     y_all[indices[train_size:train_size + val_size]]),
-            "test": (X_all[indices[:train_size + val_size:]],
-                     y_all[indices[:train_size + val_size]]),
+            "test": (X_all[indices[train_size + val_size:]],
+                     y_all[indices[train_size + val_size:]]),
         }
 
     @staticmethod

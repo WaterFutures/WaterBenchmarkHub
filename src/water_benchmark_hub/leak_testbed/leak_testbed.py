@@ -188,7 +188,7 @@ class LeakTestbed(BenchmarkResource):
             for j, i in enumerate(backgound_noise_file_list):
                 df_temp = self.raw_to_time_series(i)
                 df_temp = df_temp.set_index('Sample')
-                df_temp = df_temp.rename(columns={'Value': 'background_noise-' + str(i).split('.')[0].split('_')[-1]})
+                df_temp = df_temp.rename(columns={'Value': 'background_noise-' + str(i).split('.')[-2].split('_')[-1]})
                 if j == 0:
                     df_backgound_noise = df_temp
                 else:

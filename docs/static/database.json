@@ -1890,6 +1890,29 @@
             "external_url": "https://www.researchgate.net/publication/228410795_Water_network_design_by_MINLP",
             "backup_download_urls":["https://raw.githubusercontent.com/WaterFutures/WaterBenchmarkHub/refs/heads/main/docs/static/benchmarks/network-pescara/PES.inp", "https://raw.githubusercontent.com/KIOS-Research/EPANET-Benchmarks/refs/heads/master/collect-epanet-inp/PES.inp"],
             "permalink": "benchmarks/network-pescara.html"
+        },
+        "nbs-combat": {
+           "name": "Combat of Retrofitting Urban Drainage Networks with Nature-Based Solutions",
+            "desc": "Benchmark for evaluating nature-based solution (NBS) retrofit strategies in an urban drainage system using a calibrated SWMM model and accompanying environmental data.",
+            "year": 2025,
+            "tags": [
+                "competition",
+                "battle competition",
+                "design optimization"
+            ],
+            "keywords": [
+                "urban drainage",
+                "SWMM",
+                "combined sewer network",
+                "nature-based solutions",
+                "optimization"
+            ],
+            "doi": "10.48323/dthmn-rj585",
+            "license": "CC BY 4.0",
+            "download_url": "https://researchdata.uibk.ac.at/records/dthmn-rj585/files/Case_study.inp?download=1",
+            "external_url": "https://researchdata.uibk.ac.at/records/dthmn-rj585",
+            "backup_download_urls":[],
+            "permalink": "benchmarks/nbs-combat.html" 
         }
 
     }

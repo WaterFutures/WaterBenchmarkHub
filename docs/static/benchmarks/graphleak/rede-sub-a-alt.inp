@@ -1,0 +1,309 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ N1              	0           	0           	                	;
+ N2              	0           	0           	                	;
+ N3              	0           	1.5         	P5              	;
+ N4              	0           	2           	P6              	;
+ N5              	0           	1.5         	P3              	;
+ N6              	0           	2           	P4              	;
+ N7              	0           	0           	                	;
+ N8              	0           	0           	                	;
+ N9              	0           	0           	                	;
+ N10             	0           	0           	P1              	;
+ N11             	0           	0           	P1              	;
+ N12             	0           	0           	P1              	;
+ N13             	0           	0           	P1              	;
+ N14             	0           	0           	P1              	;
+ N15             	0           	1           	P4              	;
+ N16             	0           	1           	P3              	;
+ N17             	0           	2           	P5              	;
+ N18             	0           	1.3         	P5              	;
+ N19             	0           	1.8         	P6              	;
+ N20             	0           	1           	P3              	;
+ N21             	0           	1           	P3              	;
+ N22             	0           	1           	P6              	;
+ N23             	0           	1           	P5              	;
+ N24             	0           	1           	P6              	;
+ N25             	0           	1.5         	P6              	;
+ N26             	0           	1.4         	P4              	;
+ N27             	0           	1           	P3              	;
+ N28             	0           	2           	P5              	;
+ N29             	0           	1           	P5              	;
+ N30             	0           	1           	P3              	;
+ N31             	0           	1           	P3              	;
+ N32             	0           	1           	P6              	;
+ N33             	0           	1           	P4              	;
+ N34             	0           	1           	P4              	;
+ N35             	0           	1.5         	P5              	;
+ N36             	0           	1           	P5              	;
+ N37             	0           	1.5         	P4              	;
+ N38             	0           	1           	P6              	;
+ N39             	0           	1           	P6              	;
+ N40             	0           	2           	P6              	;
+ N41             	0           	1           	P3              	;
+ N42             	0           	1           	P5              	;
+ N43             	0           	1           	P5              	;
+ N44             	0           	1           	P4              	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+ RNF1            	40          	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ T1              	N1              	N2              	10.00       	50          	135         	0           	Open  	;
+ T2              	N2              	N10             	1.00        	50          	135         	0           	Open  	;
+ T3              	N10             	N7              	9.00        	50          	135         	1.8         	Open  	;
+ T4              	N7              	N9              	5.00        	50          	135         	0.6         	Open  	;
+ T5              	N9              	N11             	8.94        	50          	135         	0.6         	Open  	;
+ T6              	N11             	N3              	1.00        	50          	135         	0           	Open  	;
+ T7              	N9              	N12             	8.87        	50          	135         	0.6         	Open  	;
+ T8              	N12             	N4              	1.31        	50          	135         	0           	Open  	;
+ T9              	N7              	N8              	5.00        	50          	135         	0.6         	Open  	;
+ T10             	N8              	N13             	8.93        	50          	135         	0.9         	Open  	;
+ T11             	N13             	N5              	1.00        	50          	135         	0           	Open  	;
+ T12             	N8              	N14             	8.82        	50          	135         	0.9         	Open  	;
+ T13             	N14             	N6              	1.00        	50          	135         	0           	Open  	;
+ T14             	N1              	N15             	500         	50          	135         	0           	Open  	;
+ T15             	N15             	N22             	500         	50          	135         	0           	Open  	;
+ T16             	N22             	N23             	500         	50          	135         	0           	Open  	;
+ T17             	N23             	N29             	500         	50          	135         	0           	Open  	;
+ T18             	N29             	N28             	500         	50          	135         	0           	Open  	;
+ T19             	N28             	N27             	500         	50          	135         	0           	Open  	;
+ T20             	N27             	N26             	500         	50          	135         	0           	Open  	;
+ T21             	N26             	N19             	500         	50          	135         	0           	Open  	;
+ T22             	N19             	N18             	500         	50          	135         	0           	Open  	;
+ T23             	N18             	N17             	500         	50          	135         	0           	Open  	;
+ T24             	N17             	N16             	500         	50          	135         	0           	Open  	;
+ T25             	N16             	N15             	500         	50          	135         	0           	Open  	;
+ T26             	N15             	N21             	500         	50          	135         	0           	Open  	;
+ T27             	N21             	N25             	500         	50          	135         	0           	Open  	;
+ T28             	N25             	N28             	500         	50          	135         	0           	Open  	;
+ T29             	N28             	N24             	500         	50          	135         	0           	Open  	;
+ T30             	N24             	N21             	500         	50          	135         	0           	Open  	;
+ T31             	N21             	N20             	500         	50          	135         	0           	Open  	;
+ T32             	N20             	N19             	500         	50          	135         	0           	Open  	;
+ T33             	N19             	N25             	500         	50          	135         	0           	Open  	;
+ T34             	N25             	N26             	500         	50          	135         	0           	Open  	;
+ T35             	N20             	N17             	500         	50          	135         	0           	Open  	;
+ T36             	N24             	N23             	500         	50          	135         	0           	Open  	;
+ T37             	N22             	N21             	500         	50          	135         	0           	Open  	;
+ T38             	N1              	N30             	500         	50          	135         	0           	Open  	;
+ T39             	N30             	N37             	500         	50          	135         	0           	Open  	;
+ T40             	N37             	N38             	500         	50          	135         	0           	Open  	;
+ T41             	N38             	N44             	500         	50          	135         	0           	Open  	;
+ T42             	N44             	N43             	500         	50          	135         	0           	Open  	;
+ T43             	N43             	N42             	500         	50          	135         	0           	Open  	;
+ T44             	N42             	N41             	500         	50          	135         	0           	Open  	;
+ T45             	N41             	N34             	500         	50          	135         	0           	Open  	;
+ T46             	N34             	N33             	500         	50          	135         	0           	Open  	;
+ T47             	N33             	N32             	500         	50          	135         	0           	Open  	;
+ T48             	N32             	N31             	500         	50          	135         	0           	Open  	;
+ T49             	N31             	N30             	500         	50          	135         	0           	Open  	;
+ T50             	N30             	N36             	500         	50          	135         	0           	Open  	;
+ T51             	N36             	N39             	500         	50          	135         	0           	Open  	;
+ T52             	N39             	N40             	500         	50          	135         	0           	Open  	;
+ T53             	N40             	N35             	500         	50          	135         	0           	Open  	;
+ T54             	N35             	N36             	500         	50          	135         	0           	Open  	;
+ T55             	N35             	N32             	500         	50          	135         	0           	Open  	;
+ T56             	N40             	N43             	500         	50          	135         	0           	Open  	;
+ T57             	N39             	N44             	500         	50          	135         	0           	Open  	;
+ T58             	N40             	N42             	500         	50          	135         	0           	Open  	;
+ T59             	N35             	N41             	500         	50          	135         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+ B1              	RNF1            	N1              	HEAD C1	;
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ P1              	0           	0           	0           	0           	0           	0           
+ P1              	0           	0           	0           	0           	0           	0           
+ P1              	2           	2           	2           	2           	2           	2           
+ P1              	2           	2           	2           	2           	2           	2           
+;consumo-cte-media2
+ P2              	2           	2           	2           	2           	2           	2           
+ P2              	2           	2           	2           	2           	2           	2           
+ P2              	2           	2           	2           	2           	2           	2           
+ P2              	2           	2           	2           	2           	2           	2           
+;residencial-v3
+ P3              	0.1         	0.1         	0           	0           	0.5         	1           
+ P3              	1.2         	1.4         	1.8         	1.2         	1           	1           
+ P3              	1.5         	1.8         	2.1         	2.5         	2.8         	3           
+ P3              	2.8         	2.6         	2           	1           	0.5         	0.3         
+;
+ P4              	0.2         	0.2         	0.2         	0.2         	0.2         	0.3         
+ P4              	0.4         	0.5         	0.6         	0.6         	0.8         	1           
+ P4              	1           	1           	0.8         	0.7         	0.7         	0.7         
+ P4              	0.9         	0.9         	0.7         	0.5         	0.3         	0.3         
+;residencial-media 1
+ P5              	0.2         	0.2         	0.2         	0.2         	0.2         	0.5         
+ P5              	0.8         	1.1         	1.3         	1.4         	1.4         	1.8         
+ P5              	2           	1.7         	1.5         	1.4         	1.2         	1.3         
+ P5              	1.4         	1.7         	1.4         	0.5         	0.3         	0.2         
+;residencial-v4
+ P6              	0.5         	0.2         	0.2         	0.2         	0.5         	0.8         
+ P6              	1           	1.5         	2           	1.8         	1.6         	2           
+ P6              	2.2         	1.8         	1           	0.5         	0.5         	0.5         
+ P6              	0.9         	1.3         	1.5         	1.9         	1.5         	0.7         
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+;BOMBA: 
+ C1              	40          	15          
+
+[CONTROLS]
+
+[RULES]
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	24
+ Hydraulic Timestep 	0:10
+ Quality Timestep   	1:00
+ Pattern Timestep   	1:00
+ Pattern Start      	0:00
+ Report Timestep    	0:10
+ Report Start       	0:00
+ Start ClockTime    	0:00
+ Statistic          	None
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPM
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	40
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Emitter Exponent   	0.5
+ Quality            	None mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ N1              	110.00          	100.00          
+ N2              	120.00          	100.00          
+ N3              	125.00          	90.00           
+ N4              	135.00          	90.00           
+ N5              	125.00          	110.00          
+ N6              	135.00          	110.00          
+ N7              	130.00          	100.00          
+ N8              	130.00          	105.00          
+ N9              	130.00          	95.00           
+ N10             	121.00          	100.00          
+ N11             	125.00          	91.00           
+ N12             	135.00          	91.00           
+ N13             	125.00          	109.00          
+ N14             	135.00          	109.00          
+ N15             	110.20          	103.92          
+ N16             	110.20          	106.82          
+ N17             	110.14          	109.79          
+ N18             	110.39          	113.14          
+ N19             	107.49          	113.52          
+ N20             	107.49          	110.17          
+ N21             	107.43          	106.95          
+ N22             	107.17          	103.92          
+ N23             	103.63          	104.05          
+ N24             	103.69          	106.69          
+ N25             	104.27          	109.59          
+ N26             	104.66          	113.07          
+ N27             	101.57          	112.11          
+ N28             	101.57          	109.01          
+ N29             	101.31          	105.21          
+ N30             	110.27          	95.67           
+ N31             	110.33          	92.84           
+ N32             	110.46          	90.07           
+ N33             	110.20          	87.30           
+ N34             	107.43          	87.10           
+ N35             	107.49          	89.55           
+ N36             	107.75          	92.77           
+ N37             	107.37          	95.61           
+ N38             	104.01          	95.87           
+ N39             	104.14          	93.35           
+ N40             	103.82          	89.87           
+ N41             	103.89          	86.78           
+ N42             	101.05          	88.26           
+ N43             	101.18          	92.00           
+ N44             	101.57          	94.90           
+ RNF1            	100.00          	100.00          
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+ T5              	125.08          	95.01           
+ T7              	134.90          	94.96           
+ T10             	125.08          	104.99          
+ T12             	134.80          	104.99          
+ T12             	134.95          	108.78          
+ T18             	101.34          	108.73          
+ T27             	104.54          	109.57          
+ T39             	107.63          	95.61           
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	98.25           	85.44           	136.75          	114.86          
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]

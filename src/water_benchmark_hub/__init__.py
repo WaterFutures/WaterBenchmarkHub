@@ -20,6 +20,7 @@ from . import intaset
 from . import wds_eventdb
 from . import leakage_repairs
 from . import clstateestimate
+from . import multisource_wdn_anomaly 
 
 try:
     from . import bwdf

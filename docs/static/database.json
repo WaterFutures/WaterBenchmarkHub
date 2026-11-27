@@ -1913,6 +1913,53 @@
             "external_url": "https://researchdata.uibk.ac.at/records/dthmn-rj585",
             "backup_download_urls":[],
             "permalink": "benchmarks/nbs-combat.html" 
+        }, 
+        "graphleak": {
+            "name": "GraphLeak", 
+            "desc": "Realistic EPANET-based benchmark for leakage detection and localization in water distribution networks.",
+            "year": 2024,
+            "tags": [
+                "leakage detection",
+                "leakage localization"
+            ],
+            "keywords": [
+                "GraphLeak",
+                "leakage detection",
+                "leakage detection",
+                "Epanet model",
+                "realistic",
+                "simulation"
+            ],
+            "doi": "10.20906/CBA2024/4655",
+            "license": "GPLv3",
+            "download_url": "https://raw.githubusercontent.com/gasiepgodoy/WDN-Models-and-Data-Sets/refs/heads/main/Datasets/Case%20Study%201/rede-sub-a-alt.inp",
+            "external_url": "https://github.com/gasiepgodoy/WDN-Models-and-Data-Sets/tree/main",
+            "backup_download_urls": [],
+            "permalink": "benchmarks/graphleak.html"
+        }, 
+        "multisource-wdn-anomaly": {
+            "name": "Multisource WDN Anomaly Scores",
+            "desc": "Hourly anomaly scores (Elastic ML, Isolation Forest) and leak-proximity labels from an anonymized urban WDN, combining SCADA, pumping-station energy and environmental data.",
+            "year": 2025,
+            "tags": [
+                "leakage"
+            ],
+            "keywords": [
+                "anomaly detection", 
+                "leak", 
+                "SCADA", 
+                "Isolation Forest", 
+                "Elastic ML", 
+                "time series", 
+                "urban water"
+            ], 
+            "doi": "10.5281/zenodo.15096167", 
+            "license": "CC BY 4.0",
+            "download_url": "https://zenodo.org/records/15096167/files/input_model_potenc_predXfault7_A.csv?download=1",
+            "external_url": "https://www.nature.com/articles/s41597-026-07203-5",
+            "backup_download_urls": [],
+            "permalink": "benchmarks/multisource-wdn-anomaly.html"
+
         }
 
     }
